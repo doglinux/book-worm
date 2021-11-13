@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: bookworm
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Sat, 13 Nov 2021 12:08:45 +0000
+MD5Sum:
+ cc902fac2365de7f898ff2493b86d79a           420278 Packages
+ d7890ee3087591fea18b51094c6d7d5e           143781 Packages.gz
+ 399bd88fccd707ff89c3bc68a8a2c63b              188 Release
+ d7890ee3087591fea18b51094c6d7d5e           143781 Translation-en.gz
+SHA1:
+ 0fb5899b1ef89500afe0b3e55b8ccd3846b12a06           420278 Packages
+ 767d9b04710ccfe594bf1f17e1c6a9973711b1ba           143781 Packages.gz
+ 9f4c63787ccef4d7c501cb61da0350bfd2411709              188 Release
+ 767d9b04710ccfe594bf1f17e1c6a9973711b1ba           143781 Translation-en.gz
+SHA256:
+ 7dcb250a86fb9d4de5d694e16325e68c746e1e27d5ed99744c5340672d9ad4fd           420278 Packages
+ 239998c9af4daefbab6fdc71031e6120e66b88777a96ca37bc04decd0ffd168d           143781 Packages.gz
+ ba5f7446f33738af84a7ebddcfc4173cc2deecd945914c319dd9250f5bfa8c89              188 Release
+ 239998c9af4daefbab6fdc71031e6120e66b88777a96ca37bc04decd0ffd168d           143781 Translation-en.gz
+SHA512:
+ b667242a3cd20ca6841a20b686fda8b4a14b9e8d5b48aea85ca6c5081ffd989649bd6a1c8829fef4db611b6de0f3f02cc36e0d100825d4fa9a51abbca8804b4e           420278 Packages
+ 82dfe6b179a93323dfdcf3b075a5dd2fa91c77ca7be4e6e8c6aab09f5da5b3769799e508bb45512ee8f13b23f075042c3883092dc8037a67e8c5a77af70d7a5e           143781 Packages.gz
+ 23723e83f3f77eaba1f05ae1055a35c847de2f88c4578c823406f3ddc65363e1c3b344cfef23b05086a681eae382208d0de5dad2a89deea1194988a17139b7da              188 Release
+ 82dfe6b179a93323dfdcf3b075a5dd2fa91c77ca7be4e6e8c6aab09f5da5b3769799e508bb45512ee8f13b23f075042c3883092dc8037a67e8c5a77af70d7a5e           143781 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmGPqs0ACgkQrYe8en1z
+CB0NgQf/WDg5l9h5/QKasSWEsLoctQt+4WuQYjakyEonHefn7Ahzf9ZAV+b9QA1/
+ZBlv1riFXOb06imsua8FgBWP435cBNZwqABxZRzZsYFqgzURWs5cmj2PA/H4fy2T
+7OYp6dkxVF8/+E8hr7krcEAkKaaoC5KNMTNZxHkkInpYykJw4Z5TwWiSa+smlbpd
+aQfyaIVcsXCBJEzgiizOAUPhWEd9AfrBVLOVpAeyHzPSozITFmNl9U8Ojv/oM+tO
+hQZXtGBNjgmF4gzYa0wReWbm8jxGrTLRLuix69x7Gy6TXkNJhvEPHMA8jjOXhk3t
+stIeWlJdpvPQYGYc1vCPKKZpdPpWlg==
+=NpDb
+-----END PGP SIGNATURE-----

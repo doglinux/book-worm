@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: bookworm
+Architectures: amd64
+Components: main
+Description: DebianDog repository
+Date: Sat, 13 Nov 2021 12:11:30 +0000
+MD5Sum:
+ 36c97711e74c0a4517345ae8ad25d684           395064 Packages
+ 14145785213180de2b88366a9dc08a1e           133089 Packages.gz
+ 135a4252ebfa7592c47d1eb65f5bc422              189 Release
+ 14145785213180de2b88366a9dc08a1e           133089 Translation-en.gz
+SHA1:
+ 1c57130449aefab75e0e31a2e80b6964aa45916d           395064 Packages
+ af23880ec7d75a2ef8086eabac33aac011b8f8fd           133089 Packages.gz
+ 503da2b7c4fd011152444a51cb05f38052e88604              189 Release
+ af23880ec7d75a2ef8086eabac33aac011b8f8fd           133089 Translation-en.gz
+SHA256:
+ 94e48bfd87c51bf366e015c945e87c7fcee86edc7b7503da10c530f63a1a929f           395064 Packages
+ eb616a9950c01450a54028b00bdb15c46768f7fdca29b1031b8f21fc213af3d7           133089 Packages.gz
+ 2dcc4cc55dd3c59deda83a86f1c1b521d6109283a5d868a8ecd1c116b8e036a8              189 Release
+ eb616a9950c01450a54028b00bdb15c46768f7fdca29b1031b8f21fc213af3d7           133089 Translation-en.gz
+SHA512:
+ 0445e435f651bcfebc6bc352b04a1aa9ea4c5963e5ef077d8fb4d4792b755cd46e4e822bcf1e6f2d0ed910af02d3e005b986ec6bdce7e27dd576fc18470437c2           395064 Packages
+ f7fb615fdf688929bd75d44c887da0f04e6baa261680b2278526dc0015f419eb228dc7502e6951ff9d2d5d4305e5b75a418e8a97936bce96efff2d74bf5a6236           133089 Packages.gz
+ afda611e500f509636b246467a35565c76a99536aa36e4829d37d61cf6fd2192796f17435155b2f1695392d3fd2b2f9962a04533602fe0d9ac58f7fd23c7e971              189 Release
+ f7fb615fdf688929bd75d44c887da0f04e6baa261680b2278526dc0015f419eb228dc7502e6951ff9d2d5d4305e5b75a418e8a97936bce96efff2d74bf5a6236           133089 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmGPq3IACgkQrYe8en1z
+CB2SSggAj8AXV2gySZUes1IpuYPkia4BvVA4Lo6SPFC0c1lbWxhj2Mjr7nLImjtj
+eJ60uLrLh6fn+tWwI26MgSzI7Za4OEq7f+eR9vJjgKiEEBmg70Fq7RgPseQsSy6Z
+QigERSk0JcegpTAmnW8G+IX+XRaPTj420IV6fqVlej/ui1+nn1U2l3F3N6J0CiYp
+xr4kc1u/ZdV7x8RSAt4hVnL/yTyMc9Po+Di7JpPdyy5lwRmd5iMJfUSAGcBlRiOg
+WlsJtPgniI1QKI5OJaNvy5mBKPJfunxgui8eOykUIw2WvY6NlN6FY8n9tx7bPAZg
+bB///kNQvbWS2IeRsO5khm0UU7dE8w==
+=ikBP
+-----END PGP SIGNATURE-----
