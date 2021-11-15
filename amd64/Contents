@@ -4621,6 +4621,11 @@ usr/lib/python2.7/dist-packages/PIL/_imaging.so		    img2pdf-old
 usr/lib/python2.7/dist-packages/PIL/_imagingcms.so	    img2pdf-old
 usr/lib/python2.7/dist-packages/PIL/_imagingft.so	    img2pdf-old
 usr/lib/python2.7/dist-packages/PIL/_imagingmath.so	    img2pdf-old
+usr/lib/python2.7/dist-packages/PyGObject-3.30.4.egg-info/PKG-INFO obkey
+usr/lib/python2.7/dist-packages/PyGObject-3.30.4.egg-info/dependency_links.txt obkey
+usr/lib/python2.7/dist-packages/PyGObject-3.30.4.egg-info/not-zip-safe obkey
+usr/lib/python2.7/dist-packages/PyGObject-3.30.4.egg-info/requires.txt obkey
+usr/lib/python2.7/dist-packages/PyGObject-3.30.4.egg-info/top_level.txt obkey
 usr/lib/python2.7/dist-packages/PyGObject-3.36.0.egg-info/PKG-INFO obkey
 usr/lib/python2.7/dist-packages/PyGObject-3.36.0.egg-info/dependency_links.txt obkey
 usr/lib/python2.7/dist-packages/PyGObject-3.36.0.egg-info/not-zip-safe obkey

@@ -5448,6 +5448,40 @@ Description: Openbox Key Editor
      * XML inculsion is not managed. If you want to edit many files, then you shall open them with ;
      *  conditionnal tag is not supported (but did you knew it exists).
 
+Package: obkey
+Architecture: amd64
+Version: 1.3.1-4
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 157
+Depends: python2, libgtk-3-0, gir1.2-gtk-3.0
+Replaces: python-gi
+Filename: ./obkey_1.3.1-4_amd64.deb
+Size: 182724
+MD5sum: 7aeeaf6ec9e25af7ed9885777506f505
+SHA1: fc2850de4d285076dd9ce26e20280a8e0e1d4799
+SHA256: a6d1a9ac1017562dde7ffa3176b4793d0815cfc101d8b4db0e1c0ddd5cda5266
+SHA512: 8d8649012a0f7ad12a651d744a98ae79e3b0b286c51a7da046343aa6ff3c6ab8bce6180a9e28e8b662640434e7efb5ea04b51eda11f61341f424b385082ac78c
+Homepage: https://github.com/luffah/obkey
+Description: Openbox Key Editor
+ .
+ A keybinding editor for OpenBox, it includes launchers and window management keys.
+ .
+ It allows to:
+     * can check almost all keybinds in one second.
+     * add new keybinds, the default key associated will be 'a' and no action will be associated;
+     * add new child keybinds;
+     * setup existing keybinds :
+         * add/remove/sort/setup actions in the actions list;
+         * change the keybind by clicking on the item in the list;
+     * duplicate existing keybinds;
+     * remove a keybind.
+ .
+ The current drawbacks :
+     * XML inculsion is not managed. If you want to edit many files, then you shall open them with ;
+     *  conditionnal tag is not supported (but did you knew it exists).
+
 Package: obshutdown
 Architecture: amd64
 Version: 1.0.0
@@ -7094,6 +7128,22 @@ MD5sum: 666aad41d729aa16105485a383a97b61
 SHA1: da1b8783b79512c1f6262ac542430b7661865c5b
 SHA256: 26813d226c8f2be46f27237de9b866a1b50994d48ba99f844d061d1a2f56d01a
 SHA512: c6f05d66c5aa554396a868f2aa4d462645b522f352312ca0e0761ef82e0e625a9fc29a4e6f720195fd2ae812c433e57480c37a3c532ff7ec58ddce84a4f1667a
+Description: Switch from standard to static repository (from snapshot.debian)
+
+Package: repo-conf
+Architecture: amd64
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 42
+Depends: apt, yad
+Filename: ./repo-conf_1.0.2_amd64.deb
+Size: 4612
+MD5sum: a38bbb5448eb1a122299d5e096610643
+SHA1: c2344f1e1ba659572f1c9e69a846f45af61f3e1d
+SHA256: 32ad3b943619c266b1c215ba5a4f0e7f86666295c8ef248a6f8c4a38b37f4aea
+SHA512: 279f76015a945e7c59cbf95c5a66d764fef38c8c5bd74818c3694928b8f37f39b973011afb79dfe0ea107c637ec1cdeedbfaf6bc236c833f7d244df86ce0fec3
 Description: Switch from standard to static repository (from snapshot.debian)
 
 Package: resize-save-file
