@@ -6464,6 +6464,29 @@ SHA256: a8ce8962d0074451d31b917ffdac1756afe5e20f043442cbb21e62403182580e
 SHA512: 8e77fe218b6aa9d4496510e80edc797102202fa9dc7a33784770853d8363218125cb0c78dd06f97ec4482f4a59322c22d8a3c44f5c53ec39975abbd1d50af111
 Description: Picdrop, resize images, by Terry (sunburnt)
 
+Package: pipe-viewer
+Architecture: all
+Version: 0.1.6
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl,liblwp-protocol-https-perl,  wget, fonts-symbola
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.1.6_all.deb
+Size: 250216
+MD5sum: c95e29e63446684ce0a227209995cc76
+SHA1: 4460eaec551af0f0af04e127bf58ccd8c9d8d3a9
+SHA256: b92681387b331f348b6620ccdecc82098988274c49535946df262647a36fd442
+SHA512: 84761edfb208795e61946d843b57ffef6245c2707e69340885f46320ca7e8d26e7bac467b0ccbcb88ff0e7d4637eb2f92d07cec31681f85165c131cebe80335a
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
 Package: pmirrorget
 Architecture: all
 Version: 0.2
@@ -9287,6 +9310,27 @@ Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.9.6-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk3-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, fonts-symbola
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Replaces: straw-viewer, pipe-viewer
+Filename: ./youtube-viewer_3.9.6-0_all.deb
+Size: 251676
+MD5sum: 3ef9f753c5a684f2f8e3d0936fc16ad8
+SHA1: de3cc7199c16e114e1358c760525ada09257525b
+SHA256: 51f77353899d28942a195b5d1985f18bfc0bab717ec4d7d8c49fcc4f97f04fd5
+SHA512: deb9bdb1637746862f998445018e3b1638010212a6fd6109d1166ebdde283205a2b1527337d383d5702715d43ad09af5292d42cf2a6e3ea9ee1834b11e7f5c7f
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
 
 Package: yradio
 Architecture: amd64
