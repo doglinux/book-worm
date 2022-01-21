@@ -712,7 +712,7 @@ root/.local/share/file-manager/actions/activate-sfs.desktop sfsload
 root/.local/share/file-manager/actions/activate.desktop	    sfsload
 root/.local/share/file-manager/actions/de-activate.desktop  sfsload
 root/.local/share/file-manager/actions/packit.desktop	    pack-it
-root/.mplayer/config					    gmplayer
+root/.mplayer/config					    gmplayer,gnome-mplayer-1.0.6
 root/.xhippo/gtkrc					    xhippo
 root/.xhippo/playlists/0default.d.xplist		    xhippo
 root/.xhippo/playlists/0default.d/Bulgaria_BNR1_horizont_low.mp3.m3u xhippo
@@ -5331,6 +5331,7 @@ usr/local/bin/xluncher1					    xlunch
 usr/local/bin/xluncher2					    xlunch
 usr/local/bin/xluncher3					    xlunch
 usr/local/bin/xrecord					    xhippo
+usr/local/bin/xscreenshot				    xscreenshot
 usr/local/bin/xvidcap					    xvidcap
 usr/local/bin/xwd					    snappie
 usr/local/bin/yad-fontview				    font-viewer
@@ -8304,6 +8305,7 @@ usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlockmore.desktop		    xlockmore
 usr/share/applications/xlunch-help.desktop		    xlunch
 usr/share/applications/xrecord.desktop			    xhippo
+usr/share/applications/xscreenshot.desktop		    xscreenshot
 usr/share/applications/yad-fontview.desktop		    font-viewer
 usr/share/applications/yarlm-alarm-scheduler.desktop	    yalarm2
 usr/share/applications/yassm.desktop			    yassm
@@ -11668,6 +11670,7 @@ usr/share/pixmaps/xhippo/refresh.png			    xhippo
 usr/share/pixmaps/xhippo/shuffle.png			    xhippo
 usr/share/pixmaps/xhippo/stop.png			    xhippo
 usr/share/pixmaps/xlunch-logo.png			    xlunch
+usr/share/pixmaps/xscreenshot.png			    xscreenshot
 usr/share/pixmaps/xvidcap.png				    xvidcap
 usr/share/pixmaps/yassm.png				    yassm
 usr/share/pixmaps/youtube.svg				    pipe-viewer,youtube-viewer,straw-viewer

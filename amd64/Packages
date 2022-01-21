@@ -600,6 +600,21 @@ SHA256: 4fbebc33b4c056c0cc2d5a6dd1923c6da7e4b00c0328b3e033b1b52b308482c0
 SHA512: 28d7ecfaaf89c2b66d78b626ed1f8eed25a968bd139f99ef85a1bdf097f066dfeeb76a06c5d99662dcfc7e04bdc912ba38dba3242ed72ac31faef3097bc13858
 Description: Bluetooth manager and audio playeer
 
+Package: bt4stretch
+Architecture: amd64
+Version: 2.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: blueman
+Filename: ./bt4stretch_2.5_amd64.deb
+Size: 64022
+MD5sum: 97cac5b9d979b16d814f8813ae97fc4c
+SHA1: 9f7f0c632f6b1830b8ec8b849f11358f0bf9718d
+SHA256: 6ea67a472555b3fb5cdffb7ea0fb97435a3d7e6f8451a067e08c1da6764dd267
+SHA512: e5d18d89c028be31605c079a112005576c9798508994a369ba2dd9e105e11e2beba8aecc539554c88f3b8623c3b33814bb79b7e456f907c8c260a8436fa0ca38
+Description: Bluetooth manager
+
 Package: btop
 Architecture: amd64
 Version: 1.0.1
@@ -2529,6 +2544,37 @@ MD5sum: d9eb3fbdbd3f48086e676cb13a7133eb
 SHA1: c5e338043073d6f0ab4371baf5b40f16646dc174
 SHA256: 5d60a57fcc5655814635f37749e8697d1ab5c9e9ae7486d228177408618dc9d1
 SHA512: b103a089141ebf912c8979f7eeb859c0d98b4230c7fd69bf023e0464bbdd1efe8d4320d262154d70c0ee87947e4d10baf99b2b8e0ff600a2da4d24044baed701
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
+
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.9-2
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk2.0-0, libnotify4, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, gconf-service, libgconf-2-4, libbz2-1.0, libcdparanoia0, libdv4, libfaac0, libfribidi0, libgl1, libjack-jackd2-0, libmad0, libmng1, libmp3lame0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libsdl1.2debian, libtheora0, libxext6, libxinerama1, libxss1, libxv1, libxvidcore4, libxxf86dga1, libgmlib0, libjpeg8, libx264-122, libxcb-randr0, libgif4, libpng12-0, libvpx1
+Suggests: gecko-mediaplayer
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Filename: ./gnome-mplayer-1.0.6_1.0.9-2_amd64.deb
+Size: 3349020
+MD5sum: fbb3a92da6be49680d46ebe2a8843f65
+SHA1: 1e971dfb9ee379ac4c458173d72c525bd4ab8695
+SHA256: 3b5f8a4dc66cd2f677097ad15bbb685af1a8f68648ca179c5412b8a41cb11fcc
+SHA512: 0535bfe0321ca5c6cded0f8d8c52c34dabf6e67e170ecc7cc591e61b1a3177a027985ccb555f00bbaddd7210a47e60555b61f8f8257c5c4e00f66a44742ae612
 Homepage: http://code.google.com/p/gnome-mplayer
 Description: GTK+ interface for MPlayer
  The power of MPlayer combined with a friendly interface for your desktop.
@@ -8756,6 +8802,20 @@ SHA256: 539e53dc425f0403775694529b9571016ae8035c0a18c3fda6865a6fb00b8558
 SHA512: 44e706705a90607611827b4a6daadf20b4ffa242ce3158cb4d16d7d2193d5f7c5b770b05504ef1c61a7e3908a5c45ee8235a44685d5b26e0a5b72d8bf3371814
 Description: xlunch by Tomas M
  Graphical app launcher
+
+Package: xscreenshot
+Architecture: amd64
+Version: 1.1
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Filename: ./xscreenshot_1.1_amd64.deb
+Size: 16352
+MD5sum: 7dbc8888cb466edde3b3b0a411c05634
+SHA1: 63b4547ac39d5352493c2e8daf273c4b9a23522e
+SHA256: 36ff4c8364b39505fe2e1556b78081c8d8c946af5c658e620cad35e3d2ee1e1d
+SHA512: ccd968209fa84541e1cfdd88215511b30c123024e68b309ef6354d28fd99a5379334cd72181a605d4a77ddd658bd7bdecc962d02021afd07faece7b90ff63102
+Description: Screen snapshot tool from jamesbond
 
 Package: xvidcap
 Architecture: amd64
