@@ -795,7 +795,7 @@ root/.local/share/file-manager/actions/activate.desktop	    sfsload
 root/.local/share/file-manager/actions/de-activate.desktop  sfsload
 root/.local/share/file-manager/actions/packit.desktop	    pack-it
 root/.motion/motion.conf				    motion-light
-root/.mplayer/config					    gmplayer
+root/.mplayer/config					    gmplayer,gnome-mplayer-1.0.7
 root/.notecase/notecase.ini				    notecase-portable
 root/.ouricorc						    ourico
 root/.xhippo/gtkrc					    xhippo
