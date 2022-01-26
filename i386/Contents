@@ -872,6 +872,7 @@ usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
 usr/bin/ceni						    ceni
 usr/bin/conky						    conky-all,conky-std,conky-cli
+usr/bin/curlftpfs					    curlftpfs
 usr/bin/defaultconnect					    ceni,wifibox,wifibox-dhcpcd,frisbee
 usr/bin/dillo						    dillo
 usr/bin/dillo-install-hyphenation			    dillo
@@ -5021,6 +5022,7 @@ usr/sbin/mount.cifs					    yassm-smbclient-mpscan
 usr/sbin/mpscan						    yassm-smbclient-mpscan
 usr/sbin/networkdisconnect				    sns
 usr/sbin/p910nd						    p910nd-print-server
+usr/sbin/pppoeconf					    pppoeconf
 usr/sbin/screener					    screener
 usr/sbin/synaptic					    synaptic
 usr/sbin/umount.cifs					    yassm-smbclient-mpscan
@@ -5766,6 +5768,7 @@ usr/share/applications/pmusic.desktop			    pmusic
 usr/share/applications/pmwget.desktop			    pmirrorget
 usr/share/applications/poster-sel.desktop		    gopoststuff
 usr/share/applications/poster.desktop			    gopoststuff
+usr/share/applications/pppoeconf.desktop		    pppoeconf
 usr/share/applications/qiv-slideshow.desktop		    qiv-slideshow
 usr/share/applications/qtweb.desktop			    qtweb
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
@@ -6125,6 +6128,11 @@ usr/share/doc/conky/NEWS.Debian.gz			    conky
 usr/share/doc/conky/changelog.Debian.gz			    conky
 usr/share/doc/conky/changelog.gz			    conky
 usr/share/doc/conky/copyright				    conky
+usr/share/doc/curlftpfs/README				    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.gz		    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.i386.gz	    curlftpfs
+usr/share/doc/curlftpfs/changelog.gz			    curlftpfs
+usr/share/doc/curlftpfs/copyright			    curlftpfs
 usr/share/doc/dillo/user_help.html			    dillo
 usr/share/doc/dmmediaconverter/changelog.gz		    dmmediaconverter
 usr/share/doc/dmmediaconverter/copyright		    dmmediaconverter
@@ -6482,6 +6490,9 @@ usr/share/doc/openbox/xbm/shade_toggled.xbm		    openbox
 usr/share/doc/palemoon/changelog.Debian.gz		    palemoon
 usr/share/doc/palemoon/copyright			    palemoon
 usr/share/doc/pburn.html				    pburn
+usr/share/doc/pppoeconf/README.Debian			    pppoeconf
+usr/share/doc/pppoeconf/changelog.gz			    pppoeconf
+usr/share/doc/pppoeconf/copyright			    pppoeconf
 usr/share/doc/roxterm-common/changelog.Debian.gz	    roxterm-common
 usr/share/doc/roxterm-common/changelog.gz		    roxterm-common
 usr/share/doc/roxterm-common/copyright			    roxterm-common
@@ -9261,6 +9272,7 @@ usr/share/locale/de/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/de/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/de/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/de/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/de/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/de/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -9307,6 +9319,7 @@ usr/share/locale/es/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/es/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/es/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/es/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/es/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/es/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/es/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/es/LC_MESSAGES/uextract.mo		    uextract
@@ -9352,6 +9365,7 @@ usr/share/locale/fr/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/fr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/fr/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/fr/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/fr/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/fr/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
@@ -9425,6 +9439,7 @@ usr/share/locale/it/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/it/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/it/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/it/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/it/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/it/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/it/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/it/LC_MESSAGES/xfe.mo			    xfe
@@ -9438,6 +9453,7 @@ usr/share/locale/ja/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ja/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/ja/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/ja/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/ja/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/ja/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ja/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/ja/LC_MESSAGES/xfe.mo			    xfe
@@ -9553,12 +9569,14 @@ usr/share/locale/pt_BR/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/pt_BR/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/pt_BR/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/pt_BR/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/pt_BR/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/pt_BR/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/pt_BR/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt_BR/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/pt_BR/LC_MESSAGES/xfe.mo		    xfe
 usr/share/locale/pt_BR/LC_MESSAGES/yad.mo		    yad
 usr/share/locale/pt_PT/LC_MESSAGES/epdfview.mo		    epdfview
+usr/share/locale/pt_PT/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/pt_PT/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt_PT/LC_MESSAGES/xfe.mo		    xfe
 usr/share/locale/qu/LC_MESSAGES/synaptic.mo		    synaptic
@@ -9577,6 +9595,7 @@ usr/share/locale/ru/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/ru/LC_MESSAGES/mount-wizard.mo		    mount-wizard
 usr/share/locale/ru/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/ru/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/ru/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/ru/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/ru/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ru/LC_MESSAGES/uextract.mo		    uextract
@@ -9597,6 +9616,7 @@ usr/share/locale/sk/LC_MESSAGES/yad.mo			    yad
 usr/share/locale/sl/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/sl/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/sl/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
+usr/share/locale/sl/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/sl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sl/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/sq/LC_MESSAGES/NetworkManager.mo	    network-manager
@@ -9703,6 +9723,7 @@ usr/share/locale/zh_TW/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/zh_TW/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/zh_TW/LC_MESSAGES/madedit.mo		    madedit
 usr/share/locale/zh_TW/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/zh_TW/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/zh_TW/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/zh_TW/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/zh_TW/LC_MESSAGES/xfe.mo		    xfe
@@ -9771,6 +9792,7 @@ usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/busctl.1.gz				    elogind
 usr/share/man/man1/ceni.1p.gz				    ceni
 usr/share/man/man1/conky.1.gz				    conky-all,conky-std,conky-cli
+usr/share/man/man1/curlftpfs.1.gz			    curlftpfs
 usr/share/man/man1/dillo.1.gz				    dillo
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
@@ -9927,6 +9949,7 @@ usr/share/man/man8/linux-user-chroot.8.gz		    linux-user-chroot
 usr/share/man/man8/mount.aufs.8.gz			    aufs-tools
 usr/share/man/man8/nm-initrd-generator.8.gz		    network-manager
 usr/share/man/man8/pam_elogind.8.gz			    libpam-elogind
+usr/share/man/man8/pppoeconf.8.gz			    pppoeconf
 usr/share/man/man8/synaptic.8.gz			    synaptic
 usr/share/man/man8/udevadm.8.gz				    eudev
 usr/share/man/man8/udevd.8.gz				    eudev
@@ -9996,6 +10019,7 @@ usr/share/menu/pburn					    pburn
 usr/share/menu/peasyglue				    peasyglue
 usr/share/menu/peasyscale				    peasyscale
 usr/share/menu/portablesfs				    portablesfs-loadsfs-fuse
+usr/share/menu/pppoeconf				    pppoeconf
 usr/share/menu/resize-save				    resize-save-file
 usr/share/menu/rox					    rox-filer
 usr/share/menu/roxterm-gtk2				    roxterm-gtk2
@@ -10513,6 +10537,7 @@ usr/share/pixmaps/pmusic_backend_cmd.svg		    pmusic
 usr/share/pixmaps/pmusic_tophits_archive.svg		    pmusic
 usr/share/pixmaps/pmwget.png				    pmirrorget
 usr/share/pixmaps/poster.png				    gopoststuff
+usr/share/pixmaps/pppoeconf.xpm				    pppoeconf
 usr/share/pixmaps/preferences-desktop-screensaver.png	    screener
 usr/share/pixmaps/prefs.png				    jwm-setup,jwmconf
 usr/share/pixmaps/puppy/cell1_0.svg			    wifibox

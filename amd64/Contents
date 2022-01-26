@@ -789,6 +789,7 @@ usr/bin/cddetect					    pburn
 usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
 usr/bin/ceni						    ceni
+usr/bin/curlftpfs					    curlftpfs
 usr/bin/defaultconnect					    frisbee
 usr/bin/domycommand					    domycommand
 usr/bin/domyfile					    domyfile
@@ -8124,6 +8125,7 @@ usr/sbin/grub4dosconfig					    grub4dosconfig
 usr/sbin/hostapd					    wlanmaker
 usr/sbin/micro-edit					    desktop-editor
 usr/sbin/p910nd						    p910nd-print-server
+usr/sbin/pppoeconf					    pppoeconf
 usr/sbin/screener					    screener
 usr/sbin/synaptic					    synaptic
 usr/share/GConf/gsettings/evince.convert		    evince
@@ -8269,6 +8271,7 @@ usr/share/applications/pmusic.desktop			    pmusic
 usr/share/applications/pmwget.desktop			    pmirrorget
 usr/share/applications/poster-sel.desktop		    gopoststuff
 usr/share/applications/poster.desktop			    gopoststuff
+usr/share/applications/pppoeconf.desktop		    pppoeconf
 usr/share/applications/qiv-slideshow.desktop		    qiv-slideshow
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/repo-conf.desktop		    repo-conf
@@ -8577,6 +8580,11 @@ usr/share/doc/bluealsa/changelog.gz			    bluealsa
 usr/share/doc/bluealsa/copyright			    bluealsa
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
+usr/share/doc/curlftpfs/README				    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.amd64.gz	    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.gz		    curlftpfs
+usr/share/doc/curlftpfs/changelog.gz			    curlftpfs
+usr/share/doc/curlftpfs/copyright			    curlftpfs
 usr/share/doc/elogind/NEWS.gz				    elogind
 usr/share/doc/elogind/README.gz				    elogind
 usr/share/doc/elogind/README.md.gz			    elogind
@@ -8935,6 +8943,9 @@ usr/share/doc/openbox/xbm/shade_toggled.xbm		    openbox
 usr/share/doc/palemoon/changelog.Debian.gz		    palemoon
 usr/share/doc/palemoon/copyright			    palemoon
 usr/share/doc/pburn.html				    pburn
+usr/share/doc/pppoeconf/README.Debian			    pppoeconf
+usr/share/doc/pppoeconf/changelog.gz			    pppoeconf
+usr/share/doc/pppoeconf/copyright			    pppoeconf
 usr/share/doc/roxterm-common/changelog.Debian.gz	    roxterm-common
 usr/share/doc/roxterm-common/changelog.gz		    roxterm-common
 usr/share/doc/roxterm-common/copyright			    roxterm-common
@@ -10423,6 +10434,7 @@ usr/share/locale/de/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/de/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/de/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/de/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/de/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/de/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/wget.mo			    wget
@@ -10472,6 +10484,7 @@ usr/share/locale/es/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/es/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/es/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/es/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/es/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/es/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/es/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/es/LC_MESSAGES/uextract.mo		    uextract
@@ -10513,6 +10526,7 @@ usr/share/locale/fr/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/fr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/fr/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/fr/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/fr/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/fr/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
@@ -10591,6 +10605,7 @@ usr/share/locale/it/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/it/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/it/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/it/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/it/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/it/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/it/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/it/LC_MESSAGES/yad.mo			    yad
@@ -10604,6 +10619,7 @@ usr/share/locale/ja/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/ja/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/ja/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/ja/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/ja/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/ja/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ja/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/ja_JP/LC_MESSAGES/madedit.mo		    madedit
@@ -10731,11 +10747,13 @@ usr/share/locale/pt_BR/LC_MESSAGES/gftp.mo		    gftp-common
 usr/share/locale/pt_BR/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/pt_BR/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/pt_BR/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/pt_BR/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/pt_BR/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/pt_BR/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt_BR/LC_MESSAGES/wget.mo		    wget
 usr/share/locale/pt_BR/LC_MESSAGES/yad.mo		    yad
 usr/share/locale/pt_PT/LC_MESSAGES/epdfview.mo		    epdfview
+usr/share/locale/pt_PT/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/pt_PT/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/qu/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ro/LC_MESSAGES/elogind.mo		    elogind
@@ -10755,6 +10773,7 @@ usr/share/locale/ru/LC_MESSAGES/mount-wizard.mo		    mount-wizard
 usr/share/locale/ru/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/ru/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/ru/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/ru/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/ru/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/ru/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ru/LC_MESSAGES/uextract.mo		    uextract
@@ -10779,6 +10798,7 @@ usr/share/locale/sk/LC_MESSAGES/yad.mo			    yad
 usr/share/locale/sl/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/sl/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/sl/LC_MESSAGES/leafpad.mo		    leafpad
+usr/share/locale/sl/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/sl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sl/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/sq/LC_MESSAGES/NetworkManager.mo	    network-manager
@@ -10892,6 +10912,7 @@ usr/share/locale/zh_TW/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/zh_TW/LC_MESSAGES/madedit.mo		    madedit
 usr/share/locale/zh_TW/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/zh_TW/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/zh_TW/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/zh_TW/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/zh_TW/LC_MESSAGES/wget.mo		    wget
 usr/share/locale/zh_TW/LC_MESSAGES/yad.mo		    yad
@@ -10954,6 +10975,7 @@ usr/share/man/man1/auibusy.1.gz				    aufs-tools
 usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/busctl.1.gz				    elogind
 usr/share/man/man1/ceni.1p.gz				    ceni
+usr/share/man/man1/curlftpfs.1.gz			    curlftpfs
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/empty.1.gz				    empty-expect
@@ -11101,6 +11123,7 @@ usr/share/man/man8/mount.8.gz				    mount
 usr/share/man/man8/mount.aufs.8.gz			    aufs-tools
 usr/share/man/man8/nm-initrd-generator.8.gz		    network-manager
 usr/share/man/man8/pam_elogind.8.gz			    libpam-elogind
+usr/share/man/man8/pppoeconf.8.gz			    pppoeconf
 usr/share/man/man8/swapoff.8.gz				    mount
 usr/share/man/man8/swapon.8.gz				    mount
 usr/share/man/man8/synaptic.8.gz			    synaptic
@@ -11156,6 +11179,7 @@ usr/share/menu/pburn					    pburn
 usr/share/menu/peasyglue				    peasyglue
 usr/share/menu/peasyscale				    peasyscale
 usr/share/menu/portablesfs				    portablesfs-loadsfs-fuse
+usr/share/menu/pppoeconf				    pppoeconf
 usr/share/menu/refresh-menus-openbox			    jwm-setup-dd64
 usr/share/menu/resize-save				    resize-save-file
 usr/share/menu/roxterm-gtk2				    roxterm-gtk2
@@ -11619,6 +11643,7 @@ usr/share/pixmaps/pmusic_backend_cmd.svg		    pmusic
 usr/share/pixmaps/pmusic_tophits_archive.svg		    pmusic
 usr/share/pixmaps/pmwget.png				    pmirrorget
 usr/share/pixmaps/poster.png				    gopoststuff
+usr/share/pixmaps/pppoeconf.xpm				    pppoeconf
 usr/share/pixmaps/preferences-desktop-screensaver.png	    screener
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64,jwmconf,jwm-setup
 usr/share/pixmaps/puppy/firewall.svg			    firewall-ng
