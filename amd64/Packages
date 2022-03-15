@@ -6164,6 +6164,21 @@ SHA256: 8123b84c9f57537cd2d58df54e96f230f24d1c1fa165569c47317dcd407823ce
 SHA512: 57fdc3699c80bfce49f8f3fbff6ff9eb71f9b10690750d11533ace6861ffd2e3adfefc1d800d0b51d757066c9284156cff3e365c1699b73c6ac64b08631183ae
 Description: Manipulate PDF documents
 
+Package: peasypdf
+Architecture: all
+Version: 4.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc
+Filename: ./peasypdf_4.6_all.deb
+Size: 7438
+MD5sum: 7393bee9e0b6b0753844a519ce602e19
+SHA1: eb0adc38081e197f3bff0019f15e9290cc55a70c
+SHA256: dd002fd74f0e2f22c21a6224e9683bc48d1539762d964ffdd1eda5d19b73db6e
+SHA512: 0e0e2f5bd7068c792ff2e142680c116267ba1784fdc802f0c3d7d7d2fb74bef659e704a6b6dbe8db20ddc49a2c8ef284c55ecca62424e8d670b2df8664de7bdc
+Description: Manipulate PDF documents
+
 Package: peasyport
 Architecture: all
 Version: 2.5-1
@@ -6813,6 +6828,27 @@ MD5sum: 55a3abf0bda3850a450a0c4044c035c9
 SHA1: 3f4e22d5a58c22ae575e418b42ff9e7bb4cd8127
 SHA256: 0e039d02f1b19d206da27272d13181cb2ae585173eff9ab3b2dc4c5635fc51b2
 SHA512: 98def92ddd9138fa47800a81f48fb8b2e23812a113327eca218393b206d4fc9544c955e5b79588051a777591352e93cf5f02e90c485e7cf699d31a57bb5f3841
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ v1.1.0:
+ improved snapmergepuppy script (for save on exit)
+ and added systemd service saveatshutdown.service (save on exit from console)
+
+Package: porteusbootscripts
+Architecture: all
+Version: 1.1.3
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
+Filename: ./porteusbootscripts_1.1.3_all.deb
+Size: 20804
+MD5sum: 37123e17202da3279e41bbafe559f3e1
+SHA1: 6469a1d6895f56089ce8fbd3104b743dc01e13ea
+SHA256: fa653741764bfcb158b9fab20f18114dafa772ab65fb6664a36af4682a335062
+SHA512: 47cebee0a6867bec40c731449f5cf603df81b99c83e2f1315b88107fb87047f09454b3aa8ee9ae7ca3ebc0d5d42444115dd303030a3ea16590572ff8ce76ea0b
 Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  This version has included the scripts for the new-save-setup
  Note: Removing this package does not make any change.
