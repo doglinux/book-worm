@@ -25,6 +25,8 @@ etc/conky/conky.conf					    conky-all,conky-std,conky-cli
 etc/conky/conky_no_x11.conf				    conky-all,conky-std,conky-cli
 etc/daemons.conf					    wifibox-dhcpcd,wifibox
 etc/default/aufs					    aufs-tools
+etc/default/ntpdate					    ntpdate
+etc/dhcp/dhclient-exit-hooks.d/ntpdate			    ntpdate
 etc/dhcpcd.conf						    sns
 etc/dhcpcd_dropwait_secs				    frisbee,wifibox-dhcpcd,sns
 etc/dhcpcd_state_notify					    ceni,wifibox-dhcpcd,sns,frisbee
@@ -67,6 +69,7 @@ etc/inittab-noauto					    slim
 etc/insserv.conf.d/xdm					    xdm
 etc/jwm/system.jwmrc					    jwm
 etc/locale.conf						    wifibox-dhcpcd,wifibox
+etc/logcheck/ignore.d.server/ntpdate			    ntpdate
 etc/logrotate.d/slim					    slim
 etc/logrotate.d/xdm					    xdm
 etc/menu-methods/jwm					    jwm
@@ -5024,6 +5027,8 @@ usr/sbin/micro-edit					    desktop-editor
 usr/sbin/mount.cifs					    yassm-smbclient-mpscan
 usr/sbin/mpscan						    yassm-smbclient-mpscan
 usr/sbin/networkdisconnect				    sns
+usr/sbin/ntpdate					    ntpdate
+usr/sbin/ntpdate-debian					    ntpdate
 usr/sbin/p910nd						    p910nd-print-server
 usr/sbin/pppoeconf					    pppoeconf
 usr/sbin/screener					    screener
@@ -6477,6 +6482,11 @@ usr/share/doc/nls/websearch/websearch.pot		    websearch
 usr/share/doc/nls/yalrm/pot_generate			    yalarm2
 usr/share/doc/nls/yalrm/yalrm.pot			    yalarm2
 usr/share/doc/notecase/help.ncd				    notecase-portable,notecase
+usr/share/doc/ntpdate/NEWS.Debian.gz			    ntpdate
+usr/share/doc/ntpdate/README.Debian			    ntpdate
+usr/share/doc/ntpdate/changelog.Debian.gz		    ntpdate
+usr/share/doc/ntpdate/changelog.gz			    ntpdate
+usr/share/doc/ntpdate/copyright				    ntpdate
 usr/share/doc/obkey/changelog.Debian.gz			    obkey
 usr/share/doc/openbox/AUTHORS				    openbox
 usr/share/doc/openbox/COMPLIANCE			    openbox
@@ -9963,6 +9973,8 @@ usr/share/man/man8/elogind.8.gz				    elogind
 usr/share/man/man8/linux-user-chroot.8.gz		    linux-user-chroot
 usr/share/man/man8/mount.aufs.8.gz			    aufs-tools
 usr/share/man/man8/nm-initrd-generator.8.gz		    network-manager
+usr/share/man/man8/ntpdate-debian.8.gz			    ntpdate
+usr/share/man/man8/ntpdate.8.gz				    ntpdate
 usr/share/man/man8/pam_elogind.8.gz			    libpam-elogind
 usr/share/man/man8/pppoeconf.8.gz			    pppoeconf
 usr/share/man/man8/synaptic.8.gz			    synaptic

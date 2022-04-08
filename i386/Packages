@@ -5700,6 +5700,31 @@ SHA256: 1d65f5ef41e4776400e57c96d96dd49dce18ac37660eae97b40610a596ccf658
 SHA512: 095ed2e5b0bc3cfc315adb76d21303866934be8605aa997a7685a2687976e34d938f3d23a4a0ac81afa1dd6c63edc21a8b3421ee5172ecfbb452af02d60b2cfb
 Description: Hierarchical Note Manager
 
+Package: ntpdate
+Architecture: i386
+Version: 1:4.2.8p15+dfsg-1
+Priority: optional
+Section: net
+Source: ntp
+Maintainer: Debian NTP Team <ntp@packages.debian.org>
+Installed-Size: 245
+Depends: netbase, libc6 (>= 2.28), libssl1.1 (>= 1.1.0)
+Filename: ./ntpdate_4.2.8p15+dfsg-1_i386.deb
+Size: 158896
+MD5sum: 3b9c6aaca1da6b9e54c6e9b8ced9a054
+SHA1: e59c7a3da6436fd14c0059594b1769ea32d3fb5d
+SHA256: 65c4e366598eba14790245781152166fc1ba52a6807de56635e3e51b90933c4f
+SHA512: cd6e7df70fc340c2141484da678a704dc41c120ebea83c2dddc5597c17b6ef4f2902fe5611e48adbadd8b6832ff60f81922cf0feb525f8a786d5290bb01874d6
+Homepage: http://support.ntp.org/
+Description: client for setting system time from NTP servers (deprecated)
+ NTP, the Network Time Protocol, is used to keep computer clocks
+ accurate by synchronizing them over the Internet or a local network,
+ or by following an accurate hardware receiver that interprets GPS,
+ DCF-77, NIST or similar time signals.
+ .
+ ntpdate is deprecated. Please use sntp instead for manual or scripted
+ NTP queries/syncs.
+
 Package: obkey
 Architecture: all
 Version: 1.3.1-1
