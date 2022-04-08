@@ -741,6 +741,128 @@ SHA256: cd948a895f999f152329e5b147e8228f5fcd7db73b544bc99eb0a55c5c727ba0
 SHA512: 76ea136d762ea623e35ab496abe7e4281e92f4a2cc5a8a8443685c841f5764e1399e38b0bbde9ef7d91b8b4d735f4f0560107769dd88f345b9d508617858e5f0
 Description: chpupsocket
 
+Package: conky-all
+Architecture: amd64
+Version: 1.12.2-1
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 2003
+Depends: libaudclient2 (>= 2.3), libc6 (>= 2.33), libcairo2 (>= 1.8.0), libcurl3-gnutls (>= 7.16.2), libdbus-glib-1-2 (>= 0.78), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.16.0), libical3 (>= 3.0.0), libimlib2 (>= 1.4.5), libircclient1 (>= 1.8), libiw30 (>= 30~pre1), liblua5.3-0, libncurses6 (>= 6), libpulse0 (>= 0.99.1), librsvg2-2 (>= 2.46.0), libstdc++6 (>= 11), libtinfo6 (>= 6), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1), libxinerama1 (>= 2:1.1.4), libxml2 (>= 2.7.4), libxmmsclient6 (>= 0.7DrNo), libxnvctrl0
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-cli, conky-std
+Replaces: conky-cli, conky-std
+Filename: ./conky-all_1.12.2-1_amd64.deb
+Size: 710000
+MD5sum: fd72278175364d41e828d202dc1adf9f
+SHA1: a82a1e194ce0c7b3da78b7e8754e4d86231181f6
+SHA256: 7092464d9210b2c30769b540da1c32b05bb8b24ef6aec89203d6809e10043ed1
+SHA512: c03f0df96fb2bd0d1220b5a636beddb4699a93e52248a597ff67b00cf09406455dc51bceb91722e796e289345016c976c79a4f73f72bc2dff3a9d6f99de90f36
+Homepage: https://github.com/brndnmtthws/conky
+Description: highly configurable system monitor (all features enabled)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ Lua support).
+ .
+ This is a full conky with most compile options enabled:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon, RSS,
+ Weather, wireless, IBM, nvidia, eve-online, Imlib2,
+ apcupsd, I/O stats, argb, Lua and the cairo and imlib2 Lua bindings,
+ Audacious, XMMS2, PulseAudio, iCal, iconv, IRC, and systemd journal.
+
+Package: conky-cli
+Architecture: amd64
+Version: 1.12.2-1
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 1459
+Depends: libc6 (>= 2.33), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 3.0), liblua5.3-0, libncurses6 (>= 6), libstdc++6 (>= 11), libtinfo6 (>= 6)
+Suggests: apcupsd, moc, mpd
+Conflicts: conky-all, conky-std
+Replaces: conky-all, conky-std
+Filename: ./conky-cli_1.12.2-1_amd64.deb
+Size: 589768
+MD5sum: 6e0077b2b70edaa75af7ff941e67267b
+SHA1: 316a8559ffb4031fb3becf6e328aaf49ceea5053
+SHA256: fb97325ded8090e7fa89e1d2aa3cbe6fae9ddf0081b497898f3746bbef965cbb
+SHA512: b84eb592f9c88b647c4eba90e5958a2dfb38091dfbfb9464b99a81cfae8b66444f4e9008d381d70ff7de413fbd9355e70a7932adf11f595d3def76ebe0ba17ff
+Homepage: https://github.com/brndnmtthws/conky
+Description: highly configurable system monitor (basic version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ Lua support).
+ .
+ This is a basic package that can be useful in servers or piped with dzen2.
+ It includes the following support:
+ .
+ MPD, MOC, math, apcupsd, ncurses and I/O stats.
+
+Package: conky-std
+Architecture: amd64
+Version: 1.12.2-1
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 1603
+Depends: libc6 (>= 2.33), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 3.0), libimlib2 (>= 1.4.5), libiw30 (>= 30~pre1), liblua5.3-0, libncurses6 (>= 6), libstdc++6 (>= 11), libtinfo6 (>= 6), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1), libxinerama1 (>= 2:1.1.4)
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-all, conky-cli
+Replaces: conky-all, conky-cli
+Filename: ./conky-std_1.12.2-1_amd64.deb
+Size: 638320
+MD5sum: 00d4d87e998ea5bee55688425321ebbb
+SHA1: 3e603988f900e08d9b99e80190fc6e60583b3071
+SHA256: 129f967e7a49ce277139e2fa316125b5f0dcded385bd3611a6efea398f075937
+SHA512: 12bfc6eb9e173e4a9a04e0f1d65e1808e38f3df54f3184bbb1d59e47fc702930fe336813919403c1341dda4009c9d3b9516d5dfbc427a9567775427c5923ed7b
+Homepage: https://github.com/brndnmtthws/conky
+Description: highly configurable system monitor (default version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ Lua support).
+ .
+ This package should be a good compromise for most users that do not
+ need special features.
+ It includes the following support:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon,
+ wireless, ncurses, apcupsd, I/O stats, argb and Lua.
+
+Package: conky
+Architecture: all
+Version: 1.12.2-1
+Priority: optional
+Section: oldlibs
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 28
+Depends: conky-std | conky-cli | conky-all
+Filename: ./conky_1.12.2-1_all.deb
+Size: 18568
+MD5sum: bacd2e5dd8bcd8c712ff09fc986dd088
+SHA1: 9a24fee0d49c6e8fef362a6161724517c13662d2
+SHA256: 038bc34851f102f40170de0fbee81f2664756be034d09b2c8f24f2627f11a5a1
+SHA512: 1b70c77b5c50817f6dd7cc6e9cee79a2849b848f4b89d5474a36090fb27a60ad1324b06509b8f86f9fce6bb9636fb8310f20194c63aa286f693e39109848038c
+Homepage: https://github.com/brndnmtthws/conky
+Description: highly configurable system monitor (transitional package)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ Lua support).
+ .
+ This is a dummy package to ease transition to the new packaging scheme.
+ It may be safely removed after upgrade/installation.
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -4975,6 +5097,33 @@ Description: x264 video coding library
  video streams.
  .
  This package contains the libx264 shared library.
+
+Package: libxmmsclient6
+Architecture: amd64
+Version: 0.8+dfsg-22+b1
+Priority: optional
+Section: libs
+Source: xmms2 (0.8+dfsg-22)
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 230
+Depends: libc6 (>= 2.15)
+Conflicts: libxmmsclient2, libxmmsclient3, libxmmsclient4, libxmmsclient5
+Breaks: xmms2-core (<< 0.6DrMattDestruction)
+Replaces: libxmmsclient2, libxmmsclient3, libxmmsclient4, libxmmsclient5
+Filename: ./libxmmsclient6_0.8+dfsg-22+b1_amd64.deb
+Size: 70196
+MD5sum: 879931c71a845c3a0754f92fc08390df
+SHA1: 33e65c3e5e84fbd3f881b1e48a7432bd0347f1f2
+SHA256: a6d3de01b20c91c74fa6757234db4ce702af8ca84c3439e1af32fcf758335dbf
+SHA512: 863e930f67dfc55e69af7a34d02f47b5c9b09ba99ddccebfea08dd51670eba8e2dee708ca1a9ceac3e8d1c7bd14879ba16f3e01dbfd68444be26378e251789ac
+Homepage: http://xmms2.org/
+Description: XMMS2 - client library
+ XMMS2 is a redesign of the XMMS music player. It features a client-server
+ model, allowing multiple (even simultaneous!) user interfaces, both textual
+ and graphical. All common audio formats are supported using plug-ins. On top of
+ this, there is a flexible media library to organize your music.
+ .
+ This package contains a client library written in c.
 
 Package: linux-user-chroot
 Architecture: amd64

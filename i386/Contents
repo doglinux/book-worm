@@ -1539,6 +1539,9 @@ usr/lib/libsbc.so					    bt4stretch
 usr/lib/libsbc.so.1					    bt4stretch
 usr/lib/libsbc.so.1.2.1					    bt4stretch
 usr/lib/libssl.so.0.9.8					    libssl0.9.8
+usr/lib/libtcp-portmon.a				    conky-all,conky-std,conky-cli
+usr/lib/libxmmsclient.so.6				    libxmmsclient6
+usr/lib/libxmmsclient.so.6.0.0				    libxmmsclient6
 usr/lib/lua/5.3/iuplua.so				    iuplua-core-stretch-gtk2
 usr/lib/lua/5.3/iupluacontrols.so			    iupluacontrols-stretch-gtk2
 usr/lib/mime/packages/epdfview				    epdfview
@@ -5671,6 +5674,7 @@ usr/share/applications/camphonetab.desktop		    camphonetab
 usr/share/applications/cast2chrome.desktop		    cast2chrome
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
+usr/share/applications/conky.desktop			    conky-all,conky-std,conky-cli
 usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm,edit-sfs-thunar
 usr/share/applications/deadbeef.desktop			    deadbeef-static
 usr/share/applications/debdog-advert-blocker.desktop	    debdog-advert-blocker
@@ -6033,7 +6037,10 @@ usr/share/desktop-directories/dog-screensavers.directory    jwm-setup,jwmconf
 usr/share/desktop-directories/dog-settings.directory	    jwm-setup,jwmconf
 usr/share/desktop-directories/dog-system.directory	    jwm-setup,jwmconf
 usr/share/directfb-1.2.10/cursor.dat			    libdirectfb-1.2-9
+usr/share/doc-base/conky-all.conky-manual		    conky-all
+usr/share/doc-base/conky-cli.conky-manual		    conky-cli
 usr/share/doc-base/conky-manual				    conky-all,conky-std,conky-cli
+usr/share/doc-base/conky-std.conky-manual		    conky-std
 usr/share/doc-base/libpng12				    libpng12-0
 usr/share/doc-base/openbox				    openbox
 usr/share/doc-base/roxterm				    roxterm-common
@@ -6077,6 +6084,7 @@ usr/share/doc/conky-all-dbg/copyright			    conky-all-dbg
 usr/share/doc/conky-all/AUTHORS.gz			    conky-all
 usr/share/doc/conky-all/NEWS.Debian.gz			    conky-all
 usr/share/doc/conky-all/README.md			    conky-all
+usr/share/doc/conky-all/README.md.gz			    conky-all
 usr/share/doc/conky-all/TODO				    conky-all
 usr/share/doc/conky-all/changelog.Debian.gz		    conky-all
 usr/share/doc/conky-all/changelog.gz			    conky-all
@@ -6095,6 +6103,7 @@ usr/share/doc/conky-cli-dbg/copyright			    conky-cli-dbg
 usr/share/doc/conky-cli/AUTHORS.gz			    conky-cli
 usr/share/doc/conky-cli/NEWS.Debian.gz			    conky-cli
 usr/share/doc/conky-cli/README.md			    conky-cli
+usr/share/doc/conky-cli/README.md.gz			    conky-cli
 usr/share/doc/conky-cli/TODO				    conky-cli
 usr/share/doc/conky-cli/changelog.Debian.gz		    conky-cli
 usr/share/doc/conky-cli/changelog.gz			    conky-cli
@@ -6113,6 +6122,7 @@ usr/share/doc/conky-std-dbg/copyright			    conky-std-dbg
 usr/share/doc/conky-std/AUTHORS.gz			    conky-std
 usr/share/doc/conky-std/NEWS.Debian.gz			    conky-std
 usr/share/doc/conky-std/README.md			    conky-std
+usr/share/doc/conky-std/README.md.gz			    conky-std
 usr/share/doc/conky-std/TODO				    conky-std
 usr/share/doc/conky-std/changelog.Debian.gz		    conky-std
 usr/share/doc/conky-std/changelog.gz			    conky-std
@@ -6427,6 +6437,10 @@ usr/share/doc/libxml2/TODO.gz				    libxml2
 usr/share/doc/libxml2/changelog.Debian.gz		    libxml2
 usr/share/doc/libxml2/changelog.gz			    libxml2
 usr/share/doc/libxml2/copyright				    libxml2
+usr/share/doc/libxmmsclient6/NEWS.Debian.gz		    libxmmsclient6
+usr/share/doc/libxmmsclient6/changelog.Debian.gz	    libxmmsclient6
+usr/share/doc/libxmmsclient6/changelog.Debian.i386.gz	    libxmmsclient6
+usr/share/doc/libxmmsclient6/copyright			    libxmmsclient6
 usr/share/doc/linux-user-chroot/NEWS.gz			    linux-user-chroot
 usr/share/doc/linux-user-chroot/README			    linux-user-chroot
 usr/share/doc/linux-user-chroot/changelog.Debian.gz	    linux-user-chroot
@@ -7888,6 +7902,7 @@ usr/share/icons/hicolor/96x96/apps/deadbeef.png		    deadbeef-static
 usr/share/icons/hicolor/96x96/apps/yad.png		    yad
 usr/share/icons/hicolor/icon-theme.cache		    yad
 usr/share/icons/hicolor/scalable/apps/ceni.svg		    ceni
+usr/share/icons/hicolor/scalable/apps/conky-logomark-violet.svg conky-all,conky-std,conky-cli
 usr/share/icons/hicolor/scalable/apps/deadbeef.svg	    deadbeef-static
 usr/share/icons/hicolor/scalable/apps/findnrun.svg	    findnrun
 usr/share/icons/hicolor/scalable/apps/gnome-mplayer.svg	    gnome-mplayer-1.0.7
