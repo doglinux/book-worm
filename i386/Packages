@@ -8385,6 +8385,37 @@ Description: Python Chromecast media streamer for Linux
  This copy modded by wiak (of murga-linux.com/puppy forum) 
  to allow piping from stdin via transcoder ffmpeg or avconv.
 
+Package: synaptic
+Architecture: i386
+Version: 0.91.2
+Priority: optional
+Section: admin
+Maintainer: Michael Vogt <mvo@debian.org>
+Installed-Size: 7725
+Depends: libapt-pkg6.0 (>= 1.9.0), libc6 (>= 2.33), libept1.6.0 (>= 1.2.1), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.14.0), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 11), libvte-2.91-0 (>= 0.49.92), libxapian30 (>= 1.4.17~), hicolor-icon-theme, policykit-1
+Recommends: libgtk3-perl, xdg-utils
+Suggests: dwww, deborphan, apt-xapian-index, tasksel, software-properties-gtk
+Filename: ./synaptic_0.91.2_i386.deb
+Size: 2123728
+MD5sum: 29875423f5bd42cb18684bbaee9c97f4
+SHA1: 0e11835ca01ee4e8dca05c4009117237bdc0cf15
+SHA256: 2b7e400ff226118b4e06f87d03a3219829b0a4915c120a91b3efaacb47c7d40c
+SHA512: 1422a7263aa4f30c6dea8848f8c536bbaf653f343c3246916e15b4d44e63798933c6ed8bc71686eb7b7215208f0e1ac54a6f04f993f91dbd1903f5e163fef263
+Homepage: https://github.com/mvo5/synaptic/wiki
+Description: Graphical package manager
+ Synaptic is a graphical package management tool based on GTK+ and APT.
+ Synaptic enables you to install, upgrade and remove software packages in
+ a user friendly way.
+ .
+ Besides these basic functions the following features are provided:
+  * Search and filter the list of available packages
+  * Perform smart system upgrades
+  * Fix broken package dependencies
+  * Edit the list of used repositories (sources.list)
+  * Download the latest changelog of a package
+  * Configure packages through the debconf system
+  * Browse all available documentation related to a package (dwww is required)
+
 Package: takeagif
 Architecture: all
 Version: 1.0.0
