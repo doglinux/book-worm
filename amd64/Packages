@@ -20,6 +20,51 @@ Description: default icon theme of GNOME
  The icons are used in many of the official gnome applications like eog,
  evince, system monitor, and many more.
 
+Package: alsa-capture
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame
+Filename: ./alsa-capture_1.4_all.deb
+Size: 1412
+MD5sum: 1d8a00253e147528481217c0981feee6
+SHA1: 29528c2fbede889d173e27dd07a8b35cd8ceff22
+SHA256: c64f5f2ce6efadad4f2eec3880081becef4394ab21e73a2bbf555413eae4dc97
+SHA512: a217ebfc64071fbe811172a5fc6fc2c41433c457da4ce075f71e3a82ce2a2acb6845637964c88e48378f98162fc3e93c4518e437acb11a94701359d818aa1af0
+Description: capture ALSA audio output to a file
+
+Package: alsacapgui2
+Architecture: all
+Version: 2.1
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: ffmpeg, gtkdialog
+Filename: ./alsacapgui2_2.1_all.deb
+Size: 6260
+MD5sum: e086767cf0166f5dc0109509d4055632
+SHA1: d827bc471a96ef0393e50f98e397940d1d16ab33
+SHA256: 5d586df462e28b3b66138808323b1a6989dc834601e85a0d07c44d4af8cd42d8
+SHA512: 2e105cfb44729f49337613298a371846375c025b041021aca0b9a0a10f4b18c651961542666c1a59897036e7f0cef6fb6e9c9879d06a1cc88996c832e25f1f80
+Description: capture ALSA audio output to a file
+
+Package: alsacapgui
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: lame, ffmpeg, vorbis-tools
+Filename: ./alsacapgui_1.0_all.deb
+Size: 6316
+MD5sum: 623ce1afc7e00d29beaf918bdeedd570
+SHA1: 99c2de8c3ef8b25a4c097d0478efa4a3dd3c5983
+SHA256: 42694596b6e7207ba1fe7a9839c4c0caa3028f6ddf337c046646403830c120f1
+SHA512: 89e1375e2c879a06c582b4d02dfada97412b81865c99bad069f8054073f3c26e1819764566737a725856cb8b21e05a097373ed5c283d8192e1f7f27ac9197782
+Description: capture ALSA audio output to a file
+
 Package: alsamixer-tray
 Architecture: amd64
 Version: 1.0
@@ -672,6 +717,21 @@ MD5sum: cfa2390a82bb32ada64c9e7117b75ff2
 SHA1: 52b933394f46234b0fd6b87b3a622ca7271316b9
 SHA256: 6edc8e6cb8df581ee9e9729053bed2fa7269cd3ee3f92e499b87f609c70fe3ae
 SHA512: 69156e96fa733cbe683e09f9ae6c211fa5bc5e64e7541b6ac23fc2895cd49e790186a4e727cc07bf7f3502ce7f8a5246d06e63b53cb059bce9162dbc07278773
+Description: mounts hand-held devices over USB
+
+Package: camphonetab
+Architecture: all
+Version: 1.8
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs
+Filename: ./camphonetab_1.8_all.deb
+Size: 3570
+MD5sum: 31b68b6d1e6dec8766f7f4fb903863cd
+SHA1: 3af8dd0f089572cc39d5a34710ae2d388abf04fa
+SHA256: 82b140bcdfa5d8b4f413ad238dc7071b0da8cfff470696344b52e142eda1f79a
+SHA512: 1666c6e1bedfd1866a4bdcc28f7c43066e6c82dca13886e6aed4c47043333d44d072f9baed21cc3edef4acc86ca3e18baddfa96e1c699d0a5fd6102a96ea112d
 Description: mounts hand-held devices over USB
 
 Package: cast2chrome
@@ -6291,6 +6351,20 @@ SHA256: 58ffb3411c304685a30b6e75403282a3e69c1d00220efa53c3ed3a332724ab59
 SHA512: 3abd0b15023bafc70bd4ab67f654ef0331f0ecb18d206bdab540f1ed0b648ccc258e5dcf8b38dd51672cdbb74746dea99ba930815b9d3a728214427f9eaf45f5
 Description: Information about drive partitions
 
+Package: peasypartview
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./peasypartview_1.2_all.deb
+Size: 7188
+MD5sum: 58d57064e7c65759b85a90e9d875ef51
+SHA1: df27345cb9b104510f7c42507b69bec9834c884c
+SHA256: 98c885631b1fb0640e4cad9c0c8d96c0ba1e8d3ae8123ff77bd968e476587002
+SHA512: 47b496146f0ea2724067fd2d7ac7ab7724bb42f93f14a297302327a2bdf9263ba724128d3adfa4e11477ece45b9bc5c1725836bf800d4e5e5dd1784e233b3056
+Description: Information about drive partitions
+
 Package: peasypdf
 Architecture: all
 Version: 4.2-2
@@ -6757,6 +6831,29 @@ MD5sum: c95e29e63446684ce0a227209995cc76
 SHA1: 4460eaec551af0f0af04e127bf58ccd8c9d8d3a9
 SHA256: b92681387b331f348b6620ccdecc82098988274c49535946df262647a36fd442
 SHA512: 84761edfb208795e61946d843b57ffef6245c2707e69340885f46320ca7e8d26e7bac467b0ccbcb88ff0e7d4637eb2f92d07cec31681f85165c131cebe80335a
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
+Package: pipe-viewer
+Architecture: all
+Version: 0.2.2
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl, liblwp-protocol-https-perl, wget, fonts-symbola
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.2.2_all.deb
+Size: 253760
+MD5sum: a7560c8d597922243201f64f29c16e3a
+SHA1: 339866bcf84ef96e12bdfb390f580fca91c54c31
+SHA256: d5077260fe5e93099c469b7ca02b53a55a94467dbfe1f311362763f339bef626
+SHA512: d5c8feb155b8d8b4ccde8ae61f8d0451851d342721d7877062e3a7670ca696cc6d30b07074bdc3d633d81b21fabe034e7b95fd3fb481e5d6b1379f4db8480e26
 Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
@@ -7828,6 +7925,21 @@ SHA256: af57400b6ea4f6bfb6d7940fd9b1e15489e2763cf6992b53f2d44ea4dcad7a04
 SHA512: 325d7a85aef8c9488337ef69cbf161ae3ce22d4dcc529a0ab65b11f91bd1720769283f5d2f3c63e7f88ef60a443b15a40305863dadcf9266207e4c6f13553a80
 Description: Makes a basic LAN web server
 
+Package: simple-python-http-server
+Architecture: all
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: python
+Filename: ./simple-python-http-server_1.3_all.deb
+Size: 9022
+MD5sum: f4d768e6c1710b23f5deb9d364c34bdb
+SHA1: ee61e5c4eb1b409294ade80c073d397b82ef24b9
+SHA256: 42008bd0a0bd519b5009608fb60b65158de52194e0d8228f8f293b6987c26f21
+SHA512: 516a4fb0f9294d079e202791e49f6ce20000819e73ed0f28d670d1b9e5c08167dcbf2e55a64328b969105f8b1fe2a6998f313737ec6859d091fd1cb1324ca8f9
+Description: Makes a basic LAN web server
+
 Package: slim
 Architecture: amd64
 Version: 1.3.6-5.2
@@ -8335,6 +8447,22 @@ MD5sum: 6e244058814fc7f5903a57aa2ed4aedf
 SHA1: 82683eb7d275b38ec33433351d14b24216766e00
 SHA256: d50222b8c0926741eabcca0daeb62ab242456379826fed71d2d096e7de9110e1
 SHA512: ff84c81ee0b24b2cfce390957b323e37deec4d8f1ad61f823246a139375ff8ca608c0d78d62bc195ef443663e3fd1e8d96a63de2a56b97efef254999765ddf2e
+Description: Run application as unprivileged user (from root account)
+
+Package: trans-tray
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 90
+Depends: libc6, yad, xclip, gawk
+Filename: ./trans-tray_1.0.1_all.deb
+Size: 58696
+MD5sum: c28037eb1ce1ce9fc5f234a636038412
+SHA1: 7393ccc3e9b9dbf1c86da2236dbf9b1007494e88
+SHA256: 565f3be8b69565aee93ee29a0d77ffbe0d577677fa5d086bfdf07397cf49a19d
+SHA512: 6ff2fb33f9debbfb7b0d89ed395eabf296f7a0304c9c20ba17166e988ca54b651f5994092125c9069ee9ceb534c0971f4d3b2a76e9ee6d261b2913d75d12626c
 Description: Run application as unprivileged user (from root account)
 
 Package: txt2svg
@@ -8858,6 +8986,20 @@ MD5sum: 71a6dcd008256e97c1f44a0b5e603f10
 SHA1: 5f4c461676b9ebeef3e8d92411a484059fe50dc2
 SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
 SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
+Description: Makes a WiFi access point, needs iptables for internet
+
+Package: wlanmaker
+Architecture: all
+Version: 2.1
+Priority: extra
+Maintainer: rcrsn51
+Depends: hostapd
+Filename: ./wlanmaker_2.1_all.deb
+Size: 1632
+MD5sum: d2069e4e99059fc037f77eebe961da22
+SHA1: 2b7c5b6219bc6c0edb5cf244972fabc60c29cd24
+SHA256: 33d0473c4ddaab510b6174bdb0ad9d49936b78eb9e21c2f204a4f713df62f5f5
+SHA512: 3c0d615ea703bba5d9b639cb0c7f18490201a049f987f99cc833b63743b9d5f1a677216160b7f5f86d231f591d0a88aac38cbfd01bf3b5d0224b4a4fbc77d902
 Description: Makes a WiFi access point, needs iptables for internet
 
 Package: x11-xserver-utils
