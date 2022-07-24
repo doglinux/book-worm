@@ -1267,6 +1267,32 @@ SHA256: 045ff34febef783039e15908e6018b9204ae52688ec45cc1246af4618a3b5ebc
 SHA512: 2fe2a68afb64146684b86205f9d4eb9ac76dac5efde35dc860550a55f0c5a546fae58bd3fe5c89c4afe2b5453a188bdcbd064fbfb0b1fea23ddc02d2059556b3
 Description: Dancing Letters Generator (forum and HTML)
 
+Package: dash
+Architecture: i386
+Version: 1:0.5.11+git20210903+057cd650a4ed-8
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 221
+Pre-Depends: libc6 (>= 2.33)
+Depends: debianutils (>= 5.6-0.1), dpkg (>= 1.19.1)
+Filename: ./dash_0.5.11+git20210903+057cd650a4ed-8_i386.deb
+Size: 120596
+MD5sum: 2c1dd30f43ff47f7151ab35521a22ce3
+SHA1: 79fb14543da85d045e21e34eff14b3622196d2d7
+SHA256: 32e45ae862a97eb7c6f032187b505063bf85c4698594235bf65463dfa27f93a2
+SHA512: e1c14bbe762bcfbb916dacb723110619b22d3504fc86fa4be66cf762214ee25fee08673769dc51f96781d170087e892c2d61a6ff110a0fad8cfbd2c6f0dc274f
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+
 Package: deadbeef-static
 Architecture: i386
 Version: 0.7.2-2
@@ -1918,6 +1944,31 @@ MD5sum: 04eb156bc071597af459656b530fdb03
 SHA1: d872660feb088d6444e75ab3006cedd00506d844
 SHA256: 29b9b1b55881acdd7222c573bfb177f4e8c13401e645a5e9fc739641df1d7035
 SHA512: 17dcd41c4dcbe9c43571a3351e2fdf2315271d6b561a6b4b97aaad58c5f25ccc830d4198368a53625be11811ea0b96a0aa8abc5e03df416273b9956f80d5c640
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ logind
+
+Package: elogind
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 2408
+Pre-Depends: debconf, init-system-helpers (>= 1.54~)
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.33), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libudev1, libelogind0 (= 250.10-5), lsb-base (>= 3.1), procps, dbus (>= 1.9.14)
+Recommends: libpam-elogind, policykit-1
+Breaks: udev (<< 1:3.2.2+devuan1)
+Replaces: udev (<< 1:3.2.2+devuan1)
+Filename: ./elogind_250.10-5_i386.deb
+Size: 686068
+MD5sum: 7f4183961cacdc28d153ee8c1e5bad23
+SHA1: 242297a2cdaa0f31387f7f314c1ddad4600e2d1e
+SHA256: 6806ac6a564e6ca6894062ce74a63dce96f22d220894fd77609141bdea15c174
+SHA512: 27c26883c9abb4e6fa637dd6bcb9931f6ef250d2ffcc4f7e1c01a2bd886d7a01cdad6e68b3cb53717545db3f0ba8050448a8e46298d5fdfe2fff1122fe30c4cb
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management daemon
  elogind is a session management daemon extracted from systemd project's
@@ -3599,6 +3650,31 @@ Description: library to read and control CD-ROM
  so applications that use this library also have the ability to read
  disc images as though they were CD's.
 
+Package: libcrystalhd3
+Architecture: i386
+Version: 1:0.0~git20110715.fdd2f19-13
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: crystalhd
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 145
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.2), libstdc++6 (>= 4.1.1)
+Suggests: firmware-crystalhd
+Filename: ./libcrystalhd3_0.0~git20110715.fdd2f19-13_i386.deb
+Size: 50244
+MD5sum: 76b13fec3f7ef0b4ece96b07aff863e9
+SHA1: 84696931ea7dfa5c00defe935192cc027173a942
+SHA256: 3e50330ca55c754634ab6b2a1c6d5f444ce3658734395d9a0c4a2a6e3e5a1576
+SHA512: 984c4336ccd460e57a32489554b4a7da49ce893542e161683578f32d6e5cda1a8fa54acefb901cea5c12b2d473fb377f835861982f59c0a78252ed86df73ef6b
+Homepage: http://www.broadcom.com/support/crystal_hd/
+Description: Crystal HD Video Decoder (shared library)
+ Crystal HD Solution is a product offered by Broadcom. It is used to enable
+ flawless playback of 1080p high definition video across a wide range of
+ systems.
+ .
+ This package contains the shared library.
+
 Package: libdconf0
 Architecture: i386
 Version: 0.12.1-3
@@ -3691,6 +3767,34 @@ Description: library for reading DVDs
  decrypt sections of the DVD as necessary. libdvdcss needs to be installed from
  third-party repositories (see README.css), it's not included in Debian.
 
+Package: libelogind-compat
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 19
+Provides: libsystemd0 (= 246.10)
+Depends: libelogind0, systemd-standalone-tmpfiles
+Conflicts: libsystemd0
+Breaks: libelogind0 (<< 246.10-4~)
+Replaces: libsystemd0
+Filename: ./libelogind-compat_250.10-5_i386.deb
+Size: 6704
+MD5sum: f66f37bf0ce1efe91de009919a873764
+SHA1: 0244a0438b0ff77b30ff64abe4a14f23691a95fb
+SHA256: 27d098694af121725aaa15f5a4a31884512d4ad2be4fc9bba7e2c51349dd4522
+SHA512: af0d9554e9b1f1385ffb1c6b382eaff83d97b9f593354e7d7b0429042b4bf931edc3a19514c271a058131b15b85f80d500385b939641c7fe0a5582a20d501473
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library compatibility
+ The libelogind0 library is ABI compatible with libsystemd0. This package
+ provides the necessary symlinks to allow binaries linked against libsystemd0
+ to work with libelogind0. For full details of the compatibility see
+ README.Debian.
+
 Package: libelogind-dev
 Architecture: i386
 Version: 243.7-1.0antix1
@@ -3713,6 +3817,29 @@ Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library (development files)
  This package contains the files needed for developing applications that
  use libelogind
+
+Package: libelogind-dev
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 167
+Depends: libelogind0 (= 250.10-5)
+Suggests: libelogind-dev-doc
+Filename: ./libelogind-dev_250.10-5_i386.deb
+Size: 27328
+MD5sum: 12b658ccf4570b09940f273ae4f7cee6
+SHA1: 55b85922e3ef07f7866a3ae4e705457e53067789
+SHA256: 0e74ed10bcfb49d5e5e4cb5d27b903334fb35816770979ca3dac3667ce1a1b07
+SHA512: f888c2a975dd7e771b246113d6442fa4feca20c9e1c7b4b8c7d250929b8b92c6495332289c5a75b136b9557ffb501cf1415ba35bd0664ae6ea9e95dc2ea0a9f5
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library (development files)
+ This package contains the files needed for developing applications that use
+ libelogind
 
 Package: libelogind0
 Architecture: i386
@@ -3835,6 +3962,27 @@ Description: user, seat and session management library
  The library is ABI compatible with libsystemd0 and provides the necessary
  symlinks to allow binaries linked against libsystemd0 to work with
  libelogind0. For full details of the compatibility see README.Debian.
+
+Package: libelogind0
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 774
+Depends: libc6 (>= 2.33), libcap2 (>= 1:2.10)
+Filename: ./libelogind0_250.10-5_i386.deb
+Size: 265520
+MD5sum: ec2f0d6a0726ea22eddd61a3bbac2519
+SHA1: 098cfae2f0dcb669b5e93a2d98b1cc39e53177b2
+SHA256: ea99602ff23935283dc33b8e04510e72ade9ee8619d7119dc2202f61e79ea9bf
+SHA512: 0ea2225b7204186cdd9e357abafffb1d593b151ad2a87c5394c4319c4d3b140ecbc76fe4b80245fcbda53035ce3b707548a6efe6c0b4f23724b174ee95457f41
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
 
 Package: libesd0
 Architecture: i386
@@ -4595,6 +4743,31 @@ MD5sum: ac32c9138586a94668deb5b72b39be80
 SHA1: c3bc9734722a6929b12641e3367897b97d648e43
 SHA256: ddf488c28c769e84511da1ddcc02584881c31ec11ab1845d201643ed63665647
 SHA512: 4ea7bb1eb418afee57de39d38c838e1cabf8cc9e219428a3c0d8f3e9e6185a110bf78fc867658bf34fbff9d2cb34df20dc48fa29ea76fb8d6cfb652d2cbc3b47
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
+
+Package: libpam-elogind
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 614
+Provides: default-logind, libpam-systemd, logind
+Depends: libc6 (>= 2.33), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 250.10-5), libelogind-compat, libpam-runtime
+Conflicts: libpam-ck-connector
+Breaks: libpam-systemd
+Replaces: libpam-systemd
+Filename: ./libpam-elogind_250.10-5_i386.deb
+Size: 222080
+MD5sum: cb60db1045c8234a3c5cf74893a7af45
+SHA1: a2d80dc45c4eb0141b4177485c68c9c3f6058b71
+SHA256: 6aac1900243ce364e66bb50aa6cb53383a686b1b4af5e7d351813533b190d681
+SHA512: 60ccb2317e8862c70cf9bf8d3f22586c59f6d1990e9e9806b714a6d01bf9b5825382584c82258a508e4933fa98877c9d02185b4d03c50887700eec6708e1d35f
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
