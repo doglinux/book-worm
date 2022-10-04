@@ -4580,6 +4580,25 @@ Description: library to access the MusicBrainz.org database
  .
  This package contains the library to access the data from C or C++.
 
+Package: libnetpbm10
+Architecture: amd64
+Version: 2:10.0-15.4
+Priority: optional
+Section: libs
+Source: netpbm-free
+Maintainer: Andreas Barth <aba@not.so.argh.org>
+Installed-Size: 207
+Depends: libc6 (>= 2.7)
+Filename: ./libnetpbm10_10.0-15.4_amd64.deb
+Size: 86228
+MD5sum: 924884b8b5767c172d94c8cd904172db
+SHA1: 80d9830fb08d3c2a9f9d4c4208cc9d52c1dc98f5
+SHA256: 4ba09ce494d2bebf163491c2b7714ced4aa904c6fd0714d58bd0e38a1a39aa4d
+SHA512: 061fac0b2502e73c10981ac65bf6d7dcfa01da57c4ac5cfb9af490c56c42c97d1704e321ec3d69b4b75ffd242aacfd900b163950b7f771639f2fe21c188116e9
+Homepage: http://netpbm.alioth.debian.org
+Description: Graphics conversion tools shared libraries
+ This package contains the shared libraries used by netpbm.
+
 Package: libnettle4
 Architecture: amd64
 Version: 2.7.1-5+deb8u2

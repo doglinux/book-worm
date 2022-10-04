@@ -1544,6 +1544,8 @@ usr/lib/libiuplua53.so					    iuplua-core-stretch-gtk2
 usr/lib/libiupluacontrols53.so				    iupluacontrols-stretch-gtk2
 usr/lib/libmusicbrainz3.so.6				    libmusicbrainz3-6
 usr/lib/libmusicbrainz3.so.6.2.0			    libmusicbrainz3-6
+usr/lib/libnetpbm.so.10					    libnetpbm10
+usr/lib/libnetpbm.so.10.0				    libnetpbm10
 usr/lib/libnetsnmp.so					    hplip-print-scan
 usr/lib/libnetsnmp.so.15				    hplip-print-scan
 usr/lib/libnetsnmp.so.15.1.2				    hplip-print-scan
@@ -6384,6 +6386,9 @@ usr/share/doc/libmusicbrainz3-6/NEWS.txt.gz		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/README.txt		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/changelog.Debian.gz	    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/copyright		    libmusicbrainz3-6
+usr/share/doc/libnetpbm10/changelog.Debian.gz		    libnetpbm10
+usr/share/doc/libnetpbm10/changelog.gz			    libnetpbm10
+usr/share/doc/libnetpbm10/copyright			    libnetpbm10
 usr/share/doc/libnettle4/NEWS.gz			    libnettle4
 usr/share/doc/libnettle4/README				    libnettle4
 usr/share/doc/libnettle4/changelog.Debian.gz		    libnettle4
