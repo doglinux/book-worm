@@ -9117,6 +9117,8 @@ usr/share/doc/thunar/changelog.gz			    thunar
 usr/share/doc/thunar/copyright				    thunar
 usr/share/doc/udev/changelog.gz				    udev
 usr/share/doc/udev/copyright				    udev
+usr/share/doc/usr-is-merged/changelog.gz		    usr-is-merged
+usr/share/doc/usr-is-merged/copyright			    usr-is-merged
 usr/share/doc/wget/AUTHORS				    wget
 usr/share/doc/wget/ChangeLog.README			    wget
 usr/share/doc/wget/MAILING-LIST				    wget
