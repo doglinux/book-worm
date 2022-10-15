@@ -2697,6 +2697,25 @@ Description: Wireless Network manager
 
 Package: frisbee
 Architecture: i386
+Version: 1.4.9-2
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, yad
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./frisbee_1.4.9-2_i386.deb
+Size: 154156
+MD5sum: 7a45e9136729a55d3ab96007fe465dbe
+SHA1: 61f167c9bc991754c7dd8a552a2005ec05903d4c
+SHA256: 02c3b72a0f1b9b91f3eb63087a2af7043df8749104ab19e812bda6031b6f03bd
+SHA512: 89182a5b040ad53a7384ba1328aefe6b96ea27070e470ea6aa65889072a1eee83b4689e75876bef7f2baa6bd9f55ba88719e6bd24ad2599654986cd152d6d899
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
+Package: frisbee
+Architecture: i386
 Version: 1.4.9
 Priority: extra
 Section: checkinstall
@@ -8340,6 +8359,21 @@ MD5sum: f4d768e6c1710b23f5deb9d364c34bdb
 SHA1: ee61e5c4eb1b409294ade80c073d397b82ef24b9
 SHA256: 42008bd0a0bd519b5009608fb60b65158de52194e0d8228f8f293b6987c26f21
 SHA512: 516a4fb0f9294d079e202791e49f6ce20000819e73ed0f28d670d1b9e5c08167dcbf2e55a64328b969105f8b1fe2a6998f313737ec6859d091fd1cb1324ca8f9
+Description: Makes a basic LAN web server
+
+Package: simple-python-http-server
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: python2
+Filename: ./simple-python-http-server_1.4_all.deb
+Size: 8464
+MD5sum: 8b440c4023d74a327d3732d9d216760b
+SHA1: dd5e668284f069e2c736738f09bbf975ca0871a0
+SHA256: e6fc95674269a8c5953588dc6e83b1da69526aebbadb1ea4e2d9b3ec308ad970
+SHA512: c3a319971834c369fd2a10aefc263cc8b47914e68d1e35c48f1805820dcfa5ef30d10c66df7eb2c584a03f18ae1c947c9230d224c4ccb7d70420c424c849b7ea
 Description: Makes a basic LAN web server
 
 Package: slim
