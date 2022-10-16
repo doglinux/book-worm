@@ -2706,11 +2706,11 @@ Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu,
 Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
 Filename: ./frisbee_1.4.9-2_i386.deb
-Size: 154156
-MD5sum: 7a45e9136729a55d3ab96007fe465dbe
-SHA1: 61f167c9bc991754c7dd8a552a2005ec05903d4c
-SHA256: 02c3b72a0f1b9b91f3eb63087a2af7043df8749104ab19e812bda6031b6f03bd
-SHA512: 89182a5b040ad53a7384ba1328aefe6b96ea27070e470ea6aa65889072a1eee83b4689e75876bef7f2baa6bd9f55ba88719e6bd24ad2599654986cd152d6d899
+Size: 154184
+MD5sum: 5531884d2696fe9e5529124dc1214883
+SHA1: de7f248bdf715faf168711e791fa5adac8d9f725
+SHA256: 5fc5c5aecaa31f1cd9bb902003d54fd9f9319caed88930a7475bd52582c05287
+SHA512: 54f974486d98f4b45d103bb8ab6ae3c6fe9b0eddb6c1af59789d519d4b62451e572be1d0b316bf819413bb0d3a5ca2e3cb44daa15a93b770144263ba53ccbef5
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
@@ -5947,42 +5947,6 @@ Description: network management framework (daemon and userspace tools)
     connection sharing.
   * libteam-utils: Network Team driver allows multiple network interfaces to be
     teamed together and act like a single one. This process is called ethernet
-
-Package: notecase-portable
-Architecture: i386
-Version: 1.9.8-1
-Priority: optional
-Section: x11
-Maintainer: root
-Installed-Size: 946
-Depends: libc6, gtkdialog, libgtk2.0-0, libgdk-pixbuf2.0-0, libpango1.0-0, libcairo2, libglib2.0-0, libstdc++6, libgcc1, libx11-6
-Recommends: libc6-i686
-Conflicts: notecase
-Filename: ./notecase-portable_1.9.8-1_i386.deb
-Size: 337386
-MD5sum: e615f8764ac690d5e9bd92ede626be52
-SHA1: 66cf2f5991450a0b185763ffff37803ad75f0287
-SHA256: eb8e2358214497e4e711d76973d28bebf82bba8fec5ad4472a7789ff2e101d0b
-SHA512: aa4d38e9f3754d56467ecf8c3f9ea69ced82784226cb7051df4062d3ee17ede38d2f28b84021f54ab7851efba3e38f84a152c8035d0e3bb27d6f42b335d21bbb
-Description: personal organizer for GTK+
-
-Package: notecase
-Architecture: i386
-Version: 1.9.8
-Priority: optional
-Section: utilities
-Maintainer: fredx181
-Installed-Size: 834
-Depends: libc6, libcairo2, libgcc1, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libgtksourceview2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6, libx11-6
-Conflicts: notecase-portable
-Replaces: notecase-portable
-Filename: ./notecase_1.9.8_i386.deb
-Size: 221940
-MD5sum: cd31de524473e5eed9ee589693555bcc
-SHA1: 3fad859d497124a3a5bd7c038a5a81f84d31f9e2
-SHA256: 1d65f5ef41e4776400e57c96d96dd49dce18ac37660eae97b40610a596ccf658
-SHA512: 095ed2e5b0bc3cfc315adb76d21303866934be8605aa997a7685a2687976e34d938f3d23a4a0ac81afa1dd6c63edc21a8b3421ee5172ecfbb452af02d60b2cfb
-Description: Hierarchical Note Manager
 
 Package: ntpdate
 Architecture: i386
@@ -9906,28 +9870,6 @@ SHA256: f6284b0d25fd8742dff72395e3dbbe77870e582e08ade3342bb0e0a55b5f82c9
 SHA512: 78beb5d74ab1b3c6cf89183c36f1031c81e7d08758c6a35fbbbdfcd515aed80e1fa74ff901535058ba8e24144c8e91a55163b6e96dffab3574d75b83c47c509c
 Description: xlunch by Tomas M
  Graphical app launcher
-
-Package: xvidcap
-Architecture: i386
-Version: 1.1.7
-Priority: optional
-Section: x11
-Maintainer: Karl H. Beckers <karl.h.beckers@gmx.net>
-Installed-Size: 7844
-Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.16.0), libmp3lame0 (>= 3.98), libogg0 (>= 1.0rc3), libpango1.0-0 (>= 1.14.0), libtheora0 (>= 0.0.0.alpha7.dfsg), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:4.0.1), libxml2 (>= 2.6.27), libxmu6, zlib1g (>= 1:1.1.4), scrollkeeper, imagemagick, oss-compat
-Suggests: yelp
-Filename: ./xvidcap_1.1.7jaunty_i386.deb
-Size: 2686108
-MD5sum: 7bcf40a5f245d6c11b9893750fdcf741
-SHA1: a8384e529894a67c4b8d512cae4be064ded7f989
-SHA256: af5a21485a30ea9f02660f068cf9769951e74a8d51a9cf8da70e2831801c0e1d
-SHA512: 23ea5b8c576b7447d5bdbd9976da88b6712c8bb141ad8b6599062c5db3928d77d25feeb52fb9c7ff8216dfd0080619a01dd83bf8dc8cacc085d248e0ece2f761
-Description: Screen video capture for X
- A screen capture enabling you to capture videos off your X-Window desktop
- for illustration or documentation purposes. It is intended to be a
- standards-based alternative to tools like Lotus ScreenCam.
- .
- Video can be saved in MPEG or AVI files format.
 
 Package: yad-splash
 Architecture: all
