@@ -4922,6 +4922,33 @@ Description: PNG library - runtime
 
 Package: libpng12-0
 Architecture: amd64
+Version: 1:1.2.50-2+deb8u3.3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libpng
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 267
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
+Replaces: libpng12-dev (<= 1.2.8rel-7)
+Filename: ./libpng12-0_1.2.50-2+deb8u3.3_amd64.deb
+Size: 172616
+MD5sum: 2408cc971f297f478ae7ae2ba4fb718b
+SHA1: 8feab66114d74f915509f464ec86358f8b142610
+SHA256: 419d519c10d640c05135c4e77a9decf9be0336d8f0937b80062c5aa767f429f5
+SHA512: 51a5b6acb62ac1b809fe7e39e92b9c48966c8a4f7717e12d1aeb99fdfae90812388e6c51f379bb5ec9ab8dd4ba6b5956228c1c5a7eb65554ed9c4f0fcfc3e3d5
+Homepage: http://libpng.org/pub/png/libpng.html
+Description: PNG library - runtime
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the runtime library files needed to run software
+ using libpng.
+
+Package: libpng12-0
+Architecture: amd64
 Version: 1.2.50-2+deb8u3
 Multi-Arch: same
 Priority: optional
@@ -9074,27 +9101,6 @@ Description: Install kernel in chroot
  v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
  v1.6.0, small change for order of modules loaded in initrd1.xz.
  v1.7.0, btrfs support.
-
-Package: usr-is-merged
-Architecture: all
-Version: 1:31
-Multi-Arch: foreign
-Priority: optional
-Section: oldlibs
-Source: usrmerge
-Maintainer: Marco d'Itri <md@linux.it>
-Installed-Size: 12
-Filename: ./usr-is-merged_31_all.deb
-Size: 4936
-MD5sum: 5e7996f9cec8e34150484f1fac945444
-SHA1: 5a3cd3dbe33cfdd15c9ba3b3b71db711fa71c0b2
-SHA256: 72065211aa5b3cd60e3ee5f3095766817ec895b44154c5d1baa1dd184cbf1049
-SHA512: 1ae754314e1174a84aaeec226e0117b29bb733bcdad380ccf2fca1cd74f22124c377f4ad88090cdc232946af3f73c5a271886d6ced4b9bf6f80aad6346b44dd9
-Homepage: https://wiki.debian.org/UsrMerge
-Description: Transitional package to assert a merged-/usr system
- This package can be successfully installed only on merged-/usr systems.
- .
- It can be safely removed once no other package depends on it anymore.
 
 Package: vnstat-tray
 Architecture: amd64
