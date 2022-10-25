@@ -9113,11 +9113,11 @@ Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
 Conflicts: upgrade-kernel
 Replaces: upgrade-kernel
 Filename: ./upgrade-kernel_1.8.0_all.deb
-Size: 1121964
-MD5sum: 2f965d149551a68e7db03c993058a4fb
-SHA1: 71a2b5fcf577aa4dab0904390369c0885486f253
-SHA256: c530f14e45a1e294ac9be28e1e6eb77f4c1248f71c0f2bc823db858816db8979
-SHA512: 0d9d465cf95df77b2720179ee1dedce87e19b135b67ddabedd82bbf157cfb3e13d4ce2ca4665898f96ecf981633b25f566a590962e0015498c633eeb5350b795
+Size: 1121720
+MD5sum: 8f6e1c2e8a611526eb14952b0085d191
+SHA1: bb47601d2a2ca897b4d91944c6397a4cdc5db30c
+SHA256: 66b0516715b89cfbbc5dce76ec73fa5ebe636444e6d4907692225a5ad2606b33
+SHA512: 53239abf51965e0a24faa7a7839633139c413bb277c1a6dca0f102a79122b96305a69f3964eb93006a2dde2f92d7973692a59d3b70f46f967d514f0dc33c9d57
 Description: Install kernel in chroot
  And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
  v1.4.2, added support for booting with encrypted savefile.
