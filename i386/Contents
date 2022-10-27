@@ -889,6 +889,8 @@ usr/bin/cdrecord					    pburn
 usr/bin/ceni						    ceni
 usr/bin/conky						    conky-all,conky-std,conky-cli
 usr/bin/curlftpfs					    curlftpfs
+usr/bin/deb-systemd-helper				    init-system-helpers
+usr/bin/deb-systemd-invoke				    init-system-helpers
 usr/bin/defaultconnect					    ceni,wifibox,wifibox-dhcpcd,frisbee
 usr/bin/dillo						    dillo
 usr/bin/dillo-install-hyphenation			    dillo
@@ -5041,6 +5043,7 @@ usr/sbin/dhcpcd_dropwait_option				    frisbee,wifibox-dhcpcd
 usr/sbin/get_modem_alternate_device			    frisbee
 usr/sbin/grub4dosconfig					    grub4dosconfig
 usr/sbin/hostapd					    wlanmaker
+usr/sbin/invoke-rc.d					    init-system-helpers
 usr/sbin/micro-edit					    desktop-editor
 usr/sbin/mount.cifs					    yassm-smbclient-mpscan
 usr/sbin/mpscan						    yassm-smbclient-mpscan
@@ -5050,8 +5053,10 @@ usr/sbin/ntpdate-debian					    ntpdate
 usr/sbin/p910nd						    p910nd-print-server
 usr/sbin/pppoeconf					    pppoeconf
 usr/sbin/screener					    screener
+usr/sbin/service					    init-system-helpers
 usr/sbin/synaptic					    synaptic
 usr/sbin/umount.cifs					    yassm-smbclient-mpscan
+usr/sbin/update-rc.d					    init-system-helpers
 usr/share/GConf/gsettings/evince.convert		    evince
 usr/share/Lumina-DE/Login.ogg				    lumina-desktop-debdog
 usr/share/Lumina-DE/Logout.ogg				    lumina-desktop-debdog
@@ -6035,6 +6040,7 @@ usr/share/bug/eudev					    eudev
 usr/share/bug/firefox-esr/control			    firefox-esr
 usr/share/bug/firefox-esr/presubj			    firefox-esr
 usr/share/bug/firefox-esr/script			    firefox-esr
+usr/share/bug/init-system-helpers/control		    init-system-helpers
 usr/share/bug/libdvdread4				    libdvdread4
 usr/share/cups/drv/hp/hpcups.drv			    hplip-print-scan
 usr/share/dbus-1/system-services/org.freedesktop.login1.service elogind
@@ -6252,6 +6258,10 @@ usr/share/doc/help/C/grub4dosconfig.html		    grub4dosconfig
 usr/share/doc/help/images/gnibbles.png			    grub4dosconfig
 usr/share/doc/httpfs2/changelog.Debian.gz		    httpfs2
 usr/share/doc/httpfs2/copyright				    httpfs2
+usr/share/doc/init-system-helpers/README.invoke-rc.d.gz	    init-system-helpers
+usr/share/doc/init-system-helpers/README.policy-rc.d.gz	    init-system-helpers
+usr/share/doc/init-system-helpers/changelog.gz		    init-system-helpers
+usr/share/doc/init-system-helpers/copyright		    init-system-helpers
 usr/share/doc/jwm/README.Debian				    jwm
 usr/share/doc/jwm/README.Debian-source			    jwm
 usr/share/doc/jwm/TODO.Debian				    jwm
@@ -9708,6 +9718,8 @@ usr/share/man/man1/ceni.1p.gz				    ceni
 usr/share/man/man1/conky.1.gz				    conky-all,conky-std,conky-cli
 usr/share/man/man1/curlftpfs.1.gz			    curlftpfs
 usr/share/man/man1/dash.1.gz				    dash
+usr/share/man/man1/deb-systemd-helper.1p.gz		    init-system-helpers
+usr/share/man/man1/deb-systemd-invoke.1p.gz		    init-system-helpers
 usr/share/man/man1/dillo.1.gz				    dillo
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
@@ -9859,6 +9871,7 @@ usr/share/man/man8/NetworkManager.8.gz			    network-manager
 usr/share/man/man8/aumvdown.8.gz			    aufs-tools
 usr/share/man/man8/auplink.8.gz				    aufs-tools
 usr/share/man/man8/elogind.8.gz				    elogind
+usr/share/man/man8/invoke-rc.d.8.gz			    init-system-helpers
 usr/share/man/man8/linux-user-chroot.8.gz		    linux-user-chroot
 usr/share/man/man8/mount.aufs.8.gz			    aufs-tools
 usr/share/man/man8/nm-initrd-generator.8.gz		    network-manager
@@ -9866,10 +9879,12 @@ usr/share/man/man8/ntpdate-debian.8.gz			    ntpdate
 usr/share/man/man8/ntpdate.8.gz				    ntpdate
 usr/share/man/man8/pam_elogind.8.gz			    libpam-elogind
 usr/share/man/man8/pppoeconf.8.gz			    pppoeconf
+usr/share/man/man8/service.8.gz				    init-system-helpers
 usr/share/man/man8/synaptic.8.gz			    synaptic
 usr/share/man/man8/udevadm.8.gz				    eudev
 usr/share/man/man8/udevd.8.gz				    eudev
 usr/share/man/man8/umount.aufs.8.gz			    aufs-tools
+usr/share/man/man8/update-rc.d.8.gz			    init-system-helpers
 usr/share/man/pt/man1/roxterm-config.1.gz		    roxterm-common
 usr/share/man/pt/man1/roxterm.1.gz			    roxterm-common
 usr/share/man/pt_BR/man1/roxterm-config.1.gz		    roxterm-common

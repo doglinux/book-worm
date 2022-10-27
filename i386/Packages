@@ -3318,6 +3318,36 @@ SHA256: 349e15cbc2415f91922c67f3668b1f747e2713b7ccdb54bf9f36dbc9fb3d73bc
 SHA512: 60d56306575b769099cca645ec5a5f65bf78c57f1db65909afc401dc2de9a4da45b4c3b0bd72f1eb4eb4afcc59fab87a71cc7f6c1fa688625bc1e1152d773396
 Description: Convert a folder of JPEGs to a PDF > part of PeasyPDF
 
+Package: init-system-helpers
+Architecture: all
+Version: 1.64
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 140
+Conflicts: file-rc (<< 0.8.17~)
+Filename: ./init-system-helpers_1.64_all.deb
+Size: 49204
+MD5sum: 1be75800bc8fa340bb2df499182cb023
+SHA1: 7a630962e01301ce9308d57f7a9694d424e72363
+SHA256: 273173194be1ee2be42fe2c8bd6db5d3b7de42a51dcc445d9697b62399043d50
+SHA512: b0c1e755c4bebf634e07641b7481bcc54d5fbb24a9710a7a3a7b4d25bcb3d890cdd02b3d6930eaaff54ee294eb39ea0f959b60aa4593706a77ce053f9c3af1bf
+Description: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e. g. sysvinit or
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ It also includes the service, invoke-rc.d, and update-rc.d scripts which
+ provide an abstraction for enabling, disabling, starting, and stopping
+ services for all supported Debian init systems as specified by the policy.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+
 Package: inkgui
 Architecture: all
 Version: 0.5.2-1
