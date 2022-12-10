@@ -4986,6 +4986,83 @@ Description: PNG library - runtime
  This package contains the runtime library files needed to run software
  using libpng.
 
+Package: libpython2-stdlib
+Architecture: i386
+Version: 2.7.18-3
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 38
+Depends: libpython2.7-stdlib (>= 2.7.18~)
+Breaks: libpython-stdlib (<< 2.7.15-2)
+Replaces: libpython-stdlib (<< 2.7.15-2)
+Filename: ./libpython2-stdlib_2.7.18-3_i386.deb
+Size: 21204
+MD5sum: d9749cddafef7dbeb7267987d8cbe20b
+SHA1: 0ea3cfb7f8ab562c1efacb97383f0a0ca39b724f
+SHA256: 314aec7fde0834af96253057565690c793cf8fa21d2c3a7fe31c382390410b18
+SHA512: 0a997e419a1347bad209b70e5b6fc29635caae5eddadbd828c1d488834d53b65734bfa586f5143e95826be694d6da93b77c3ff386b4a3c774b7ec8edf719eff4
+Homepage: https://www.python.org/
+Description: interactive high-level object-oriented language (Python2)
+ Python2, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's Python2
+ version (currently v2.7).
+
+Package: libpython2.7-minimal
+Architecture: i386
+Version: 2.7.18-13.2
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 2783
+Recommends: libpython2.7-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Breaks: libgcj-common (<< 1:7), libpython-dbg (<< 2.7.18), libpython-dev (<< 2.7.18), libpython-stdlib (<< 2.7.18), libvolk1-bin (<< 2), pysycache (<< 3.1-4~), python (<< 2.7.18), python-catkin-pkg (<< 0.4.14-2~), python-chardet (<< 3.0.4-6~), python-dbg (<< 2.7.18), python-dev (<< 2.7.18), python-extras (<< 1.0.0-4~), python-fixtures (<< 3.0.0-3~), python-genpy (<< 0.6.9-2~), python-iso8601 (<< 0.1.12-2~), python-linecache2 (<< 1.0.0-4~), python-minimal (<< 2.7.18), python-pbr (<< 5.4.5), python-pyasn1 (<< 0.4.2-4~), python-pygame (<< 1.9.6+dfsg-3~), python-pyicu (<< 2.2-3~), python-rospkg (<< 1.1.10-2~), python-std-msgs (<< 0.5.12-2~), python-testtools (<< 2.3.0-7~), python-traceback2 (<< 1.4.0-6~), python-traitlets (<< 4.3.3-3~), python-urllib3 (<< 1.25.8-2~), python-yaml (<< 5.3.1-2~), python2.7-minimal (<< 2.7.4~rc1-1~)
+Replaces: libpython2.7-stdlib (<< 2.7.8-7), python2.7 (<< 2.7.4-2), python2.7-minimal (<< 2.7.3-10)
+Filename: ./libpython2.7-minimal_2.7.18-13.2_i386.deb
+Size: 397012
+MD5sum: 3728ea29b991e6d5176641b74f347af7
+SHA1: b2cb17900d3c6578ee9451614362d241f58082d2
+SHA256: 60bef890646941ccc3d0bd1799c672082565b94d462a33da8e40de9765321393
+SHA512: 57c3dcbca65e3145a9fcac1239fc2bf73b6c045fc09ab502dea49f0139023667f57e442dd9382e6226db300048074608dce6a4d42f6ef2c32889a35d05cf4a7c
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python2.7-minimal.
+
+Package: libpython2.7-stdlib
+Architecture: i386
+Version: 2.7.18-13.2
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8635
+Provides: python-argparse, python2.7-argparse, python2.7-celementtree, python2.7-cjkcodecs, python2.7-ctypes, python2.7-elementtree, python2.7-profiler, python2.7-wsgiref
+Depends: libpython2.7-minimal (= 2.7.18-13.2), libssl3 (>= 3.0.0), media-types | mime-support, libbz2-1.0, libc6 (>= 2.33), libcrypt1 (>= 1:4.1.0), libdb5.3, libexpat1 (>= 2.1~beta3), libffi8 (>= 3.4), libncursesw6 (>= 6), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.5.9), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2)
+Breaks: libgcj-common (<< 1:7), libpython-dbg (<< 2.7.18), libpython-dev (<< 2.7.18), libpython-stdlib (<< 2.7.18), libvolk1-bin (<< 2), pysycache (<< 3.1-4~), python (<< 2.7.18), python-catkin-pkg (<< 0.4.14-2~), python-chardet (<< 3.0.4-6~), python-dbg (<< 2.7.18), python-dev (<< 2.7.18), python-extras (<< 1.0.0-4~), python-fixtures (<< 3.0.0-3~), python-genpy (<< 0.6.9-2~), python-iso8601 (<< 0.1.12-2~), python-linecache2 (<< 1.0.0-4~), python-minimal (<< 2.7.18), python-pbr (<< 5.4.5), python-pyasn1 (<< 0.4.2-4~), python-pygame (<< 1.9.6+dfsg-3~), python-pyicu (<< 2.2-3~), python-rospkg (<< 1.1.10-2~), python-std-msgs (<< 0.5.12-2~), python-testtools (<< 2.3.0-7~), python-traceback2 (<< 1.4.0-6~), python-traitlets (<< 4.3.3-3~), python-urllib3 (<< 1.25.8-2~), python-yaml (<< 5.3.1-2~)
+Replaces: libpython2.7-testsuite (<< 2.7.13-4), python2.7 (<< 2.7.5-0~)
+Filename: ./libpython2.7-stdlib_2.7.18-13.2_i386.deb
+Size: 1844856
+MD5sum: 0d2937f1d2745e68b812977ebbaf1552
+SHA1: 4ec9919e63e1fc332c64d498f613b63fc56eacea
+SHA256: d0c141ff88468c86ffcde31ba1e63b0e05114309d3395aa32d334016bc270d99
+SHA512: 030c054047c9a682c92d5dd72332beff9f711cfeff966b6289473f27d424d289b4ff3c52e8c618cbf2ac8a701576bfafd66c7ae34d35e3dee14defc482c0d467
+Description: Interactive high-level object-oriented language (standard library, version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 2.7's standard library. It is normally not
+ used on its own, but as a dependency of python2.7.
+
 Package: libqt3-mt
 Architecture: i386
 Version: 3:3.3.8b-8+b1
@@ -7607,6 +7684,118 @@ SHA1: 3706cbbc499105c14f8bce96b357bd68d70e4a5f
 SHA256: d48e2d171ce1160789fd44b85910a386811cae783ed3d461f9be4d39d2425361
 SHA512: 55a08eb1b2b03481e97e3ec1fcef94bc17b7810e56b7d19c95419ff23149a4504adb33938495fc7152fc83caa5d60dfd7461b29d342ed76fdf2abd4902f02ce9
 Description: Disk volume monitor
+
+Package: python2-minimal
+Architecture: i386
+Version: 2.7.18-3
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 105
+Depends: python2.7-minimal (>= 2.7.18~), dpkg (>= 1.13.20)
+Recommends: python2
+Conflicts: python-central (<< 0.5.5)
+Breaks: idle (<< 2.6), python (<= 2.7.3-1~), python-all (<< 2.6), python-all-dbg (<< 2.6), python-all-dev (<< 2.6), python-dbg (<< 2.6), python-dev (<< 2.6), python-examples (<< 2.6), python-minimal (<< 2.7.15-2), python-support (<< 1.0.10ubuntu2), python2.5-minimal (<< 2.5.5-7), python2.6-minimal (<< 2.6.5~rc2-2), python3.1-minimal (<< 3.1.2~rc1-2)
+Replaces: python (<= 2.7.3-1~), python-minimal (<< 2.7.15-2)
+Filename: ./python2-minimal_2.7.18-3_i386.deb
+Size: 34244
+MD5sum: 2cd1a6e6daa2358d98ef0c78ae5eead9
+SHA1: 4172c53470c8732f8a0ec802bf7503f18bda3b4a
+SHA256: 409ddf4e5e0eca9f0e0ccc0ec20acab83deef5d40ce003e81758d9a51055b034
+SHA512: 86145e8a9570473b5bd170ae8e849b713dccfa67c245f1c7b3427cb94766bd1711d42260facce1b179d3f0e11f0f16debfa919252897982326e6f8af5d60ceb0
+Homepage: https://www.python.org/
+Description: minimal subset of the Python2 language
+ This package contains the interpreter and some essential modules.  It's used
+ in the boot process for some basic tasks.
+ See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python2
+
+Package: python2.7-minimal
+Architecture: i386
+Version: 2.7.18-13.2
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 3610
+Pre-Depends: libc6 (>= 2.33), zlib1g (>= 1:1.2.0)
+Depends: libpython2.7-minimal (= 2.7.18-13.2)
+Recommends: python2.7
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Breaks: libgcj-common (<< 1:7), libpython-dbg (<< 2.7.18), libpython-dev (<< 2.7.18), libpython-stdlib (<< 2.7.18), libvolk1-bin (<< 2), pysycache (<< 3.1-4~), python (<< 2.7.18), python-catkin-pkg (<< 0.4.14-2~), python-chardet (<< 3.0.4-6~), python-dbg (<< 2.7.18), python-dev (<< 2.7.18), python-extras (<< 1.0.0-4~), python-fixtures (<< 3.0.0-3~), python-genpy (<< 0.6.9-2~), python-iso8601 (<< 0.1.12-2~), python-linecache2 (<< 1.0.0-4~), python-minimal (<< 2.7.18), python-pbr (<< 5.4.5), python-pyasn1 (<< 0.4.2-4~), python-pygame (<< 1.9.6+dfsg-3~), python-pyicu (<< 2.2-3~), python-rospkg (<< 1.1.10-2~), python-std-msgs (<< 0.5.12-2~), python-testtools (<< 2.3.0-7~), python-traceback2 (<< 1.4.0-6~), python-traitlets (<< 4.3.3-3~), python-urllib3 (<< 1.25.8-2~), python-yaml (<< 5.3.1-2~)
+Replaces: python2.7 (<< 2.7.8-7~)
+Filename: ./python2.7-minimal_2.7.18-13.2_i386.deb
+Size: 1247308
+MD5sum: cb3c787d5d53545a0c5852d55a5891dd
+SHA1: cd15b745d77718895ce1d801f8e76a4d1c6b52ac
+SHA256: e75f1e6ae3e10dbbf4c253c3ff6ce1b330c817e6f9d0a83adc8d094e3514d2bc
+SHA512: 99000bd7c6418ef2819e1d93270f1329b46a13905f969e3888b1d4b8a94fec962f37c4e968258741eed8c3d577bc97e4f2c2eb50e68592a69b1293b36cdb31ab
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python2.7
+
+Package: python2.7
+Architecture: i386
+Version: 2.7.18-13.2
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 383
+Depends: python2.7-minimal (= 2.7.18-13.2), libpython2.7-stdlib (= 2.7.18-13.2), media-types | mime-support
+Suggests: python2.7-doc, binutils
+Conflicts: python-profiler (<= 2.7.1-2)
+Breaks: libgcj-common (<< 1:7), libpython-dbg (<< 2.7.18), libpython-dev (<< 2.7.18), libpython-stdlib (<< 2.7.18), libvolk1-bin (<< 2), pysycache (<< 3.1-4~), python (<< 2.7.18), python-catkin-pkg (<< 0.4.14-2~), python-chardet (<< 3.0.4-6~), python-dbg (<< 2.7.18), python-dev (<< 2.7.18), python-extras (<< 1.0.0-4~), python-fixtures (<< 3.0.0-3~), python-genpy (<< 0.6.9-2~), python-iso8601 (<< 0.1.12-2~), python-linecache2 (<< 1.0.0-4~), python-minimal (<< 2.7.18), python-pbr (<< 5.4.5), python-pyasn1 (<< 0.4.2-4~), python-pygame (<< 1.9.6+dfsg-3~), python-pyicu (<< 2.2-3~), python-rospkg (<< 1.1.10-2~), python-std-msgs (<< 0.5.12-2~), python-testtools (<< 2.3.0-7~), python-traceback2 (<< 1.4.0-6~), python-traitlets (<< 4.3.3-3~), python-urllib3 (<< 1.25.8-2~), python-virtualenv (<< 1.7.1.2-2~), python-yaml (<< 5.3.1-2~), vim-athena (<< 2:7.3.547-4), vim-gnome (<< 2:7.3.547-4), vim-gtk (<< 2:7.3.547-4), vim-nox (<< 2:7.3.547-4)
+Replaces: python-profiler (<= 2.7.1-2), python2.7-minimal (<< 2.7.3-7~)
+Filename: ./python2.7_2.7.18-13.2_i386.deb
+Size: 311008
+MD5sum: 6a62800af4ba27b94b06923aaa0cd7de
+SHA1: 2d3527ffbfacb0efa0a76603c0040934357f8218
+SHA256: 6678d2f8423539be7fc7a2c15df0f9b5b237a13db3d13fca3b8171ea674041ab
+SHA512: 674c08a0a6d9d599b06b0e7cea7dfd6ef3dd54bb6fc6a034822a354d8dcbf95b3902cd08a20b2190aa66b75b4c47417029f2efa0bc0818c687bce38e39d005b7
+Description: Interactive high-level object-oriented language (version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+
+Package: python2
+Architecture: i386
+Version: 2.7.18-3
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 69
+Provides: python-ctypes, python-email, python-importlib, python-profiler, python-wsgiref
+Pre-Depends: python2-minimal (= 2.7.18-3)
+Depends: python2.7 (>= 2.7.18~), libpython2-stdlib (= 2.7.18-3)
+Suggests: python2-doc (= 2.7.18-3), python-tk (>= 2.7.18~)
+Conflicts: python-central (<< 0.5.5)
+Breaks: python (<< 2.7.15-2), python2-doc (<< 2.7.18-2), update-manager-core (<< 0.200.5-2)
+Replaces: python (<< 2.7.15-2), python-dev (<< 2.6.5-2), python2-doc (<< 2.7.18-2)
+Filename: ./python2_2.7.18-3_i386.deb
+Size: 24468
+MD5sum: 654e0a12d4cb9348aab689cf6f03742c
+SHA1: 2377767d4b64bb17c84854780efd0f84b257d6c9
+SHA256: da3571e7df15544a738c50ce7b77beca4e1e364e08081e505eb6596d4c6ad360
+SHA512: c20b07829ee6bfd530defa8e74c56ee54bfcc9669432764905db2a6aa8014457a2e58472852055c27042efe693f75ef734d3a682cddc3662cf3599498401685e
+Homepage: https://www.python.org/
+Description: interactive high-level object-oriented language (Python2 version)
+ Python2, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's Python2
+ version (currently v2.7).
 
 Package: qiv-slideshow
 Architecture: all
