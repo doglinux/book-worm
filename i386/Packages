@@ -1690,6 +1690,29 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  (can be enabled/disabled from tray icon menu + other settings)
  v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
 
+Package: dogradio
+Architecture: all
+Version: 2.1.0
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper
+Filename: ./dogradio_2.1.0_all.deb
+Size: 414052
+MD5sum: bb53eddc9ebaec681f8a69c0f336de28
+SHA1: 50b4055740fcf1612c90418f438ede5fba76ecfd
+SHA256: 3fc1acd85633c680dde66b3df6b5f9f29d624aae7356e3b17140baf9ac5351d5
+SHA512: f004691a470ebe8024343c2903b85f054f418498d0f6edd74044a2a7aaeb13c3cbf767bb3c59498d24886495d25ec77a005f6a22288f960946d9d6d95bf0c443
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+
 Package: domycommand
 Architecture: i386
 Version: 9.0.3
@@ -10567,6 +10590,38 @@ Description: YouTube Downloader, frontend for youtube-dl
  - v1.5.1 Using youtube-dl now rather than youtube-dlc 
  -v1.5.2, fixes for display for yad gtk3 linked, and more
  -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.4
+Maintainer: fredx181
+Installed-Size: 1978
+Depends: libc6, yad, sed, wget, python3, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.4_all.deb
+Size: 2566124
+MD5sum: 64ee92f0b4f24b016b6d62ef3fffef12
+SHA1: 9a64244d20019c08cb6dbafc4f23b7f01b7594cc
+SHA256: ccda62ea7d90c4acc799e7d2c9e5ca875a88f06cabd3ec3bb25c7d1b8e89c25f
+SHA512: 245b92b9371bb41aeb0a5167361164459b6f9deacae1706079b059a562c438492296e8685278a268dc1e4eedda6883edd14ea55576597448994bc4495e9eeae0
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+ -v1.5.4, fixed when id starts with a dash (-), that download failed
 
 Package: youtube-get
 Architecture: i386

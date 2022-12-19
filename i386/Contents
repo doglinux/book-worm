@@ -2562,6 +2562,103 @@ usr/local/.dogradio/v0.0.4				    dogradio
 usr/local/.dogradio/v0.0.8				    dogradio
 usr/local/.dogradio/v0.0.9				    dogradio
 usr/local/.dogradio/v1.0.0				    dogradio
+usr/local/.dogradio2/.fonts/Oxygen-Regular.ttf		    dogradio
+usr/local/.dogradio2/2.jpg				    dogradio
+usr/local/.dogradio2/Internet-Radio.desktop		    dogradio
+usr/local/.dogradio2/ListenLive.desktop			    dogradio
+usr/local/.dogradio2/data/.conkyrc-radio-new		    dogradio
+usr/local/.dogradio2/data/.conkyrc-radio-old		    dogradio
+usr/local/.dogradio2/data/181.fm Salsa Latin USA.desktop    dogradio
+usr/local/.dogradio2/data/Allzic Radio Blues.desktop	    dogradio
+usr/local/.dogradio2/data/Arrow Rock.desktop		    dogradio
+usr/local/.dogradio2/data/BBC Radio 1.desktop		    dogradio
+usr/local/.dogradio2/data/BBC Radio 3.desktop		    dogradio
+usr/local/.dogradio2/data/BBC Radio 6 Music.desktop	    dogradio
+usr/local/.dogradio2/data/Classical.desktop		    dogradio
+usr/local/.dogradio2/data/Concertzender Wereldmuziek World-Fo.desktop dogradio
+usr/local/.dogradio2/data/FIP Radio Variety France.desktop  dogradio
+usr/local/.dogradio2/data/FunX Slow Jamz Soul-R&B Netherlands.desktop dogradio
+usr/local/.dogradio2/data/GotRadio Bluegrass Bluegrass USA.desktop dogradio
+usr/local/.dogradio2/data/Jazz.desktop			    dogradio
+usr/local/.dogradio2/data/NPO 3FM Pop Netherlands.desktop   dogradio
+usr/local/.dogradio2/data/Nostalgie Rock.desktop	    dogradio
+usr/local/.dogradio2/data/Paradise.desktop		    dogradio
+usr/local/.dogradio2/data/RADIO1.desktop		    dogradio
+usr/local/.dogradio2/data/RNZ Radio New Zealand Classic.desktop dogradio
+usr/local/.dogradio2/data/Radio 2.desktop		    dogradio
+usr/local/.dogradio2/data/Sky Radio Lovesong.desktop	    dogradio
+usr/local/.dogradio2/data/Soma fm Groove Salad Electronica-Am.desktop dogradio
+usr/local/.dogradio2/data/Swiss Jazz.desktop		    dogradio
+usr/local/.dogradio2/data/USA Dance Groove Dance-DJ USA.desktop dogradio
+usr/local/.dogradio2/data/WPKN Radio 89.5 Bridgeport, CT.desktop dogradio
+usr/local/.dogradio2/data/conkyfunc			    dogradio
+usr/local/.dogradio2/data/func				    dogradio
+usr/local/.dogradio2/data/icons/3fm_76x48.jpg		    dogradio
+usr/local/.dogradio2/data/icons/Australian.png		    dogradio
+usr/local/.dogradio2/data/icons/BBC.png			    dogradio
+usr/local/.dogradio2/data/icons/Blues.png		    dogradio
+usr/local/.dogradio2/data/icons/Classical.png		    dogradio
+usr/local/.dogradio2/data/icons/Country.png		    dogradio
+usr/local/.dogradio2/data/icons/Dance.png		    dogradio
+usr/local/.dogradio2/data/icons/Gospel.png		    dogradio
+usr/local/.dogradio2/data/icons/Jazz.png		    dogradio
+usr/local/.dogradio2/data/icons/Latin.png		    dogradio
+usr/local/.dogradio2/data/icons/NPO-Netherlands.png	    dogradio
+usr/local/.dogradio2/data/icons/R&B.png			    dogradio
+usr/local/.dogradio2/data/icons/Radionomy.png		    dogradio
+usr/local/.dogradio2/data/icons/Rock.png		    dogradio
+usr/local/.dogradio2/data/icons/World.png		    dogradio
+usr/local/.dogradio2/data/icons/arrow.png		    dogradio
+usr/local/.dogradio2/data/icons/audio-x-generic-old.png	    dogradio
+usr/local/.dogradio2/data/icons/audio-x-generic.png	    dogradio
+usr/local/.dogradio2/data/icons/beethoven_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/icons/bulgarian_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/icons/classical.png		    dogradio
+usr/local/.dogradio2/data/icons/classjazz.png		    dogradio
+usr/local/.dogradio2/data/icons/country.jpeg		    dogradio
+usr/local/.dogradio2/data/icons/country1_48x48.png	    dogradio
+usr/local/.dogradio2/data/icons/gitaar.png		    dogradio
+usr/local/.dogradio2/data/icons/hismastersvoice1_62x47.jpeg dogradio
+usr/local/.dogradio2/data/icons/hismastersvoice2.jpg	    dogradio
+usr/local/.dogradio2/data/icons/hismastersvoice3.jpg	    dogradio
+usr/local/.dogradio2/data/icons/hismastersvoice_50x48.jpeg  dogradio
+usr/local/.dogradio2/data/icons/new.png			    dogradio
+usr/local/.dogradio2/data/icons/paradise.png		    dogradio
+usr/local/.dogradio2/data/icons/player.png		    dogradio
+usr/local/.dogradio2/data/icons/radio2_48x44.png	    dogradio
+usr/local/.dogradio2/data/icons/radio4_48x48.png	    dogradio
+usr/local/.dogradio2/data/icons/radio5_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/icons/radio6_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/icons/radio_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/icons/search.png		    dogradio
+usr/local/.dogradio2/data/icons/veronica_48x48.jpeg	    dogradio
+usr/local/.dogradio2/data/themed			    dogradio
+usr/local/.dogradio2/dogradio-tray-menu.jpg		    dogradio
+usr/local/.dogradio2/dragndrop.jpg			    dogradio
+usr/local/.dogradio2/find-radio.txt			    dogradio
+usr/local/.dogradio2/gtkrc				    dogradio
+usr/local/.dogradio2/gtkrc-bg				    dogradio
+usr/local/.dogradio2/gtkrc-cream			    dogradio
+usr/local/.dogradio2/gtkrc-dark				    dogradio
+usr/local/.dogradio2/playlist/playlist.Australian	    dogradio
+usr/local/.dogradio2/playlist/playlist.BBC		    dogradio
+usr/local/.dogradio2/playlist/playlist.Blues		    dogradio
+usr/local/.dogradio2/playlist/playlist.Classical	    dogradio
+usr/local/.dogradio2/playlist/playlist.Country		    dogradio
+usr/local/.dogradio2/playlist/playlist.Dance		    dogradio
+usr/local/.dogradio2/playlist/playlist.Dragndrop	    dogradio
+usr/local/.dogradio2/playlist/playlist.Jazz		    dogradio
+usr/local/.dogradio2/playlist/playlist.Latin		    dogradio
+usr/local/.dogradio2/playlist/playlist.M2radio		    dogradio
+usr/local/.dogradio2/playlist/playlist.Netherlands	    dogradio
+usr/local/.dogradio2/playlist/playlist.Paradise		    dogradio
+usr/local/.dogradio2/playlist/playlist.R&B		    dogradio
+usr/local/.dogradio2/playlist/playlist.Radionomy	    dogradio
+usr/local/.dogradio2/playlist/playlist.Rock		    dogradio
+usr/local/.dogradio2/playlist/playlist.SomaFM		    dogradio
+usr/local/.dogradio2/playlist/playlist.World		    dogradio
+usr/local/.dogradio2/v2.0.0				    dogradio
+usr/local/.dogradio2/v2.1.0				    dogradio
 usr/local/01-create-appimage32/.DirIcon			    create-portable
 usr/local/01-create-appimage32/AppImageAssistant.desktop    create-portable
 usr/local/01-create-appimage32/AppImageAssistant.png	    create-portable
