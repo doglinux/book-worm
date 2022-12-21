@@ -1599,6 +1599,29 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
  and config directory changed to ~/.dogradio2
 
+Package: dogradio
+Architecture: all
+Version: 2.1.1
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper
+Filename: ./dogradio_2.1.1_all.deb
+Size: 414080
+MD5sum: 39d0a9a1968161bd390eabc0b7096897
+SHA1: 763382aaa1c359b30d1d3319b65a62afa5a814fb
+SHA256: 6263e9c426fa56781c6a530db315942bbb64d5d3b5feb8dcc32ac90c04b60493
+SHA512: 341c5a1ac1bb8d3afee81ef02d6546832c9c67581270885d877ca9bf2ab6fba64ee217c0867da1de0a0a0944ff4a7c4f31857f4b2a1cd9ec0d6be38bd6633487
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+
 Package: domycommand
 Architecture: all
 Version: 9.0.3
@@ -10393,6 +10416,23 @@ SHA1: f7dc735833dd39c8a5b0ef390e00433c4343e0a8
 SHA256: 5bf3b8be570754ee314f25d49a5cb8c7e7d726f972dcd5cb0de270523885ba76
 SHA512: 0b570d392a4058031bccf4d6925bfa71f9bf72912daa64dc413511630975e72f1515e9afa40265f5aa89a2b6f139bcf4969e1fea05287d81cf8936e5999ffcf5
 Description: Internet Radio Player
+
+Package: yradio
+Architecture: amd64
+Version: 1.3.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper
+Filename: ./yradio_1.3.0-0_amd64.deb
+Size: 276012
+MD5sum: b314116f99b2bed5099fa86c17139cbd
+SHA1: 06c014d1649f7af9698389f6212c8af22ac0fe6b
+SHA256: ff16d3f47986ea0583b2d86ae14c71004f4628b3639ee9fedf3c90d940df2036
+SHA512: fb9d51602379af7b852a0dd444149133af79041f3435e1b41820c975aa6b00f01734a16c907c90f44f3fce1f09a9a2807cafd32efdc509b47cbff039ad5bb960
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
 
 Package: zenity-portable
 Architecture: amd64
