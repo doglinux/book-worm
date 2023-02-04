@@ -2762,6 +2762,25 @@ Description: Wireless Network manager
 
 Package: frisbee
 Architecture: i386
+Version: 1.4.9-3
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, yad
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./frisbee_1.4.9-3_i386.deb
+Size: 154132
+MD5sum: 647efa11fbb147dc3f55705f668376a3
+SHA1: 3c43f245cf8dcf6df5cbdc60296864c0323ecca3
+SHA256: 48674ba002d07fc238943f02be74c872527b567dde4644e46999c8def2e080b0
+SHA512: 02dce76f7f4679a6c75f762c46f971c06e2151782d269e0108b25b18fc7f04892c25cdf5d6a1e6c99d76b79d741022969acfe4b0be1538cb672d561852b806e8
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
+Package: frisbee
+Architecture: i386
 Version: 1.4.9
 Priority: extra
 Section: checkinstall
@@ -6819,6 +6838,23 @@ SHA256: a85f617aae83c2903bea6b7c811e915ed2eb7bd5a1a8fa095dbb8c5d401340bd
 SHA512: 12785dbd777215b3c14efba50222cfd94c1cd5ece14cf51261ec91c33be3844f8aa949fce250bfefd9b8e18aa7bc407086fe6f5a22dbf1fb3e737f83d9976c97
 Description: graphic-utility
 
+Package: peasyglue
+Architecture: all
+Version: 2.3
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 268
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, netpbm, poppler-utils
+Filename: ./peasyglue_2.3_all.deb
+Size: 6408
+MD5sum: 11fd71ca530d8cbfa35f326a9fe98c68
+SHA1: b865cf0f7fa15ed3d0847ecc6e28949d97b9cd54
+SHA256: 974a43bd567a76bd469995da7d3c7b8853065b27c15aab0c5272e5765b159c07
+SHA512: 13d448f783a09d0df3b72fe826a6bf02be8f15f64dadee6c72601f1cf9240bbe230628fba5800cde2ad1609d55d52884e7111c54b64d4d1b4f69c87315c06eb3
+Description: graphic-utility
+
 Package: peasymount
 Architecture: all
 Version: 1.4-2
@@ -7190,6 +7226,33 @@ MD5sum: e571d70c911a7dc999e33f16e2a604ac
 SHA1: eb8df3853e3f1e3a61ab884cecf34fe0147cd944
 SHA256: 87375830bc1a1b2039db92be17b13ab626c08206bda31a4467d596665c1b974b
 SHA512: d06216619f1832720d77cc6dbf87bba96ed05d7c4ca034788ef7c8a01ca85a9634c9734f80d8b6ba20f29c50daf1d3b429772b636e29a12708098d0a95dd2a87
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+ Changes in v4.7:
+ 1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
+ 2. There are improved instructions for setting up an alternate Ethernet interface like usb0
+
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.8.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ifmetric
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./peasywifi_4.8.2_i386.deb
+Size: 17828
+MD5sum: b2867c8ed67d718c39fe5679b6c445eb
+SHA1: efb13007be3902a89ae04a1f78da0a21d5051a07
+SHA256: 4b574fc1f52555d76572a3587625edacafe3234c36779150c789ff4914f20d75
+SHA512: 8b389d42cd706b0a6f21e78baf81b319be445f820278f5084fba38382c68ec57abcb7244e886a4e52927ae1395b667569a8bdc38a4f22242469e403ebec3510e
 Description: Reliable network manager
  -changes in v4.4-0 in peasywifi script by rcrsn51:
  - added option (Ethernet tab) to bring the interface down
