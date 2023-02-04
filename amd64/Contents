@@ -688,31 +688,11 @@ root/.config/rox.sourceforge.net/ROX-Filer/panels	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/ROX-Filer/pinbd	    jwm-setup-dd64,jwmconf,jwm-setup
 root/.config/rox.sourceforge.net/ROX-Filer/pinbd-OB	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/SendTo			    pmusic
-root/.config/rox.sourceforge.net/SendTo/.application_octet-stream/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_bmp/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_gif/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_j2k/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_jp2/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_jpeg/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_openraster/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_png/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/Copy to Screenshots Folder mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/Copy to... mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/Edit with Inkscapelite mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/SVG-viewer.sh mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/Trash mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg+xml/geeqie slideshow mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_svg/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_tga/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_tiff/Edit with mtPaint mtpaint
-root/.config/rox.sourceforge.net/SendTo/.image_vnd.zbrush.pcx/Edit with mtPaint mtpaint
 root/.config/rox.sourceforge.net/SendTo/.inode_directory/Search with pFind pfind
 root/.config/rox.sourceforge.net/SendTo/.inode_mount-point/Search with pFind pfind
 root/.config/rox.sourceforge.net/SendTo/Multi-Copy	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/SendTo/Multi-Cut	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/SendTo/Multi-Paste	    jwm-setup,jwmconf
-root/.config/rox.sourceforge.net/mtpaint		    mtpaint
 root/.config/screener.conf				    screener
 root/.config/xfe/scripts/edit-sfs			    edit-sfs-pcmanfm,edit-sfs-thunar
 root/.config/youtube-viewer/api.json			    youtube-viewer
@@ -873,7 +853,6 @@ usr/bin/md2html-gui					    md2html
 usr/bin/mkplaylist					    ffconvert
 usr/bin/mplayer						    gmplayer
 usr/bin/mpv						    mpv
-usr/bin/mtpaint						    mtpaint
 usr/bin/netmon_wce					    frisbee
 usr/bin/netmon_wpoll					    frisbee
 usr/bin/network_tray					    frisbee
@@ -2605,9 +2584,6 @@ usr/local/apps/UExtract/locale/pl/LC_MESSAGES/uextract.mo   uextract
 usr/local/apps/UExtract/locale/ru/LC_MESSAGES/uextract.mo   uextract
 usr/local/apps/UExtract/resources/README.txt		    uextract
 usr/local/apps/UExtract/uextract			    uextract
-usr/local/apps/mtpaint/.DirIcon				    mtpaint
-usr/local/apps/mtpaint/AppInfo.xml			    mtpaint
-usr/local/apps/mtpaint/AppRun				    mtpaint
 usr/local/apps/pBurn/.DirIcon				    pburn
 usr/local/apps/pBurn/AppInfo.xml			    pburn
 usr/local/apps/pBurn/AppRun				    pburn
@@ -5643,7 +5619,6 @@ usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/mplayer.desktop			    gmplayer
 usr/share/applications/mpv.desktop			    mpv
-usr/share/applications/mtpaint.desktop			    mtpaint
 usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup-dd64,jwm-setup
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server
@@ -7918,7 +7893,6 @@ usr/share/locale/cs/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/cs/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/cs/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/cs/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/cs/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/cs/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/cs/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/cs/LC_MESSAGES/wget.mo			    wget
@@ -7942,7 +7916,6 @@ usr/share/locale/de/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/de/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/de/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/de/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/de/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/de/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/de/LC_MESSAGES/packit.mo		    pack-it
 usr/share/locale/de/LC_MESSAGES/pppoeconf.mo		    pppoeconf
@@ -7992,7 +7965,6 @@ usr/share/locale/es/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/es/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/es/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/es/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/es/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/es/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/es/LC_MESSAGES/packit.mo		    pack-it
 usr/share/locale/es/LC_MESSAGES/pppoeconf.mo		    pppoeconf
@@ -8033,7 +8005,6 @@ usr/share/locale/fr/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/fr/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fr/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/fr/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/fr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/fr/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/fr/LC_MESSAGES/packit.mo		    pack-it
@@ -8058,7 +8029,6 @@ usr/share/locale/gl/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/gl/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/gl/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/gl/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/gl/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/gl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/gl/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/gl_ES/LC_MESSAGES/openbox.mo		    openbox
@@ -8092,7 +8062,6 @@ usr/share/locale/hu/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/hu/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/hu/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/hu/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/hu/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/hu/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/hu/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/hu/LC_MESSAGES/wget.mo			    wget
@@ -8114,7 +8083,6 @@ usr/share/locale/it/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/it/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/it/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/it/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/it/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/it/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/it/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/it/LC_MESSAGES/synaptic.mo		    synaptic
@@ -8128,7 +8096,6 @@ usr/share/locale/ja/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ja/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ja/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/ja/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/ja/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/ja/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/ja/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/ja/LC_MESSAGES/synaptic.mo		    synaptic
@@ -8204,7 +8171,6 @@ usr/share/locale/nl/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/nl/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/nl/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/nl/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/nl/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/nl/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/nl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/nl/LC_MESSAGES/wget.mo			    wget
@@ -8233,7 +8199,6 @@ usr/share/locale/pl/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pl/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/pl/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/pl/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/pl/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/pl/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/pl/LC_MESSAGES/packit.mo		    pack-it
 usr/share/locale/pl/LC_MESSAGES/synaptic.mo		    synaptic
@@ -8246,7 +8211,6 @@ usr/share/locale/pt/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/pt/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pt/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/pt/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/pt/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/pt/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/pt/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/pt/LC_MESSAGES/synaptic.mo		    synaptic
@@ -8257,7 +8221,6 @@ usr/share/locale/pt_BR/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/pt_BR/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pt_BR/LC_MESSAGES/gftp.mo		    gftp-common
 usr/share/locale/pt_BR/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/pt_BR/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/pt_BR/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/pt_BR/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/pt_BR/LC_MESSAGES/roxterm.mo		    roxterm-common
@@ -8282,7 +8245,6 @@ usr/share/locale/ru/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ru/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/ru/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/ru/LC_MESSAGES/mount-wizard.mo		    mount-wizard
-usr/share/locale/ru/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/ru/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/ru/LC_MESSAGES/packit.mo		    pack-it
 usr/share/locale/ru/LC_MESSAGES/pppoeconf.mo		    pppoeconf
@@ -8302,7 +8264,6 @@ usr/share/locale/sk/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/sk/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/sk/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/sk/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/sk/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/sk/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/sk/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sk/LC_MESSAGES/wget.mo			    wget
@@ -8338,7 +8299,6 @@ usr/share/locale/sv/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/sv/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/sv/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/sv/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/sv/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/sv/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/sv/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sv/LC_MESSAGES/wget.mo			    wget
@@ -8356,14 +8316,12 @@ usr/share/locale/th/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/th/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/th/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/th/LC_MESSAGES/synaptic.mo		    synaptic
-usr/share/locale/tl/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/tl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/tr/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/tr/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/tr/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/tr/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/tr/LC_MESSAGES/leafpad.mo		    leafpad
-usr/share/locale/tr/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/tr/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/tr/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/tr/LC_MESSAGES/wget.mo			    wget
@@ -8404,7 +8362,6 @@ usr/share/locale/zh_CN/LC_MESSAGES/gftp.mo		    gftp-common
 usr/share/locale/zh_CN/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/zh_CN/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/zh_CN/LC_MESSAGES/madedit.mo		    madedit
-usr/share/locale/zh_CN/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/zh_CN/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/zh_CN/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/zh_CN/LC_MESSAGES/wget.mo		    wget
@@ -8422,7 +8379,6 @@ usr/share/locale/zh_TW/LC_MESSAGES/find_n_run_tw.mo	    findnrun-nls
 usr/share/locale/zh_TW/LC_MESSAGES/gftp.mo		    gftp-common
 usr/share/locale/zh_TW/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/zh_TW/LC_MESSAGES/madedit.mo		    madedit
-usr/share/locale/zh_TW/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/zh_TW/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/zh_TW/LC_MESSAGES/pppoeconf.mo		    pppoeconf
 usr/share/locale/zh_TW/LC_MESSAGES/synaptic.mo		    synaptic
@@ -9104,7 +9060,6 @@ usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
 usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get,youtube-get3
 usr/share/pixmaps/mpv.png				    mpv
-usr/share/pixmaps/mtpaint.png				    mtpaint
 usr/share/pixmaps/netmon_wce/cell1_0.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_1.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_2.svg		    frisbee

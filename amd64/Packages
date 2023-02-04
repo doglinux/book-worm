@@ -5921,38 +5921,6 @@ SHA256: 637b8d94b0a2956cbe738ea1ae080396c16c3050f0326fbc6d4dc3c0aa4801e8
 SHA512: dbd74a98aa4a1f9fcae24b24a5c532b896835ca319a41c252fbc88c65ee88d1569251f2f519530d6d5441325d7c6d992b4b543d43250a4e1d2ed94a64c9aac91
 Description: Restores the DOS/Win MBR
 
-Package: mtpaint
-Architecture: amd64
-Version: 3.49.12
-Priority: optional
-Section: graphics
-Maintainer: root
-Installed-Size: 1700
-Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libgif7, libglib2.0-0, libgtk2.0-0, liblcms2-2, libopenjp2-7, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libpng16-16, libtiff5, libx11-6
-Filename: ./mtpaint_3.49.12_amd64.deb
-Size: 499836
-MD5sum: 16b2d5fff675e3caca371f6afa273ff8
-SHA1: f153a65635f987845aefcb01167b5d7c7a3a6982
-SHA256: 984a7a4f16944d9a36013504e5c4ddb98f046e0af76a68ae97c6e96af0fdcb36
-SHA512: db479675e1008e3d013074917a79486fd149393e6a249313deefc52ffdaef7a55d4d568271dbab120a8d3889af27209c190b03e6360dfef61fef28732ac539af
-Description: mtpaint for stretch dog linux
-
-Package: mtpaint
-Architecture: amd64
-Version: 3.49.13
-Priority: optional
-Section: graphics
-Maintainer: root
-Installed-Size: 1700
-Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libgif7, libglib2.0-0, libgtk2.0-0, liblcms2-2, libopenjp2-7, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libpng16-16, libtiff5, libx11-6, libjpeg8
-Filename: ./mtpaint_3.49.13_amd64.deb
-Size: 499680
-MD5sum: 7faa71b05c34d9d63c9fce4c0c8236c6
-SHA1: d83e0f5ee3f036747be8349c2886f4fece8b130e
-SHA256: d1f276f923822e3db9d4824e04b4f3fcfacb9a34b2d678f31deb108254d1ef88
-SHA512: 6198a0ab189556f5bb8f5c75664698aab3938e369099f05a31524dcc0b6923d9da5ccbd4c36c869ce23cd92b579fea2bdeed88913239eb67c5dfa433abe9d0ed
-Description: mtpaint for stretch dog linux
-
 Package: multiarch-support
 Architecture: amd64
 Version: 2.28-10
