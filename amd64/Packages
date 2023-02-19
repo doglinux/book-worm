@@ -2674,6 +2674,27 @@ Description: X/GTK+ and console FTP client (metapackage)
  .
  This is an upgrade convenience package, it's only useful for depending on.
 
+Package: giblib1
+Architecture: amd64
+Version: 1.2.4-13
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: giblib
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 72
+Depends: libc6 (>= 2.4), libimlib2 (>= 1.4.5)
+Filename: ./giblib1_1.2.4-13_amd64.deb
+Size: 20036
+MD5sum: 582b508083591fa20d9bfca08fb1338b
+SHA1: d843600abe9affe70b0abd08a89117c009e30cf7
+SHA256: dc4e9cb191000a34e22c0d97c7b1c33a587918fa2045bf855e394f8b95311265
+SHA512: 6c391e1fb690f95bd9c2bb3ffe5a3888c477a7152b8e021e5cde99099a808e275ebb8f56780a095c927003a0f4498d303c28ab1d9cecf3221f93769ee4346bbb
+Homepage: http://linuxbrit.co.uk/giblib/
+Description: wrapper library for imlib2, and other stuff
+ giblib is a library of handy stuff. Contains an imlib2 wrapper to avoid the
+ context stuff, doubly-linked lists and font styles.
+
 Package: gifdance
 Architecture: all
 Version: 1.0.1
@@ -5126,6 +5147,35 @@ Description: Interactive high-level object-oriented language (standard library, 
  .
  This package contains Python 2.7's standard library. It is normally not
  used on its own, but as a dependency of python2.7.
+
+Package: libroar-compat2
+Architecture: amd64
+Version: 1.0~beta12-5+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: roaraudio (1.0~beta12-5)
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 130
+Depends: libc6 (>= 2.34), libroar2 (>= 1.0~beta12)
+Conflicts: libroar-compat0, libroar-compat1
+Breaks: roaraudio (<< 0.3~beta7-pr2-1)
+Replaces: libroar-compat0, libroar-compat1
+Filename: ./libroar-compat2_1.0~beta12-5+b1_amd64.deb
+Size: 34156
+MD5sum: 7f1017d86d3a667794aa6a2daeb1fd06
+SHA1: b2f97d6a7ea59b24f64c3ea79941a794ff1cdb1d
+SHA256: df5bc74b3847bb84ef104f07c8885adc7585b4cc6e8d37497f4d9c364c57f99b
+SHA512: 9ee0d93d43caba46fc91b5e8c66d8669c339d20e9f6e6db0c6b3056d437271d9594b144739608ed48748f1feeb2056482c863e8fca62ae6261be35d015511d16
+Homepage: http://roaraudio.keep-cool.org/
+Description: drop-in replacements for other sound libraries
+ RoarAudio is a system for audio mixing. Its main purpose is to mix audio from
+ different clients before sending it to its outputs (for example a soundcard).
+ It is completely network transparent (UNIX sockets, TCP/IP, DECnet) and
+ supports many common codecs like Ogg Vorbis, Speex or FLAC.
+ .
+ To get programs which use the PulseAudio or YIFF API running, you can install
+ this package and replace the appropriate libraries.
 
 Package: libsndio6.1
 Architecture: amd64

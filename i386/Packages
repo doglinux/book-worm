@@ -2798,6 +2798,27 @@ SHA512: 94c2fa4ca7a165c1837a19ec815bb611bcc2c7db22487c4541e3e27d38eb560be9436bc2
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
+Package: giblib1
+Architecture: i386
+Version: 1.2.4-13
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: giblib
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 71
+Depends: libc6 (>= 2.4), libimlib2 (>= 1.4.5)
+Filename: ./giblib1_1.2.4-13_i386.deb
+Size: 20560
+MD5sum: 55e9d3141243b5cf1c5776b4ec6afc9f
+SHA1: fb8f4a361efc278f9a91cd8016f7e1d0749d1aca
+SHA256: 01cdba790c87c09ef5774049c796ad55810d7fb40d9eb0487aac8ce64aae5ae9
+SHA512: 5046c8de8b59c60e5ff10fc45ab15947d25fad865d5d89e7c692243d788e8e8a2ffa04c288cce839c10657339392fcce4b11a0869e9dc0f4448fd778cae149e0
+Homepage: http://linuxbrit.co.uk/giblib/
+Description: wrapper library for imlib2, and other stuff
+ giblib is a library of handy stuff. Contains an imlib2 wrapper to avoid the
+ context stuff, doubly-linked lists and font styles.
+
 Package: gifdance
 Architecture: i386
 Version: 1.0.0
@@ -5152,6 +5173,35 @@ Description: Qt GUI Library (Threaded runtime version), Version 3
  This is the Trolltech Qt library, version 3. It's necessary for
  applications that link against the libqt-mt.so.3, e.g. all KDE3
  applications.
+
+Package: libroar-compat2
+Architecture: i386
+Version: 1.0~beta12-5+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: roaraudio (1.0~beta12-5)
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 125
+Depends: libc6 (>= 2.34), libroar2 (>= 1.0~beta12)
+Conflicts: libroar-compat0, libroar-compat1
+Breaks: roaraudio (<< 0.3~beta7-pr2-1)
+Replaces: libroar-compat0, libroar-compat1
+Filename: ./libroar-compat2_1.0~beta12-5+b1_i386.deb
+Size: 34296
+MD5sum: b30e90f6613fa71d74c54e0b9bdb7ad8
+SHA1: 149f0809eb6e8ac6dd42ddadb6b4291c48edf871
+SHA256: 7c257ee393c9b2caf82ae67e6198b9f2332db8a58c6b9aa2c82ae8d0da9ab613
+SHA512: 7c60d2081084c2b5f38ae5fc4aaa7aac16404af32b36f11805160570cf941793a247b1fde2643d4424fc58ea430018eba256b419486c116ac1297acfc61e82e3
+Homepage: http://roaraudio.keep-cool.org/
+Description: drop-in replacements for other sound libraries
+ RoarAudio is a system for audio mixing. Its main purpose is to mix audio from
+ different clients before sending it to its outputs (for example a soundcard).
+ It is completely network transparent (UNIX sockets, TCP/IP, DECnet) and
+ supports many common codecs like Ogg Vorbis, Speex or FLAC.
+ .
+ To get programs which use the PulseAudio or YIFF API running, you can install
+ this package and replace the appropriate libraries.
 
 Package: libsndio6.1
 Architecture: i386
