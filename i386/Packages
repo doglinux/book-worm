@@ -6104,27 +6104,6 @@ SHA256: be68830a685ee894778998062c5547a3f0870a00cf7f8148f462cf930d3238e3
 SHA512: 1d960bcedc328a55b1c51e529d69a2cf8454278f736db468758d9e74edffc5dd54af688cbe56162651a8309ff5006925b3f3c22402e7fba7c18d60f8dfa446fb
 Description: Manage encrypted save file utility.
 
-Package: mpv
-Architecture: i386
-Version: 1:0.27.1-ddstretch
-Priority: optional
-Section: misc
-Maintainer: fredx181
-Installed-Size: 21000
-Depends: libasound2, libbluray1, libc6, libcaca0, libdrm2, libegl1-mesa, libfontconfig1, libfreetype6, libfribidi0, libgbm1, libgl1-mesa-glx, libgnutls30, libharfbuzz0b, libjack0 | libjack-jackd2-0, libjpeg62-turbo, liblcms2-2, liblua5.2-0, libpulse0, libroar-compat2, librubberband2, libuchardet0, libva1, libva-drm1, libva-x11-1, libvdpau1, libx11-6, libxcb1, libxcb-shape0, libxcb-xfixes0, libxext6, libxinerama1, libxrandr2, libxss1, libxv1
-Filename: ./mpv_0.27.1-ddstretch_i386.deb
-Size: 7309534
-MD5sum: 2fd5691ee12ea3125ec1b01d4325dd93
-SHA1: 0d8b251419e44509649ee7dc968d40c9d5ea0677
-SHA256: a6fba12dfa96875f0179e606c7af471558c5e14eab4b4942e1cede699cee66c7
-SHA512: 0c555a42a7f955485a8053bf5d7f88ab990f51a66b9be10aad35c6ad23cc2160a76fc9b4e7e039588dcbccfdd10d99852ca1d028ac3a8fbb2ac8727ecc7fada7
-Homepage: https://github.com/mpv-player/mpv-build
-Description: mplayer/mplayer2 based video player, minimal build
- MPV is a versatile CLI movie player, based on mplayer and mplayer2.
- .
- This package is not part of Debian. It was created by mpv-build scripts with
- statically linked ffmpeg (not libav) and libass from upstream.
-
 Package: ms-sys
 Architecture: i386
 Version: 2.2.1

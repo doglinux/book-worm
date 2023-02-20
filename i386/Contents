@@ -77,7 +77,6 @@ etc/logrotate.d/xdm					    xdm
 etc/menu-methods/jwm					    jwm
 etc/menu-methods/jwm-debdog				    jwm
 etc/menu-methods/openbox				    openbox
-etc/mpv/encoding-profiles.conf				    mpv
 etc/network.conf					    wifibox-dhcpcd,wifibox
 etc/networkmodules					    sns
 etc/pam.d/elogind-user					    libpam-elogind
@@ -962,7 +961,6 @@ usr/bin/mkplaylist					    ffconvert
 usr/bin/mksquashfs					    squashfs-tools
 usr/bin/motion						    motion-light
 usr/bin/mplayer						    gmplayer
-usr/bin/mpv						    mpv
 usr/bin/netmon_wce					    frisbee,wifibox
 usr/bin/netmon_wpoll					    frisbee,wifibox
 usr/bin/network_tray					    ceni,wifibox-dhcpcd,frisbee
@@ -1611,7 +1609,6 @@ usr/lib/lua/5.3/iuplua.so				    iuplua-core-stretch-gtk2
 usr/lib/lua/5.3/iupluacontrols.so			    iupluacontrols-stretch-gtk2
 usr/lib/mime/packages/epdfview				    epdfview
 usr/lib/mime/packages/firefox-esr			    firefox-esr
-usr/lib/mime/packages/mpv				    mpv
 usr/lib/palemoon/active-update.xml			    palemoon
 usr/lib/palemoon/application.ini			    palemoon
 usr/lib/palemoon/browser/blocklist.xml			    palemoon
@@ -6557,7 +6554,6 @@ usr/share/applications/mount-wizard-2.desktop		    mount-wizard-2
 usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/mplayer.desktop			    gmplayer
-usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup
 usr/share/applications/osmo.desktop			    osmo-portable
@@ -8555,7 +8551,6 @@ usr/share/icons/hicolor/16x16/apps/gnome-mplayer.png	    gnome-mplayer-1.0.7
 usr/share/icons/hicolor/16x16/apps/leafpad.png		    leafpad
 usr/share/icons/hicolor/16x16/apps/midori.png		    midori
 usr/share/icons/hicolor/16x16/apps/mplayer.png		    gmplayer
-usr/share/icons/hicolor/16x16/apps/mpv.png		    mpv
 usr/share/icons/hicolor/16x16/apps/palemoon.png		    palemoon
 usr/share/icons/hicolor/16x16/apps/tazpanel.png		    wifibox-dhcpcd,wifibox
 usr/share/icons/hicolor/16x16/apps/xfce4-whiskermenu.png    xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -8592,7 +8587,6 @@ usr/share/icons/hicolor/32x32/apps/firefox-esr.png	    firefox-esr
 usr/share/icons/hicolor/32x32/apps/gnome-mplayer.png	    gnome-mplayer-1.0.7
 usr/share/icons/hicolor/32x32/apps/leafpad.png		    leafpad
 usr/share/icons/hicolor/32x32/apps/mplayer.png		    gmplayer
-usr/share/icons/hicolor/32x32/apps/mpv.png		    mpv
 usr/share/icons/hicolor/32x32/apps/palemoon.png		    palemoon
 usr/share/icons/hicolor/32x32/apps/tazpanel.png		    wifibox-dhcpcd,wifibox
 usr/share/icons/hicolor/32x32/apps/xfce4-whiskermenu.png    xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -8639,7 +8633,6 @@ usr/share/icons/hicolor/48x48/mimetypes/utility24.png	    jwm-setup,jwmconf
 usr/share/icons/hicolor/64x64/apps/ceni.png		    ceni
 usr/share/icons/hicolor/64x64/apps/deadbeef.png		    deadbeef-static
 usr/share/icons/hicolor/64x64/apps/firefox-esr.png	    firefox-esr
-usr/share/icons/hicolor/64x64/apps/mpv.png		    mpv
 usr/share/icons/hicolor/64x64/apps/xfce4-whiskermenu.png    xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/icons/hicolor/72x72/apps/deadbeef.png		    deadbeef-static
 usr/share/icons/hicolor/72x72/apps/findnrun.png		    findnrun
@@ -11240,7 +11233,6 @@ usr/share/pixmaps/mk-initrd.png				    upgrade-kernel
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
 usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get,youtube-get3
-usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/netmon_wce/cell1_0.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_1.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_2.svg		    frisbee
