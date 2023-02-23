@@ -1037,6 +1037,7 @@ usr/bin/xdg-open					    xdg-utils
 usr/bin/xdg-screensaver					    xdg-utils
 usr/bin/xdg-settings					    xdg-utils
 usr/bin/xdm						    xdm
+usr/bin/xfce4-mime-settings				    xfce4-mime-settings
 usr/bin/xfce4-popup-whiskermenu				    xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/bin/xfe						    xfe
 usr/bin/xfi						    xfe
@@ -6634,6 +6635,7 @@ usr/share/applications/weav.desktop			    weav
 usr/share/applications/websearch.desktop		    websearch
 usr/share/applications/wex.desktop			    wex
 usr/share/applications/wifi-box.desktop			    wifibox-dhcpcd,wifibox
+usr/share/applications/xfce4-mime-settings.desktop	    xfce4-mime-settings
 usr/share/applications/xfe.desktop			    xfe
 usr/share/applications/xfi.desktop			    xfe
 usr/share/applications/xfp.desktop			    xfe
@@ -11269,6 +11271,7 @@ usr/share/pixmaps/netmon_wce/qual_9.svg			    frisbee
 usr/share/pixmaps/network-workgroup.png			    sns
 usr/share/pixmaps/openbox.png				    openbox
 usr/share/pixmaps/optical24.png				    mount-wizard
+usr/share/pixmaps/org.xfce.settings.default-applications.png xfce4-mime-settings
 usr/share/pixmaps/osmo.png				    osmo-portable
 usr/share/pixmaps/other.png				    jwm-setup,jwmconf
 usr/share/pixmaps/p910nd-control.png			    p910nd-print-server

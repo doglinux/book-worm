@@ -9772,6 +9772,24 @@ Description: desktop integration utilities from freedesktop.org
  If you are running GNOME, make sure that the gvfs-bin package is
  installed.
 
+Package: xfce4-mime-settings
+Architecture: amd64
+Version: 2.2.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: exo-utils, libgarcon-common, xfce4-helpers, xfconf, libexo-2-0, libfontconfig1, libgarcon-1-0, libgdk-pixbuf-2.0-0, libgtk-3-0, libgdk-pixbuf-2.0-0, libglib2.0-0, libxfce4ui-2-0, libxfce4util7, libatk1.0-0, libc6, libcairo2
+Conflicts: xfce4-settings
+Replaces: xfce4-settings
+Filename: ./xfce4-mime-settings_2.2.0_amd64.deb
+Size: 35236
+MD5sum: 0918b22c2588d866d4f824b5269e14c1
+SHA1: eb89da57b14af1fce0b30a63e99cf4820af0b4be
+SHA256: 9c50e2a3d8a810a02dbaf9444726d6f048f0f6cca7f5be22e2496fcaee7b0133
+SHA512: 0b1d07f2cd8f98c4785565645bcd80e0bc5c65c0662a597a5bebe7dfb54fc7cfe95bafcdcc2b52dc53633164c82f303f98c87eeb65125f6a71fdb29737fd6b03
+Description: xfce4-mime-settings for openbox/xfce4 setup
+
 Package: xhippo
 Architecture: amd64
 Version: 1.0.1

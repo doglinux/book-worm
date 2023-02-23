@@ -919,6 +919,7 @@ usr/bin/xdg-mime					    xdg-utils
 usr/bin/xdg-open					    xdg-utils
 usr/bin/xdg-screensaver					    xdg-utils
 usr/bin/xdg-settings					    xdg-utils
+usr/bin/xfce4-mime-settings				    xfce4-mime-settings
 usr/bin/xgamma						    x11-xserver-utils
 usr/bin/xhost						    x11-xserver-utils
 usr/bin/xkeystone					    x11-xserver-utils
@@ -5717,6 +5718,7 @@ usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/weav.desktop			    weav
 usr/share/applications/websearch.desktop		    websearch
 usr/share/applications/wex.desktop			    wex
+usr/share/applications/xfce4-mime-settings.desktop	    xfce4-mime-settings
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlockmore.desktop		    xlockmore
 usr/share/applications/xlunch-help.desktop		    xlunch
@@ -9132,6 +9134,7 @@ usr/share/pixmaps/netmon_wce/qual_8.svg			    frisbee
 usr/share/pixmaps/netmon_wce/qual_9.svg			    frisbee
 usr/share/pixmaps/openbox.png				    openbox
 usr/share/pixmaps/optical24.png				    mount-wizard
+usr/share/pixmaps/org.xfce.settings.default-applications.png xfce4-mime-settings
 usr/share/pixmaps/other.png				    jwm-setup,jwmconf
 usr/share/pixmaps/p910nd-control.png			    p910nd-print-server
 usr/share/pixmaps/palemoon.png				    palemoon

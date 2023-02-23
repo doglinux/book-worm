@@ -10148,6 +10148,24 @@ Description: enhancements for the Xfce4 Desktop Environment
  consistent upgrade path from previous versions. It can safely be removed with
  no ill effects.
 
+Package: xfce4-mime-settings
+Architecture: i386
+Version: 2.2.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: exo-utils, libgarcon-common, xfce4-helpers, xfconf, libexo-2-0, libfontconfig1, libgarcon-1-0, libgdk-pixbuf-2.0-0, libgtk-3-0, libgdk-pixbuf-2.0-0, libglib2.0-0, libxfce4ui-2-0, libxfce4util7, libatk1.0-0, libc6, libcairo2
+Conflicts: xfce4-settings
+Replaces: xfce4-settings
+Filename: ./xfce4-mime-settings_2.2.0_i386.deb
+Size: 38388
+MD5sum: 3655765c76c0a0ddb0a33b68b772aa4e
+SHA1: 4429ade4ae3511f58f7fe92ca6cbc3ec3c640f7b
+SHA256: b031a708a53315ffb672bc15f2dad2699487724b80fb3b71c653aa1de4d31ab7
+SHA512: 81f3c8a7d601d3a69c4695ecb8415e9b35b379e6e7eb7dc20f19659ff96a2a30ac3ecd5fca5c243a3df43feb09f23632035a61dd33abcdbac1aa9b7d2bb81df8
+Description: xfce4-mime-settings for openbox/xfce4 setup
+
 Package: xfce4-whiskermenu-plugin-mod
 Architecture: i386
 Version: 1.6.2-1
