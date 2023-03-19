@@ -8796,6 +8796,7 @@ usr/share/perl5/WWW/PipeViewer/Activities.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Authentication.pm	    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Channels.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/CommentThreads.pm	    pipe-viewer
+usr/share/perl5/WWW/PipeViewer/DiskCache.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/GetCaption.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/GuideCategories.pm	    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/InitialData.pm		    pipe-viewer
@@ -8804,12 +8805,14 @@ usr/share/perl5/WWW/PipeViewer/ParseJSON.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/ParseXML.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/PlaylistItems.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Playlists.pm		    pipe-viewer
+usr/share/perl5/WWW/PipeViewer/Proto.pm			    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/RegularExpressions.pm	    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Search.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Subscriptions.pm		    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Utils.pm			    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/VideoCategories.pm	    pipe-viewer
 usr/share/perl5/WWW/PipeViewer/Videos.pm		    pipe-viewer
+usr/share/perl5/WWW/PipeViewer/Worker.pm		    pipe-viewer
 usr/share/perl5/WWW/RobotRules.pm			    straw-viewer
 usr/share/perl5/WWW/StrawViewer.pm			    straw-viewer
 usr/share/perl5/WWW/StrawViewer/Activities.pm		    straw-viewer

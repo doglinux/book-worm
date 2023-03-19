@@ -7317,6 +7317,29 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer
 
+Package: pipe-viewer
+Architecture: all
+Version: 0.4.5
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl, liblwp-protocol-https-perl, wget, fonts-symbola
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.4.5_all.deb
+Size: 256124
+MD5sum: 4a781415fc72734f56332d055aa4ab9d
+SHA1: 0aa2b9f6847bb4d57f09189af023eee4597f1bf5
+SHA256: a820752e6c7c13f5eb5116fc79c302577acafce51fcfad6230c857a18e188d02
+SHA512: 76b3e95fdca277b1fe2f81f284aaec82a64f78f6c066000143e5360fbcd7c5bad2199019b634bec43ea13a0b8c220a03073d441acba8b92d58d5413803312331
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
 Package: pmirrorget
 Architecture: all
 Version: 0.2
