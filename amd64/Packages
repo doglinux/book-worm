@@ -1636,6 +1636,30 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
  and config directory changed to ~/.dogradio2
 
+Package: dogradio
+Architecture: all
+Version: 2.2.0
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper, curl, jq
+Filename: ./dogradio_2.2.0_all.deb
+Size: 415500
+MD5sum: 17eb413a7db49ec2d4ec21007ed27778
+SHA1: f87b944a0f7d425a33390bf5d5306eeb49dabf36
+SHA256: 375498baa042c39a76ea89d5a2312a571b94ebd4710e3546e7935e6922318536
+SHA512: e46f06ef1b6bb7a9bf8a1e19bc3ec2b99d6cfa2bba0f26b001e54481bdef32c2e3db0570f7ec01384d72411a76914cacd8936411d19b5fd04fac8364f848dd24
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+ v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
+
 Package: domycommand
 Architecture: all
 Version: 9.0.3
@@ -10588,6 +10612,24 @@ SHA256: ff16d3f47986ea0583b2d86ae14c71004f4628b3639ee9fedf3c90d940df2036
 SHA512: fb9d51602379af7b852a0dd444149133af79041f3435e1b41820c975aa6b00f01734a16c907c90f44f3fce1f09a9a2807cafd32efdc509b47cbff039ad5bb960
 Description: Internet Radio Player
  v1.3, works with mpv and mplayer
+
+Package: yradio
+Architecture: all
+Version: 1.7.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.7.0-0_all.deb
+Size: 280000
+MD5sum: bc9d3f05e559497471e9af6fd4074098
+SHA1: a6bd607360508897fc1df3d3a9c77ce90940c028
+SHA256: 9a9ae5e0619ed5bc390697897f9259ad2b8651025a2b0d8c2774dc66256d25e8
+SHA512: 667568679d7b40d145bfb10fd2e2eebc15041d97abd3ed27cb0ba33722f0425b8e046eacd3b1b19084f832069c73d04babf8145351181ced69629b705cc74bec
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
 
 Package: zenity-portable
 Architecture: amd64

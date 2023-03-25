@@ -5801,13 +5801,17 @@ usr/local/yradio/icons/fav.png				    yradio
 usr/local/yradio/icons/gtk-help.png			    yradio
 usr/local/yradio/icons/gtk-new (kopie 1).png		    yradio
 usr/local/yradio/icons/gtk-new.png			    yradio
+usr/local/yradio/icons/gtk-new1.png			    yradio
+usr/local/yradio/icons/gtk-remove.png			    yradio
 usr/local/yradio/icons/internet_radio_48.png		    yradio
 usr/local/yradio/icons/internetradio.png		    yradio
+usr/local/yradio/icons/list-add.png			    yradio
 usr/local/yradio/icons/pause_play.png			    yradio
 usr/local/yradio/icons/player.png			    yradio
 usr/local/yradio/icons/quit.png				    yradio
 usr/local/yradio/icons/record.png			    yradio
 usr/local/yradio/icons/save.png				    yradio
+usr/local/yradio/icons/search.png			    yradio
 usr/local/yradio/icons/stop.png				    yradio
 usr/local/yradio/icons/volume.png			    yradio
 usr/local/yradio/playlist/playlist.181fm		    yradio
