@@ -1774,6 +1774,30 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  and config directory changed to ~/.dogradio2
  v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
 
+Package: dogradio
+Architecture: all
+Version: 2.3.0
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper, curl, jq
+Filename: ./dogradio_2.3.0_all.deb
+Size: 415476
+MD5sum: 739ad458f6ce5e63cefd8a0ab130a8de
+SHA1: 60a1aa594922dac72d851c05a2bb077321264141
+SHA256: 506369fba6046bbde531c9978519aa5aed5c2bab71dfa90474bc72a552ae8ff4
+SHA512: 7ccf5803e4ce763a09b6f70466ad9c2640ea9b25f8e834e9935a7a6467002d561609664c284ae538a0828fca3093b5ac9c4535ffa4277b3e1580cde88f902811
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+ v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
+
 Package: domycommand
 Architecture: i386
 Version: 9.0.3
