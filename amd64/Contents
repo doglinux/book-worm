@@ -2521,6 +2521,13 @@ usr/local/.dogradio2/data/themed			    dogradio
 usr/local/.dogradio2/dogradio-tray-menu.jpg		    dogradio
 usr/local/.dogradio2/dragndrop.jpg			    dogradio
 usr/local/.dogradio2/find-radio.txt			    dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/blue_gtkrc/gtk-3.0/gtk.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/blue_gtkrc/gtk-3.0/tweaks.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/blue_gtkrc/gtk-3.0/widgets.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/cream_gtkrc/gtk-3.0/gtk.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/cream_gtkrc/gtk-3.0/tweaks.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/cream_gtkrc/gtk-3.0/widgets.css dogradio
+usr/local/.dogradio2/gtk3-theme/share/themes/dark_gtkrc/gtk-3.0/gtk.css dogradio
 usr/local/.dogradio2/gtkrc				    dogradio
 usr/local/.dogradio2/gtkrc-bg				    dogradio
 usr/local/.dogradio2/gtkrc-cream			    dogradio

@@ -970,6 +970,23 @@ Description: Conky-clock v2 Luxe edition, choose analog clock display on the Des
  Choice from 300 clock images with the appropriate hands
  Option to display the date on the clock
 
+Package: conkyclock2
+Architecture: all
+Version: 1.0.3
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 13900
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot
+Recommends: imagemagick
+Filename: ./conkyclock2_1.0.3_all.deb
+Size: 13053640
+MD5sum: a8043f5b3e0e2bc5a850aeda8ae25dc4
+SHA1: ee9088ed62eeedd0de36e962ef50d7b584692b7c
+SHA256: e96cb3fdd502bece0e53a05232c42330144e391c3e85e49510d0433d8e3cd7d8
+SHA512: ddd7eef6d61929daeb508e3a6a20d145db313bc4ce093855106643e888473fabef3655ccc217df0433347f3de82a9dfefeb4363b5e838b388539066f9e39a547
+Description: Conky-clock v2 Luxe edition, choose analog clock display on the Desktop
+ Choice from 300 clock images with the appropriate hands
+ Option to display the date on the clock
+
 Package: conkyclock
 Architecture: all
 Version: 0.0.2
@@ -1672,6 +1689,30 @@ MD5sum: 739ad458f6ce5e63cefd8a0ab130a8de
 SHA1: 60a1aa594922dac72d851c05a2bb077321264141
 SHA256: 506369fba6046bbde531c9978519aa5aed5c2bab71dfa90474bc72a552ae8ff4
 SHA512: 7ccf5803e4ce763a09b6f70466ad9c2640ea9b25f8e834e9935a7a6467002d561609664c284ae538a0828fca3093b5ac9c4535ffa4277b3e1580cde88f902811
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+ v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
+
+Package: dogradio
+Architecture: all
+Version: 2.4.0
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper, curl, jq
+Filename: ./dogradio_2.4.0_all.deb
+Size: 425184
+MD5sum: 3e33310a07d2a2a994fd5dea02dfd2ff
+SHA1: 9070f6b15d735ae8c7a3785966d737b220ff6549
+SHA256: 928db8fbd5ec8e4fa2a32f99af3703e2e35c19638a3c65d8710ad7c4c58c40c9
+SHA512: 07c646520d26dcecb14e8144d0c17008d137026d621526dbcc0a761491b64e6c2ecabef5c2fe0b1533b29c8d12735e4a3ab63d4a2aef21ae9b05c24209ec817a
 Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
  - Using yad for the icons GUI
