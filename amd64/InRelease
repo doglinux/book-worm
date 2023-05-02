@@ -9,35 +9,35 @@ Codename: bookworm
 Architectures: amd64
 Components: main
 Description: DebianDog repository
-Date: Wed, 19 Apr 2023 15:07:29 +0000
+Date: Tue, 02 May 2023 15:38:53 +0000
 MD5Sum:
  71631a6e1b762ad044535b471e62ac81           458193 Packages
- 6cbd864bd55611c8906df1227e76b531           151430 Packages.gz
- 11e5fc673d58de3b29ba53b4a4a27c10              189 Release
- 6cbd864bd55611c8906df1227e76b531           151430 Translation-en.gz
+ b0532cae9c2ddb98c6660adaa9f0b7db           151430 Packages.gz
+ c503a7b688357ea22e99e42205c68963              189 Release
+ b0532cae9c2ddb98c6660adaa9f0b7db           151430 Translation-en.gz
 SHA1:
  68a21a48e12878e847031191aec06ae29bd6d780           458193 Packages
- 4ba3734cf1123abb7565e7b5265310a35f4f4621           151430 Packages.gz
- 773523c30bc87a03fc46ecac196f4f4af022f456              189 Release
- 4ba3734cf1123abb7565e7b5265310a35f4f4621           151430 Translation-en.gz
+ cea395b35ce19859f362c9f9e7ac7ece317093e5           151430 Packages.gz
+ 5c03a79eb9d699cd824a08e4f1b79594abe2cb4e              189 Release
+ cea395b35ce19859f362c9f9e7ac7ece317093e5           151430 Translation-en.gz
 SHA256:
  1a4947406a6ee020908979aaf36ffdc2dab16dca01a4afb58a5532241b4d04ca           458193 Packages
- 2e4f9c5f3c379830d1d2d7c72e6adc6472ecbe4ce416a3935119752928b2a4a6           151430 Packages.gz
- 16942c4e715fb956d3c43a464b3225cae326404d361ee47bd0db9534c224b9da              189 Release
- 2e4f9c5f3c379830d1d2d7c72e6adc6472ecbe4ce416a3935119752928b2a4a6           151430 Translation-en.gz
+ 92df2b719887ec62bbe584ab51c257569cf8b4e52970ff71ca33a3d920215be7           151430 Packages.gz
+ b283ef24ce66c57a8dbbad3f6e917765aee04f7d5ce3efd9478099e7b938fbce              189 Release
+ 92df2b719887ec62bbe584ab51c257569cf8b4e52970ff71ca33a3d920215be7           151430 Translation-en.gz
 SHA512:
  c94bc6f276ce4db6e144c2ab17ee8e5ef53fd570a99af817d0fff5060582e4177be733a158435ff4d8afe425aff7d453c48791065bbb38ea0fb91351b68621e5           458193 Packages
- b482a040788121aaa5c642ff0732cb3d527c392a5041a3db48940d92231f40be85bf68cac97f8e1145c9ce07a769cb070d4ecf72976895c31e46919a127da730           151430 Packages.gz
- 0ec3d0b1fb62ef3eeb70a93ab43c0eb3518022606455a20152c3856755f8bd25b518c19130033d4373e192c3ef60c8986c75d6323b78dca89936326892986c5c              189 Release
- b482a040788121aaa5c642ff0732cb3d527c392a5041a3db48940d92231f40be85bf68cac97f8e1145c9ce07a769cb070d4ecf72976895c31e46919a127da730           151430 Translation-en.gz
+ db83752fc48ba97a6335ce739bb5b2347c18fd3d029a0a1dc75de71b44f0b36a2fa72659cdcea62afec55089df979fbc0ee5dec0c7ec39bd494723cd5679f6d7           151430 Packages.gz
+ 9c59e6f6dfdda1a6f493b10202314c9729c055d15758a789a9ebfa6c5c533988363abd25f97a4d280d6dced98334be82cf51d24c4f896fe846e37efb840fe083              189 Release
+ db83752fc48ba97a6335ce739bb5b2347c18fd3d029a0a1dc75de71b44f0b36a2fa72659cdcea62afec55089df979fbc0ee5dec0c7ec39bd494723cd5679f6d7           151430 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmRAA7EACgkQrYe8en1z
-CB2jbwf/XiayKZmyY+Et7Po2oXRja3wNjZptuG6uWzdhVgLOy7+AmW5RsCWDrbrU
-UGLYCGewWiNUZWll9Z9+Us91Q9YvQof2Jam0suVBkpnqVUAxzl4qZOUpOliMyZWo
-q4hxEy41i6RALJ0YXu2878pNi2dRGjlnfDtQlD+JW2WJMd8q8dx//LpevaT93VTw
-3QaVnOCBtp+uYpFKvLoHNH3SH2KlCJOiAkqA/swZ+k3yXVf8sbIxBXZp6ZKfoWP0
-J/vNBAZMLuuAZodZZs4gNpFSW9+e6kgeIGG85nqigboDnA1Cy1GrLatUVlDG2btX
-mf0Nx4BfNXPwSkfYm1zlcCyHrwq8FA==
-=1V1b
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmRRLo0ACgkQrYe8en1z
+CB2Kiwf/Z7/GaxqzCJHwRxwAFy5ZSdFosKoeeUTOpjgZJoQqUR4hDrOCWkj5x3wj
+/r+jIisZx25xbgAtGOcRKXeybIYmIKEEqcQVtPzA1PagLSeCuz6YGhtvgb+hCovX
+T8jXPH5IAtdhZKme0zDtAyuJu/Y81khAlnp8uSlCkvfYzC/RMim9juX3qLi51azR
+i3wAJOj5e5BRQj1lb97X2qYyIbI2hQCfHX4RGaIscrjXC+rg5bsQTmZvqgtdl+y0
+J5hfVDq2Cd2mChxq9mzGavnvF08H7xNbrlwiPJrJpsorofm3cakNZlBRnoEbhwrp
+QKTQWQrsznJ1aJ2cVhzvwACyQoIJxA==
+=irS2
 -----END PGP SIGNATURE-----
