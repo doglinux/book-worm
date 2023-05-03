@@ -8463,6 +8463,22 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
+Package: remaster-scripts
+Architecture: all
+Version: 1.0.9
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 57
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./remaster-scripts_1.0.9_all.deb
+Size: 8116
+MD5sum: 8463c89a65e846c50dee987f0b839317
+SHA1: a5f0185302f4ee013d73681a931574150457f059
+SHA256: 773ad43bafa4d7a66fbadf14d99f1ecc4c7657f22cb68e4dc96873ec96e5d290
+SHA512: b158378d183ecf7c1e601e0d9e6078ba71cb0633c3df7cfddc86647886868f67276f08425ec96c68114117f2bc2157732665f813b885f4638fe22f91aca58e61
+Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
+ .
+ For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
+
 Package: repo-conf
 Architecture: i386
 Version: 1.0.1
@@ -9407,6 +9423,31 @@ MD5sum: ad401c619daf7a37801c0d1b3c98758b
 SHA1: 4808beaeb2c9415ac0bba8c5768b2f6c5af835cd
 SHA256: d0354c237b96676d64035a3a030e6fd850d0581cc63381c8904d518d9aab8413
 SHA512: 3cd90e346f587f23256d7ee36ce243e7bc7fbf5e477d86f3711de6f37a42b69bf5377792a865096382b7ef7c3df606f342d2bb39f52b972cb1428347f333f27f
+Homepage: https://docs.xfce.org/xfce/thunar/start
+Description: File Manager for Xfce
+ Thunar is the file manager designed to be the default file manager for the
+ Xfce desktop environment. It has been designed to be fast and easy to use.
+ .
+ Also included is an Xfce panel plugin which can manage the desktop trash.
+
+Package: thunar
+Architecture: i386
+Version: 1:4.18.4-1
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Installed-Size: 1383
+Depends: desktop-file-utils, exo-utils, shared-mime-info, thunar-data (>= 4.18.4-1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.34), libcairo2 (>= 1.14.0), libexo-2-0 (>= 4.17.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.65.1), libgtk-3-0 (>= 3.21.5), libgudev-1.0-0 (>= 146), libice6 (>= 1:1.0.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.44.6), libsm6, libthunarx-3-0 (>= 1.7.0), libxfce4ui-2-0 (>= 4.17.6), libxfce4util7 (>= 4.17.2), libxfconf-0-3 (>= 4.6.0)
+Recommends: default-dbus-session-bus | dbus-session-bus, gvfs, policykit-1-gnome | polkit-1-auth-agent, thunar-volman, tumbler, udisks2, xdg-user-dirs, libxfce4panel-2.0-4 (>= 4.13.0)
+Suggests: thunar-archive-plugin, thunar-media-tags-plugin, gvfs-backends
+Breaks: thunar-data (<< 1.2.3-3)
+Replaces: thunar-data (<< 1.2.3-3)
+Filename: ./thunar_4.18.4-1_i386.deb
+Size: 438280
+MD5sum: 9161f94dd0c6aeacbdfec262a8d3542d
+SHA1: 235c7c8242da1b383481f65bf9795b190b048bf0
+SHA256: 10fb12eee30cc0babbdcf7d1fd226599fe43f106faffd502fc8c6039bbe5b893
+SHA512: a2c6d8dd4550a59324fc1bca89ffd5bb91f8decaa37339d111cb94ca468fc0721e08bd9b9e1344f6b3014267ebc7c69ffacaebb9f75f697256695c6e6fa244cf
 Homepage: https://docs.xfce.org/xfce/thunar/start
 Description: File Manager for Xfce
  Thunar is the file manager designed to be the default file manager for the
