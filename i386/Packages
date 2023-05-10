@@ -5331,6 +5331,51 @@ Description: drop-in replacements for other sound libraries
  To get programs which use the PulseAudio or YIFF API running, you can install
  this package and replace the appropriate libraries.
 
+Package: libroar2
+Architecture: i386
+Version: 1.0~beta12-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: roaraudio
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 575
+Depends: libc6 (>= 2.29), libspeex1 (>= 1.2~beta3-1), libspeexdsp1 (>= 1.2~beta3.2-1), libx11-6, zlib1g (>= 1:1.2.2)
+Suggests: libroar-plugins-universal (= 1.0~beta12-4), roaraudio-server, bzip2, gnupg, openssh-client, pinentry, libmuroar0, slpd, socat
+Conflicts: libroar0
+Replaces: libroar0
+Filename: ./libroar2_1.0~beta12-4_i386.deb
+Size: 202292
+MD5sum: 22214f87ae411771f89fac7966653797
+SHA1: 7c951d44c3ac147c44f84dbfb9634be6ec091511
+SHA256: d64f0dd9cf698b001e5d9b723f28fdf16fe110b41ad73bb93d721e2b78819eb7
+SHA512: 53c5d5c34c7c2dcb9778076f1ac09690757895cc5babc34df8183c7bbe01796b62be0167fea6a76fd959943aa6755b9b788b0407e48b6b0f4ed7739acfacac3d
+Homepage: http://roaraudio.keep-cool.org/
+Description: foundation libraries for the RoarAudio sound server and clients
+ RoarAudio is a server for audio mixing. Its main purpose is to mix audio from
+ different clients before sending it to its outputs (for example a soundcard).
+ It is completely network transparent (UNIX sockets, TCP/IP, DECnet) and
+ supports many common codecs like Ogg Vorbis, Speex or FLAC.
+ .
+ This packet consists of the following libraries:
+ libroar: The RoarAudio main library. It contains code for talking to roard,
+ virtual IO functions useful not only for audio applications, memory
+ management functions like buffers, lists, stacks.
+ .
+ libroardsp: Digital Signal Processing library. It contains code to work with
+ PCM signals including simple filters, converters and code to work with some
+ (realtime) codecs.
+ .
+ libroareio: This is the RoarAudio Extended IO library. It contains code for
+ talking to extended IO. Currently it contains code to talk to soundcards
+ without roard. This is not meant to be used by other applications directly.
+ .
+ libroarlight: Light Control support library. It contains code to support
+ the usage of the light control subsystem.
+ .
+ libroarmidi: MIDI subsystem support library. It contains code to support
+ the usage of the MIDI subsystem.
+
 Package: libsndio6.1
 Architecture: i386
 Version: 1.1.0-3
@@ -8835,6 +8880,31 @@ SHA512: 18add3856737d4e288ad470ea6cb5e7a34ee5c15b8299d9700401f4bdf9458fd53f72933
 Description: scrox is a fork of the scrot command line screen capture utility 
  including identical functionality plus can output coordinate information for
  full screen or the selected rectangular area.
+
+Package: sct
+Architecture: i386
+Version: 1.3-1+b1
+Priority: optional
+Section: x11
+Source: setcolortemperature (1.3-1)
+Maintainer: Jacob Adams <tookmund@gmail.com>
+Installed-Size: 31
+Depends: libc6 (>= 2.1.3), libx11-6, libxrandr2 (>= 2:1.2.99.2)
+Filename: ./sct_1.3-1+b1_i386.deb
+Size: 6840
+MD5sum: a96586fb3f27f84063f41c4aea0df225
+SHA1: ee89428c4d192b64805d09446a53f45babe095f0
+SHA256: e245e6c7faf5176d53b9da3dd196ace0d63207d4cfc850ad89207545c1248697
+SHA512: 9edd9d7e4a1166e8e261f37ae29b436baa76ac9ae26ff80f5be31b8a67be39697cb5af0b2fb67f02d72abcc5d3a488af3fb8012a99934e899c8280dbd06d5a3c
+Homepage: https://github.com/Tookmund/setcolortemperature
+Description: Set screen color temperature
+ sct is a small C program to change the screen color temperature. It
+ can be used to reduce or increase the amount of blue light produced
+ by the screen.
+ .
+ sct sets the color temperature of the screen via xrandr like redshift.
+ Unlike redshift, it is only 80 lines of C and will not change the
+ screen temperature automatically.
 
 Package: sfs-get-smokey-get
 Architecture: all
