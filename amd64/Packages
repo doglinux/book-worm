@@ -136,6 +136,27 @@ Description: Warning - This package works only in DebianDog! Fix: Force being us
  - apt2sfs, GUI using yad
  - apt2sfs-fullinst, GUI using yad, can be used on a full install
 
+Package: apt2sfs
+Architecture: all
+Version: 1.1.4
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 104
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./apt2sfs_1.1.4_all.deb
+Size: 9724
+MD5sum: f9f2ada73375949b3b62a79aa2f2f537
+SHA1: ebaa8bb14b5b7efe1c8f72c126e3604cb1257ffc
+SHA256: 4987f559cd5a4ed24a469ea478f44cf77554fc2e20b5d3704ee472452e9fc63e
+SHA512: dc5465ebcb28cf833efb553d186ed857aa81fd9c4c28ff84c60128c1a69542e61f26beddefa5d51944e40c272fa76b604bfdd29e2425cddeec8aee26df2fbfd5
+Description: Warning - This package works only in DebianDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+
 Package: apulse
 Architecture: amd64
 Version: 20171016-1
