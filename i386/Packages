@@ -10081,6 +10081,31 @@ Description: Install kernel in chroot
  v1.7.0, btrfs support.
  v1.8.0, support for 'usr-merged' system
 
+Package: upgrade-kernel
+Architecture: all
+Version: 1.9.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.9.0_all.deb
+Size: 1121680
+MD5sum: 3ad87ea9c6e25a8be3f19ac2d107a316
+SHA1: 6cd343061c78cbdbfc0ee8c1b29dbbf5b5560a6e
+SHA256: 9b016c6515d2a4341bc4b861ff3b8ea83110ae7f3cf375d10fffedf8124ad9bf
+SHA512: 2c432a44996d6a724d093a8c33dbb2ef80cbe6872083d6030d45d9c2691405f50fe5b2d48f3790b761aec340c1aac7ec873a99a031a9d71f8b25d7c4d689489a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+
 Package: vnstat-tray
 Architecture: i386
 Version: 1.1
