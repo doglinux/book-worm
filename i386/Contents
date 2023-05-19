@@ -2500,6 +2500,7 @@ usr/lib/python2.7/xml/sax/xmlreader.py			    libpython2.7-stdlib
 usr/lib/python2.7/xmllib.py				    libpython2.7-stdlib
 usr/lib/python2.7/xmlrpclib.py				    libpython2.7-stdlib
 usr/lib/python2.7/zipfile.py				    libpython2.7-stdlib
+usr/lib/python3.11/SimpleHTTPServerWithUpload.py	    simple-python-http-server
 usr/lib/qt3/plugins/imageformats/libqmng.so		    libqt3-mt
 usr/lib/qt3/plugins/inputmethods/libqimsw-multi.so	    libqt3-mt
 usr/lib/qt3/plugins/inputmethods/libqimsw-none.so	    libqt3-mt

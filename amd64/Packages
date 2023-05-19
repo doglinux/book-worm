@@ -1139,6 +1139,21 @@ SHA256: 4dae6f527a09e182bfd617e4c8ab9dcd5994f99f69419c5d4f54b44ba06cd065
 SHA512: cd28de973daaac21dd40c24eefd3b13c66aeab87e2f9346e47ec95e460e94ba9cb93ca7e4d71e0c62aba9097317c341ab70b5fc4eecbc4120b22ab27f1bce920
 Description: CPU temperature monitor
 
+Package: cputemp
+Architecture: amd64
+Version: 3.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils, lshw
+Filename: ./cputemp_3.7_amd64.deb
+Size: 6328
+MD5sum: f5d83035957dc7a1c99cd9709f09e749
+SHA1: c2433de5191d75e6b5baa8279ebb31dffc31b331
+SHA256: 3140eee91dfe0d2568be39a67a8f26a3f2596bc44520bb35f6579352d244de69
+SHA512: 8fada096e734ae5df512a40ab864c9d16127db8e76fad3f6a2d6f898316577e0a121be20533895fdbfba261708a567a83956ed4d889b8c7884e304d7ddaaf15e
+Description: CPU temperature monitor
+
 Package: create-portable
 Architecture: amd64
 Version: 2.0.2
@@ -6772,6 +6787,34 @@ SHA256: 388c4003dfead26c6cd6e7bca45935e4b62f84b70934156a120ad7d601f2621b
 SHA512: ec127ec580994baccb526266f10e1700e92b8b3bb8665a99c56d12c13695d3e947af9a7e6d9ba984a8235b12f9a9094d9bcf9584748805f038bf6da7c0f386ee
 Description: Sets system date, time, zone
 
+Package: peasyclock
+Architecture: all
+Version: 1.6
+Priority: optional
+Maintainer: rcrsn51
+Depends: tzdata, ntpdate
+Filename: ./peasyclock_1.6_all.deb
+Size: 5104
+MD5sum: e2ed74e0383ecc490e1e3e91cdff6376
+SHA1: 3b7caaed94a133d755e37ad36c95a3ddd40c5da6
+SHA256: 0b69c299d60835eb6c5bc3dd3588ff064e5e2e95c7ad9bdfbbe93910b4228a86
+SHA512: 3752975b254d1d736663746c6ca6c384d50af32936fff4601134aecf7492ebacd31fbf3b4aea6fe3db0501c3d7b3031e007c52ffa7fda966759125d04694fe8c
+Description: Sets system date, time, zone
+
+Package: peasyclock
+Architecture: all
+Version: 1.7
+Priority: optional
+Maintainer: rcrsn51
+Depends: tzdata, ntpdate
+Filename: ./peasyclock_1.7_all.deb
+Size: 5162
+MD5sum: 3a3db015485d8f713dea28dbf7b9c6c9
+SHA1: d923f9f0b8349ad2c16ea8ab9a42f7bf626c0361
+SHA256: 00b4e8e2a05448651d16cc1f514e1b4e3ec2fd9ce108cb883da27ca377fb69bd
+SHA512: 958808e5f2036e2fd27d58817d9ff0881aff8b577c274b8ae4a9b5c623e5c67bb5784b1e7e0743039c121770ac858a2e1c840233677d642c130fdf200545b607
+Description: Sets system date, time, zone
+
 Package: peasydial
 Architecture: all
 Version: 1.1
@@ -6945,6 +6988,21 @@ MD5sum: 02d8c7263bab85a56a9934049434dca5
 SHA1: 7343365de7a0b3f7a598b671c7ce0616fc4bf493
 SHA256: 4f43cc4914842d0d938cc876909fa5be6ceafdbeea7d4435f58d44eb72990209
 SHA512: 77f4830ca1edea5cdcb43f00b7a364a15bf5bce38d61312b86e79deb0517ef126e835cfa26f65aee6b55d621cc1d03791321222eeb8c139611e1ff0289fdcf99
+Description: Media player, CD player, Carousel
+
+Package: peasymp3
+Architecture: amd64
+Version: 4.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gmplayer, icedax, eject, xterm, libasound2-plugin-equal
+Filename: ./peasymp3_4.3_amd64.deb
+Size: 11988
+MD5sum: cb9ec738f1ee7ae09ef83412bb8ea84d
+SHA1: dfca4a80cc2775bdcebf48708b67c1eda0e67b79
+SHA256: 5ca0c64c84d015a5fabeb9a85371e44aebb2de270b7a486fe093cdca10592e42
+SHA512: 11f8dcef49691676b39ba8b35250ddcc1bde862e06cec3d893b4938cd7b0938f153a00fc0b20bcb4d0e0802dac8e5c380874a0e816fa060ee2cdb5ba22d5d0d3
 Description: Media player, CD player, Carousel
 
 Package: peasypartview
@@ -7173,6 +7231,22 @@ Description: prints graphic files
 
 Package: peasyscale
 Architecture: amd64
+Version: 2.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libpango1.0-0, libcairo2, libglib2.0-0, libgtk-3-0
+Filename: ./peasyscale-gtk3_2.2_amd64.deb
+Size: 12082
+MD5sum: 2033ca7234bc0a58561ad012613dc50e
+SHA1: f792c417485bcc1ef1416c42122d9b84ec716f79
+SHA256: 3b5743d626318d0b2fb16ab17f3a1400d93bfba327fad5a8052125fc18fb20a2
+SHA512: 72612c6095172c4b4fb2a3f721628a493e114b4a945e4889323f7fb4e89339b913637db08cf00677448bb5231a68e39572e34256b1ac699680e3d69d4bcf05b6
+Description: peasyscale from rcrsn51 for Puppy linux
+
+Package: peasyscale
+Architecture: amd64
 Version: 2.0
 Priority: optional
 Section: utilities
@@ -7342,6 +7416,33 @@ Description: Reliable network manager
  1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
  2. There are improved instructions for setting up an alternate Ethernet interface like usb0
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.9
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ifmetric
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./peasywifi_4.9_amd64.deb
+Size: 20628
+MD5sum: 48b0606977693f7b8efd1535b381376e
+SHA1: 1f05af07f9971539f17e302d743d4b30cd644113
+SHA256: 379467cd8e840264c753408b85b26f6945b702671a950db2b41b37ea5c7818fd
+SHA512: 70f5439ac06f2e6969fb5c55818c5d511f003ebcddba446c226a0476ac61dc479ca2375c2a535049e16c8840cceac537b70e62a2b6177f8f64dfd95fc28157e6
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+ Changes in v4.7:
+ 1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
+ 2. There are improved instructions for setting up an alternate Ethernet interface like usb0
+
 Package: peasyxorburn
 Architecture: all
 Version: 1.1-1
@@ -7370,6 +7471,21 @@ MD5sum: 46c3e6760e65048cb15b996f6274cf6e
 SHA1: a44960bad806a5b4c20f014aaa1bd66389a9f90d
 SHA256: a82ef3f984889a569a96708afb2cae2b36b52eab9b47272d6f6955f57e4c4ea4
 SHA512: 4aa3b5042236fef07878e5a9d1c478ec75d4997347fdfb4c6d56ebd772bdb0e9557fd98c00c65bf222dc9946ebb705da2e207b7492bd6a1f99bd338b6b2298a7
+Description: Simple burning tool
+
+Package: peasyxorburn
+Architecture: all
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, cdrskin, eject, xterm
+Filename: ./peasyxorburn_1.5_all.deb
+Size: 10314
+MD5sum: 8720d597d0b8c946aeaa2209b54323ca
+SHA1: fc3c945b06fe3770046f8bbf671500b3cda454f1
+SHA256: c07439d52ae117e88b093d85f5117378994d0277d2786d171c3e6c9b7ce915c1
+SHA512: 2995235000c352fd12e9a508d8f1d0d69d194949f50cbec04ad9769ad3e7455d948d6b47214702d996ff67566f13f48d404f4167b4e7f7097ecdeaedb91e6a4e
 Description: Simple burning tool
 
 Package: pequalizer
@@ -8892,6 +9008,21 @@ SHA256: e6fc95674269a8c5953588dc6e83b1da69526aebbadb1ea4e2d9b3ec308ad970
 SHA512: c3a319971834c369fd2a10aefc263cc8b47914e68d1e35c48f1805820dcfa5ef30d10c66df7eb2c584a03f18ae1c947c9230d224c4ccb7d70420c424c849b7ea
 Description: Makes a basic LAN web server
 
+Package: simple-python-http-server
+Architecture: all
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: python3
+Filename: ./simple-python3-http-server_1.5_all.deb
+Size: 8086
+MD5sum: 51b9f6ae2e0381939992aac7df8839b3
+SHA1: 13da7125aadde3ac8a6d8a70883413980cb0b359
+SHA256: 117682a373ee663ddc2861546b40672290612ee901502040fa9be88b9b8d5868
+SHA512: 6d725c540ef844d65d0a1b30fc27fd6923406764b9c879d310f78ec14117075ed28a6dfde8b269c7ebd485c924012513589590260b58d899acc1ae0ea455d0dc
+Description: Makes a basic LAN web server
+
 Package: slim
 Architecture: amd64
 Version: 1.3.6-5.2
@@ -9001,6 +9132,20 @@ MD5sum: e1ad1e4cd74ac6d9c6d254c3e3438fde
 SHA1: ef7c1567ad8befafa323d64ca989773cba0c4b62
 SHA256: 6b253d306f2e6fe92e4a95821ee1652647f3ebadce5aa5a7bb456bf968b651f4
 SHA512: 7d78ff3bdb7201cab9219b5a67f322199b5166aa3f0547c7bb0bef44fce4d59d265882f84e0c4747f8ca108c8b4900ee9d1ac07277bce9fc7221c636fc2572b4
+Description: Select a sound card and set ALSA defaults
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.9
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./sound-card-selector_1.9_all.deb
+Size: 4390
+MD5sum: d8d6528caa48feb50167041ad6ad3eab
+SHA1: 206dac39f6d998b7c1290aec105b829f4bc0efc7
+SHA256: f24e62069a5a2499147ffeaa8cc35ee3aa5c3ea0491a300ae259fa15d17a8c7e
+SHA512: d448680c177575efd3a08801d4c825dc7d14a8af3761f93b51eae0efd5add45b2e8ab4de8483bba366669c398f56eca752c20a800046ae7750ef4d430bf41706
 Description: Select a sound card and set ALSA defaults
 
 Package: squashfuse
@@ -9363,6 +9508,21 @@ MD5sum: 6f740260f77890044235e9b5f88c894e
 SHA1: edd40ea049f3cfa2455f9d291ae865548de6e80b
 SHA256: 8b0534639251071d7bce48d2fd20732a8d81e8b73e338d36b170d5dca9a0339a
 SHA512: db904572c147c4176967e4a61c68401748816e7d04c81a584aaf0067018a44ee336995203a133b09a44c022c9c7cde2e28fc1fdde7bf22d9806f619b84b86ec4
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.13
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.13_all.deb
+Size: 6914
+MD5sum: d41676f42811e097cab85528d49fc391
+SHA1: b5f7cb0e168941571789d77292573fc1bfbaa085
+SHA256: 6d23062287ef780de3453ea36a54f0c48bff29cddc97b6f22c6f8b9edaf1206d
+SHA512: 4a031d8acaa83f9baab7e3b4439560b7090c007b22bf5c74f700fb28292beb9227d5f0e446ae73c721637e1c1aac872fab40e619055930515507a772be5e39bc
 Description: Touchpad/mouse/touchscreen setup
 
 Package: touchpad
@@ -10428,6 +10588,21 @@ MD5sum: 796f4dccb98fcc9172357d922e0a8c23
 SHA1: 857c4dab2e1c9108d6865be1aba05f4d6d9efaf6
 SHA256: 669871f1e8ad43af5e1cb9e495fcacadfec8770217dd7cc972d2b7d7eeace7e7
 SHA512: b5aaf6f1dcd008e6a4584e31d75943fb16717dc82a85785444469f87295bc7614560c14a4824b35d0860726a5e9530f2ab5ce993f66dd0b93cf132683ea74032
+Description: Samba share mounter
+
+Package: yassm
+Architecture: all
+Version: 4.8
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, samba-common-bin, peasyport (>= 3.0)
+Filename: ./yassm_4.8_all.deb
+Size: 7094
+MD5sum: d6a462e6ea9293b54ee82a43be6ebd94
+SHA1: ff2c6299230abe044a075a4f04e06e93746ca824
+SHA256: 63f0cbd047129a11c957094a62cf665d0de777588588773139650e2f7f2c879c
+SHA512: e565506c866e78e52aca91172a3f97a38d48780fb7890c80bbda5b1f733cd7fe85778594cf4ce5c8dfa196fdd6cfbdde33dc128619542c890e19bfc5d61e5a20
 Description: Samba share mounter
 
 Package: youtube-get2
