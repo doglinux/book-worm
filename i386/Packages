@@ -10044,6 +10044,32 @@ Description: Install kernel in chroot
 
 Package: upgrade-kernel
 Architecture: all
+Version: 1.10.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.10.0_all.deb
+Size: 1121808
+MD5sum: 44ffad02c1fa8e741e801402f7257801
+SHA1: 65b562423753c804231017a2bbd3ff729cfe3eab
+SHA256: 7dcff6155e0c51d95e76ec69dad04c588fb23515a4b807695f2fb90782fd154f
+SHA512: 5b155d4d8d345fbe08eb8ea60da46c8ed7d639664e5762d0c99f1073f26cac97a358cf73cf090cea81dd5febe1b4000ce976eecd87c6f8f409ce2f3bae71f36a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.10.0, added i915, nouveau and radeon kernel modules to the initrd1.xz
+
+Package: upgrade-kernel
+Architecture: all
 Version: 1.2.0
 Priority: optional
 Section: utilities
