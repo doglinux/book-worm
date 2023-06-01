@@ -755,6 +755,21 @@ SHA256: 82b140bcdfa5d8b4f413ad238dc7071b0da8cfff470696344b52e142eda1f79a
 SHA512: 1666c6e1bedfd1866a4bdcc28f7c43066e6c82dca13886e6aed4c47043333d44d072f9baed21cc3edef4acc86ca3e18baddfa96e1c699d0a5fd6102a96ea112d
 Description: mounts hand-held devices over USB
 
+Package: camphonetab
+Architecture: all
+Version: 1.9
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs
+Filename: ./camphonetab_1.9_all.deb
+Size: 3510
+MD5sum: 8d7fc80f399f99ab50fcf06e8bb280ad
+SHA1: 6b04a4ec6ed1c720fffb927c628c0ab6db6cfa85
+SHA256: 30ad834f4456aa820ae4748da3d29650b0f3d830a2e2aae3f11a1ac89fda3c95
+SHA512: 1784f52e23392cba3776d6d1a7b8582c47d7a7e354b2982fd4c58c4c7e1c2fbb3974202a258217dc2d171f5b7181abb7cc614181b028d5ed6d76eed7da708a98
+Description: mounts hand-held devices over USB
+
 Package: cast2chrome
 Architecture: all
 Version: 0.0.4-2
@@ -6861,6 +6876,22 @@ SHA512: fc6bd108c9090fcd32f5ac79e7b799f496c9bed9ba895deb5aa48d4a2340b1f1ffa837ed
 Description: DVD movie player, ripper, etc.
   Install mplayer and ffmpeg separately
 
+Package: peasydvd
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xterm, eject, libdvdcss, vamps, pv, dvdauthor, vobcopy, genisoimage
+Filename: ./peasydvd_1.1_all.deb
+Size: 6622
+MD5sum: edcadd19a7eeb5f9a75417f3379129dd
+SHA1: 3dca4328a7f360b3e297cb45e6041269402f59dd
+SHA256: c369b89b737d226da2998e3f21b1738745df2770b560170a83cab9985bc1bbe4
+SHA512: 4e9eedac5dac5f2ad24a31add2365c22f5ac700184ac1df694434f6b6e2981507fa5978d23020e40fbf494e3ec4e5025324e4131505182aa6c490ec0b0caab39
+Description: DVD movie player, ripper, etc.
+  Install mplayer and ffmpeg separately
+
 Package: peasyfwmon
 Architecture: amd64
 Version: 1.0.2
@@ -9523,6 +9554,21 @@ MD5sum: d41676f42811e097cab85528d49fc391
 SHA1: b5f7cb0e168941571789d77292573fc1bfbaa085
 SHA256: 6d23062287ef780de3453ea36a54f0c48bff29cddc97b6f22c6f8b9edaf1206d
 SHA512: 4a031d8acaa83f9baab7e3b4439560b7090c007b22bf5c74f700fb28292beb9227d5f0e446ae73c721637e1c1aac872fab40e619055930515507a772be5e39bc
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.14
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.14_all.deb
+Size: 7314
+MD5sum: 74aa355cdfd978a70d8dff49844de637
+SHA1: 22be2aaf428d3d9ef2488fc683f6e6e89fb6a1bd
+SHA256: fb8c45f31d5758580e2421085590d5134ab7b4b3205e615fcf1483a69be7089a
+SHA512: 916e94b7bbda08381d96b71d8ce71f3cb1111e30e57a65542dc62b3a3b6aa5ede5c0753f6ce4ba3da4543122e46f0632c5a1e1ae80d437699b38736b4e3408be
 Description: Touchpad/mouse/touchscreen setup
 
 Package: touchpad
