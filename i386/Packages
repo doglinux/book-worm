@@ -8103,6 +8103,30 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  v1.1.3: bug fix for snapmergepuppy script
  v1.1.6: bug fix for snapmergepuppy script
 
+Package: porteusbootscripts
+Architecture: all
+Version: 1.1.7
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
+Filename: ./porteusbootscripts_1.1.7_all.deb
+Size: 20884
+MD5sum: 50f34dcb772bfc5ddb0aa68da33f7a25
+SHA1: e006c737661cf93242e00a4fff6a11a469434415
+SHA256: 2631ce6be57863bba19868c55ee9cc9ecc7648393c8ba9604cc3d6870460bce9
+SHA512: ac7db0a33496cfa387945c58795397e6610ffa95d2d2c2b96eedd5f6804ab5d448a0e47abf6e2aef613e4aa2962786032561077c081cf1e1d321f4f29501876e
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ v1.1.0:
+ improved snapmergepuppy script (for save on exit)
+ and added systemd service saveatshutdown.service (save on exit from console)
+ v1.1.3: bug fix for snapmergepuppy script
+ v1.1.6: bug fix for snapmergepuppy script
+ v1.1.7: bug fix for snapmergepuppy script
+
 Package: pppoeconf
 Architecture: all
 Version: 1.21+nmu2
