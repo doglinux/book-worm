@@ -5965,6 +5965,23 @@ SHA256: 65a96f35299a808384de524804d1310396654f77ca7ef74fa26f3f516f507d6d
 SHA512: f4d3785a36ae1b5f5cef7e74cd0d2551c0006db76a43cd1f7cf9f07390d3e39da4b9a86820ed619155ea8a375a1becdcab91a20d7627503e041507b1471455ab
 Description: desktop configuration save settings fix for DebianDog
 
+Package: lxrandr-save-fix
+Architecture: all
+Version: 1.2
+Priority: extra
+Section: system
+Maintainer: root@wheezy
+Installed-Size: 158
+Provides: save-settings-after-reboot
+Depends: libc6, lxrandr
+Filename: ./lxrandr-save-fix_1.2_all.deb
+Size: 1204
+MD5sum: 39f3cd2001e6dd661f677c0d5466b98d
+SHA1: 5d9d9834ca4662d586a613c754e75ccc962d0229
+SHA256: 61e30b04be23a2e6af7289c71deae55235add2a376f79c35cb4157c40633c295
+SHA512: a19ee1b1162be61727773f4065cc023c29372a477687753b48b7b30908b79bdf70bdc1be96f7eea18738eca0ac32f286c3b1999af6588fcc269342fd95e520b8
+Description: desktop configuration save settings fix for DebianDog
+
 Package: madedit
 Architecture: amd64
 Version: 0.2.9-1

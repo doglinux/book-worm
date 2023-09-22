@@ -1,0 +1,8 @@
+Package: gtkdialog-gtk3
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: rcrsn51
+Description: gtkdialog for gtk3
+Depends: libgtk-3-0
