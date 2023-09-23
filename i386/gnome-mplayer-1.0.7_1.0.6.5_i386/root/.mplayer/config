@@ -1,4 +1,0 @@
-ao=alsa
-vo=x11
-cache-min=1
-zoom="1" #Allow sofware scaling if using x11 for vo
