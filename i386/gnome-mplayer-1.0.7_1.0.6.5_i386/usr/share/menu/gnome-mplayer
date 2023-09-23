@@ -1,0 +1,3 @@
+?package(pburn): needs="X11" \
+   section="Applications/Video"\
+   title="GNOME MPlayer" icon="/usr/share/icons/hicolor/48x48/apps/gnome-mplayer.png" command="gnome-mplayer"
