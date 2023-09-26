@@ -3160,18 +3160,18 @@ Description: Media player small version for DebianDog
 
 Package: gnome-mplayer-1.0.7
 Architecture: i386
-Version: 1:1.0.6.6
+Version: 1:1.0.6.7
 Priority: extra
 Section: system
 Maintainer: root@wheezy
 Installed-Size: 9500
-Depends: mplayer, dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libcurl4, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf-2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, libmusicbrainz3-6, libssl1.0.2
-Filename: ./gnome-mplayer-1.0.7_1.0.6.6_i386.deb
-Size: 375008
-MD5sum: 313dd47fbee9d2e1675b13fa22891525
-SHA1: c9f4a43b7d2863b1b945653db9e8b326209fc06e
-SHA256: 2f9feb62be5c963d46872ed1b11374b81ae05a550f2007fd4e0fce6bb4ed205d
-SHA512: f6ccdaf2928af4d5cbbf63fe5bf1776064a79298519055ad024e9a1b746595c228eff6607ebf2df2ed78439103a13b0b6518087bdb2c72097315e253922eda7c
+Depends: mplayer, dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libcurl4, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf-2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, libmusicbrainz3-6, libssl1.0.2, libldap-2.4-2
+Filename: ./gnome-mplayer-1.0.7_1.0.6.7_i386.deb
+Size: 375252
+MD5sum: abef26fce8fbddb54e1c215da3f5af01
+SHA1: f54284234c42746487ad2899918d8335746dee14
+SHA256: f6127ae7ec9abb2171c98e68e7ec56f5bb1d4a983187fb2e2e0476b219172fee
+SHA512: 52b6895ffb5477208a6d1364bf106117e265c9d0b065c537695eace01284e472b29f33239b96370174f0c630e41589a398d3a970296ae80e1b48bc3faa2a2d52
 Description: Media player small version for DebianDog
 
 Package: googledrivegui2
@@ -4801,6 +4801,30 @@ Description: Independent JPEG Group's JPEG runtime library
  JPEG files.
  .
  This package contains the shared library.
+
+Package: libldap-2.4-2
+Architecture: i386
+Version: 2.4.57+dfsg-3+deb11u1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openldap
+Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+Installed-Size: 577
+Depends: libc6 (>= 2.28), libgnutls30 (>= 3.7.0), libsasl2-2 (>= 2.1.27+dfsg)
+Recommends: libldap-common
+Conflicts: ldap-utils (<= 2.1.23-1)
+Replaces: libldap-2.3-0, libldap2
+Filename: ./libldap-2.4-2_2.4.57+dfsg-3+deb11u1_i386.deb
+Size: 244268
+MD5sum: 66a3d86ef4ad6ef2d2fb7471e709d28e
+SHA1: d99e1e2a76b26010ecc2b3be99eb199c89cd4161
+SHA256: 57fb9c537059cfcde023e6b3ad1c4dd7ed7d7f54a0aba2c4f3d1390b90c944ab
+SHA512: e579ac8d9d3e964f989fac519ce7902603842aeb9bd829474f69702e23515e59dc8cfa4114587b58db3750456efaeb46038d5e394b8b0f61a247e1e7465cebc4
+Homepage: https://www.openldap.org/
+Description: OpenLDAP libraries
+ These are the run-time libraries for the OpenLDAP (Lightweight Directory
+ Access Protocol) servers and clients.
 
 Package: libmac2
 Architecture: i386

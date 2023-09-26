@@ -1450,6 +1450,11 @@ usr/lib/i386-linux-gnu/libhunspell-1.4.so.0		    libhunspell-1.4-0
 usr/lib/i386-linux-gnu/libhunspell-1.4.so.0.0.0		    libhunspell-1.4-0
 usr/lib/i386-linux-gnu/libjpeg.so.8			    libjpeg8
 usr/lib/i386-linux-gnu/libjpeg.so.8.4.0			    libjpeg8
+usr/lib/i386-linux-gnu/liblber-2.4.so.2			    libldap-2.4-2
+usr/lib/i386-linux-gnu/liblber-2.4.so.2.11.5		    libldap-2.4-2
+usr/lib/i386-linux-gnu/libldap-2.4.so.2			    libldap-2.4-2
+usr/lib/i386-linux-gnu/libldap_r-2.4.so.2		    libldap-2.4-2
+usr/lib/i386-linux-gnu/libldap_r-2.4.so.2.11.5		    libldap-2.4-2
 usr/lib/i386-linux-gnu/libmac.so.2			    libmac2
 usr/lib/i386-linux-gnu/libmac.so.2.0.0			    libmac2
 usr/lib/i386-linux-gnu/libnettle.so.4			    libnettle4
@@ -7226,6 +7231,10 @@ usr/share/doc/libjpeg8/README.gz			    libjpeg8
 usr/share/doc/libjpeg8/changelog.Debian.gz		    libjpeg8
 usr/share/doc/libjpeg8/changelog.gz			    libjpeg8
 usr/share/doc/libjpeg8/copyright			    libjpeg8
+usr/share/doc/libldap-2.4-2/README.Debian		    libldap-2.4-2
+usr/share/doc/libldap-2.4-2/changelog.Debian.gz		    libldap-2.4-2
+usr/share/doc/libldap-2.4-2/changelog.gz		    libldap-2.4-2
+usr/share/doc/libldap-2.4-2/copyright			    libldap-2.4-2
 usr/share/doc/libmac2/AUTHORS				    libmac2
 usr/share/doc/libmac2/NEWS.gz				    libmac2
 usr/share/doc/libmac2/README				    libmac2
@@ -10008,6 +10017,7 @@ usr/share/lintian/overrides/giblib1			    giblib1
 usr/share/lintian/overrides/libdirectfb-1.2-9		    libdirectfb-1.2-9
 usr/share/lintian/overrides/libeudev-dev		    libeudev-dev
 usr/share/lintian/overrides/libeudev1			    libeudev1
+usr/share/lintian/overrides/libldap-2.4-2		    libldap-2.4-2
 usr/share/lintian/overrides/libpython2.7-minimal	    libpython2.7-minimal
 usr/share/lintian/overrides/libpython2.7-stdlib		    libpython2.7-stdlib
 usr/share/lintian/overrides/libroar-compat2		    libroar-compat2
