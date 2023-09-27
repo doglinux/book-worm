@@ -7245,18 +7245,18 @@ SHA512: b90d73f62fe55ab38cb3d6aff52f3150d15e7224056448714efc321d897ae1e61e9bf6aa
 Description: Media player, CD player, Carousel
 
 Package: peasymp3
-Architecture: amd64
-Version: 4.3
+Architecture: i386
+Version: 4.1-4
 Priority: optional
 Section: base
 Maintainer: rcrsn51
-Depends: gmplayer, icedax, eject, xterm, libasound2-plugin-equal
-Filename: ./peasymp3_4.3_amd64.deb
-Size: 11988
-MD5sum: cb9ec738f1ee7ae09ef83412bb8ea84d
-SHA1: dfca4a80cc2775bdcebf48708b67c1eda0e67b79
-SHA256: 5ca0c64c84d015a5fabeb9a85371e44aebb2de270b7a486fe093cdca10592e42
-SHA512: 11f8dcef49691676b39ba8b35250ddcc1bde862e06cec3d893b4938cd7b0938f153a00fc0b20bcb4d0e0802dac8e5c380874a0e816fa060ee2cdb5ba22d5d0d3
+Depends: mplayer, icedax, eject, xterm, libasound2-plugin-equal, gtkdialog
+Filename: ./peasymp3_4.1-4_i386.deb
+Size: 10880
+MD5sum: 184e7ee552d10da0c4613e96441010e5
+SHA1: aad064053f74f0c6374df530237b4163ee2e0e0b
+SHA256: 950ab9757de9fc1135b01cf6a4a6ce88e27be4539c41d7e1ab2ef225ac5d6097
+SHA512: 99740fa9198fdb95183af38cb41e9d903f44fd883effce3e7a8a54197950791ebb436c760b902af8e8693e4273da77ed769bce7328f4b22d06f81f4b3e8f55f6
 Description: Media player, CD player, Carousel
 
 Package: peasypartview
@@ -7287,6 +7287,21 @@ SHA1: df27345cb9b104510f7c42507b69bec9834c884c
 SHA256: 98c885631b1fb0640e4cad9c0c8d96c0ba1e8d3ae8123ff77bd968e476587002
 SHA512: 47b496146f0ea2724067fd2d7ac7ab7724bb42f93f14a297302327a2bdf9263ba724128d3adfa4e11477ece45b9bc5c1725836bf800d4e5e5dd1784e233b3056
 Description: Information about drive partitions
+
+Package: peasypdf
+Architecture: all
+Version: 5.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc, xdialog3
+Filename: ./peasypdf-gtk3_5.0_all.deb
+Size: 7320
+MD5sum: fb0db05319ad00c89712dc28a4fc0fd6
+SHA1: 2c2415eb9f26d172496b6f3e0f99dcfa1b07f298
+SHA256: ba116a6859e546147d5c2e2ee7a1bff8698080b96fa427d460fa920f00abf768
+SHA512: 33f1b506a87d6b6463188932d4010bb2cf49d57a9c35689774751fc3cb9c225e6d9b3033ffc5a44a87a2b8c4defa81110935b72309aaad13b31a9fec4a571abc
+Description: Manipulate PDF documents
 
 Package: peasypdf
 Architecture: all

@@ -7129,6 +7129,21 @@ Description: Information about drive partitions
 
 Package: peasypdf
 Architecture: all
+Version: 5.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc, xdialog3
+Filename: ./peasypdf-gtk3_5.0_all.deb
+Size: 7320
+MD5sum: fb0db05319ad00c89712dc28a4fc0fd6
+SHA1: 2c2415eb9f26d172496b6f3e0f99dcfa1b07f298
+SHA256: ba116a6859e546147d5c2e2ee7a1bff8698080b96fa427d460fa920f00abf768
+SHA512: 33f1b506a87d6b6463188932d4010bb2cf49d57a9c35689774751fc3cb9c225e6d9b3033ffc5a44a87a2b8c4defa81110935b72309aaad13b31a9fec4a571abc
+Description: Manipulate PDF documents
+
+Package: peasypdf
+Architecture: all
 Version: 4.2-2
 Priority: optional
 Section: base
