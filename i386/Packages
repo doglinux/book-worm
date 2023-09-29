@@ -3038,42 +3038,6 @@ SHA256: abfb7caf1f40adb1c7deec77416125b13fe2a16d90984656201a2d7b1e15899b
 SHA512: 67938b6c9f26a229d3b5bd96ab88ae4f6eaed62b288b81fa7c493907a7f5ecbc2f744529ae166325346daf71949fb0cef98808dc7d6055cba723c22eab045580
 Description: Display Animated Gif on Desktop
 
-Package: gmplayer
-Architecture: i386
-Version: 37926-6.3.3
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 1700
-Depends: libsndio6.1, libbluray1, libdvdread4, libcdio-cdda1, libcdio13, libcdio-paranoia1, libfribidi0, libass5, libenca0, libmad0, libvorbisenc2, libvorbis0a, libogg0, libgsm1, libtheora0, liba52-0.7.4, libmpeg2-4, libdca0, libopus0, libbs2b0, libopencore-amrnb0, libopencore-amrwb0, libxvidcore4, libvpx4, libdvdnav4, libdirectfb-1.2-9, libvdpau1, libesd0, libaudio2, libjack0 | libjack-jackd2-0, libopenal1, libdvdcss, librtmp1, libncurses5
-Conflicts: gnome-mplayer-1.0.7, mplayer
-Replaces: gnome-mplayer-1.0.7, mplayer
-Filename: ./gmplayer_37926-6.3.3_i386.deb
-Size: 6241940
-MD5sum: 93a5aa430487c1707366e400afc5c44f
-SHA1: 030f57fe8b50988bda44fbd28bd823d6d4d7969a
-SHA256: c75e77dc659aa040156bb4e04d839bd08d9283fe58accb8d424299f94ad00c1d
-SHA512: 96745abb9c85a1934bd75794b76793b78b3257d40c5e118850f94c9f4a665a89bd381bf9f321523deb7dfcdcfda8f6c3a973040813893f40eb816fc46dbe6614
-Description: Mplayer SVN-r37926, mediaplayer
-
-Package: gmplayer
-Architecture: i386
-Version: 37926-6.3.4
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 1700
-Depends: libsndio6.1, libbluray1, libdvdread4, libcdio-cdda1, libcdio13, libcdio-paranoia1, libfribidi0, libass5, libenca0, libmad0, libvorbisenc2, libvorbis0a, libogg0, libgsm1, libtheora0, liba52-0.7.4, libmpeg2-4, libdca0, libopus0, libbs2b0, libopencore-amrnb0, libopencore-amrwb0, libxvidcore4, libvpx4, libdvdnav4, libdirectfb-1.2-9, libvdpau1, libesd0, libaudio2, libjack-jackd2-0, libopenal1, libdvdcss, librtmp1, libncurses5
-Conflicts: gnome-mplayer-1.0.7, mplayer
-Replaces: gnome-mplayer-1.0.7, mplayer
-Filename: ./gmplayer_37926-6.3.4_i386.deb
-Size: 6240456
-MD5sum: 9cf7f8ee16a294d4ed3753d8a2646df3
-SHA1: acc42a5124912e5419278ede06107f2dff0826fa
-SHA256: 2da95eb252bb8cd7461c6360d7d3b44606044119506598f240364b29bacfc3d8
-SHA512: 0bbad5f8bc44594014927c7119440ee59becff3baafb56cb7058f367ef6f588b0780145d3276d3d5364605a6616f0cb9fc671089d912af8ae48fcaa356b6b3bc
-Description: Mplayer SVN-r37926, mediaplayer
-
 Package: gnetcat
 Architecture: all
 Version: 1.3-1
