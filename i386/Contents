@@ -3110,6 +3110,7 @@ usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/repo-conf					    repo-conf
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
+usr/local/bin/run-as-spot				    run-as-user
 usr/local/bin/run-as-user				    run-as-user
 usr/local/bin/samba-server-control			    samba-server-control
 usr/local/bin/scrox					    scrox

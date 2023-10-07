@@ -7320,6 +7320,22 @@ Description: peasyscale from rcrsn51 for Puppy linux
 
 Package: peasyscale
 Architecture: amd64
+Version: 3.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libpango1.0-0, libcairo2, libglib2.0-0, libgtk-3-0, xdialog3
+Filename: ./peasyscale-gtk3_3.0_amd64.deb
+Size: 12686
+MD5sum: 3c4e2650ba8660b3a6dff6e19ab4643a
+SHA1: 3130bee9272bdb04681dea9c2af33b16bc6bc6fb
+SHA256: 179cd853fab8ceb2f80244109142e75d531738748022c1a1b67798fca9e027a0
+SHA512: da6e23f724d9f4b3837b3b8522ea18a19068536b71e601ef89170ec809e291812f1b38e6f2507b1f6d951f17639d4fba0fa84075b25cb846cf7a1f0713426e5e
+Description: peasyscale from rcrsn51 for Puppy linux
+
+Package: peasyscale
+Architecture: amd64
 Version: 2.0
 Priority: optional
 Section: utilities
@@ -8836,6 +8852,22 @@ MD5sum: 0bc30a9ef924f7fef6e40f49dc34904b
 SHA1: 930d2f475a4074ff387255e824160a2a873dc1b7
 SHA256: beea23f5b31510d37d17e1cb00a6341e22c09e2eb4b44b0d135fa1b4a290d5e2
 SHA512: 1515d3cb7cc87b46e543e6470bd6677b009fffcbf84f14a0f4a3267190afa863ad5450b80cfa0c6746e074c2109fc51ba242ac919150174c5862b024bf257d6b
+Description: Run application as unprivileged user (from root account)
+
+Package: run-as-user
+Architecture: amd64
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm
+Filename: ./run-as-user_0.0.4_amd64.deb
+Size: 27188
+MD5sum: c2b6217fc8cc416416b5125ddd982e4f
+SHA1: 01593f47f1d7d1e4b4e68874c86ede5d2583ebd8
+SHA256: a32f736abb5fc1dedb2ee29578c7d320aa96a080ae3f31f8a8d23280f234cc0e
+SHA512: 38119a6823c19cd57b7bb9e8dbeedfb2b7598e7f242048510971933ed69307f1f8be57f829503ad66b735b257e053f9cb7393c039d7ba817c9c97d5c735437d1
 Description: Run application as unprivileged user (from root account)
 
 Package: samba-server-control
