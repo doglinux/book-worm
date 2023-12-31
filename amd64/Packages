@@ -3130,6 +3130,24 @@ SHA256: ddf9c9506d1903078bfcdf3bc44a8e73e4374d57f3b2b6ebd6fdfa4fa45fb305
 SHA512: 3f78c2fec1302471a4e2ff4d5b4886ba98333f592c3c4b209e8f472673d772328cc0290b385a991fe02694889cec9ceaf251c1c405c00353279b47978009933d
 Description: Google-drive Filemanager v2
 
+Package: googledrivegui3
+Architecture: all
+Version: 3.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 70
+Depends: gtkdialog, yad, rclone
+Conflicts: googledrivegui2
+Replaces: googledrivegui2
+Filename: ./googledrivegui3_3.0.0_all.deb
+Size: 15404
+MD5sum: e1eb91b6a36eb33ee3ad87d20b28bb39
+SHA1: 98cd07bf1a6e1847be95c5be30d81e601662fb2b
+SHA256: 22a119cb6150ab7dccea5fc5af9cbf405cfb44b617979389abe8b3bcc87626f7
+SHA512: 7898de502ecb5018e64b7b018d1085d65981af8868afc3bb642bb88537e4a76a30c86f673dc7ad2afe5a588cf1d6c60728c7c08da041cc77ec0ad5db265ac3e4
+Description: Google-drive Filemanager v3
+
 Package: googledrivegui
 Architecture: amd64
 Version: 0.3.2

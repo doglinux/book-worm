@@ -2762,6 +2762,8 @@ usr/local/bin/font2font					    font-viewer
 usr/local/bin/gdrive					    googledrivegui2
 usr/local/bin/gdrive_gui				    googledrivegui
 usr/local/bin/gdrive_gui2				    googledrivegui2
+usr/local/bin/gdrive_gui3				    googledrivegui3
+usr/local/bin/gdrive_gui3_shared			    googledrivegui3
 usr/local/bin/gentriesquick				    xlunch
 usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gfontviewer				    font-viewer
@@ -5325,7 +5327,7 @@ usr/local/share/obshutdown/themes/oxygen/suspend.png	    obshutdown
 usr/local/share/obshutdown/themes/oxygen/switch.png	    obshutdown
 usr/local/share/obshutdown/themes/spacefun-bg.png	    obshutdown
 usr/local/share/pixmaps/gtk-close.png			    dogradio
-usr/local/share/pixmaps/gtk-help.png			    googledrivegui2,googledrivegui
+usr/local/share/pixmaps/gtk-help.png			    googledrivegui2,googledrivegui,googledrivegui3
 usr/local/share/pixmaps/gtk-info.png			    dogradio
 usr/local/share/pixmaps/gtk-media-play.png		    dogradio
 usr/local/share/pixmaps/gtk-new.png			    dogradio
@@ -5676,6 +5678,8 @@ usr/share/applications/gnetcat.desktop			    gnetcat
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.6
 usr/share/applications/googledrivegui.desktop		    googledrivegui
 usr/share/applications/googledrivegui2.desktop		    googledrivegui2
+usr/share/applications/googledrivegui3-shared.desktop	    googledrivegui3
+usr/share/applications/googledrivegui3.desktop		    googledrivegui3
 usr/share/applications/gtk-pipe-viewer.desktop		    pipe-viewer
 usr/share/applications/gtk-youtube-viewer.desktop	    straw-viewer,youtube-viewer
 usr/share/applications/inkgui.desktop			    inkgui
@@ -9152,6 +9156,7 @@ usr/share/pixmaps/go-next.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/go-previous.png			    youtube-get2,youtube-get3
 usr/share/pixmaps/google-chrome64.png			    run-as-user
 usr/share/pixmaps/google-drive-128.png			    googledrivegui2,googledrivegui
+usr/share/pixmaps/google-drive3-128.png			    googledrivegui3
 usr/share/pixmaps/gtk-go-back.png			    youtube-get2,youtube-get3
 usr/share/pixmaps/gtk-go-forward.png			    youtube-get2,youtube-get3
 usr/share/pixmaps/gtk-info.png				    youtube-get2,youtube-get3
