@@ -65,6 +65,7 @@ etc/ppp/gprs.conf					    frisbee
 etc/ppp/options.gprs					    frisbee
 etc/ppp/peers/gprs-editable				    frisbee
 etc/profile.d/rmbrokenlinks.sh				    sfsload
+etc/profile.d/runuser.sh				    pipewire-setup
 etc/pwf/ethernet/eth0.dhcp				    PeasyWiFi
 etc/pwf/interfaces					    PeasyWiFi
 etc/pwf/udhcpc/default.script				    PeasyWiFi
@@ -177,6 +178,7 @@ home/puppy/Startup/network_tray.sh			    frisbee
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/Startup/peasywifi_tray			    PeasyWiFi
 home/puppy/Startup/rshift-gui-lite			    redshift-gui-lite
+home/puppy/Startup/run-pipewire				    pipewire-setup
 home/puppy/startup-jwm					    jwm-setup-dd64,jwmconf,jwm-setup
 index.html						    pack-it
 lib/dhcpcd/dhcpcd-hooks					    frisbee
@@ -761,6 +763,7 @@ root/Startup/peasymag_tray				    peasymag
 root/Startup/peasymp3_tray				    peasymp3
 root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
+root/Startup/run-pipewire				    pipewire-setup
 root/Startup/samba-autostart				    samba-server-control
 root/Startup/xscreener					    screener
 root/fisherman.jpg					    jwmconf
@@ -2870,6 +2873,7 @@ usr/local/bin/pfind					    pfind
 usr/local/bin/photo-cropper				    photo-cropper
 usr/local/bin/picdrop					    picdrop
 usr/local/bin/picscale					    picdrop
+usr/local/bin/pipewire-start				    pipewire-setup
 usr/local/bin/pmusic					    pmusic
 usr/local/bin/pmwget					    pmirrorget
 usr/local/bin/popup-image				    popup-image

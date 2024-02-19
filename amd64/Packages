@@ -7743,6 +7743,21 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer
 
+Package: pipewire-setup
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: pipewire, pipewire-pulse, wireplumber, pipewire-alsa, run-as-user, pavucontrol
+Filename: ./pipewire-setup_1.0.0_all.deb
+Size: 1884
+MD5sum: 392ddc2a5245381089828c6f817a0f7e
+SHA1: 3b7f5d25c1564fe6aa708e61716ca8d2b6ee8a47
+SHA256: e961e359df83a6762f6a7c07d5ac86367a5b0788a398ce7c76b38db0a77cf3ed
+SHA512: 53aeb6c81c93ef37db691b361a47851488ae81c3255cdba43b9b69cd02a9a771f883ee146d0ff664e03ae9fa14f9cb6f2667c31b4e01ffda210665da1c5a40ef
+Description: Set up pipewire
+
 Package: pmirrorget
 Architecture: all
 Version: 0.2
