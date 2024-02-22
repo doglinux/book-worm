@@ -7837,11 +7837,11 @@ Section: base
 Maintainer: fredx181
 Depends: pipewire, pipewire-pulse, wireplumber, pipewire-alsa, run-as-user, pavucontrol
 Filename: ./pipewire-setup_1.0.0_all.deb
-Size: 1884
-MD5sum: 392ddc2a5245381089828c6f817a0f7e
-SHA1: 3b7f5d25c1564fe6aa708e61716ca8d2b6ee8a47
-SHA256: e961e359df83a6762f6a7c07d5ac86367a5b0788a398ce7c76b38db0a77cf3ed
-SHA512: 53aeb6c81c93ef37db691b361a47851488ae81c3255cdba43b9b69cd02a9a771f883ee146d0ff664e03ae9fa14f9cb6f2667c31b4e01ffda210665da1c5a40ef
+Size: 2000
+MD5sum: c990e084fae3cbe6b896fc72978a1a69
+SHA1: 366c98836e7569e7868a2e518921e5780d7c8e1a
+SHA256: a5bbc7391aa401228cfa08d5d70377b6788e17df0c650ad84ab1e992d257038a
+SHA512: 9ddab3b3d2b821dd3015546666a3d95533af1856cfd8f1fe37c855230dd5c0660d898b610d7dbcf67349a67a3c25c4b195d9492db414800bad82251cc79f573c
 Description: Set up pipewire
 
 Package: pmirrorget
