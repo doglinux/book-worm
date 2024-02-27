@@ -4061,6 +4061,34 @@ Description: user, seat and session management library compatibility
  to work with libelogind0. For full details of the compatibility see
  README.Debian.
 
+Package: libelogind-compat
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 19
+Provides: libsystemd0
+Depends: libelogind0
+Conflicts: libsystemd0
+Breaks: libelogind0 (<< 246.10-4~)
+Replaces: libsystemd0
+Filename: ./libelogind-compat_250.10-5_i386.deb
+Size: 6684
+MD5sum: 12a49e0d015bd98c776c9cccf2861636
+SHA1: a82393f33c0065bd133515f1a5643ca5ea814367
+SHA256: bb1ef49f14a19d39d4712955878a019d705bba24ead4c1d41123081703714a6d
+SHA512: 669ecf639bd649dfc5bacb54561e2fa0c37642bf721959bd412440098f27a80a57e3f1992296b92e6ddc2d7c4e22e3bc1ce218786c9ef718ef238eedc0394db9
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library compatibility
+ The libelogind0 library is ABI compatible with libsystemd0. This package
+ provides the necessary symlinks to allow binaries linked against libsystemd0
+ to work with libelogind0. For full details of the compatibility see
+ README.Debian.
+
 Package: libelogind-dev
 Architecture: amd64
 Version: 243.7-1.0antix1
@@ -4246,6 +4274,27 @@ MD5sum: ec3eabcd0181f1232be4948ae9e3d35b
 SHA1: ad8930b81d3a15b29be5ea35ee067a62db74367b
 SHA256: 28471a058515a3b901a725916a7cff403f302d9a6a26fa4aba0991179778adf1
 SHA512: 48bdb2f7ccc4d2227ae409174dd57877a5f7b91a6f9a149782f7163a9ab6d0cd3255c1f0f5222a4aaa0608f27166c58690431f8570171fbbfbe0b9c921402c3c
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+
+Package: libelogind0
+Architecture: i386
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 774
+Depends: libc6 (>= 2.33), libcap2 (>= 1:2.10)
+Filename: ./libelogind0_250.10-5_i386.deb
+Size: 265520
+MD5sum: ec2f0d6a0726ea22eddd61a3bbac2519
+SHA1: 098cfae2f0dcb669b5e93a2d98b1cc39e53177b2
+SHA256: ea99602ff23935283dc33b8e04510e72ade9ee8619d7119dc2202f61e79ea9bf
+SHA512: 0ea2225b7204186cdd9e357abafffb1d593b151ad2a87c5394c4319c4d3b140ecbc76fe4b80245fcbda53035ce3b707548a6efe6c0b4f23724b174ee95457f41
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library
  This library provides runtime access to elogind session management.
