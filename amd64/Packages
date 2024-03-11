@@ -8675,6 +8675,40 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version 1.2.7, run save2flash in case of booting with EXIT parameter
  Version 1.3.0, added info message about priority and order of kernel .squashfs
 
+Package: quick-remaster
+Architecture: all
+Version: 1.4.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.4.0_all.deb
+Size: 3960320
+MD5sum: 6793870384180fcd49c84291636aa197
+SHA1: 93016d3c61306824c85053298a37f8dd034ec9f1
+SHA256: fd9099f2242639b84aca4fe16d4b5fb4761fd03d94440a1839606b417c26e1cb
+SHA512: 939fc97726d43b4a7357bfddb31ef598848ac78f6ac27c5211e797778977879a63275a4eeb5dde6734c4b39ad889ad02dd06a7450c4ce9cd1b6b2a70ff3d6dfa
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now 
+ Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
+ Version 1.2.7, run save2flash in case of booting with EXIT parameter
+ Version 1.3.0, added info message about priority and order of kernel .squashfs
+ Version 1.4.0, Added UEFI support for creating ISO
+
 Package: redshift-gui-lite
 Architecture: amd64
 Version: 0.0.3
