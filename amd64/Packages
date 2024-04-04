@@ -7822,6 +7822,21 @@ SHA256: c68b716afc232e1988e95fc3f3d76553f5f4f824230782c161824749e3cd7f75
 SHA512: a33dad9244b2dcbfb3a0ea682ef588ddd8ceba5e743ce8b63b4e20fda27e6a6804d863427c0e1f5d71ac5fb7103cddb882d32d374f6e86aee4466bb26f129036
 Description: Set up pipewire
 
+Package: pipewire-setup
+Architecture: all
+Version: 1.2.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: pipewire, pipewire-pulse, wireplumber, pipewire-alsa, run-as-user, pavucontrol
+Filename: ./pipewire-setup_1.2.0_all.deb
+Size: 2036
+MD5sum: d96f594b1b839ae6d1b31c6ad6c603d6
+SHA1: d1760addc6781ac5182af5f6236c800aa0dc95b0
+SHA256: a564f2694b7617ed4e77a81c1f960840ccc17a5040700bfbf0a154ba0149f580
+SHA512: 3906d915742d1a2d7556a04ab90d77fc7f3e0d832e36e9ca0cdb26919ac96cd0bcf1ef4a5384728e106b3d47a3fa89179ae59970662a5c3d97e8363e448ef563
+Description: Set up pipewire
+
 Package: pmirrorget
 Architecture: all
 Version: 0.2
@@ -9090,6 +9105,22 @@ MD5sum: 4d0ff8007a40814eec49efc6782550d3
 SHA1: 94d732cde11b988ef5db027f1a857b65291ddec6
 SHA256: e31c8ccd8dd5dd493327fe753316bcfba43ffe7b8079ce066e4e03d493be6df7
 SHA512: 384e25400148b509c143b23ac39ffbddc47273e38073c36e32a6ab262b85904fd963a50c5f3d9133ae9aa8261ec28a45288b965c5f3abf44cfa32afa268edec1
+Description: Run application as unprivileged user (from root account)
+
+Package: run-as-user
+Architecture: amd64
+Version: 0.0.7
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm
+Filename: ./run-as-user_0.0.7_amd64.deb
+Size: 27280
+MD5sum: b0bd72e33eb091fd6f4546d24820413d
+SHA1: 226f2cedc6d801124dcbe01382d3870ca9f6467c
+SHA256: 300a6a239f994cccd728720f98b2ca10a6d9e1ea79b4146483724a5ffadf5df8
+SHA512: 1d114c8e8cf0eef8efef5caf4762ab40076f581585cb9b2ddfd440f2c0921dfb0a2d9a22d4561f136c28314c8fa250f145c288993cc7dc825ee8c6a159e7183e
 Description: Run application as unprivileged user (from root account)
 
 Package: samba-server-control
