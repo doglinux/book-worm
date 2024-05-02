@@ -7176,6 +7176,21 @@ Description: Manipulate PDF documents
 
 Package: peasypdf
 Architecture: all
+Version: 5.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, dc, xdialog3
+Filename: ./peasypdf-gtk3_5.2_all.deb
+Size: 7442
+MD5sum: 87c0c1ec1d498a1114d6efe589c8f733
+SHA1: 5f88156d77d55c61befaf083dff8fee39ac3397b
+SHA256: 53a3a02622cb189203e590e54256c0a39ee58888361636c74d0bb590cf738525
+SHA512: aea69d1b44c0d95059dd5734bafe6f188c2fc2a288ce3084327bb71eb24b60d78f31e378bd953dcca6640341ea30f5ab6eecb05438a59bd1dc0f41f276aaf6ef
+Description: Manipulate PDF documents
+
+Package: peasypdf
+Architecture: all
 Version: 4.2-2
 Priority: optional
 Section: base
@@ -7247,6 +7262,21 @@ MD5sum: 7393bee9e0b6b0753844a519ce602e19
 SHA1: eb0adc38081e197f3bff0019f15e9290cc55a70c
 SHA256: dd002fd74f0e2f22c21a6224e9683bc48d1539762d964ffdd1eda5d19b73db6e
 SHA512: 0e0e2f5bd7068c792ff2e142680c116267ba1784fdc802f0c3d7d7d2fb74bef659e704a6b6dbe8db20ddc49a2c8ef284c55ecca62424e8d670b2df8664de7bdc
+Description: Manipulate PDF documents
+
+Package: peasypdf
+Architecture: all
+Version: 4.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc
+Filename: ./peasypdf_4.7_all.deb
+Size: 7528
+MD5sum: 1e3854e15d855e83e67f61468da3c71d
+SHA1: 472c232d853d216fb1a2f3c70f5065d48fd07a9e
+SHA256: c45c67226642e56b5dc315c86cae25848f70800f6ef593967514557189451b02
+SHA512: 9f6048e536e62fba75f64573c6f8879b6e16e77f4fe6899e99620ca5e20ffb859f2d7d48817ca1b4dc7a2200b2458ffe88d5733429b07c5c6636559aaec485fb
 Description: Manipulate PDF documents
 
 Package: peasyport
@@ -9184,6 +9214,22 @@ SHA256: 449326764d7ab06bce800e532099232b35556c9a991688dc8550b7d84a1ba82a
 SHA512: 97e4b3b8698b2038f7accf1d8883de09e7fa953648a7c35e9d17b924ab21820d00d7d00f22db68d625c3d76d95613419dbaff03d2b35d772f214b880b92f1382
 Description: Screensaver Gui
 
+Package: screener
+Architecture: amd64
+Version: 1.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 60
+Depends: yad, libc6, xautolock, xlockmore (=5.61)
+Filename: ./screener_1.0.3_amd64.deb
+Size: 14916
+MD5sum: 518e65043b694a2a24fb8446b42e55ed
+SHA1: 828fedaedbd6f186120ef27c14063ea9d90bb670
+SHA256: 76e1c4b6474dfaa62c3507874c24edc6d7757a838109fa6415adafce566d35c7
+SHA512: 092c41ec256ae3bf5b8d319fb0a923f9f037e5ce984e72c911437ccbfffbc1491cf4ce0fa6c9e9d6b701b6f81b9863d923447f929edfd3dc7e161698e74045ea
+Description: Screensaver Gui
+
 Package: scrotdlg
 Architecture: amd64
 Version: 1.0.0
@@ -10910,6 +10956,22 @@ SHA256: 79b3bbdb61dc8cb75d9e740dd09f1035cc6f4258aa611646bfc6c6a5d30ceca6
 SHA512: c1de3ba127e9baaf88f0b39cea37063e1b80f0f8efd93cf2dba4181652b5910f1f31c999983e970e7f8e55cf3292094439ceb0308174a72e85dca95d836ddaa1
 Description: Screensaver
 
+Package: xlockmore
+Architecture: amd64
+Version: 5.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 3500
+Depends: yad, libc6, libglu1-mesa
+Filename: ./xlockmore_5.61_amd64.deb
+Size: 1096900
+MD5sum: 5b568d877ddb95662f81eebb56eb3007
+SHA1: 8bdf6cd67d4c571de31b5e129be5c682bcd79df5
+SHA256: a69df25463338b256eb269b39a0f49d77efa163e4d85f07b38064cdf59cb0a5d
+SHA512: 7cf73bad5dd0f24efb34fdbdb2a3587c41b13155ae323421062e46bc8c1a56d2fd83b5a3dd8328482f20c316e665c1b8ede6bc7fc15c034540128149f3b783cc
+Description: Screensaver
+
 Package: xlunch
 Architecture: amd64
 Version: 4.1.1-3
@@ -11656,6 +11718,25 @@ SHA512: 667568679d7b40d145bfb10fd2e2eebc15041d97abd3ed27cb0ba33722f0425b8e046eac
 Description: Internet Radio Player
  v1.3, works with mpv and mplayer
  v1.7, direct online search
+
+Package: yradio
+Architecture: all
+Version: 1.8.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.0-0_all.deb
+Size: 279916
+MD5sum: 210585cec88034fedcd93f52f8726a13
+SHA1: 90a4da598bbdc09ed256ca1c0fc2c948ba382441
+SHA256: 30abbe6a1cfb272042de12b87063a3db3b8997e3edb1e6f1d9ee25780d756f97
+SHA512: 3ceab9ec9041ef0d2e3c93d7c3e60ab16aed88485d21073cb9b707d4cd6bbaabae35ab2e49cac722d38ec94ee8aeac1d7968a223664046703c90e10cbb828e69
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
 
 Package: zenity-portable
 Architecture: amd64
