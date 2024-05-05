@@ -3068,6 +3068,21 @@ SHA256: 20d76f08eb39ceb5c7f35c8650d9b5657e9d4a8d4073ef0218fded35af831ec7
 SHA512: 305faac450b3e65a70a30b26a8d7d09ced4397178434065f96a7f98134a7051e68537f240e84a89ee5a926e09359e8fec06fc71172db94c60dfdba418e13ac9b
 Description: File transfer with busybox nc
 
+Package: gnetcat
+Architecture: all
+Version: 1.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./gnetcat_1.7_all.deb
+Size: 5478
+MD5sum: 67efb8b206bbdd1121d1a5efaf14041b
+SHA1: 6e2c0586d36692641d7eff2a2c7e80756ba6f2ff
+SHA256: dce4b8502d831258d8a1d57bbe81e05426d4cb07253b7796de37294b619d725f
+SHA512: 27fbc109bab98066a4386c51ddb6abc08c0f2aff982e5f9774d0aeeb43c0a449d6a636f33970086376a7814236ebaff74af86fa03c1843d0d957c9c31ed10f15
+Description: File transfer with busybox nc
+
 Package: gnome-mplayer-1.0.7
 Architecture: i386
 Version: 1:1.0.6.3
