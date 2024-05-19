@@ -11762,11 +11762,11 @@ Maintainer: fredx181
 Installed-Size: 878
 Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
 Filename: ./yradio_1.8.1-0_all.deb
-Size: 279904
-MD5sum: 571cde054a8161ce026429a5e7bfa02e
-SHA1: 7e10473f6b65c5def775c2bfcd865fe784b731be
-SHA256: c8a25fcdaf5df48437818b4f13bc967e102ddf45bd4e8766bbbc9e54333a93e7
-SHA512: b0b7bd7f4d733b0e1950f80d7aa22ce66b56e5376d13b975d316aedd556f8bc63e7bdc970dc30ecfbe934e9bac5f6e57871cd924dede1841725104901a1f48cb
+Size: 279908
+MD5sum: 6359c82fef97f3fea982947d6d1cc72e
+SHA1: ec4881949eb52da54d3330776118dcf42b865628
+SHA256: 58a6baa941977124a7ccab5683f2142ffc7a09fd9a343a84d854c1021c479664
+SHA512: feb844a72a8d5980bc2fcb8c5d7e3ba67f0ecbcea57123c4422df48a8ef5367cfd60b8e999c04934efac55599be503a729dfc14a0b0e59912b056600d77b62c8
 Description: Internet Radio Player
  v1.3, works with mpv and mplayer
  v1.7, direct online search
