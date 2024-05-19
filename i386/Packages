@@ -12055,6 +12055,25 @@ Description: Internet Radio Player
  v1.7, direct online search
  v1.8, volume fix for in case pipewire or pulseaudio running
 
+Package: yradio
+Architecture: all
+Version: 1.8.1-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.1-0_all.deb
+Size: 279904
+MD5sum: 571cde054a8161ce026429a5e7bfa02e
+SHA1: 7e10473f6b65c5def775c2bfcd865fe784b731be
+SHA256: c8a25fcdaf5df48437818b4f13bc967e102ddf45bd4e8766bbbc9e54333a93e7
+SHA512: b0b7bd7f4d733b0e1950f80d7aa22ce66b56e5376d13b975d316aedd556f8bc63e7bdc970dc30ecfbe934e9bac5f6e57871cd924dede1841725104901a1f48cb
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+
 Package: zenity-portable
 Architecture: i386
 Version: 2.30.0
