@@ -1,0 +1,38 @@
+#!/bin/bash
+#set -x
+export LANG=C
+cmd=$*
+
+sudo_check_if_passwd_needed=$(sudo -H -S -- $cmd 2>&1 &)
+if [[ "$(echo "$sudo_check_if_passwd_needed" | grep -o "\[sudo\] password for $USER")" != "[sudo] password for $USER" ]]; then
+
+exit 1
+fi
+
+pass=$(yad --class="GSu" \
+    --title="Password" \
+    --text=" To install in /usr/local/bin: \n linux-user-chroot \n Enter password for <b>$USER</b> " \
+    --image="dialog-password" \
+    --entry --hide-text)
+ret=$?
+[[ $ret -ne 0 ]] && exit 1
+if [[ -z "$pass" ]]; then
+yad --text="  Sorry, incorrect password.  \n    Please try again. " --button="gtk-close:0"
+exec ${0} $cmd
+fi
+
+echo "$pass" | sudo  -k -S -p "" -E true
+ret=$?
+if [ $ret -ne 0 ]; then
+yad --text="  Sorry, incorrect password.  \n    Please try again. " --button="gtk-close:0"
+exec ${0} $cmd
+fi
+
+echo "$pass" | sudo -S env LD_LIBRARY_PATH=/opt/lib:/usr/local/lib sh -c "$cmd"
+ret=$?
+echo $ret
+if [ $ret = 127 ]; then
+yad --text="    Sorry, could not find:     \n   '$cmd' .  \n     Please try again. " --button="gtk-close:0"
+fi
+
+exit $?

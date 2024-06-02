@@ -3269,6 +3269,22 @@ SHA256: c57cf010917b899e57698da3d7f8cbd9b9f9e7caec65b5937bc8fed7e389a0b2
 SHA512: c47627f5d4c6e379b7b0ca0d166d55e514e36b881513602824f9cb9f8c9c9e88a29b20a175dac62ab6bfda8d95a8cb0933e11eb9b511b53f13c46116745e4d0b
 Description: greybird-theme-dd-jessie: A minimal greybird theme
 
+Package: greybird-theme-dd-stretch
+Architecture: all
+Version: 0.0.2
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 386
+Depends: libc6, gtk2-engines-pixbuf, gtk2-engines-murrine
+Conflicts: greybird-gtk-theme
+Replaces: greybird-gtk-theme
+Filename: ./greybird-theme-dd-stretch_0.0.2_all.deb
+Size: 579996
+MD5sum: a9b60e558e42040d2aa72b0ace47cd1a
+SHA1: 9b8591a6f3a0c3d6f6304107a50c5d7d0be963b8
+SHA256: 1be1892e3f833a4657b115b5e0195710cc9e36b7dcdae4db7c349f70f2cdab9a
+SHA512: 0c68369b89f891fca596de361235978a422fd94eb7ce257d2d382605564a43d6c67676fb252747d0cf0cabcf5f80a5e54c885949238a8e6324c747cd5e65fac4
+Description: greybird-theme-dd-jessie: A minimal greybird theme
+
 Package: grub4dosconfig
 Architecture: i386
 Version: 1.8.9b
@@ -3718,6 +3734,25 @@ MD5sum: 621fa75ff6d68b5690a30b08b3d57f9d
 SHA1: c76e29623401a3522f7d4b3f573957c35bdcf1ee
 SHA256: 9b94cf7d2683e9b615028dd6ebbcde7cc065b4ae9024de5e8d7ab2e07c19beeb
 SHA512: 71937ce34b8fe5eb5acaf3428a6856dbb5f7106abe95d2b18a6bb52f96c38916f696e5280db94e1cd6325721081c34b558d5b5f91328ae6e9725184bab15cb45
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
+Package: jwm-setup
+Architecture: i386
+Version: 0.0.6
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
+Filename: ./jwm-setup_0.0.6_i386.deb
+Size: 701628
+MD5sum: 57e5f41b3cf2869043512dba1240d3ee
+SHA1: 8aa0097dcdc3329c46d3e289acfff9eec2b1a7d1
+SHA256: 87a4b20cf433ea67f9e86f9d0900e43c9028e4e00a52d068aa8b9e3179f77652
+SHA512: 303f0d9a82e7ec6ea4197c726c02602e4fccd01e4364629f874725debd10f60e61fbd576f4e2fd4c3e344c460c6b0013ae5aee4132d63196dcf004f3d30a676b
 Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides

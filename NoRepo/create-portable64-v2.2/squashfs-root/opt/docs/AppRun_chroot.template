@@ -1,0 +1,260 @@
+#!/bin/bash
+
+export LAUNCHDIR="$(dirname "$(readlink -f "$0")")"
+#cd "$LAUNCHDIR"
+export ARG=$*
+
+# Variable for the command to run (programname, e.g. abiword)
+export CMD=
+ASROOT=
+
+	if [ "$ASROOT" = "yes" ]; then
+if [ -z `which gsu` ]; then
+[ "`whoami`" != "root" ] && exec gksu ${0} "$@"
+else
+[ "`whoami`" != "root" ] && exec gsu ${0} "$@"
+fi
+	fi
+
+#export PATH="./usr/bin:./usr/sbin:./usr/local/bin:/root/my-applications/bin/:$PATH"
+#export LD_LIBRARY_PATH="$LAUNCHDIR/usr/lib:$LAUNCHDIR/usr/lib/i386-linux-gnu/:$LAUNCHDIR/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PATH="${LAUNCHDIR}"/usr/bin/:"${LAUNCHDIR}"/usr/sbin/:"${LAUNCHDIR}"/usr/local/bin/:"${LAUNCHDIR}"/usr/games/:"${LAUNCHDIR}"/bin/:"${LAUNCHDIR}"/sbin/:"${PATH}"
+export LD_LIBRARY_PATH="${LAUNCHDIR}"/usr/lib/:"${LAUNCHDIR}"/usr/lib/i386-linux-gnu/:"${LAUNCHDIR}"/usr/lib/x86_64-linux-gnu/:"${LAUNCHDIR}"/usr/lib32/:"${LAUNCHDIR}"/usr/lib64/:"${LAUNCHDIR}"/lib/:"${LAUNCHDIR}"/lib/i386-linux-gnu/:"${LAUNCHDIR}"/lib/x86_64-linux-gnu/:"${LAUNCHDIR}"/lib32/:"${LAUNCHDIR}"/lib64/:"${LD_LIBRARY_PATH}"
+export PYTHONPATH="${LAUNCHDIR}"/usr/share/pyshared/:"${PYTHONPATH}"
+export PYTHONHOME="${LAUNCHDIR}"/usr/
+#export XDG_DATA_DIRS="${LAUNCHDIR}"/usr/share/:"${XDG_DATA_DIRS}"
+export PERLLIB="${LAUNCHDIR}"/usr/share/perl5/:"${LAUNCHDIR}"/usr/lib/perl5/:"${PERLLIB}"
+export GSETTINGS_SCHEMA_DIR="${LAUNCHDIR}"/usr/share/glib-2.0/schemas/:"${GSETTINGS_SCHEMA_DIR}"
+export QT_PLUGIN_PATH="${LAUNCHDIR}"/usr/lib/qt4/plugins/:"${LAUNCHDIR}"/usr/lib/i386-linux-gnu/qt4/plugins/:"${LAUNCHDIR}"/usr/lib/x86_64-linux-gnu/qt4/plugins/:"${LAUNCHDIR}"/usr/lib32/qt4/plugins/:"${LAUNCHDIR}"/usr/lib64/qt4/plugins/:"${LAUNCHDIR}"/usr/lib/qt5/plugins/:"${LAUNCHDIR}"/usr/lib/i386-linux-gnu/qt5/plugins/:"${LAUNCHDIR}"/usr/lib/x86_64-linux-gnu/qt5/plugins/:"${LAUNCHDIR}"/usr/lib32/qt5/plugins/:"${LAUNCHDIR}"/usr/lib64/qt5/plugins/:"${QT_PLUGIN_PATH}"
+
+# Function to cleanly unmount if the script is interrupted
+exitfn () {
+	if [ "`whoami`" != "root" ]; then
+echo "Unloading module..."
+# Unmount everything
+fusermount -u "$UNION" -o allow_other 2> /dev/null
+   if [ "$?" -ne 0 ]; then # Try the -l umount option (lazy) in this case
+echo "Try to gently force unmounting of $UNION..."
+fusermount -u -z "$UNION" -o allow_other 2> /dev/null
+# As last resort use brute force in this (rare) case
+[ "$?" -ne 0 ] && killall unionfs-fuse && echo "Forced unmounting of $UNION"
+fusermount -u -z "$APP" -o allow_other 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   else
+fusermount -u "$APP" -o allow_other 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   fi
+	else
+echo "Unloading module..."
+#post_actions_run_list
+# Unmount everything
+umount "$UNION"/tmp
+umount "$UNION"/proc
+umount "$UNION"/dev/pts
+umount "$UNION"/dev
+umount "$UNION"/sys
+umount "$UNION"
+   if [ "$?" -ne 0 ]; then # Try the -l umount option (lazy) in this case
+echo "Try to gently force unmounting of $UNION..."
+umount -l "$UNION"/tmp
+umount -l "$UNION"/proc 2> /dev/null
+umount -l "$UNION"/dev/pts
+umount -l "$UNION"/dev
+umount -l "$UNION"/sys 2> /dev/null
+umount -l "$UNION"
+# As last resort use brute force in this (rare) case
+[ "$?" -ne 0 ] && killall unionfs-fuse && echo "Forced unmounting of $UNION"
+umount -l "$APP" 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   else
+umount "$APP" 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   fi
+	fi
+rm -rf /.unionfs 2> /dev/null
+rm -rf $HOME/unionfs 2> /dev/null
+exit
+}
+
+trap "exitfn" 1 2 15           # Set up SIGINT trap to call function 'exitfn'.
+
+
+SFSDIR="$(dirname "$(readlink -f "$0")")"
+export SFS=
+
+
+unmount_all() {
+	if [ "`whoami`" != "root" ]; then
+echo "Unloading module..."
+# Unmount everything
+fusermount -u "$UNION" -o allow_other 2> /dev/null
+   if [ "$?" -ne 0 ]; then # Try the -l umount option (lazy) in this case
+echo "Try to gently force unmounting of $UNION..."
+fusermount -u -z "$UNION" -o allow_other 2> /dev/null
+# As last resort use brute force in this (rare) case
+[ "$?" -ne 0 ] && killall unionfs-fuse && echo "Forced unmounting of $UNION"
+fusermount -u -z "$APP" -o allow_other 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   else
+fusermount -u "$APP" -o allow_other 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP"
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   fi
+	else
+echo "Unloading module..."
+#post_actions_run_list
+# Unmount everything
+umount "$UNION"/tmp
+umount "$UNION"/proc
+umount "$UNION"/dev/pts
+umount "$UNION"/dev
+umount "$UNION"/sys
+umount "$UNION"
+   if [ "$?" -ne 0 ]; then # Try the -l umount option (lazy) in this case
+echo "Try to gently force unmounting of $UNION..."
+umount -l "$UNION"/tmp
+umount -l "$UNION"/proc 2> /dev/null
+umount -l "$UNION"/dev/pts
+umount -l "$UNION"/dev
+umount -l "$UNION"/sys 2> /dev/null
+umount -l "$UNION"
+# As last resort use brute force in this (rare) case
+[ "$?" -ne 0 ] && killall unionfs-fuse && echo "Forced unmounting of $UNION"
+umount -l "$APP" 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP" 2> /dev/null
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   else
+umount "$APP" 2> /dev/null
+rmdir "$UNION"
+rmdir "$APP" 2> /dev/null
+[ "$?" -eq 0 ] && echo "Succesfully unmounted and cleaned up!"
+   fi
+	fi
+rm -rf /.unionfs 2> /dev/null
+rm -rf $HOME/unionfs 2> /dev/null
+exit
+}
+
+post_actions_run_list()
+{
+MODULES=$(ls $APP/lib/modules 2>/dev/null)
+  if [ "$MODULES" ]; then 
+    echo -e $Green"ACTION:"$Color_Off" updating loadable kernel modules list"
+    depmod -a
+  fi
+ICONS=$(ls $APP/usr/share/icons/hicolor 2>/dev/null)
+  if [ "$ICONS" ]; then 
+    echo -e $Green"ACTION:"$Color_Off" rebuilding the gtk+ icon cache"
+    gtk-update-icon-cache --force /usr/share/icons/hicolor &>/dev/null 2>&1
+  fi
+DESKTOP=$(ls $APP/usr/share/applications 2>/dev/null)
+  if [ "$DESKTOP" ]; then
+    echo -e $Green"ACTION:"$Color_Off" updating mimeinfo cache"
+    update-desktop-database &>/dev/null 2>&1
+    rm -r $HOME/.cache &>/dev/null 2>&1
+  fi
+GSETTINGS=$(ls $APP/usr/share/glib-2.0/schemas 2>/dev/null)
+  if [ "$GSETTINGS" ]; then
+    echo -e $Green"ACTION:"$Color_Off" gsettings xml schema files"
+    /usr/lib/x86_64-linux-gnu/glib-2.0/glib-compile-schemas /usr/share/glib-2.0/schemas &>/dev/null 2>&1
+  fi
+FONTS=$(ls $APP/usr/share/fonts/TTF 2>/dev/null)
+  if [ "$FONTS" ]; then
+    echo -e $Green"ACTION:"$Color_Off" updating font cache"
+    fc-cache -f -s > /dev/null
+    mkfontscale /usr/share/fonts/TTF
+    mkfontdir /usr/share/fonts/TTF
+  fi
+}
+export -f post_actions_run_list
+
+# Mount the directories, prepare the chroot
+	if [ "`whoami`" != "root" ]; then
+# Setup temp directories for mounting
+export UNION=/mnt/unionsfs_$RANDOM; mkdir -p "$UNION"
+export APP=/mnt/appsfs_$RANDOM; mkdir -p "$APP"
+if [ -n "$SFS" ]; then
+squashfuse "$SFS" "$APP"
+else
+export APP="$LAUNCHDIR"
+fi
+unionfs-fuse -o nonempty -o allow_other,suid,dev -o cow /=RW:"$APP"=RO "$UNION"
+	else
+# Setup temp directories for mounting
+export UNION=/mnt/unionsfs_$RANDOM; mkdir -p "$UNION"
+if [ -n "$SFS" ]; then
+export APP=/mnt/appsfs_$RANDOM; mkdir -p "$APP"
+mount -o loop "$SFS" "$APP"
+else
+export APP="$LAUNCHDIR"
+fi
+which unionfs-fuse
+unionfs-fuse -V
+unionfs-fuse -o nonempty -o allow_other,suid,dev -o cow /=RW:"$APP"=RO "$UNION"
+
+# Do the required mount binds for chroot
+mount --bind /proc "$UNION"/proc
+mount --bind /dev "$UNION"/dev
+mount --bind /sys "$UNION"/sys
+mount -t devpts devpts "$UNION"/dev/pts
+mount --rbind /tmp "$UNION"/tmp
+	fi
+
+function comnd() {
+echo -e "\e[0;32mFlying into the chroot now... :)\033[0m"
+if [ -n "$SFS" ]; then
+export PATH="$APP/opt/bin:$APP/usr/local/sbin:$APP/usr/local/bin:$APP/usr/sbin:$APP/usr/bin:$APP/sbin:$APP/bin:$APP/usr/local/games:$APP/usr/games:$APP/root/my-applications/bin/:$PATH"
+export LD_LIBRARY_PATH="$APP/opt/lib:$APP/usr/local/lib:$APP/usr/lib:$APP/usr/lib/x86_64-linux-gnu:$APP/lib/x86_64-linux-gnu:$APP/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PYTHONPATH="${APP}"/usr/share/pyshared/:"${PYTHONPATH}"
+export PYTHONHOME="${APP}"/usr/
+#export XDG_DATA_DIRS="${APP}"/usr/share/:"${XDG_DATA_DIRS}"
+export PERLLIB="${APP}"/usr/share/perl5/:"${APP}"/usr/lib/perl5/:"${PERLLIB}"
+export GSETTINGS_SCHEMA_DIR="${APP}"/usr/share/glib-2.0/schemas/:"${GSETTINGS_SCHEMA_DIR}"
+export QT_PLUGIN_PATH="${APP}"/usr/lib/qt4/plugins/:"${APP}"/usr/lib/i386-linux-gnu/qt4/plugins/:"${APP}"/usr/lib/x86_64-linux-gnu/qt4/plugins/:"${APP}"/usr/lib32/qt4/plugins/:"${APP}"/usr/lib64/qt4/plugins/:"${APP}"/usr/lib/qt5/plugins/:"${APP}"/usr/lib/i386-linux-gnu/qt5/plugins/:"${APP}"/usr/lib/x86_64-linux-gnu/qt5/plugins/:"${APP}"/usr/lib32/qt5/plugins/:"${APP}"/usr/lib64/qt5/plugins/:"${QT_PLUGIN_PATH}"
+echo LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+fi
+DEFAULT_XDG_DATA_DIRS=/usr/local/share/:/usr/share/
+if [ -z "$XDG_DATA_DIRS" ]; then
+    export XDG_DATA_DIRS="$DEFAULT_XDG_DATA_DIRS":$APP/usr/share/
+else
+    export XDG_DATA_DIRS="$XDG_DATA_DIRS":$APP/usr/share/
+fi
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+echo PATH=$PATH
+echo
+echo LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+echo
+echo -e "\e[0;32mExecuting $CMD ...\033[0m"
+if [ -n "$ARG" ]; then
+$CMD "$ARG"
+else
+$CMD
+fi
+msg="Checking $CMD for missing libraries... \n$(ldd `which $CMD` | grep 'not found')\nAdding these depencencies will probably fix if the program doesn't run."
+echo -e "$msg"
+}
+export -f comnd
+	if [ "`whoami`" != "root" ]; then
+xhost +local:
+linux-user-chroot --mount-proc /proc --mount-bind /dev /dev  --mount-bind /dev/pts /dev/pts  --mount-bind /sys /sys --mount-bind /tmp /tmp "$UNION" /bin/bash -c comnd
+unmount_all
+	else
+xhost +local:
+#chroot "$UNION" /bin/bash -c post_actions_run_list
+chroot "$UNION" /bin/bash -c comnd
+sleep 2
+unmount_all
+	fi
+exit 0

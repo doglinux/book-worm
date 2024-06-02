@@ -1,0 +1,11 @@
+#!/bin/bash
+
+usr/bin/xorriso -dev "$(dirname "$1")/$(basename $2)" -padding 0 -map "$1" / -- -map "$1/.DirIcon" /.DirIcon -zisofs level=9:block_size=128k -chown_r 0 / -- set_filter_r --zisofs /
+echo
+echo "Embedding runtime..."
+dd if=runtime of="$(dirname "$1")/$(basename $2)" conv=notrunc
+echo
+echo "Making $(dirname "$1")/$(basename $2) executable..."
+chmod 0755 "$(dirname "$1")/$(basename $2)"
+echo
+echo "Done !"

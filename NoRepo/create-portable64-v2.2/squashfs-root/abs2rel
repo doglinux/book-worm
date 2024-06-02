@@ -1,0 +1,100 @@
+#!/bin/bash
+
+# Convert symlinks pointing to absolute path to relative path
+
+LAUNCHDIR="$(dirname "$(readlink -f "$0")")"
+cd "$LAUNCHDIR"
+echo "We are in $PWD, the root of this AppDir"
+
+abs2rel () {
+set -e
+declare base=$1
+declare target=$2
+declare -a base_part=()
+declare -a target_part=()
+
+#Split path elements & canonicalize
+OFS="$IFS"; IFS='/'
+bpl=0;
+for bp in $base; do
+    case "$bp" in
+        ".");;
+        "..") let "bpl=$bpl-1" ;;
+        *) base_part[${bpl}]="$bp" ; let "bpl=$bpl+1";;
+    esac
+done
+tpl=0;
+for tp in $target; do
+    case "$tp" in
+        ".");;
+        "..") let "tpl=$tpl-1" ;;
+        *) target_part[${tpl}]="$tp" ; let "tpl=$tpl+1";;
+    esac
+done
+IFS="$OFS"
+
+#Count common prefix
+common=0
+for (( i=0 ; i<$bpl ; i++ )); do
+    if [ "${base_part[$i]}" = "${target_part[$common]}" ] ; then
+        let "common=$common+1"
+    else
+        break   
+    fi
+done
+
+#Compute number of directories up
+let "updir=$bpl-$common" || updir=0 #if the expression is zero, 'let' fails
+
+#trivial case (after canonical decomposition)
+if [ $updir -eq 0 ]; then
+    echo .
+    exit
+fi
+
+#Print updirs
+for (( i=0 ; i<$updir ; i++ )); do
+    echo -n ../
+done
+
+#Print remaining path
+for (( i=$common ; i<$tpl ; i++ )); do
+    if [ $i -ne $common ]; then
+        echo -n "/"
+    fi
+    if [ "" != "${target_part[$i]}" ] ; then
+        echo -n "${target_part[$i]}"
+    fi
+done
+#One last newline
+echo
+}
+export -f abs2rel
+
+echo "Simulating first, to see what will happen..."
+echo
+sleep 3
+find . -type l -xtype l | while read i; do
+abs=$(readlink "$i" | grep "^\/")
+if [ -n "$abs" ]; then 
+echo abs=$abs
+relsrc=$(abs2rel "$(dirname "$i" | sed 's/^.//')" "$abs")
+echo ln -sf "$relsrc" "$i"  #"$(basename "$i")"
+fi
+done
+
+echo
+echo "Looking OK?"
+echo "If there is no output from simulating, there are no absolute symlinks"
+read -s -n 1 -p "Press any key to continue, now it is for real . . ."
+echo
+find . -type l -xtype l | while read i; do
+abs=$(readlink "$i" | grep "^\/")
+if [ -n "$abs" ]; then 
+echo abs=$abs
+relsrc=$(abs2rel "$(dirname "$i" | sed 's/^.//')" "$abs")
+ln -sf "$relsrc" "$i"  #"$(basename "$i")"
+fi
+done
+
+exit
