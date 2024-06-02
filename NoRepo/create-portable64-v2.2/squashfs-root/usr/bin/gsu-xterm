@@ -1,7 +1,0 @@
-#!/bin/sh 
-
-if [ "`whoami`" != "root" ]; then 
-xterm -T "gsu-xterm" -si -sb -fg white -bg SkyBlue4 -geometry 65x14 -e sudo env LD_LIBRARY_PATH=/opt/lib:/usr/local/lib "$@" 
-else 
-"$@" 
-fi 
