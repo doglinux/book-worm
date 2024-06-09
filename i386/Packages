@@ -3285,6 +3285,22 @@ SHA256: 1be1892e3f833a4657b115b5e0195710cc9e36b7dcdae4db7c349f70f2cdab9a
 SHA512: 0c68369b89f891fca596de361235978a422fd94eb7ce257d2d382605564a43d6c67676fb252747d0cf0cabcf5f80a5e54c885949238a8e6324c747cd5e65fac4
 Description: greybird-theme-dd-jessie: A minimal greybird theme
 
+Package: greybird-theme-dd-stretch
+Architecture: all
+Version: 0.0.3
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 386
+Depends: libc6, gtk2-engines-pixbuf, gtk2-engines-murrine
+Conflicts: greybird-gtk-theme
+Replaces: greybird-gtk-theme
+Filename: ./greybird-theme-dd-stretch_0.0.3_all.deb
+Size: 197108
+MD5sum: 2c8dc97d766bd6cc8e4cd784ba874802
+SHA1: 230289954e4089aed1ff6902674526d1dcc1ec0e
+SHA256: a368cdbc931b7c9ee19bcee73961a8ab50d0967bec000df71e37c4dcb8d6c28a
+SHA512: 078a4ec67d2a47928584d32d35b6c5b8cb00bc1cdbd5d604175bdceb27c5d9d4d8d15e5cfdba189a96b70b6aee950c5d880fabff6b1b117015929cd2d87f2826
+Description: greybird-theme-dd-jessie: A minimal greybird theme
+
 Package: grub4dosconfig
 Architecture: i386
 Version: 1.8.9b
@@ -6830,6 +6846,22 @@ MD5sum: 731276f09fa1ba0ffbbfb28a185b1358
 SHA1: 29541cb61fb229c9fc1a449a7e33b43baaa6f8dc
 SHA256: 57bd5cdb62a22eab144504f709f16a34d519995a9dfc3573a66c1574a8d9512c
 SHA512: 045c74d056425a979e89a717ef838091e6c0639a192d410b48a8eba727349e1fd261a6cc4b1ecdef08c3ccae7560f95094bf2f44326f4e601463baa90d3338d2
+Description: packit-converted-pet-to-deb
+
+Package: pack-it
+Architecture: all
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 116
+Depends: libc6, gtkdialog
+Filename: ./pack-it_1.0.2_all.deb
+Size: 31628
+MD5sum: adf60d0d2a2d599eb0d1e9e508387cab
+SHA1: 25ae1f64f71c957fd664797b78e807e47c3a3df5
+SHA256: d54aad94a1efbae346689ed0d2b8994bdfc129c0e0df2b2606aaa70c0fd0a538
+SHA512: abe90f69ec370bac6fc6ca496d613eafa5f5e463db3c794b41222cf0653a9821eb05bc6f0ce8118761dd8fe5b8a66a1f9ca3b664c5bf8a5b66ebb60829bf8d76
 Description: packit-converted-pet-to-deb
 
 Package: palemoon
