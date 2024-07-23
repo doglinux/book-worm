@@ -8981,6 +8981,8 @@ usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/default_thumb.jpg pipe-view
 usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/feed.png pipe-viewer
 usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/feed_gray.png pipe-viewer
 usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/gtk-pipe-viewer.png pipe-viewer
+usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/left_arrow.png pipe-viewer
+usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/right_arrow.png pipe-viewer
 usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/spinner.gif pipe-viewer
 usr/share/perl5/auto/share/dist/WWW-PipeViewer/icons/user.png pipe-viewer
 usr/share/perl5/auto/share/dist/WWW-StrawViewer/gtk-straw-viewer.desktop straw-viewer
