@@ -1989,6 +1989,23 @@ SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
 SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
 Description: Light window manager
 
+Package: edit-sfs-pcmanfm-qt
+Architecture: all
+Version: 2.5
+Priority: extra
+Section: x11
+Maintainer: root
+Installed-Size: 134
+Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, pcmanfm-qt, disktype, coreutils, xterm
+Replaces: edit-sfs-rox, edit-sfs-thunar, edit-sfs-pcmanfm
+Filename: ./edit-sfs-pcmanfm-qt_2.5_all.deb
+Size: 6608
+MD5sum: a72d58457c2524205c2413e2b8ec6e41
+SHA1: aafe8f4773629615d83f0f3c5a994438fa76650c
+SHA256: e20cb5c20561d3750b7b674d107358c8a0d501d5f227c93e3138407a0c0cd4b9
+SHA512: 368198ce7ee65a4aaa835474e02735415bcb33ab054a6aab42f425e11a73256ec82f6882197723619311568b44ae81cca3a0197e130aafaf11029aa6050d8604
+Description: squashfs editor, converter
+
 Package: edit-sfs-pcmanfm
 Architecture: all
 Version: 2.5
@@ -2469,6 +2486,21 @@ MD5sum: 8a3b6322ede772a5d9da5cccb75db03e
 SHA1: 3c5842feeaf4a6d0da30a4ef9730dbd64a84ffa4
 SHA256: 1e2c6302f8fec35f2f16ba7465f7ed466ad003feabc75a6ec3f88f53f414feb3
 SHA512: 085aad01cfcacbb714702cae9705ad16d817ed2a5d1d28d9e267a4652776d2096f0499748524d739ee6140bb9f8679e5b57478990eb00e05a98ad84d81591967
+Description: Mount images, savefile, modules
+
+Package: filemnt-pcmanfm-qt
+Architecture: i386
+Version: 1.0.2
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype, menu, pcmanfm-qt
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
+Filename: ./filemnt-pcmanfm-qt_1.0.2_i386.deb
+Size: 20440
+MD5sum: baa7713b137f7be065390a1d1ddda86c
+SHA1: b189fa61624efe75f54097c27c76ee65ea73c542
+SHA256: 5742d7ad6153138acbea070407707ae8a254e70f7c95452b46ad073e7220601d
+SHA512: 8d34d6593b1fd5da38e440e98dbcc905eb11d6ce45fd1234d94e17571ac404c77a7fc9d768199d9f9c74b1749b92b1329186e5ef71ae15b87b300cf8c6ff0715
 Description: Mount images, savefile, modules
 
 Package: filemnt-pcmanfm
