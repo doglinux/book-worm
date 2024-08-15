@@ -8397,6 +8397,32 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  v1.1.7: bug fix for snapmergepuppy script
  v1.1.8: bug fix for snapmergepuppy script
 
+Package: porteusbootscripts
+Architecture: all
+Version: 1.1.9
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
+Filename: ./porteusbootscripts_1.1.9_all.deb
+Size: 20920
+MD5sum: c620eb4b0a495c9757c7feef2717b005
+SHA1: 3ea400dd41772d4f37bdaea8131e5ddd09ef0b17
+SHA256: 2ccb6601dd4e7d5850efa16d89a583f2455f26d875103db13b1c7b1d7376bf3a
+SHA512: 1a076810cf2dec95dbfb2d8ba7a5c14d420460c0eda0c07b26bb9552529e9c0b88803b74db334ef267ad6bce55d883a89ed26343809313f2cb784c19c3754e45
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ v1.1.0:
+ improved snapmergepuppy script (for save on exit)
+ and added systemd service saveatshutdown.service (save on exit from console)
+ v1.1.3: bug fix for snapmergepuppy script
+ v1.1.6: bug fix for snapmergepuppy script
+ v1.1.7: bug fix for snapmergepuppy script
+ v1.1.8: bug fix for snapmergepuppy script
+ v1.1.9: should fix save on exit on console in case slim is installed
+
 Package: pppoeconf
 Architecture: all
 Version: 1.21+nmu2
