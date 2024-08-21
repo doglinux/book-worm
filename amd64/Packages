@@ -7976,6 +7976,29 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer
 
+Package: pipe-viewer
+Architecture: all
+Version: 0.5.2
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl, liblwp-protocol-https-perl, wget, fonts-symbola, yt-dlp
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.5.2_all.deb
+Size: 255768
+MD5sum: 636356cb7a628b3055387b3d2edff15c
+SHA1: 5e3a73583e601eac83e25f683616b3b91e978bbb
+SHA256: d5f06d2b6fc7bd77ba5a9fd0a6dab5f2b1405c1a7b3b4f1163ecc752c6ec01ed
+SHA512: a6252b5e88ec85e6c2816bf7cd6f31e5c1f7be648938e715cd02c24b7a7a7235c73e3eface36e760bc7dabd1240911a060415e027922ab4d4187ca340d7a0b67
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
 Package: pipewire-setup
 Architecture: all
 Version: 1.0.0
@@ -11682,6 +11705,38 @@ Description: YouTube Downloader, frontend for youtube-dl
  -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
  -v1.5.4, fixed when id starts with a dash (-), that download failed
 
+Package: youtube-get3
+Architecture: all
+Version: 1.5.5
+Maintainer: fredx181
+Installed-Size: 1978
+Depends: libc6, yad, sed, wget, python3, curl, ffmpeg, yt-dlp
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.5_all.deb
+Size: 54820
+MD5sum: f545cc5f775f1bb329c570f6c2aaac82
+SHA1: edc156fdbb8de1ba64d9f59ac73092543040492d
+SHA256: c4529bd425f908974b3f052e4eb27dad8386d5c41b811606e09b3b60b73bfbb6
+SHA512: 5bcf562dac2d900db37b0bd09126037da1f25aa14bed1545ffa1ef72a3d70a39ee31233c6de45d298eaf2568e6736b8a206511cf251b9a863cc7d6a9fc292e77
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+ -v1.5.4, fixed when id starts with a dash (-), that download failed
+
 Package: youtube-get
 Architecture: all
 Version: 0.1.1
@@ -11811,6 +11866,27 @@ MD5sum: 3ef9f753c5a684f2f8e3d0936fc16ad8
 SHA1: de3cc7199c16e114e1358c760525ada09257525b
 SHA256: 51f77353899d28942a195b5d1985f18bfc0bab717ec4d7d8c49fcc4f97f04fd5
 SHA512: deb9bdb1637746862f998445018e3b1638010212a6fd6109d1166ebdde283205a2b1527337d383d5702715d43ad09af5292d42cf2a6e3ea9ee1834b11e7f5c7f
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.9.6-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk3-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, fonts-symbola, yt-dlp
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Replaces: straw-viewer, pipe-viewer
+Filename: ./youtube-viewer_3.9.6-1_all.deb
+Size: 251036
+MD5sum: 00c202e30b15298a2bae3b7f08a27796
+SHA1: 054052b844af536df9cc411c45c6f4072fe90d4a
+SHA256: 47d4d699fc4e89311916722d4d37f0c8d9847997f676eb1f684f8fdf39be98f9
+SHA512: c2e8dc24bd68f00aed5e64e8d58ee510482458442d185269717a22920fc4a2946ac99bf9adadf6df82e49f10ebff387f514d1373083aecaa0f25889e6bebb3b6
 Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
@@ -11952,6 +12028,32 @@ Description: Internet Radio Player
  v1.3, works with mpv and mplayer
  v1.7, direct online search
  v1.8, volume fix for in case pipewire or pulseaudio running
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2024.08.06
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2024.08.06_all.deb
+Size: 2834816
+MD5sum: ace9f6f86514c99d08ba7cbd643e0526
+SHA1: 873e8a7f0db5338294601e67d06da9e176c5f12f
+SHA256: 117ee7aab338042828df248941108b9c400328da08a3c701417d041a2eaa79ee
+SHA512: fdfb98a546ea311859f324152d389d92073273636de3653159560cb60000b320f96756542d5c971830cecf5f8a853f4dd2396082ef6c51e93b62691671749445
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
 
 Package: zenity-portable
 Architecture: amd64

@@ -3178,7 +3178,7 @@ usr/local/bin/youtube-get-xterm				    youtube-get
 usr/local/bin/youtube-get2				    youtube-get2
 usr/local/bin/youtube-get3				    youtube-get3
 usr/local/bin/yradio					    yradio
-usr/local/bin/yt-dlp					    youtube-get3
+usr/local/bin/yt-dlp					    youtube-get3,yt-dlp
 usr/local/bin/zenity					    zenity-portable
 usr/local/conky-clock/Analog_clock/choice.sh		    conkyclock
 usr/local/conky-clock/Analog_clock/clock.lua		    conkyclock
