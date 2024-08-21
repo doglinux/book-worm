@@ -6,24 +6,24 @@ Codename: bookworm
 Architectures: amd64
 Components: main
 Description: DebianDog repository
-Date: Wed, 21 Aug 2024 08:51:51 +0000
+Date: Wed, 21 Aug 2024 17:58:45 +0000
 MD5Sum:
- 9d6b30c77ea66bc12253009b1cf5feec           515654 Packages
- 65e94ba0f6d61ba7ad3a286fd37ab9fb           166667 Packages.gz
- 0bf75175584725ad98e073cfb9129771              189 Release
- 65e94ba0f6d61ba7ad3a286fd37ab9fb           166667 Translation-en.gz
+ 4879e734f7ce3ca06c36ce9acab1f2b6           516304 Packages
+ 187ab28ccebaf31f4fb8e8f13047e952           167025 Packages.gz
+ 66a9649d587031e524207214be9d45a1              189 Release
+ 187ab28ccebaf31f4fb8e8f13047e952           167025 Translation-en.gz
 SHA1:
- af4559a789fe8e1f6cc166cf3233daeddaddc26d           515654 Packages
- b897f572f6b28d77cdfe945f9d1bda3a33272abd           166667 Packages.gz
- 26a9fe1a15331400f2bb6fae8086763935a8b485              189 Release
- b897f572f6b28d77cdfe945f9d1bda3a33272abd           166667 Translation-en.gz
+ 5435f69df136267d1c0e6934972c0b82bc0b0cf2           516304 Packages
+ 1932627219e3c6f40262eb91e420707062e85a03           167025 Packages.gz
+ 6fb10f097d33191bd4188a1844405453c42d9dd1              189 Release
+ 1932627219e3c6f40262eb91e420707062e85a03           167025 Translation-en.gz
 SHA256:
- bb41c4b26fc690ab277c0d9aab97ae748878a4e3d820ca0d72668f741e3bb5d2           515654 Packages
- a08268163bf55ead0a68a15aa5f3c7e723da18378cc8e3f3dfdf9ff0a102580a           166667 Packages.gz
- ae6f94231f17962b8e031b9d8cedec0cb21b662185228ed3c377298243fcdb6f              189 Release
- a08268163bf55ead0a68a15aa5f3c7e723da18378cc8e3f3dfdf9ff0a102580a           166667 Translation-en.gz
+ 9bf56d13b530dbf87e4fcb9e7f75b6839dd2f7c7ab14aad340d88dc71108f076           516304 Packages
+ dea9a6d3ad41c3dbdf951f8ecedbe01dcbca3aacc41222e40f81b888e0c77f21           167025 Packages.gz
+ 3da5a50f4215511fad2f8fb67d8ab4a1c431b2f79935b8e0c76a6e0ea575743b              189 Release
+ dea9a6d3ad41c3dbdf951f8ecedbe01dcbca3aacc41222e40f81b888e0c77f21           167025 Translation-en.gz
 SHA512:
- bb9f715134f6e6834427c5ddbfa48c48d7320d0f24c1af75ecfb5032ee4519d0068bc59b46633137885e2508974dab12b7022598ae7745915819bde8b9596148           515654 Packages
- 3027c6a8e2a5a191b26e327d57e36532d019c967b01961f7bf867c778cc085cd39ada2fa1660787fa86b3718f49540aa5bc752490ab2ba8c7ccd083ebf132a68           166667 Packages.gz
- 6be32238dd9abefc3c9b90b47f4cc8f0ceb9493371bc32674f250a01ff856e5c896c6e7038db81a26f5e1a6262f16c282745370e8040f9c378a0b5fd69f6e36a              189 Release
- 3027c6a8e2a5a191b26e327d57e36532d019c967b01961f7bf867c778cc085cd39ada2fa1660787fa86b3718f49540aa5bc752490ab2ba8c7ccd083ebf132a68           166667 Translation-en.gz
+ bc6f78c2fd6d6c685a050f8d136f2cb48083b978dafe665b2294a83023856f0833599b61ccd65e356835b4477d27fc8a36617162a38e8fd5d8fb27379ec72d1a           516304 Packages
+ 6cb206a44dc9a2f5f6a69a1b07891b876097774a8bfe8bce4acbf1aaafa27cc34fb71459e2eccf3cff706ab3a21e0bfc477b95045b79f6d8b848fed9e30b7bfd           167025 Packages.gz
+ 5064a85f596c7c23554387fbcefdd308dc72866eddfbf1ac80b4f1570e80a6bc6a38fccf15445080a84fb95f623988996874e95f590dc9fa67f21ca8f94b95ba              189 Release
+ 6cb206a44dc9a2f5f6a69a1b07891b876097774a8bfe8bce4acbf1aaafa27cc34fb71459e2eccf3cff706ab3a21e0bfc477b95045b79f6d8b848fed9e30b7bfd           167025 Translation-en.gz
