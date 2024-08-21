@@ -536,6 +536,20 @@ SHA256: b8770298b9ca0108f9abb937b5499525d6fede80aaf7a686f2bbcbcd34ee0664
 SHA512: 00fad29cfc1e3fe93362ab853a3e22bcd578919d6a6153df612796861b6b8a51bac52c4d12fbc78cc7f112025fac8ae743282ff7818c1e2ca5d7cae98ae8112a
 Description: Edits media files
 
+Package: avsplitter
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Maintainer: fredx181
+Depends: ffmpeg, gtkdialog
+Filename: ./avsplitter_1.0.0_all.deb
+Size: 28220
+MD5sum: 09a81f5654fa03ac4058456dc656a8cf
+SHA1: 37c75a7c3ad17ea2acfab7a060c7e5e97b8bb22e
+SHA256: 61013e61d7e71f4dec2552d084662202ae3f62ef9b22d537f7ff6328ce227986
+SHA512: b90e0038521245af6881c75ac6de6771d0fa2fc182e47c8acd3192f987f4aee54c02bf95ba568d9c1f24c73cc7551d600f941ba119315eb9a3c2a275e0662a0e
+Description: Split Video/Audio into chapters
+
 Package: azpainter
 Architecture: amd64
 Version: 2.1.1

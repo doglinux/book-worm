@@ -2720,6 +2720,7 @@ usr/local/bin/audio-converter				    audio-converter
 usr/local/bin/av-clipper-joiner				    av-clipper-joiner
 usr/local/bin/av-converter				    av-converter
 usr/local/bin/av-editor					    av-editor
+usr/local/bin/avsplitter				    avsplitter
 usr/local/bin/batterup					    batterup
 usr/local/bin/batterup_calibrate			    batterup
 usr/local/bin/batterup_restart				    batterup
@@ -5673,6 +5674,7 @@ usr/share/applications/audio-converter.desktop		    audio-converter
 usr/share/applications/av-clipper-joiner.desktop	    av-clipper-joiner
 usr/share/applications/av-converter.desktop		    av-converter
 usr/share/applications/av-editor.desktop		    av-editor
+usr/share/applications/avsplitter.desktop		    avsplitter
 usr/share/applications/azpainter.desktop		    azpainter
 usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/batterup_calibrate.desktop	    batterup
@@ -9031,6 +9033,7 @@ usr/share/pixmaps/audio-converter.png			    audio-converter
 usr/share/pixmaps/av-clipper-joiner.png			    av-clipper-joiner
 usr/share/pixmaps/av-converter.png			    av-converter
 usr/share/pixmaps/av-editor.png				    av-editor
+usr/share/pixmaps/avsplitter.png			    avsplitter
 usr/share/pixmaps/azpainter.png				    azpainter
 usr/share/pixmaps/backup-restore.png			    SaveFolderBackup
 usr/share/pixmaps/batterup.png				    batterup
