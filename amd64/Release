@@ -6,24 +6,24 @@ Codename: bookworm
 Architectures: amd64
 Components: main
 Description: DebianDog repository
-Date: Thu, 22 Aug 2024 06:21:51 +0000
+Date: Thu, 22 Aug 2024 06:48:14 +0000
 MD5Sum:
  2c2d6c34ba2ace2ebca2806537f15989           518449 Packages
- 6331f05b5f750a351be76ffe5d5c32d2           167431 Packages.gz
- 53039d1dd2f5b59e09e531f4446dfff6              189 Release
- 6331f05b5f750a351be76ffe5d5c32d2           167431 Translation-en.gz
+ 613afdce0bea0ee3dae829eaeebfdc95           167431 Packages.gz
+ 53036c3c89f3329b9f2c0589de40b52f              189 Release
+ 613afdce0bea0ee3dae829eaeebfdc95           167431 Translation-en.gz
 SHA1:
  d1aae0d7d7e54983f7f60efaaa06c607922fe0d7           518449 Packages
- d7a6a1eb46443e5060335e8c1c2d558fb43bb1a1           167431 Packages.gz
- ef90c65d07a799cd0ed63b9d38111373a4f081ba              189 Release
- d7a6a1eb46443e5060335e8c1c2d558fb43bb1a1           167431 Translation-en.gz
+ 53b1247f0cb59ae68ef4d5e2f08d115fc15496af           167431 Packages.gz
+ 646655ab3397fb5f35240f524279cac5e78c561d              189 Release
+ 53b1247f0cb59ae68ef4d5e2f08d115fc15496af           167431 Translation-en.gz
 SHA256:
  e5f43d60f231afdf9dd605a3d722bdff39fde1dd9fd374faa87f94af3a334f81           518449 Packages
- a147431b5b8e78bb3165ff07fe033444356d2e491176da5a9967ace16b2900be           167431 Packages.gz
- 7268fe9bd5a5571e4deb94987c071616c00ffb57decb7153f4faad792a2c6dfb              189 Release
- a147431b5b8e78bb3165ff07fe033444356d2e491176da5a9967ace16b2900be           167431 Translation-en.gz
+ 35257293d96cb5ac3a6ea780629658122f4f6185010b7a0fc2df9460dbde157e           167431 Packages.gz
+ 0b0ae1df099ca359cf4faae9e92e514415c39fac53e9eef54f2292d52ecafc81              189 Release
+ 35257293d96cb5ac3a6ea780629658122f4f6185010b7a0fc2df9460dbde157e           167431 Translation-en.gz
 SHA512:
  4c965e66d1cb19b646b7ea3f34a5346a77fe36a9a145400b20c3577f447cd99417d1d033a3306bf7454c930f91921c32c120cb7d7be7700090fbd4acf92f441d           518449 Packages
- 4cd065762b20275ff329a91fa5059c9aa145aeaeb447132770afb4ea0767c45cae9f4e7f687907fb1296fcf71d3ab96ad1e1bf2cbd98e28fa8a181a35de8e687           167431 Packages.gz
- e47dc396ea3a7c94a4f699f2603c02eef3960af634e977140f19a7f8184ce152228fc9db2b5ff827cc6d7f883cb54ae8d21f580790c1fdd32b556ed22c0f6ec9              189 Release
- 4cd065762b20275ff329a91fa5059c9aa145aeaeb447132770afb4ea0767c45cae9f4e7f687907fb1296fcf71d3ab96ad1e1bf2cbd98e28fa8a181a35de8e687           167431 Translation-en.gz
+ c3a7336d5724c46cbf9a49b4bcdcb24d80b571bf0ecf1922c5ad83db081103631af732a2cbe6f824f2e92fbcba94c4b1caa1cf5c546963b95e40d1dbf1481a3c           167431 Packages.gz
+ 04c2f9a1778361cd884516f39a102daed4492e6da221c99204d3c52b005c5d83bd7468a14ba5dc47c0964d32f027effbea997b3a54fc78c9cb0727e98afd32ae              189 Release
+ c3a7336d5724c46cbf9a49b4bcdcb24d80b571bf0ecf1922c5ad83db081103631af732a2cbe6f824f2e92fbcba94c4b1caa1cf5c546963b95e40d1dbf1481a3c           167431 Translation-en.gz

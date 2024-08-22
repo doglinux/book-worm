@@ -9722,6 +9722,22 @@ SHA256: 117682a373ee663ddc2861546b40672290612ee901502040fa9be88b9b8d5868
 SHA512: 6d725c540ef844d65d0a1b30fc27fd6923406764b9c879d310f78ec14117075ed28a6dfde8b269c7ebd485c924012513589590260b58d899acc1ae0ea455d0dc
 Description: Makes a basic LAN web server
 
+Package: simplecdripper
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 962
+Depends: cdparanoia, cd-discid, flac, vorbis-tools, lame, cuetools, shntool, fdkaac, monkeys-audio, atomicparsley, id3v2
+Filename: ./simplecdripper_1.0.0_i386.deb
+Size: 918422
+MD5sum: 173cbaa2971499f40526c6446ff87fd0
+SHA1: 4d45c4687b315ada3126d1caa4f99b64e2c214f3
+SHA256: 9ef05bf79114585bfe0eb1b9dd1c127d97ccea20827acafd0481c35efb3726fc
+SHA512: 3e5095b5d1ada6f3d7b6c42a5809a1899fa83a2118d8ba7d0cc8f19b6cc0185a602f281d98e3cef651a0477db0dcd360eb5d34f49aa035a50c4495977cc4867d
+Description: Simple Audio CD ripper
+
 Package: slim
 Architecture: i386
 Version: 1:1.3.6-4-dd
