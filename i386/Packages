@@ -8562,6 +8562,22 @@ Description: /proc file system utilities
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
 
+Package: pulsecapgui
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 962
+Depends: pulseaudio-utils, vorbis-tools, lame
+Filename: ./pulsecapgui_1.0.0_all.deb
+Size: 5572
+MD5sum: 50bc7e5803f3bb21d4b0eacb27558f4e
+SHA1: f832ad64f98057e444fcac1527a1084678ae0986
+SHA256: 64adf97aa9c3c1961f3ab57b6133a1c959f9f6732c485ab6464c897c49676fd2
+SHA512: 7c45567c0d6fca9f0ce478ade1953ec660a439431b89ef5c020883b6228f0c7d851f57dce1e70c5958160d906d74fdc2c079e1bb00018ef19d472982ff43752a
+Description: Record what you hear (for pulse or pipewire)
+
 Package: pup-volume-monitor
 Architecture: i386
 Version: 0.1.15-2
@@ -9662,6 +9678,22 @@ Description: Load a *.squashfs or *.sfs module.
  v1.0.9 added service to unload sfs module at shutdown
  v2.0.0 now mount module READ-WRITE, so  it's possible that files included can be modified or replaced.
 
+Package: simple-http-filemanager
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 50
+Depends: gtkdialog, curl
+Filename: ./simple-http-filemanager_1.0.0_all.deb
+Size: 9084
+MD5sum: cafe29bc30561734bd41b9a988c00111
+SHA1: cf834d93eee67301f95efd5a838b03ad61223786
+SHA256: c429561c5c6c3fc2d0d36ae95c7cfbdffe38aac6344eb024070a8034084b4c3e
+SHA512: b0095cf2724508415d91ba5ecf3b6aabbace73c2777836d180ba8fe4428ceef9370a282dab214b71e02a5629121bcc27224742b4cba02b83242926b2a5fc8c6a
+Description: two pane http filemanager
+
 Package: simple-python-http-server
 Architecture: all
 Version: 1.2
@@ -9706,6 +9738,24 @@ SHA1: dd5e668284f069e2c736738f09bbf975ca0871a0
 SHA256: e6fc95674269a8c5953588dc6e83b1da69526aebbadb1ea4e2d9b3ec308ad970
 SHA512: c3a319971834c369fd2a10aefc263cc8b47914e68d1e35c48f1805820dcfa5ef30d10c66df7eb2c584a03f18ae1c947c9230d224c4ccb7d70420c424c849b7ea
 Description: Makes a basic LAN web server
+
+Package: simple-python3-http-server
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 50
+Depends: python3, gtkdialog, curl
+Conflicts: simple-python-http-server
+Replaces: simple-python-http-server
+Filename: ./simple-python3-http-server_1.0.0_all.deb
+Size: 10684
+MD5sum: 4139c52749c92b6c07b0770e60d8a684
+SHA1: 1e8706893ecdc5fcc09c8a5d89c01a8c9a6a4c64
+SHA256: e49998305af470e26bd896cdf718cbc37248f50d74422b097cffefac1d5643c0
+SHA512: 0c4ea400225fd59c91207f4b44694e54b0dc9129cc96ce37afe40a6a96a09f98d36cb4c527e1f9f0eae11eabf64e721c445bcbefd9ba111a26abe73c7c8ef6e9
+Description: simple-python3-http-server alternative version, supports multiple file upload
 
 Package: simple-python-http-server
 Architecture: all

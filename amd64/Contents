@@ -2791,6 +2791,7 @@ usr/local/bin/gsu-xterm					    gsu
 usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/hidd					    bt4stretch
+usr/local/bin/http-fman					    simple-http-filemanager
 usr/local/bin/image-changer				    peasyscale
 usr/local/bin/inkgui					    inkgui
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
@@ -2884,6 +2885,7 @@ usr/local/bin/popup-image				    popup-image
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/postergo					    gopoststuff
 usr/local/bin/postergo-sel				    gopoststuff
+usr/local/bin/pulsecapgui				    pulsecapgui
 usr/local/bin/qiv-gui-info.sh				    qiv-slideshow
 usr/local/bin/qiv-gui.sh				    qiv-slideshow
 usr/local/bin/quick-remastergui				    quick-remaster
@@ -2903,6 +2905,7 @@ usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwm-setup,jwmconf
 usr/local/bin/sfs-get					    sfs-get-smokey-get
 usr/local/bin/simpleHTTPserver				    simple-python-http-server
+usr/local/bin/simpleHTTPserver-python3			    simple-python3-http-server
 usr/local/bin/smokey-get				    sfs-get-smokey-get
 usr/local/bin/snappie					    snappie
 usr/local/bin/sound-card-selector			    sound-card-selector
@@ -2922,6 +2925,8 @@ usr/local/bin/umounting					    diff-sync-umount
 usr/local/bin/unzipper					    unzipper
 usr/local/bin/update-menus				    jwm-setup-dd64
 usr/local/bin/upgrade-kernel				    upgrade-kernel
+usr/local/bin/uploadserver				    simple-python3-http-server
+usr/local/bin/uploadserver.py				    simple-python3-http-server
 usr/local/bin/vnstat-tray				    vnstat-tray
 usr/local/bin/weav					    weav
 usr/local/bin/websearch					    websearch
@@ -5769,6 +5774,7 @@ usr/share/applications/pmwget.desktop			    pmirrorget
 usr/share/applications/poster-sel.desktop		    gopoststuff
 usr/share/applications/poster.desktop			    gopoststuff
 usr/share/applications/pppoeconf.desktop		    pppoeconf
+usr/share/applications/pulsecap2.desktop		    pulsecapgui
 usr/share/applications/python2.7.desktop		    python2.7
 usr/share/applications/qiv-slideshow.desktop		    qiv-slideshow
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
@@ -5782,6 +5788,8 @@ usr/share/applications/scdripper.desktop		    simplecdripper
 usr/share/applications/screener.desktop			    screener
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
+usr/share/applications/simpleHTTPfilemanager.desktop	    simple-http-filemanager
+usr/share/applications/simpleHTTPserver-python3.desktop	    simple-python3-http-server
 usr/share/applications/simpleHTTPserver.desktop		    simple-python-http-server
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/snappie.desktop			    snappie
@@ -9283,6 +9291,7 @@ usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/partview-24.png			    peasypartview
 usr/share/pixmaps/partview-48.png			    peasypartview
+usr/share/pixmaps/pcap2.png				    pulsecapgui
 usr/share/pixmaps/peasy-ytdl.png			    peasy-ytdl
 usr/share/pixmaps/peasyclock.png			    peasyclock
 usr/share/pixmaps/peasydial.png				    peasydial
@@ -9336,7 +9345,8 @@ usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sfs.png				    edit-sfs-pcmanfm-qt,edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown.png				    jwm-setup-dd64,jwmconf,jwm-setup
-usr/share/pixmaps/simpleHTTPserver.png			    simple-python-http-server
+usr/share/pixmaps/simpleHTTPfman.png			    simple-http-filemanager
+usr/share/pixmaps/simpleHTTPserver.png			    simple-python-http-server,simple-python3-http-server
 usr/share/pixmaps/snappie.png				    snappie
 usr/share/pixmaps/soundcard.png				    sound-card-selector
 usr/share/pixmaps/suspend.png				    jwm-setup,jwmconf
