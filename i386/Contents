@@ -10,8 +10,6 @@ etc/NetworkManager/dispatcher.d/01-ifupdown		    network-manager
 etc/X11/Xsession.d/20slim_locale			    slim
 etc/X11/app-defaults/Chooser				    xdm
 etc/X11/app-defaults/Xvidtune				    x11-xserver-utils
-etc/X11/autologin					    slim
-etc/X11/no-autologin					    slim
 etc/X11/openbox						    openbox
 etc/X11/xdm/Xaccess					    xdm
 etc/X11/xdm/Xreset					    xdm
@@ -69,8 +67,6 @@ etc/init.d/udev						    eudev
 etc/init.d/wpa_action.sh				    wifibox
 etc/init.d/xdm						    xdm
 etc/init/slim.conf					    slim
-etc/inittab-auto					    slim
-etc/inittab-noauto					    slim
 etc/insserv.conf.d/xdm					    xdm
 etc/jwm/system.jwmrc					    jwm
 etc/locale.conf						    wifibox-dhcpcd,wifibox
@@ -621,8 +617,6 @@ opt/deadbeef/share/locale/uk/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/vi/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/zh_CN/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/zh_TW/LC_MESSAGES/deadbeef.mo	    deadbeef-static
-opt/docs/getty@tty1.service-autologin			    slim
-opt/docs/getty@tty1.service-no-autologin		    slim
 opt/docs/jwm-themes/jwm.tail-blood_red			    jwm-setup,jwmconf
 opt/docs/jwm-themes/jwm.tail-blue_jay			    jwm-setup,jwmconf
 opt/docs/jwm-themes/jwm.tail-calm_blue			    jwm-setup,jwmconf
@@ -3135,7 +3129,6 @@ usr/local/bin/st-slim					    xfce4-whiskermenu-plugin-mod
 usr/local/bin/start-jwm					    jwm-setup
 usr/local/bin/start-ntpdate				    tzupdate
 usr/local/bin/start-openbox				    jwm-setup
-usr/local/bin/start-stop-slim				    slim
 usr/local/bin/start-stop-tzupdate			    tzupdate
 usr/local/bin/syncing					    diff-sync-umount
 usr/local/bin/timidity					    timidity-old
@@ -6721,7 +6714,6 @@ usr/share/applications/snappie.desktop			    snappie
 usr/share/applications/sns.desktop			    sns
 usr/share/applications/sound-card-selector.desktop	    sound-card-selector
 usr/share/applications/start-lumina-info.desktop	    lumina-desktop-debdog
-usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/synaptic.desktop			    synaptic
 usr/share/applications/syncing.desktop			    diff-sync-umount
 usr/share/applications/tas.desktop			    takeashot
@@ -11393,7 +11385,6 @@ usr/share/pixmaps/leafpad.xpm				    leafpad
 usr/share/pixmaps/loadsfs.png				    portablesfs-loadsfs-fuse
 usr/share/pixmaps/locale8.png				    locale-conf
 usr/share/pixmaps/lock.png				    jwm-setup,jwmconf
-usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwm-setup,jwmconf
 usr/share/pixmaps/madedit.xpm				    madedit
 usr/share/pixmaps/makedebpkg.png			    makedebpackage
@@ -11853,7 +11844,6 @@ usr/share/slim/themes/debian-joy/panel.png		    slim
 usr/share/slim/themes/debian-joy/slim.theme		    slim
 usr/share/slim/themes/debian-lines/COPYRIGHT.background	    slim
 usr/share/slim/themes/debian-lines/COPYRIGHT.panel	    slim
-usr/share/slim/themes/debian-lines/background.jpg	    slim
 usr/share/slim/themes/debian-lines/background.png	    slim
 usr/share/slim/themes/debian-lines/panel.png		    slim
 usr/share/slim/themes/debian-lines/slim.theme		    slim
