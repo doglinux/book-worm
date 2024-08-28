@@ -185,6 +185,20 @@ SHA256: c7cff061ff83b4ac5bbc62c6dfb0fc6a26b90677e65c51418913095857f79924
 SHA512: c4dea3a99e465a561f6e47daa312afb29fcc5a3b60ae5564a792e61bbc33f496b89098734571ce4452a20e5ddec4ed39060fe03d08f1a9753b2f314c9aaae647
 Description: Pulseaudio emulator using alsa
 
+Package: apulse
+Architecture: amd64
+Version: 20240828
+Priority: extra
+Maintainer: rcrsn51
+Depends: libasound2 (>= 1.0.18), libc6 (>= 2.17), libglib2.0-0 (>= 2.14.0)
+Filename: ./apulse_20240828_amd64.deb
+Size: 32872
+MD5sum: 9bc27ecc88dcc1fc28ab6139d3ae0492
+SHA1: d3a9f9cd08f74acb29e331fc61d84a140d4fd203
+SHA256: 50a19331fccf5d7ce39c26f339ffa822b0e913c8a76d80a6a63daec1af41274b
+SHA512: fc69217dd7179f6c6e512a416d4f6ab7cf15199f7dba0b20ccfc9cef67061fd06826595c65a68d4aa1c3822bbd5f81b7589e9b8f2259a68c4767b6beed310e99
+Description: Pulseaudio emulator using alsa
+
 Package: audio-converter
 Architecture: all
 Version: 1.4-1
