@@ -11349,6 +11349,23 @@ SHA512: 44e706705a90607611827b4a6daadf20b4ffa242ce3158cb4d16d7d2193d5f7c5b770b05
 Description: xlunch by Tomas M
  Graphical app launcher
 
+Package: xlunch
+Architecture: amd64
+Version: 4.1.1-5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libimlib2, xterm, librsvg2-bin, devilspie2
+Filename: ./xlunch_4.1.1-5_amd64.deb
+Size: 1317064
+MD5sum: 0c632e3c0e74570731d66eb87a53242f
+SHA1: 4245645fb293c9cf678d85542e0b4e52d10e42f8
+SHA256: 81e54af77201cde546a6e0dd0ece8d220a6ff1e0aecb9f5eedaac1d12f7ec314
+SHA512: 6085813e01150c772dc020effd5dddbe9f1af377770755877981ab99d654da7fd48dc0571f3b0ab3178e6d9e3b22fbfc8d50d6b02c7451abc369982e60f104da
+Description: xlunch by Tomas M
+ Graphical app launcher
+
 Package: xscreenshot
 Architecture: amd64
 Version: 1.1

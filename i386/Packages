@@ -11547,13 +11547,13 @@ Priority: optional
 Section: utilities
 Maintainer: fredx181
 Installed-Size: 1600
-Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libimlib2, libpng16-16, xterm, librsvg2-bin, devilspie2
+Depends: libimlib2, xterm, librsvg2-bin, devilspie2
 Filename: ./xlunch_4.1.1-5_i386.deb
-Size: 1319870
-MD5sum: 2451a5b7c3598504005f3fb15567b628
-SHA1: 9723d5e50ebaa0e5229d4c1dc12d5257a75ce996
-SHA256: f6284b0d25fd8742dff72395e3dbbe77870e582e08ade3342bb0e0a55b5f82c9
-SHA512: 78beb5d74ab1b3c6cf89183c36f1031c81e7d08758c6a35fbbbdfcd515aed80e1fa74ff901535058ba8e24144c8e91a55163b6e96dffab3574d75b83c47c509c
+Size: 1317436
+MD5sum: e1e3210e4d9f1814ff029934e1c80d29
+SHA1: 2f78011ea68aa797f263df6c035aa1ccc51db109
+SHA256: a900244ffba560d2d8256b1a4b912b50b8024aac63a5fbd8d30530e8e91566c4
+SHA512: 88705d4475d4689c048d1938727c25b44896ff0a1220b0b762f641ff39fdd690ce569a6453cdd57847bfb078cfcf16ebcd6ecb1f0f1cd0cd89c27f0f528bd8ec
 Description: xlunch by Tomas M
  Graphical app launcher
 

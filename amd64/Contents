@@ -2771,6 +2771,7 @@ usr/local/bin/gdrive_gui				    googledrivegui
 usr/local/bin/gdrive_gui2				    googledrivegui2
 usr/local/bin/gdrive_gui3				    googledrivegui3
 usr/local/bin/gdrive_gui3_shared			    googledrivegui3
+usr/local/bin/genentries				    xlunch
 usr/local/bin/gentriesquick				    xlunch
 usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gfontviewer				    font-viewer
@@ -5715,6 +5716,7 @@ usr/share/applications/fixdepinstall.desktop		    fixdepinstall
 usr/share/applications/flashplayerchoice.desktop	    flashplayerchoice
 usr/share/applications/font-viewer.desktop		    font-viewer
 usr/share/applications/frisbee.desktop			    frisbee
+usr/share/applications/gen-entries.desktop		    xlunch
 usr/share/applications/gfontview.desktop		    font-viewer
 usr/share/applications/gftp.desktop			    gftp-gtk
 usr/share/applications/gnetcat.desktop			    gnetcat
