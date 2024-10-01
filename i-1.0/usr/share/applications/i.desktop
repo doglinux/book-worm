@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=i[nfo]
+Comment=Get a lot of info about a file
+Exec=env I_GUI=true i
+Icon=i
+Type=Application
+Categories=Utility;
+NoDisplay=false
