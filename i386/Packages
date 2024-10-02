@@ -1374,6 +1374,32 @@ Description: POSIX-compliant shell
  dependencies (making it more robust against software or hardware
  failures), it is used as the default system shell on Debian systems.
 
+Package: dash
+Architecture: i386
+Version: 1:0.5.12-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 221
+Pre-Depends: libc6 (>= 2.33)
+Depends: debianutils (>= 5.6-0.1), dpkg (>= 1.19.1)
+Filename: ./dash_0.5.12-2_i386.deb
+Size: 120636
+MD5sum: 8f5508f0f8cb74177ce89a11913a7845
+SHA1: a89ac61cbef54ab3399ba79716f3e72d89a4ce1e
+SHA256: ebf6a3b3d5d923da082314271b0db9415717b80fc3a5a4e908bb14b68445d155
+SHA512: 8410f2cf9bec4dc36be08a35771d83269867550209e7cc1519b9b0fc291e6b6c48fb7564c8e0b6c92c3288bdd88c060dab6fa1470a8a83c0aa507d95d86d9697
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+
 Package: deadbeef-static
 Architecture: i386
 Version: 0.7.2-2
@@ -2295,6 +2321,33 @@ Description: Enlightened Sound Daemon - Common files
  audio streams for playback by a single device.
  .
  This package contains the documentation and configuration files.
+
+Package: eudev
+Architecture: i386
+Version: 234:3.2.12-4+deb12u1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
+Installed-Size: 9452
+Provides: udev (= 1:3.2.12-4+deb12u1)
+Depends: adduser, libeudev1 (= 234:3.2.12-4+deb12u1), procps, util-linux (>= 2.27.1), libblkid1 (>= 2.25), libc6 (>= 2.34), libkmod2 (>= 15), libselinux1 (>= 3.1~)
+Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7)
+Replaces: bash-completion (<< 1:2.1), hal, udev (>= 215), udev (<< 1:1:3.2.9+devuan4)
+Filename: ./eudev_3.2.12-4+deb12u1_i386.deb
+Size: 1294884
+MD5sum: 721e5cea456b4ff41c9c8527d1cd836b
+SHA1: aa944aace691e348f486aa21fd2060cf0e7d3ca2
+SHA256: 246a0966c7a5a8e07a5b3d6d9e61413ee3d461cd40629adfe7b5384ca99a37ea
+SHA512: 63a1023264d73d9db37778f06387da8670804792744bebe09030ac09dda7409b401964162152c66c2b0424218cdc69d4cb15a4ad81e4d588bb52ea9146806f3a
+Homepage: https://github.com/eudev-project/eudev
+Description: /dev/ and hotplug management daemon
+ eudev is a daemon which dynamically creates and removes device nodes
+ from /dev/, handles hotplug events and loads drivers at boot time.
+ .
+ eudev is a fork of udev in systemd, version 215, by Jaret Jay Cantu from
+ Gentoo in 2015.
 
 Package: eudev
 Architecture: i386
@@ -4461,6 +4514,33 @@ Description: libeudev development files
 
 Package: libeudev1
 Architecture: i386
+Version: 234:3.2.12-4+deb12u1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: eudev
+Origin: Devuan
+Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
+Installed-Size: 211
+Provides: libudev1 (= 1:3.2.12-4+deb12u1)
+Depends: libc6 (>= 2.34), libselinux1 (>= 3.1~)
+Breaks: libudev1 (<< 1:3.2.9+devuan4)
+Replaces: libudev1 (>= 215), libudev1 (<< 1:3.2.9+devuan4)
+Filename: ./libeudev1_3.2.12-4+deb12u1_i386.deb
+Size: 79448
+MD5sum: c58b4e0dbe1faf0dfd0e598da2a9d404
+SHA1: d006d7b15d6ee70afc314e7c37850d8a249d0eac
+SHA256: 7b1d72c715beb05ce0a52af74762ac6e31bf487de48b8eb769bc9d4ef1a67d80
+SHA512: 8bf73cc285b6909a7424f70b714d809f29e93dcd57b3a3d9fbe765d002397ea56288dfe6c112671bace9b5eb47a98b06b850aa57a4911626709eb00762c8fc3d
+Homepage: https://github.com/eudev-project/eudev
+Description: libeudev shared library
+ eudev is a daemon which dynamically creates and removes device nodes
+ from /dev/, handles hotplug events and loads drivers at boot time.
+ .
+ This library provides access to eudev device information.
+
+Package: libeudev1
+Architecture: i386
 Version: 232:3.2.8
 Multi-Arch: same
 Priority: important
@@ -6544,23 +6624,23 @@ Description: Transitional package to ensure multiarch compatibility
 
 Package: network-manager
 Architecture: i386
-Version: 1.42.4-1devuan1
+Version: 1:1.42.4-1devuan1
 Priority: optional
 Section: net
 Origin: Devuan
 Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 15546
 Pre-Depends: init-system-helpers (>= 1.54~)
-Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libcurl3-gnutls (>= 7.24.0), libelogind0 (>= 246.10), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.68.0), libgnutls30 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.4.0), libndp0 (>= 1.2), libnewt0.52 (>= 0.52.23), libnm0 (= 1.42.4-1devuan1), libpsl5 (>= 0.13.0), libreadline8 (>= 6.0), libselinux1 (>= 3.1~), libteamdctl0 (>= 1.9), default-dbus-system-bus | dbus-system-bus, udev, adduser, default-logind | logind, polkitd | policykit-1
+Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libcurl3-gnutls (>= 7.24.0), libelogind0 (>= 246.10), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.68.0), libgnutls30 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.4.0), libndp0 (>= 1.2), libnewt0.52 (>= 0.52.23), libnm0 (= 1:1.42.4-1devuan1), libpsl5 (>= 0.13.0), libreadline8 (>= 6.0), libselinux1 (>= 3.1~), libteamdctl0 (>= 1.9), default-dbus-system-bus | dbus-system-bus, udev, adduser, default-logind | logind, polkitd | policykit-1, wpasupplicant
 Recommends: ppp, dnsmasq-base, modemmanager, wireless-regdb, wpasupplicant
 Suggests: libteam-utils, iptables
 Breaks: ppp (>= 2.4.9-2~), ppp (<< 2.4.9-1+~)
 Filename: ./network-manager_1.42.4-1devuan1_i386.deb
-Size: 3196024
-MD5sum: 3d297db30fb9554acc245116ee6152ef
-SHA1: 1ff0aa097fe551019e52917e89312d29677ddc70
-SHA256: 60ee7d7da4426e6da2755e47365d6c713f8e1391b845d81ee5133e16f4e0449b
-SHA512: 2ad2a44731f3c96faecd20c23071b0da453480daeb195de9b9e67ec7421fe04533818af1b3436f1c2518034de204bc34c411c59d70e93113d7a1b13a97f1d162
+Size: 3195568
+MD5sum: f4b536054d8ca7aa5730bd25f095c983
+SHA1: 3339f75293a9276904480204f09f0011fc23f85f
+SHA256: 8f3eb80cbe7295f1d176d952ca3b986e971e238e50ed7fced54ebb9adc10dd24
+SHA512: 1ded3584ba222e94cb180f4d5197abb3f5deda984934cd1ff485a0c31c29300dc739529c14a5205ad3d3db0d1ed3e7203f2f9cac3cedd55a1382b61ad5c1a10a
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
@@ -6577,8 +6657,7 @@ Description: network management framework (daemon and userspace tools)
   * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
     connection sharing.
   * libteam-utils: Network Team driver allows multiple network interfaces to be
-    teamed together and act like a single one. This process is called "ethernet
-    bonding", "channel teaming" or "link aggregation".
+    teamed together and act like a single one. This process is called ethernet
 
 Package: ntpdate
 Architecture: i386
