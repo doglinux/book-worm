@@ -5226,7 +5226,7 @@ Description: library for dealing with netlink sockets
 
 Package: libnm0
 Architecture: amd64
-Version: 1.42.4-1devuan1
+Version: 1:1.42.4-1devuan1
 Multi-Arch: same
 Priority: optional
 Section: libs
@@ -5236,11 +5236,11 @@ Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 1507
 Depends: libc6 (>= 2.34), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.43.2), libgnutls30 (>= 3.7.2)
 Filename: ./libnm0_1.42.4-1devuan1_amd64.deb
-Size: 437348
-MD5sum: 50b28e5ddfdeae90c127a4416f898ab2
-SHA1: 7c8d3477f714744902e0f81a2958afd29e082311
-SHA256: 2e300efc11d7a15dddb416677b463f2cd3fe7e80bef09d8c75f10093c8d73ab4
-SHA512: f46ed754cdd196de9cf2d3cf733873d23954ac0ba2ce32c4c3da0d84426f92cafb69127f55a483e5350812c588cbadae36e97447b17686d21b7924ce45433257
+Size: 437160
+MD5sum: 1df5bc3c79d15b95bb2b1d75d5f68250
+SHA1: e941f564b6d1e57249de3ac6c5111041a19b332d
+SHA256: 8e4daa485c020c57a270cd522fb4ab81401c1b4b3666677e51a5e51078aecc36
+SHA512: 3d8887cc2e3bb4511a7b9ccbedb9c2dad06d4742aded4734ee445fe895c5d51b215607501080c42ca9e77e9b9095008a214c869bbc46364943fae7332ca098ff
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 Description: GObject-based client library for NetworkManager
  NetworkManager is a system network service that manages your network devices
@@ -6540,23 +6540,23 @@ Description: Transitional package to ensure multiarch compatibility
 
 Package: network-manager
 Architecture: amd64
-Version: 1.42.4-1devuan1
+Version: 1:1.42.4-1devuan1
 Priority: optional
 Section: net
 Origin: Devuan
 Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 15137
 Pre-Depends: init-system-helpers (>= 1.54~)
-Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libcurl3-gnutls (>= 7.24.0), libelogind0 (>= 246.10), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.68.0), libgnutls30 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.4.0), libndp0 (>= 1.2), libnewt0.52 (>= 0.52.23), libnm0 (= 1.42.4-1devuan1), libpsl5 (>= 0.13.0), libreadline8 (>= 6.0), libselinux1 (>= 3.1~), libteamdctl0 (>= 1.9), default-dbus-system-bus | dbus-system-bus, udev, adduser, default-logind | logind, polkitd | policykit-1
+Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.34), libcurl3-gnutls (>= 7.24.0), libelogind0 (>= 246.10), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.68.0), libgnutls30 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.4.0), libndp0 (>= 1.2), libnewt0.52 (>= 0.52.23), libnm0 (= 1:1.42.4-1devuan1), libpsl5 (>= 0.13.0), libreadline8 (>= 6.0), libselinux1 (>= 3.1~), libteamdctl0 (>= 1.9), default-dbus-system-bus | dbus-system-bus, udev, adduser, default-logind | logind, polkitd | policykit-1
 Recommends: ppp, dnsmasq-base, modemmanager, wireless-regdb, wpasupplicant
 Suggests: libteam-utils, iptables
 Breaks: ppp (>= 2.4.9-2~), ppp (<< 2.4.9-1+~)
 Filename: ./network-manager_1.42.4-1devuan1_amd64.deb
-Size: 3140832
-MD5sum: 62f2f2f9241f1be7c31395f14ab1851b
-SHA1: b6ad23812e29bc9f92ccca9ed2361553e50267f7
-SHA256: 678a163be1fdb9cf7558c9abbf024ab3a48f23190ec500b8d31050d3919822c0
-SHA512: 41cbfd3141b8d9cfb76958eb4aded5213dd47b54756c2ae19277b66b6fb6d8a55de06e9da8a9dbc043b4f7e0cccbea3c54ddb86f0f7a32c312072870d21a6219
+Size: 3140464
+MD5sum: 521d2e01bc354e296113e5a1f4871654
+SHA1: dc1ac743561208707d7f9adf4cbe0b11aec48730
+SHA256: 30d8d43b37677a8ec4b13407c12a001f28f635cf05aa53e11da9c56ac408e3fb
+SHA512: 8b29e72889d59f12d051f9a50fe225c0c84d82a1e336117744d26c9bf2a3bef1f066c3a52b2fbc1d33df115511e2e60a8fa7c089a03833914af7399d4f97f5ef
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
@@ -6573,8 +6573,7 @@ Description: network management framework (daemon and userspace tools)
   * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
     connection sharing.
   * libteam-utils: Network Team driver allows multiple network interfaces to be
-    teamed together and act like a single one. This process is called "ethernet
-    bonding", "channel teaming" or "link aggregation".
+    teamed together and act like a single one. This process is called ethernet
 
 Package: ntpdate
 Architecture: amd64

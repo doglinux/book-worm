@@ -5145,7 +5145,7 @@ Description: library for dealing with netlink sockets
 
 Package: libnm0
 Architecture: i386
-Version: 1.42.4-1devuan1
+Version: 1:1.42.4-1devuan1
 Multi-Arch: same
 Priority: optional
 Section: libs
@@ -5155,11 +5155,11 @@ Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 1622
 Depends: libc6 (>= 2.34), libeudev1 (>= 3.2.11), libglib2.0-0 (>= 2.43.2), libgnutls30 (>= 3.7.2)
 Filename: ./libnm0_1.42.4-1devuan1_i386.deb
-Size: 459128
-MD5sum: 4089824354e724c2e7e112f855ec6f5f
-SHA1: d4220b85ea0aa2f4c500be91bf495b64b2c93ac7
-SHA256: 010de25f6e08190bd6fb076901d5589c3b832d3e2ff4bab142dd070cbb6b5d14
-SHA512: a778318bea0bb691c2b436d99685289924bdce64074b9272243257ebc8b98874eeb1a1c2964343da632375028fc5b647df43f40a3db60446236cca92f782d373
+Size: 458992
+MD5sum: beb259d0a2cefe8e17d5adec125de9da
+SHA1: 6eb792af966874f4646bf0223a01315359153270
+SHA256: a4c3ed1c079a569c04070f29f4bf8bdd760ac11e3f1aef71cc7e5775be7c484c
+SHA512: 2ce0a41f007750bf42f0f4f716c50fc49a6caeff4866bfc949ed319ba08f74595780015d3cf5383933d3ba7e8774e5126527e81cbb0583233aba1d8de64a43d8
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 Description: GObject-based client library for NetworkManager
  NetworkManager is a system network service that manages your network devices
@@ -6636,11 +6636,11 @@ Recommends: ppp, dnsmasq-base, modemmanager, wireless-regdb, wpasupplicant
 Suggests: libteam-utils, iptables
 Breaks: ppp (>= 2.4.9-2~), ppp (<< 2.4.9-1+~)
 Filename: ./network-manager_1.42.4-1devuan1_i386.deb
-Size: 3195568
-MD5sum: f4b536054d8ca7aa5730bd25f095c983
-SHA1: 3339f75293a9276904480204f09f0011fc23f85f
-SHA256: 8f3eb80cbe7295f1d176d952ca3b986e971e238e50ed7fced54ebb9adc10dd24
-SHA512: 1ded3584ba222e94cb180f4d5197abb3f5deda984934cd1ff485a0c31c29300dc739529c14a5205ad3d3db0d1ed3e7203f2f9cac3cedd55a1382b61ad5c1a10a
+Size: 3195904
+MD5sum: 77e47534e32060c22b041fefda849738
+SHA1: 739b39f6ab9d06d97ad778d2f5b6c02a00c7d6e7
+SHA256: 229fc2f1768c2b3564d8f4eba81e8969fc207ddfa2d34ebb734c4bb78fd5dd20
+SHA512: 11637f4de3cf0cd283853370a8e7a18a7f86a36d150fc40d7312e9bd21023696bfd9c441eaf2073e75b4e29fede5a293f24ebe6b46da5e1773cc573bdc970c2e
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
