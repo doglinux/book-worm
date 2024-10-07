@@ -4461,6 +4461,34 @@ Description: Enlightened Sound Daemon - Shared libraries
 
 Package: libeudev-dev
 Architecture: i386
+Version: 234:3.2.12-4+deb12u1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: eudev
+Origin: Devuan
+Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
+Installed-Size: 338
+Provides: libudev-dev (= 1:3.2.12-4+deb12u1)
+Depends: libeudev1 (= 234:3.2.12-4+deb12u1)
+Breaks: libudev-dev (<< 1:3.2.9+devuan4)
+Replaces: libudev-dev (>= 215), libudev-dev (<< 1:3.2.9+devuan4)
+Filename: ./libeudev-dev_3.2.12-4+deb12u1_i386.deb
+Size: 97124
+MD5sum: eb0aa0666e5dadbfbb64dd9e63b89b4e
+SHA1: 606b1f98fe3bdad980775538bead541d69abb327
+SHA256: 661f70ab9ac011c5af114bce0637d0c774fea3906e8f8dd6c3fd04a0af6d2c78
+SHA512: 8385dfbf33826bf1102eb0f6792b51085002561decb1102a07c1c92cfba85fbb576e4e20f4ee5540031acfb23498409b1d8990a223c485e2964fb8c755a1903e
+Homepage: https://github.com/eudev-project/eudev
+Description: libeudev development files
+ eudev is a daemon which dynamically creates and removes device nodes
+ from /dev/, handles hotplug events and loads drivers at boot time.
+ .
+ This package contains the files needed for developing applications that
+ use libeudev1.
+
+Package: libeudev-dev
+Architecture: i386
 Version: 3.2.9-7
 Multi-Arch: same
 Priority: optional
