@@ -8026,6 +8026,23 @@ SHA256: 11ce6aae78ca6e7cc73e9ea1813f436f93ed09cc0fe1e19ccbd1a350d4c34772
 SHA512: 231c11c5b8bc1c5b1d953a2b293ecbacbba58a6d0512d96ef145fe02aaa5dfb537be235636ca5a912381675b79774ea1857d8d36f1c8ccaa59d15508fb91adc0
 Description: pfind-converted-pet-to-deb by zigbert
 
+Package: pfind
+Architecture: all
+Version: 6.5
+Priority: optional
+Section: utilities
+Maintainer: zigbert
+Installed-Size: 100
+Depends: gtkdialog, findutils
+Replaces: spacefm-common
+Filename: ./pfind_6.5_all.deb
+Size: 29212
+MD5sum: 310deb8481f11b3b980670cb469d9421
+SHA1: f122debb695e324763adbd465c6f71280885763b
+SHA256: 170b84c8e17713b3b66609c4509297eef6b7b1c4da5eda0d03b40737e7d25960
+SHA512: 9cd7fd546d378dd454b266dc572ea003eb26245492a0c371ddaf5ed3ad8826f956f230309a9a4809db71ba47bbaefe6803a3cb5becca634d8836de9c31cad3d5
+Description: pfind-converted-pet-to-deb by zigbert
+
 Package: photo-cropper
 Architecture: all
 Version: 1.3
