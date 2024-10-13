@@ -1,0 +1,471 @@
+#!/bin/bash
+#Spotify recorder, by fredx181, record tracks from Spotify Web Player to mp3 @320
+#The tracks will be titled (and tagged too)
+#It will check for if running the system with pulseaudio (or pipewire) or just 'plain' alsa
+# 2024-09-19 v2.0, using arecord for capturing instead of ffmpeg in case of 'plain' alsa
+# and recording directly to final filename e.g. <tracknumber>-<title> instead of recording to a temporary file first.
+ 
+if [ -z $(which gxmessage) ]; then
+MESSAGE=xmessage
+else
+MESSAGE=gxmessage
+fi
+
+if [ -n "$(pidof pulseaudio)" ] || [ -n "$(pidof pipewire)" ]; then
+export PPULSE=yes
+fi
+
+if [ -f $HOME/.asoundrc ]; then
+export def_asoundrc=$(cat $HOME/.asoundrc)
+fi
+
+  if [ "$PPULSE" = "yes" ]; then
+if [ -z "$(which lame)" ]; then
+	msg=" Required is to have lame installed "
+	$MESSAGE -center "`echo -e $msg`" 2> /dev/null
+	echo "Required is to have lame installed"
+	exit 0
+fi
+
+if [ -z "$(which pactl)" ]; then
+	msg=" Required is to have pactl installed \n Install pulseaudio-utils "
+	$MESSAGE -center "`echo -e $msg`" 2> /dev/null
+	echo "Required is to have pactl installed \n Install pulseaudio-utils"
+	exit 0
+fi
+  else
+if [ -z "$(which arecord)" ]; then
+	msg=" Required is arecord \n Install alsa-utils "
+	$MESSAGE -center "`echo -e $msg`" 2> /dev/null
+	echo "Required is to have arecord installed \n Install alsa-utils"
+	exit 0
+fi
+
+if [ -z "$(which lame)" ]; then
+	msg=" Required is to have lame installed "
+	$MESSAGE -center "`echo -e $msg`" 2> /dev/null
+	echo "Required is to have lame installed"
+	exit 0
+fi
+  fi
+
+help () {
+echo -e '<window title="Help">
+<vbox>
+    <edit editable="false">
+      <width>620</width><height>460</height>
+      <default>
+"
+   *** Record tracks, titled, numbered and tagged from https://open.spotify.com/ ***
+ 
+ Recommended is to click '"'Record'"' first (after done making settings),
+  then AFTER that start the Spotify Web Player and play a track so it will be detected.
+ Next track played will be recorded then. 
+ Be sure that no other mediaplayer is running, as it may conflict.
+
+ When the '"'Album Mode'"' box checked, recorded tracks will be saved (and tagged) in:
+  <outputdir>/<artist>/<album>/<title>
+
+ If not, recordings will be saved in:
+  <outputdir>/Recordings/<artist> - <album> - <title>
+ 
+ The latter is more suitable for collections e.g. Various artists.
+
+ When the '"'Browser runs as spot'"' box checked,
+  it will work only if a D-Bus session bus had been started for this user.
+ (otherwise '"'dbus-send'"' cannot find the title/album info)
+
+ For audio advertisements (if there are), recording will be skipped.
+
+"
+      </default>
+    </edit>
+    <hbox>
+      <button ok></button>
+    </hbox>
+</vbox>
+</window>
+' | gtkdialog -s --center &
+
+}; export -f help
+
+[ -n "$(which xterm)" ] && export _TERM_=xterm || export _TERM_=rxvt
+
+rec_spotify () {
+
+QUIT ()
+{
+if [ -z "$def_asoundrc" ]; then
+rm -f $HOME/.asoundrc
+else
+echo -e "$def_asoundrc" > $HOME/.asoundrc
+fi
+echo
+echo "Recording stopped ..."
+#rm -f "$DIR"/spotrectemp.mp3
+#killall ffmpeg 2>/dev/null
+killall arecord 2> /dev/null
+killall parec 2> /dev/null
+killall pw-record 2> /dev/null
+exit 
+}
+trap QUIT 1 2 15
+
+if [ "$SPOT" = "true" ]; then
+[ -n $(which run-as-user) ] && export RAS=run-as-user || export RAS=run-as-spot
+else
+export RAS=""
+fi
+
+  if [ "$PPULSE" = "yes" ]; then
+####################################################
+#### PULSE OR PIPEWIRE #############################
+####################################################
+# Get sink monitor:
+if [ -n "$(pidof pulseaudio)" -a  -z "$(pidof pipewire)" ]; then    # pulseaudio running
+MONITOR=$(pactl list short sources | grep 'alsa.*\.monitor' | awk '{print $2}' | head -1)
+PA=yes
+echo "set-source-mute ${MONITOR} false" | pacmd >/dev/null
+elif [ -z "$(pidof pulseaudio)" -a  -n "$(pidof pipewire)" ]; then    # pipewire running
+MONITOR=$(pactl list short sources | grep 'alsa.*\.monitor' | awk '{print $1}' | head -1)
+#MONITOR=$(wpctl inspect @DEFAULT_AUDIO_SINK@ | head -1 | awk '{print $2}' | sed 's/,//')
+fi
+
+echo "Start the spotify web player ..."
+bus=$($RAS dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply=literal /org/freedesktop/DBus org.freedesktop.DBus.ListNames | tr ' ' '\n' | grep 'org.mpris.MediaPlayer2' | head -n 1)
+if [ -z "$bus" ]; then
+echo "Waiting for spotify web-player... "
+echo "To detect, it may be required to play a track first"
+fi
+
+  else
+####################################################
+#### ALSA ##########################################
+####################################################
+modprobe snd-aloop
+[ "$CARD" != "No Monitoring" ] && MONITOR=$(echo "hw:$CARDN,$DEVICE")
+
+# modify ~/.asoundrc
+echo -e 'pcm.!default pcm.Capture
+
+pcm.Capture {
+    type plug
+    slave.pcm "Loop"
+}
+
+# duplex plug device
+pcm.Loop {
+    type plug
+    slave {
+      pcm {
+         type asym
+         playback.pcm "loopout"
+         capture.pcm "loopin"
+      }
+    }
+}
+
+# output device
+pcm.loopout {
+    type dmix
+    ipc_key 328211
+    slave {
+      pcm "hw:Loopback,0,0"
+             #rate 48000
+             format S16_LE
+             channels 2
+             period_size 256
+             buffer_size 8192
+    }
+}
+
+# input device
+pcm.loopin {
+    type dsnoop
+    ipc_key 686592
+    slave.pcm "hw:Loopback,1,0"
+}
+' > $HOME/.asoundrc
+
+killall alsaloop 2>/dev/null #just in case
+[ "$CARD" != "No Monitoring" ] && alsaloop -C Loop -P $MONITOR -t 50000 >/dev/null 2>&1 &
+
+echo "Start the spotify web player ..."
+bus=$($RAS dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply=literal /org/freedesktop/DBus org.freedesktop.DBus.ListNames | tr ' ' '\n' | grep 'org.mpris.MediaPlayer2' | head -n 1)
+if [ -z "$bus" ]; then
+echo "Waiting for spotify web-player... "
+echo "To detect, it may be required to play a song first"
+else
+echo "Spotify web-player or other mediaplayer is already running... "
+echo "It's recommended to restart the Spotify web-player "
+echo "Otherwise recording may fail ! "
+echo "Please close it ... "
+read -sp "   ... then press ENTER to continue"
+echo "And start it again (and login of course)"
+echo
+echo "Waiting for spotify web-player... "
+echo "To detect, it may be required to play a track first"
+fi
+  fi
+
+trap QUIT 1 2 3 15
+
+while true; do
+bus=$($RAS dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply=literal /org/freedesktop/DBus org.freedesktop.DBus.ListNames | tr ' ' '\n' | grep 'org.mpris.MediaPlayer2' | head -n 1)
+#echo "Waiting for player... "
+if [ -n "$bus" ]; then
+break
+fi
+sleep 2
+done
+echo $bus
+
+META=$($RAS dbus-send --print-reply --dest=$bus /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata')
+DBUS_TRACKDATA=$(echo "$META" | grep "xesam:title\|xesam:album" -A 1 | grep variant | cut -d \" -f 2)
+# show title
+echo "Track: $(echo "$META" | grep xesam:title -A 1 | grep variant | cut -d \" -f 2) (next track played will be recorded ...)"
+echo "Stop with Ctrl-C ..."
+
+CNT=1
+while [ 1 ]; do
+NEW_META=$($RAS dbus-send --print-reply --dest=$bus /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata')
+if [ -z "$NEW_META" ]; then
+QUIT
+break
+fi
+NEW_DBUS_TRACKDATA=$(echo "$NEW_META" | grep "xesam:title\|xesam:album" -A 1 | grep variant | cut -d \" -f 2)
+
+      if [[ "$DBUS_TRACKDATA" != "$NEW_DBUS_TRACKDATA" ]]; then
+#NEW_META=$($RAS dbus-send --print-reply --dest=$bus /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata')
+# title change
+   if [[ -n "$title" ]]; then
+killall -3 parec 2>/dev/null
+killall -3 pw-record  2>/dev/null
+killall -3 arecord 2>/dev/null
+#killall -3 ffmpeg 2>/dev/null
+#pidffmpeg=$(ps -eo pid,cmd | grep "ffmpeg -nostdin -y -hide_banner -v quiet -stats -f alsa -i mixout" | grep -v grep | awk '{print $1}')
+#kill -3 $pidffmpeg 2>/dev/null
+
+[[ "$album" != "" ]] && ((CNT++))
+
+      artist=""
+      album=""
+      title=""
+      tracknumber=""
+      arturl=""
+      #rm -f /tmp/cover.png
+   fi
+
+DBUS_TRACKDATA="$NEW_DBUS_TRACKDATA"
+
+title=$(echo "$NEW_META" | grep xesam:title -A 1 | grep variant | cut -d \" -f 2)
+artist=$(echo "$NEW_META" | grep xesam:artist -A 2 | tail -n1  | cut -d \" -f 2)
+album=$(echo "$NEW_META" | grep xesam:album -A 1 | grep variant | cut -d \" -f 2)
+arturl=$(echo "$NEW_META" | grep mpris:artUrl -A 1 | grep variant | cut -d \" -f 2 | sed 's#file://##')
+#echo arturl=$arturl
+
+ if [ "$A_MODE" = "true" ]; then
+   # save to <artist>/<album>
+      saveto="$DIR/${artist//\/ /}/${album//\/ /}"
+      TITLE="${title}"
+ else
+   # save to Recordings
+      saveto="$DIR/Recordings"
+      TITLE="${artist} - ${album} - ${title}"
+ fi
+      if [[ ! -a "$saveto" ]]; then
+        mkdir -p "$saveto"
+      fi
+
+if [[ "$album" != "$oldalbum" ]]; then
+[[ "$album" != "" ]] && CNT=1
+fi
+
+[[ "$album" != "" ]] && oldalbum="$album"
+
+if [ -n "$album" ]; then
+echo
+echo -e "\e[0;32mRecording... Track:\033[0m" "(stop with Ctrl-C ...)"
+echo "$saveto/${CNT}-${TITLE//\//-}.mp3"
+echo Title = $title
+echo Artist = $artist
+echo Album = $album
+#echo Arturl = $arturl
+fi
+
+   if [ "$PPULSE" = "yes" ]; then
+ if [ "$PA" = "yes" ]; then  # pulse
+[[ "$album" != "" ]] && parec --format=s16le -d "$MONITOR" --rate=44100 | lame -r -b 320 -s 44.1 --quiet --tt "${title}" --ta "${artist}" --tl "${album}" --tn "${CNT}" - "$saveto/${CNT}-${TITLE//\//-}.mp3" 2>/dev/null &
+
+ else  # pipewire
+[[ "$album" != "" ]] && pw-record --target="$MONITOR" --rate=44100 - | lame -r -b 320 -s 44.1 --quiet --tt "${title}" --ta "${artist}" --tl "${album}" --tn "${CNT}" - "$saveto/${CNT}-${TITLE//\//-}.mp3" 2>/dev/null &  
+ fi
+
+   else
+[[ "$album" != "" ]] && arecord -V mono -f cd -D Loop | lame -b 320 -s 44.1 --quiet --tt "${title}" --ta "${artist}" --tl "${album}" --add-id3v2 - "$saveto/${CNT}-${TITLE//\//-}.mp3" | grep -v "environment\|QUIT\|Aborted" &
+#[[ "$album" != "" ]] && ffmpeg -nostdin -y -hide_banner -v quiet -stats -f alsa -i loopout -vn -c:a libmp3lame -b:a 320k -ar 44100 -metadata title="${title}" -metadata artist="${artist}" -metadata album="${album}" -metadata track="${CNT}" -id3v2_version 3 -write_id3v1 1 "$saveto/${CNT}-${TITLE//\//-}.mp3" | grep -v environment &
+   fi
+
+# get art (doesn't always work)  
+  if [[ "$album" != "" ]] && [[ -f "$arturl" ]]; then
+  [[ ! -a "$saveto/cover.png" ]] && mv "$arturl" "$saveto/cover.png" 2> /dev/null
+  fi
+
+      fi
+
+sleep 0.1
+done
+
+QUIT
+}; export -f rec_spotify
+
+if [ "$PPULSE" = "" ]; then # plain alsa, option to select sound card
+CARDL=""
+while read C; do CARDL=$CARDL"<item>$C</item>"
+done <<< "$(aplay -l | grep "^card" | grep "device 0" | grep -v "Loopback")"
+if [ "$(aplay -l | grep -Fo "$CARD")" ]; then CARDL="<item>"$CARD"</item>"$CARDL; fi
+
+RECORDER=$(echo -e "<window title=\"Spotify Recorder v2.0\" image-name=\"/usr/share/pixmaps/spotifytomp3.png\">
+<vbox>
+    <hbox>
+  <text use-markup=\"true\" width-request=\"500\">
+  <label>\"<b>Record tracks from Spotify Web Player to mp3 @320</b>   \"</label>
+     </text>
+    </hbox>
+<frame Set Capture device:>
+	<hbox>
+     <comboboxtext width-request=\"510\">
+       <variable>CARD</variable>
+       $CARDL
+     </comboboxtext>
+      </hbox>
+  </frame>
+  <frame $(gettext 'Output directory:')>
+    <hbox>
+      <entry accept=\"directory\" fs-title=\"Select output directory\">
+      <variable>DIR</variable>
+     <default>$HOME</default>  
+      </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">DIR</action>
+      </button>
+      <button>
+          <input file stock=\"gtk-clear\"></input>
+          <action>Clear:DIR</action>
+      </button>
+    </hbox>
+  </frame>
+  <hbox>
+	<checkbox width-request=\"480\">
+<label>\"Artist/Album Mode (see Help)\"</label>
+<default>true</default>
+<variable>A_MODE</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  </hbox>
+ <hbox>
+	<checkbox width-request=\"480\">
+<label>\"Browser runs as spot (with run-as-spot)\"</label>
+<default>false</default>
+<variable>SPOT</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  </hbox>
+
+  <hbox>
+<button>
+	<input file stock=\"gtk-help\"></input>
+	<label>\"Help\"</label>
+	<action>help</action>
+</button>
+<button>
+       <input file stock=\"gtk-media-record\"></input>
+       <label>$(gettext 'Record')</label>
+    <action>EXIT:rec_spotify</action>
+</button>
+<button>
+    <input file stock=\"gtk-quit\"></input>
+    <label>$(gettext 'Quit')</label>
+</button>
+  </hbox>
+</vbox>
+</window>
+" | gtkdialog -s --center)
+
+else    # pulse or pipewire
+RECORDER=$(echo -e "<window title=\"Spotify Recorder v2.0\" image-name=\"/usr/share/pixmaps/spotifytomp3.png\">
+<vbox>
+    <hbox>
+  <text use-markup=\"true\" width-request=\"500\">
+  <label>\"<b>Record tracks from Spotify Web Player to mp3 @320</b>   \"</label>
+     </text>
+    </hbox>
+
+  <frame $(gettext 'Output directory')>
+    <hbox>
+      <entry accept=\"directory\" fs-title=\"Select output directory\">
+      <variable>DIR</variable>
+     <default>$HOME</default>  
+      </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">DIR</action>
+      </button>
+      <button>
+          <input file stock=\"gtk-clear\"></input>
+          <action>Clear:DIR</action>
+      </button>
+    </hbox>
+  </frame>
+  <hbox>
+	<checkbox width-request=\"480\">
+<label>\"Artist/Album Mode (see Help)\"</label>
+<default>true</default>
+<variable>A_MODE</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  </hbox>
+ <hbox>
+	<checkbox width-request=\"480\">
+<label>\"Browser runs as spot (with run-as-spot)\"</label>
+<default>false</default>
+<variable>SPOT</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  </hbox>
+
+  <hbox>
+<button>
+	<input file stock=\"gtk-help\"></input>
+	<label>\"Help\"</label>
+	<action>help</action>
+</button>
+<button>
+       <input file stock=\"gtk-media-record\"></input>
+       <label>$(gettext 'Record')</label>
+    <action>EXIT:rec_spotify</action>
+</button>
+<button>
+    <input file stock=\"gtk-quit\"></input>
+    <label>$(gettext 'Quit')</label>
+</button>
+  </hbox>
+</vbox>
+</window>
+" | gtkdialog -s --center)
+fi
+
+if [ "`echo "$RECORDER" | grep EXIT | grep -v "exit\|abort" | grep rec_spotify`" ]; then
+export DIR=$(echo "$RECORDER" | grep DIR= | sed 's/DIR=//;s/\"//g')
+export A_MODE=$(echo "$RECORDER" | grep A_MODE= | sed 's/A_MODE=//;s/\"//g')
+export SPOT=$(echo "$RECORDER" | grep SPOT= | sed 's/SPOT=//;s/\"//g')
+export CARDN=$(echo "$RECORDER" | grep "CARD=" | awk '{print $2}' | tr -d ":")
+export DEVICE=$(echo "$RECORDER" | grep "CARD=" | cut -d "," -f 2 | awk '{print $2}' | tr -d ":")
+$_TERM_ -rv -title 'Spotify Recorder, do not close, press CTRL-C to stop' -geometry 80x18 -hold -e bash -c rec_spotify
+fi
+
