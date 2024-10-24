@@ -2933,6 +2933,7 @@ usr/local/bin/simpleHTTPserver-python3			    simple-python3-http-server
 usr/local/bin/smokey-get				    sfs-get-smokey-get
 usr/local/bin/snappie					    snappie
 usr/local/bin/sound-card-selector			    sound-card-selector
+usr/local/bin/spotifytomp3				    spotifytomp3
 usr/local/bin/start-jwm					    jwm-setup-dd64,jwm-setup
 usr/local/bin/start-ntpdate				    tzupdate
 usr/local/bin/start-openbox				    jwm-setup-dd64,jwm-setup
@@ -5819,6 +5820,7 @@ usr/share/applications/simpleHTTPserver.desktop		    simple-python-http-server
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/snappie.desktop			    snappie
 usr/share/applications/sound-card-selector.desktop	    sound-card-selector
+usr/share/applications/spotifytomp3.desktop		    spotifytomp3
 usr/share/applications/synaptic.desktop			    synaptic
 usr/share/applications/syncing.desktop			    diff-sync-umount
 usr/share/applications/tas.desktop			    takeashot
@@ -9384,6 +9386,7 @@ usr/share/pixmaps/simpleHTTPfman.png			    simple-http-filemanager
 usr/share/pixmaps/simpleHTTPserver.png			    simple-python-http-server,simple-python3-http-server
 usr/share/pixmaps/snappie.png				    snappie
 usr/share/pixmaps/soundcard.png				    sound-card-selector
+usr/share/pixmaps/spotifytomp3.png			    spotifytomp3
 usr/share/pixmaps/suspend.png				    jwm-setup,jwmconf
 usr/share/pixmaps/swap2.png				    makeswap
 usr/share/pixmaps/switch.png				    jwm-setup-dd64,jwmconf,jwm-setup

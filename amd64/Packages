@@ -10156,6 +10156,20 @@ SHA256: f24e62069a5a2499147ffeaa8cc35ee3aa5c3ea0491a300ae259fa15d17a8c7e
 SHA512: d448680c177575efd3a08801d4c825dc7d14a8af3761f93b51eae0efd5add45b2e8ab4de8483bba366669c398f56eca752c20a800046ae7750ef4d430bf41706
 Description: Select a sound card and set ALSA defaults
 
+Package: spotifytomp3
+Architecture: all
+Version: 2.0.0
+Priority: extra
+Maintainer: fredx181
+Depends: lame, alsa-utils
+Filename: ./spotifytomp3_2.0.0_all.deb
+Size: 9176
+MD5sum: f2c5aa133f2e3111a5ae161b182556b6
+SHA1: a240ae8285d6adee543ce8a5a337c9d7fe48d9d2
+SHA256: 39195872bb9d72d6715481bd38d7b078ef3191b35348d488a003e3e6d20df7f6
+SHA512: 0b56f1765177d7bcb5d5970e6a334ec9e3690752b49aa1048fa2bb1f4f7263f39fb5aebb28e98d175e58ee3caf55a8b89d3a217252640ad6989337e955f300e5
+Description: Record tracks from Spotify Web Player
+
 Package: squashfuse
 Architecture: amd64
 Version: 0.1.0
@@ -11024,6 +11038,36 @@ Description: Install kernel in chroot
  v1.12.0, reverted changes done at v1.11.0
  v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
  v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.16.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.16.0_all.deb
+Size: 1123100
+MD5sum: da058f605ea6e16eed8e8e6c808cffbd
+SHA1: 2841465d161936a8eb6e00ed74a4b1487ebc1dac
+SHA256: df33ce2df68d62aa9fdbd844b7c532f9137ea6dc3b7adee5cfdf980f326f1166
+SHA512: 92372b5524d01f0bd884a45ff82bd046f8cd6fcd21f9fb2a1bef47c4f6a17f490820202406b1997d456126b7b3b6a5c8e813a57eb3928799fdad71ebde449cb6
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
 
 Package: upgrade-kernel
 Architecture: all
