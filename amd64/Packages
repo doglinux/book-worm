@@ -5581,23 +5581,23 @@ Description: pango library X backend
 
 Package: libpng12-0
 Architecture: amd64
-Version: 1.2.50-2+deb8u3.2
+Version: 1.2.59-1
 Multi-Arch: same
 Priority: optional
 Section: libs
 Source: libpng
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Installed-Size: 267
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 274
+Depends: libc6 (>= 2.29), zlib1g (>= 1:1.1.4)
 Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
 Replaces: libpng12-dev (<= 1.2.8rel-7)
-Filename: ./libpng12-0_1.2.50-2+deb8u3.2_amd64.deb
-Size: 172658
-MD5sum: bf8b80e2faa724f7e41a05f05c39e17f
-SHA1: 5a9bc85acc81f5db759bf8597630e276405a8d10
-SHA256: 2a61d053362bd2dc68f1eaa4b36f158d97ce2e03803ad7701483d2ea85049c20
-SHA512: e765442fd5968791d0c91fc52eafba67556cec6ee63e310ec828c593bb3161ca85614502436c0277f8b548c54ad083e19f12ec87fbc70f29fd2b8a828c18f74a
+Filename: ./libpng12-0_1.2.59-1_amd64.deb
+Size: 163272
+MD5sum: 670f4951710ea51dd326b4e8bb490165
+SHA1: eea2572ec4afec85a3167959aef03be38c1460c2
+SHA256: 4775ebe3b0f0ccf47e8f524b4fc080dff75dd54d016c038ad46195b90a55f373
+SHA512: 46881163b83ad839040d01ae4c209194f7b1e8204ef4e4b6d5a3c91a8245382f3bbf424a696b3ecb49ea900e9265d42fb4387cc02e7e68ac7dbfa41f823c36a0
 Homepage: http://libpng.org/pub/png/libpng.html
 Description: PNG library - runtime
  libpng is a library implementing an interface for reading and writing
@@ -5607,24 +5607,24 @@ Description: PNG library - runtime
  using libpng.
 
 Package: libpng12-0
-Architecture: amd64
-Version: 1:1.2.50-2+deb8u3.3
+Architecture: i386
+Version: 1.2.59-1
 Multi-Arch: same
 Priority: optional
 Section: libs
 Source: libpng
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Installed-Size: 267
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 289
+Depends: libc6 (>= 2.29), zlib1g (>= 1:1.1.4)
 Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
 Replaces: libpng12-dev (<= 1.2.8rel-7)
-Filename: ./libpng12-0_1.2.50-2+deb8u3.3_amd64.deb
-Size: 172616
-MD5sum: 2408cc971f297f478ae7ae2ba4fb718b
-SHA1: 8feab66114d74f915509f464ec86358f8b142610
-SHA256: 419d519c10d640c05135c4e77a9decf9be0336d8f0937b80062c5aa767f429f5
-SHA512: 51a5b6acb62ac1b809fe7e39e92b9c48966c8a4f7717e12d1aeb99fdfae90812388e6c51f379bb5ec9ab8dd4ba6b5956228c1c5a7eb65554ed9c4f0fcfc3e3d5
+Filename: ./libpng12-0_1.2.59-1_i386.deb
+Size: 168004
+MD5sum: 5dd929c8b303fa6aba8fa8a5da232387
+SHA1: 9638572c3de8c8a220d7ab6134c129fb96380887
+SHA256: 9c14105e61ba60b693263ff329cc7855df8987f372c684d8651d153ea6149124
+SHA512: a2f2fb529228b038871afc72239146e6fa58d13f14460e90c3ae0f87fdd8b9d90024269e1594a710b83b406a5721b31921e647a2a7641255bd84ea8e0c075c58
 Homepage: http://libpng.org/pub/png/libpng.html
 Description: PNG library - runtime
  libpng is a library implementing an interface for reading and writing
@@ -5633,32 +5633,61 @@ Description: PNG library - runtime
  This package contains the runtime library files needed to run software
  using libpng.
 
-Package: libpng12-0
+Package: libpng12-dev
 Architecture: amd64
-Version: 1.2.50-2+deb8u3
+Version: 1.2.59-1
 Multi-Arch: same
 Priority: optional
-Section: libs
+Section: libdevel
 Source: libpng
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Installed-Size: 267
-Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
-Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), povray-3.5 (<= 3.5.0c-10), qemacs (<= 0.3.1-5)
-Replaces: libpng12-dev (<= 1.2.8rel-7)
-Filename: ./libpng12-0_1.2.50-2+deb8u3_amd64.deb
-Size: 172654
-MD5sum: be75107eb1e2eb25ba1f65ab6f6ba459
-SHA1: f79cb97878bf6b73c35956b932974c3e28b3e692
-SHA256: c2eb98aa0ddf92374b5d40ace2d38ae0da256147dbefb3a739f28a286a06bf51
-SHA512: a1402af31daafc3d64ce71df89bfa733c04ed2ef151ef5254b262711d9a6710297acdc6f8ba32a673dc7c71524ed544a900aa6960ec272dbe0a96af63a96de39
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 607
+Provides: libpng-dev, libpng12-0-dev, libpng3-dev
+Depends: libpng12-0 (= 1.2.59-1), zlib1g-dev
+Conflicts: libpng-dev, libpng12-0-dev, libpng2 (<< 1.0.12-3), libpng2-dev
+Replaces: libpng12-0-dev, libpng3-dev (<= 1.2.5)
+Filename: ./libpng12-dev_1.2.59-1_amd64.deb
+Size: 237984
+MD5sum: 8013863f4f716ed13de2cb16499998d3
+SHA1: 01bc3a27253833324b4a7d5afec00a60b6e4c3f9
+SHA256: 72606f2a3ee7bac3e769c13553339d4c38a364a571b7945136c65641d758b7b9
+SHA512: 31d1333a7651d7151f71cdc48ede5562f60e4f85f27c71c90ed8ebab07c3067894e9955a25ad43928abd555c516b342ef8d811ce52018dc6fc8f7d7ba23cf940
 Homepage: http://libpng.org/pub/png/libpng.html
-Description: PNG library - runtime
+Description: PNG library - development
  libpng is a library implementing an interface for reading and writing
  PNG (Portable Network Graphics) format files.
  .
- This package contains the runtime library files needed to run software
- using libpng.
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
+
+Package: libpng12-dev
+Architecture: i386
+Version: 1.2.59-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libpng
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 590
+Provides: libpng-dev, libpng12-0-dev, libpng3-dev
+Depends: libpng12-0 (= 1.2.59-1), zlib1g-dev
+Conflicts: libpng-dev, libpng12-0-dev, libpng2 (<< 1.0.12-3), libpng2-dev
+Replaces: libpng12-0-dev, libpng3-dev (<= 1.2.5)
+Filename: ./libpng12-dev_1.2.59-1_i386.deb
+Size: 244140
+MD5sum: 1694ded4f8f0e38a607a1c6658b84af3
+SHA1: d335c2ae73a93223e414a2cc8ac45600ac058f18
+SHA256: f552a2673c7f55914585673451e6e3e0ad582a8f3bff362bee8adf7388230e23
+SHA512: 33bfbeee846737fa5f072dc022f115b79a1fb9e75c6ffeae438e193250c6dacfe17da050cb892d99768d7b2dc8713701a916adf9c0a816f0a05f690b06524e10
+Homepage: http://libpng.org/pub/png/libpng.html
+Description: PNG library - development
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
 
 Package: libprocps8
 Architecture: amd64

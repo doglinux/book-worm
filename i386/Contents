@@ -969,6 +969,8 @@ usr/bin/ipinfo						    ceni,wifibox,wifibox-dhcpcd,frisbee
 usr/bin/jp2.py						    img2pdf-old
 usr/bin/jwm						    jwm
 usr/bin/leafpad						    leafpad
+usr/bin/libpng-config					    libpng12-dev
+usr/bin/libpng12-config					    libpng12-dev
 usr/bin/linux-user-chroot				    linux-user-chroot
 usr/bin/losetup-FULL					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm,filemnt-pcmanfm-qt
 usr/bin/lumina-config					    lumina-desktop-debdog
@@ -1141,6 +1143,9 @@ usr/include/elogind/systemd/sd-journal.h		    libelogind-dev
 usr/include/elogind/systemd/sd-login.h			    libelogind-dev
 usr/include/elogind/systemd/sd-messages.h		    libelogind-dev
 usr/include/elogind/systemd/sd-path.h			    libelogind-dev
+usr/include/libpng					    libpng12-dev
+usr/include/libpng12/png.h				    libpng12-dev
+usr/include/libpng12/pngconf.h				    libpng12-dev
 usr/include/libudev.h					    libeudev-dev
 usr/include/libxml2/libxml/DOCBparser.h			    libxml2-dev
 usr/include/libxml2/libxml/HTMLparser.h			    libxml2-dev
@@ -1189,6 +1194,8 @@ usr/include/libxml2/libxml/xmlwriter.h			    libxml2-dev
 usr/include/libxml2/libxml/xpath.h			    libxml2-dev
 usr/include/libxml2/libxml/xpathInternals.h		    libxml2-dev
 usr/include/libxml2/libxml/xpointer.h			    libxml2-dev
+usr/include/png.h					    libpng12-dev
+usr/include/pngconf.h					    libpng12-dev
 usr/include/pupvm/conv.h				    pup-volume-monitor
 usr/include/pupvm/core.h				    pup-volume-monitor
 usr/include/pupvm/protocol.h				    pup-volume-monitor
@@ -1481,8 +1488,12 @@ usr/lib/i386-linux-gnu/libnm.so.0			    libnm0
 usr/lib/i386-linux-gnu/libnm.so.0.1.0			    libnm0
 usr/lib/i386-linux-gnu/libpangox-1.0.so.0		    libpangox-1.0-0
 usr/lib/i386-linux-gnu/libpangox-1.0.so.0.0.0		    libpangox-1.0-0
+usr/lib/i386-linux-gnu/libpng.a				    libpng12-dev
+usr/lib/i386-linux-gnu/libpng.so			    libpng12-dev
+usr/lib/i386-linux-gnu/libpng12.a			    libpng12-dev
+usr/lib/i386-linux-gnu/libpng12.so			    libpng12-dev
 usr/lib/i386-linux-gnu/libpng12.so.0			    libpng12-0
-usr/lib/i386-linux-gnu/libpng12.so.0.50.0		    libpng12-0
+usr/lib/i386-linux-gnu/libpng12.so.0.59.0		    libpng12-0
 usr/lib/i386-linux-gnu/libroar.so.2			    libroar2
 usr/lib/i386-linux-gnu/libroardsp.so.2			    libroar2
 usr/lib/i386-linux-gnu/libroareio.so.2			    libroar2
@@ -1558,6 +1569,8 @@ usr/lib/i386-linux-gnu/perl5/5.30/Gtk2/SimpleMenu.pm	    libgtk2-perl
 usr/lib/i386-linux-gnu/perl5/5.30/Gtk2/TestHelper.pm	    libgtk2-perl
 usr/lib/i386-linux-gnu/perl5/5.30/auto/Gtk2/Gtk2.so	    libgtk2-perl
 usr/lib/i386-linux-gnu/pkgconfig/libelogind.pc		    libelogind-dev
+usr/lib/i386-linux-gnu/pkgconfig/libpng.pc		    libpng12-dev
+usr/lib/i386-linux-gnu/pkgconfig/libpng12.pc		    libpng12-dev
 usr/lib/i386-linux-gnu/pkgconfig/libudev.pc		    libeudev-dev
 usr/lib/i386-linux-gnu/pkgconfig/libxml-2.0.pc		    libxml2-dev
 usr/lib/i386-linux-gnu/roaraudio/compbins/artscat	    libroar-compat2
@@ -6994,7 +7007,6 @@ usr/share/doc-base/conky-all.conky-manual		    conky-all
 usr/share/doc-base/conky-cli.conky-manual		    conky-cli
 usr/share/doc-base/conky-manual				    conky-all,conky-std,conky-cli
 usr/share/doc-base/conky-std.conky-manual		    conky-std
-usr/share/doc-base/libpng12				    libpng12-0
 usr/share/doc-base/openbox				    openbox
 usr/share/doc-base/roxterm				    roxterm-common
 usr/share/doc/adwaita-icon-theme/AUTHORS		    adwaita-icon-theme
@@ -7355,7 +7367,13 @@ usr/share/doc/libpng12-0/TODO				    libpng12-0
 usr/share/doc/libpng12-0/changelog.Debian.gz		    libpng12-0
 usr/share/doc/libpng12-0/changelog.gz			    libpng12-0
 usr/share/doc/libpng12-0/copyright			    libpng12-0
-usr/share/doc/libpng12-0/libpng-1.2.50.txt.gz		    libpng12-0
+usr/share/doc/libpng12-0/libpng-1.2.59.txt.gz		    libpng12-0
+usr/share/doc/libpng12-dev/changelog.Debian.gz		    libpng12-dev
+usr/share/doc/libpng12-dev/changelog.gz			    libpng12-dev
+usr/share/doc/libpng12-dev/copyright			    libpng12-dev
+usr/share/doc/libpng12-dev/examples/example.c.gz	    libpng12-dev
+usr/share/doc/libpng12-dev/examples/pngtest.c.gz	    libpng12-dev
+usr/share/doc/libpng12-dev/examples/pngtest.png		    libpng12-dev
 usr/share/doc/libprocps8/NEWS.Debian.gz			    libprocps8
 usr/share/doc/libprocps8/changelog.Debian.gz		    libprocps8
 usr/share/doc/libprocps8/changelog.gz			    libprocps8
@@ -10756,6 +10774,8 @@ usr/share/man/man1/iceauth.1.gz				    x11-xserver-utils
 usr/share/man/man1/jwm.1.gz				    jwm
 usr/share/man/man1/kill.1.gz				    procps
 usr/share/man/man1/leafpad.1.gz				    leafpad
+usr/share/man/man1/libpng-config.1.gz			    libpng12-dev
+usr/share/man/man1/libpng12-config.1.gz			    libpng12-dev
 usr/share/man/man1/loginctl.1.gz			    elogind
 usr/share/man/man1/mksquashfs.1.gz			    squashfs-tools
 usr/share/man/man1/nicinfo.1p.gz			    ceni
@@ -10900,6 +10920,7 @@ usr/share/man/man3/WWW::YoutubeViewer::Subscriptions.3pm    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Utils.3pm	    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::VideoCategories.3pm  youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Videos.3pm	    youtube-viewer
+usr/share/man/man3/libpng.3.gz				    libpng12-dev
 usr/share/man/man3/libxml.3.gz				    libxml2-dev
 usr/share/man/man3/openproc.3.gz			    procps
 usr/share/man/man3/readproc.3.gz			    procps
@@ -10912,6 +10933,7 @@ usr/share/man/man5/nm-settings-keyfile.5.gz		    network-manager
 usr/share/man/man5/nm-settings-nmcli.5.gz		    network-manager
 usr/share/man/man5/nm-settings.5.gz			    network-manager
 usr/share/man/man5/nm-system-settings.conf.5.gz		    network-manager
+usr/share/man/man5/png.5.gz				    libpng12-dev
 usr/share/man/man5/sysctl.conf.5.gz			    procps
 usr/share/man/man5/udev.conf.5.gz			    eudev
 usr/share/man/man5/xdm.options.5.gz			    xdm
