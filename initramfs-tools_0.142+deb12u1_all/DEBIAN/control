@@ -1,0 +1,19 @@
+Package: initramfs-tools
+Version: 1:0.142+deb12u1
+Architecture: all
+Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+Installed-Size: 58
+Depends: initramfs-tools-core (= 0.142+deb12u1), linux-base
+Suggests: bash-completion
+Conflicts: linux-initramfs-tool, usplash (<< 0.5.50)
+Breaks: e2fsprogs (<< 1.42.13), initscripts (<< 2.88dsf-59.3~), upstart
+Provides: linux-initramfs-tool
+Section: utils
+Priority: optional
+Multi-Arch: foreign
+Description: generic modular initramfs generator (automation)
+ This package builds a bootable initramfs for Linux kernel packages.  The
+ initramfs is loaded along with the kernel and is responsible for
+ mounting the root filesystem and starting the main init system.
+
+
