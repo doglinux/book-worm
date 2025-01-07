@@ -9547,6 +9547,28 @@ Description: Monitor color adjustment tool
  Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
  v0.0.5, use backlight (/sys/class/backlight), if available for brightness setting
 
+Package: redshift-gui-lite
+Architecture: amd64
+Version: 0.0.6
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 389
+Depends: libc6, curl
+Conflicts: redshiftgui
+Replaces: redshiftgui
+Filename: ./redshift-gui-lite_0.0.6_amd64.deb
+Size: 176064
+MD5sum: 9d8ace9c5c47f5143b6259d3fbd40965
+SHA1: bfba53c2d4e1b898c24790b829925b5d27ffe784
+SHA256: 2957d97a8d58f001cda897790ed904169c1a90baf4166fac38eda9e98caeb00f
+SHA512: 8239b62328e79de596ccdc62ef3bee35d50a91c9754b8f563b3cd8b895e44e63c25f3d2aace98e342b8d8556b4c89d870755798172605344ad71eea005dc7132
+Description: Monitor color adjustment tool
+ Redshift-gui light is using yad (notification icon)
+ and the redshift commandline utility (yad and redshift are builtin) 
+ Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
+ v0.0.5, use backlight (/sys/class/backlight), if available for brightness setting
+
 Package: remaster-scripts
 Architecture: all
 Version: 1.0.6
