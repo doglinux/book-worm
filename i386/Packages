@@ -7476,6 +7476,21 @@ Description: Manipulate PDF documents
 
 Package: peasypdf
 Architecture: all
+Version: 5.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, dc, xdialog3
+Filename: ./peasypdf-gtk3_5.4_all.deb
+Size: 7044
+MD5sum: b8e05c71d959090ebd8dd8013f60330b
+SHA1: 7064c1a7703b57ac32f0cffa88bc140043e76836
+SHA256: 9cf97fad2d870eb55285e3af181c484bb82350f3b985a3ec24d5c99648ba8437
+SHA512: 697bfb763662194b4790da8d2a08aee3b22f07848c26b142e879289bc53a1a04851666d9e8f30cd7d1f7dc7fdd13b286648f5625ce859cb0b6ba5d995224daa9
+Description: Manipulate PDF documents
+
+Package: peasypdf
+Architecture: all
 Version: 4.2-2
 Priority: optional
 Section: base
