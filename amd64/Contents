@@ -2949,6 +2949,7 @@ usr/local/bin/start-openbox				    jwm-setup-dd64,jwm-setup
 usr/local/bin/start-stop-tzupdate			    tzupdate
 usr/local/bin/syncing					    diff-sync-umount
 usr/local/bin/timidity					    timidity-old
+usr/local/bin/tkacast					    takeacast
 usr/local/bin/tkagif					    takeagif
 usr/local/bin/touchpad					    touchpad
 usr/local/bin/trans					    trans-tray
@@ -5458,6 +5459,17 @@ usr/local/smokey-get/tempestuous			    sfs-get-smokey-get
 usr/local/smokey-get/ttuuxxx				    sfs-get-smokey-get
 usr/local/smokey-get/wuxiandianzi			    sfs-get-smokey-get
 usr/local/smokey-get/zigbert				    sfs-get-smokey-get
+usr/local/takeacast2.0/AppRun				    takeacast
+usr/local/takeacast2.0/usr/bin/scrox32			    takeacast
+usr/local/takeacast2.0/usr/bin/scrox64			    takeacast
+usr/local/takeacast2.0/usr/bin/tkacast			    takeacast
+usr/local/takeacast2.0/usr/lib32/libgiblib.so.1		    takeacast
+usr/local/takeacast2.0/usr/lib32/libgiblib.so.1.0.6	    takeacast
+usr/local/takeacast2.0/usr/lib64/libgiblib.so.1		    takeacast
+usr/local/takeacast2.0/usr/lib64/libgiblib.so.1.0.6	    takeacast
+usr/local/takeacast2.0/usr/share/applications/tkacast.desktop takeacast
+usr/local/takeacast2.0/usr/share/pixmaps/camera-photo.png   takeacast
+usr/local/takeacast2.0/usr/share/pixmaps/tkacast.png	    takeacast
 usr/local/takeagif/.DirIcon				    takeagif
 usr/local/takeagif/AppRun				    takeagif
 usr/local/takeagif/tkagif.desktop			    takeagif
@@ -5836,6 +5848,7 @@ usr/share/applications/tas.desktop			    takeashot
 usr/share/applications/thunar-bulk-rename.desktop	    thunar
 usr/share/applications/thunar-settings.desktop		    thunar
 usr/share/applications/thunar.desktop			    thunar
+usr/share/applications/tkacast.desktop			    takeacast
 usr/share/applications/tkagif.desktop			    takeagif
 usr/share/applications/touchpad.desktop			    touchpad
 usr/share/applications/transtray.desktop		    trans-tray

@@ -10471,6 +10471,23 @@ Description: Graphical package manager
   * Configure packages through the debconf system
   * Browse all available documentation related to a package (dwww is required)
 
+Package: takeacast
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 234
+Depends: ffmpeg, gtkdialog
+Replaces: takeagif
+Filename: ./takeacast_2.0.0_all.deb
+Size: 57448
+MD5sum: 3f47f4af07f8e147f381013e8e039b6c
+SHA1: 8a659a139b19a84b4e464e30d5283ceac298f1fb
+SHA256: 292bd23f7a45354eb6336c9ed089b657b42a92ca182b7af5255d7d61b8880d6d
+SHA512: 270984e02bbe59bcaee7c2139d8ecabf85e73adc7800ea998b25d9d8fc646df33461ece9666c134dac5b3a2cd5fab073e8366878e3f4188446c5529f2a9e9cef
+Description: Modified from TAS Screenshot utility, focused on taking a screencast with audio included
+
 Package: takeagif
 Architecture: all
 Version: 1.0.0
