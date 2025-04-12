@@ -1936,11 +1936,11 @@ Maintainer: fredx181
 Installed-Size: 3100
 Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper, curl, jq
 Filename: ./dogradio_2.5.0_all.deb
-Size: 425352
-MD5sum: dd16b86d1667182af44cce16c95a8dc8
-SHA1: 8fcaab9deeb5167626195c7e85b4bbb2bd33e050
-SHA256: 769a9a2771b8a3e58bd0c5aaeee3ed20ad67abd1049961e7359df97045c38d61
-SHA512: 344c6fcfc4486e263a3e8a8e106f59ecdf460a46305734058fecc10eb9f0e92b40cdf450e98addb72daf537908c1c77e42303122ebdcd7957cdc788e3ab78c0f
+Size: 425364
+MD5sum: c43f5832de6c2ab758dad1ead7f4d974
+SHA1: a01935156c12d92cb0d1ab4fdc05aaa3ac79e7b2
+SHA256: f6d38e3a13dd97255522e829bc815258f555b914ed050f81b58867f08816a752
+SHA512: e6fb5ba96c0047c5211274bca44dea136152de4e710fbec7da63eeac3a681a8e2b47e45b70b6a61a81e8d5c9248b08b7f0be0fbe6a7714c65b6b57c46b27a869
 Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
  - Using yad for the icons GUI
