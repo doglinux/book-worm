@@ -7485,36 +7485,6 @@ Description: Information about drive partitions
 
 Package: peasypdf
 Architecture: all
-Version: 5.3
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, dc, xdialog3
-Filename: ./peasypdf-gtk3_5.3_all.deb
-Size: 6932
-MD5sum: e69449a725bf79a63b35ebf9e90f5029
-SHA1: eff8bb7418c38278e602717842f65d096e7a0658
-SHA256: 5843ba7bb42dc03e252bc264f4ec84ee1574bb73a384cfeddd714b93996ac67b
-SHA512: c56921190f6effd815f4be2761662f505991fe6c09eab4e144881446ed54a4f4821af525e3112413c05cceb2a244e8e273938437d58e60e08af8f5334f458b09
-Description: Manipulate PDF documents
-
-Package: peasypdf
-Architecture: all
-Version: 5.4
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, dc, xdialog3
-Filename: ./peasypdf-gtk3_5.4_all.deb
-Size: 7044
-MD5sum: b8e05c71d959090ebd8dd8013f60330b
-SHA1: 7064c1a7703b57ac32f0cffa88bc140043e76836
-SHA256: 9cf97fad2d870eb55285e3af181c484bb82350f3b985a3ec24d5c99648ba8437
-SHA512: 697bfb763662194b4790da8d2a08aee3b22f07848c26b142e879289bc53a1a04851666d9e8f30cd7d1f7dc7fdd13b286648f5625ce859cb0b6ba5d995224daa9
-Description: Manipulate PDF documents
-
-Package: peasypdf
-Architecture: all
 Version: 5.5
 Priority: optional
 Section: base
@@ -7753,6 +7723,22 @@ MD5sum: fcc7f0601d00c3930ba24da31c6f215f
 SHA1: e36270e0ddaef6652b544797e4384d09bcaed889
 SHA256: 646b022bd9fa60fcf492a4c92a3c21b94b1c54f502b07911338d7c9d4dc7e00b
 SHA512: 79e1ec0009af44a999da03f95d82482988b800dd99fa085fae02c17531c655e870994c6f2b22c31589eb166785789f21c0127046af06efbb93cf4ab74fdce98c
+Description: peasyscale from rcrsn51 for Puppy linux
+
+Package: peasyscale
+Architecture: i386
+Version: 3.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libpango1.0-0, libcairo2, libglib2.0-0, libgtk-3-0, xdialog3, webp-pixbuf-loader
+Filename: ./peasyscale_3.2_i386.deb
+Size: 10820
+MD5sum: 60369c2c0c83ab0d4fefa91ae2517050
+SHA1: 2c4f6e5f89ab71790fde4ce08f8f05cd09bf510b
+SHA256: 2917d5142fd5f90d989bbfc0ed1122b107d862d1c77e49d21a5053e7edb43368
+SHA512: 34ace4155a21906868426ecad7f6b18e1ac126b62a63dedd8218db5853440415342696ad9f8fc962130a5cdffa3473648023ddd73420b9127d1a9829649c0546
 Description: peasyscale from rcrsn51 for Puppy linux
 
 Package: peasyscan
@@ -11724,6 +11710,21 @@ Description: X server utilities
   - xsetroot, a tool for tailoring the appearance of the root window;
   - xstdcmap, a utility to selectively define standard colormap properties;
   - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: xdialog3
+Architecture: i386
+Version: 2.3.5
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: libgtk-3-0
+Filename: ./xdialog3_2.3.5_i386.deb
+Size: 36012
+MD5sum: eb5960d1f009f1ee7a4e76cfb97d36ec
+SHA1: 2b2738685ba07bbb6f493023dd1d99688e6aa616
+SHA256: 0d4540182cbef8c3225494a8b5b2dfd285396b3dd64927144cd5c0c471ae0fef
+SHA512: 4cc79692cd1da760d9ba72e735b537b5b002dfe7ad1bd1904a1cf56b08094148910e76dcb184e2de030ee714b150b073cffe272a7d5ec21d8013ae067dbf1674
+Description: Xdialog for gtk3
 
 Package: xdm
 Architecture: i386

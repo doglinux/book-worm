@@ -899,6 +899,7 @@ usr/bin/Frisbee						    frisbee
 usr/bin/Lumina-DE					    lumina-desktop-debdog
 usr/bin/Thunar						    thunar
 usr/bin/Xdialog						    gtkdialog
+usr/bin/Xdialog3					    xdialog3
 usr/bin/apulse						    apulse
 usr/bin/aubrsync					    aufs-tools
 usr/bin/aubusy						    aufs-tools
