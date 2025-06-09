@@ -973,7 +973,7 @@ usr/bin/leafpad						    leafpad
 usr/bin/libpng-config					    libpng12-dev
 usr/bin/libpng12-config					    libpng12-dev
 usr/bin/linux-user-chroot				    linux-user-chroot
-usr/bin/losetup-FULL					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm,filemnt-pcmanfm-qt
+usr/bin/losetup-FULL					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm
 usr/bin/lumina-config					    lumina-desktop-debdog
 usr/bin/lumina-fileinfo					    lumina-desktop-debdog
 usr/bin/lumina-fm					    lumina-desktop-debdog
@@ -1027,8 +1027,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm,filemnt-pcmanfm-qt
-usr/bin/pupmessage					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm,filemnt-pcmanfm-qt
+usr/bin/pupdialog					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm
+usr/bin/pupmessage					    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm
 usr/bin/pwdx						    procps
 usr/bin/pyclean						    python2-minimal
 usr/bin/pycompile					    python2-minimal
@@ -1065,7 +1065,7 @@ usr/bin/top						    procps
 usr/bin/unsquashfs					    squashfs-tools
 usr/bin/uptime						    procps
 usr/bin/usleep						    pburn
-usr/bin/vercmp						    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm,filemnt-pcmanfm-qt
+usr/bin/vercmp						    filemnt-caja,filemnt-thunar,filemnt-rox,filemnt-pcmanfm
 usr/bin/vmstat						    procps
 usr/bin/w						    procps
 usr/bin/watch						    procps
@@ -2993,7 +2993,7 @@ usr/local/bin/evince					    evince
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
 usr/local/bin/f3_flash_check				    f3-flash-check
 usr/local/bin/filefinder				    filefinder
-usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm,filemnt-pcmanfm-qt
+usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_install				    Firewall-Puppy
 usr/local/bin/firewall_install.sh			    Firewall-Puppy
 usr/local/bin/firewall_ng				    firewall-ng

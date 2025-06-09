@@ -12831,6 +12831,32 @@ Description: Downloader of videos from web page.
  .
  yt-dlp is a youtube-dl fork.
 
+Package: yt-dlp
+Architecture: all
+Version: 2:2025.05.22
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2025.05.22_all.deb
+Size: 2958764
+MD5sum: 08c686bce3f0f77ba0c721ac44c36829
+SHA1: edd83639284c08a95558d74757e558156043dd23
+SHA256: d651b5432eb2618deaf6468515e5ddc46d1eedafe84f15f3d14cd79271491fe3
+SHA512: 87bb5b469b0c1f0643b1e9dc7168733492079305e72631b81a92ad018d9b86efccc6bf88e974a990262901cfb5259cb823627cbcd52da66a5f12cfc53bb943a8
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
 Package: zenity-portable
 Architecture: amd64
 Version: 2.30.0

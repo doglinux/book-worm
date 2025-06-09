@@ -2593,21 +2593,6 @@ SHA256: 1e2c6302f8fec35f2f16ba7465f7ed466ad003feabc75a6ec3f88f53f414feb3
 SHA512: 085aad01cfcacbb714702cae9705ad16d817ed2a5d1d28d9e267a4652776d2096f0499748524d739ee6140bb9f8679e5b57478990eb00e05a98ad84d81591967
 Description: Mount images, savefile, modules
 
-Package: filemnt-pcmanfm-qt
-Architecture: i386
-Version: 1.0.2
-Maintainer: fredx181 root@dog
-Installed-Size: 39
-Depends: libc6, disktype, menu, pcmanfm-qt
-Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
-Filename: ./filemnt-pcmanfm-qt_1.0.2_i386.deb
-Size: 20440
-MD5sum: baa7713b137f7be065390a1d1ddda86c
-SHA1: b189fa61624efe75f54097c27c76ee65ea73c542
-SHA256: 5742d7ad6153138acbea070407707ae8a254e70f7c95452b46ad073e7220601d
-SHA512: 8d34d6593b1fd5da38e440e98dbcc905eb11d6ce45fd1234d94e17571ac404c77a7fc9d768199d9f9c74b1749b92b1329186e5ef71ae15b87b300cf8c6ff0715
-Description: Mount images, savefile, modules
-
 Package: filemnt-pcmanfm
 Architecture: i386
 Version: 1.0.1
@@ -12832,6 +12817,32 @@ MD5sum: ace9f6f86514c99d08ba7cbd643e0526
 SHA1: 873e8a7f0db5338294601e67d06da9e176c5f12f
 SHA256: 117ee7aab338042828df248941108b9c400328da08a3c701417d041a2eaa79ee
 SHA512: fdfb98a546ea311859f324152d389d92073273636de3653159560cb60000b320f96756542d5c971830cecf5f8a853f4dd2396082ef6c51e93b62691671749445
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2025.05.22
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2025.05.22_all.deb
+Size: 2958764
+MD5sum: 08c686bce3f0f77ba0c721ac44c36829
+SHA1: edd83639284c08a95558d74757e558156043dd23
+SHA256: d651b5432eb2618deaf6468515e5ddc46d1eedafe84f15f3d14cd79271491fe3
+SHA512: 87bb5b469b0c1f0643b1e9dc7168733492079305e72631b81a92ad018d9b86efccc6bf88e974a990262901cfb5259cb823627cbcd52da66a5f12cfc53bb943a8
 Homepage: https://github.com/yt-dlp/yt-dlp
 Description: Downloader of videos from web page.
  This tool is a small command-line program to download videos from webpage
