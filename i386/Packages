@@ -2593,6 +2593,21 @@ SHA256: 1e2c6302f8fec35f2f16ba7465f7ed466ad003feabc75a6ec3f88f53f414feb3
 SHA512: 085aad01cfcacbb714702cae9705ad16d817ed2a5d1d28d9e267a4652776d2096f0499748524d739ee6140bb9f8679e5b57478990eb00e05a98ad84d81591967
 Description: Mount images, savefile, modules
 
+Package: filemnt-pcmanfm-qt
+Architecture: i386
+Version: 1.0.2
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype, menu, pcmanfm-qt
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
+Filename: ./filemnt-pcmanfm-qt_1.0.2_i386.deb
+Size: 20440
+MD5sum: baa7713b137f7be065390a1d1ddda86c
+SHA1: b189fa61624efe75f54097c27c76ee65ea73c542
+SHA256: 5742d7ad6153138acbea070407707ae8a254e70f7c95452b46ad073e7220601d
+SHA512: 8d34d6593b1fd5da38e440e98dbcc905eb11d6ce45fd1234d94e17571ac404c77a7fc9d768199d9f9c74b1749b92b1329186e5ef71ae15b87b300cf8c6ff0715
+Description: Mount images, savefile, modules
+
 Package: filemnt-pcmanfm
 Architecture: i386
 Version: 1.0.1
