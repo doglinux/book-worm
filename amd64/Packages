@@ -664,6 +664,21 @@ Description: Bluetooth ALSA Audio backend
 
 Package: bt4stretch
 Architecture: amd64
+Version: 2.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: blueman, bluealsa, xdialog3
+Filename: ./bt4stretch-bookworm-gtk3_2.7_amd64.deb
+Size: 53144
+MD5sum: 1f6050fc064a22770a5f4f641277eb37
+SHA1: 5d2f33b60589cd41953ec518c4809412af4e4bda
+SHA256: 3382312a4ef1d57b9e9500177446df70073bcba777171ad41498c814b21fc416
+SHA512: b3784253eca9dfc23a8bd68ec4cdacdef4005c61bd59fd23be5ec12bdc5293a3b8e1408502d751b5a728ccdb379673a9d8d899a710a120dedf52a52c5284c646
+Description: Bluetooth manager
+
+Package: bt4stretch
+Architecture: amd64
 Version: 1.2
 Priority: optional
 Section: base
