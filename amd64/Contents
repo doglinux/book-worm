@@ -2781,6 +2781,7 @@ usr/local/bin/defaulttexteditor				    mm-view
 usr/local/bin/desktop-editor				    desktop-editor
 usr/local/bin/desktop_drive_icons			    desktop-drive-icons
 usr/local/bin/diffing					    diff-sync-umount
+usr/local/bin/docx2html					    docx2html
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive					    googledrivegui
@@ -5740,6 +5741,7 @@ usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm,edit-sfs-pcmanfm-
 usr/share/applications/deadbeef.desktop			    deadbeef-static
 usr/share/applications/desktop_view_edit.desktop	    desktop-editor
 usr/share/applications/diffing.desktop			    diff-sync-umount
+usr/share/applications/docx2html.desktop		    docx2html
 usr/share/applications/domycommand.desktop		    domycommand
 usr/share/applications/domyfile.desktop			    domyfile
 usr/share/applications/drivespeed.desktop		    drivespeed
@@ -9107,6 +9109,7 @@ usr/share/pixmaps/diffing.png				    diff-sync-umount
 usr/share/pixmaps/dirs.png				    jwm-setup,jwmconf
 usr/share/pixmaps/disc.png				    mount-wizard
 usr/share/pixmaps/dload.png				    youtube-get2,youtube-get3
+usr/share/pixmaps/docx2html.png				    docx2html
 usr/share/pixmaps/drive.png				    mount-wizard
 usr/share/pixmaps/drive24.png				    mount-wizard
 usr/share/pixmaps/dropbox.png				    dropboxgui
