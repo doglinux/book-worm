@@ -664,6 +664,36 @@ Description: Bluetooth ALSA Audio backend
 
 Package: bt4stretch
 Architecture: amd64
+Version: 2.10
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, xdialog3
+Filename: ./bt4stretch-bookworm-gtk3_2.10_amd64.deb
+Size: 53016
+MD5sum: 6cf0e1fd2c2e3b740ec711d19623b6aa
+SHA1: e60c1e656402abf1e3beb1906a79857b9ad20b1e
+SHA256: 630c8916032b8f54c5eaa00be0552be34ee613ec2ca7e148df654cd42fe93f49
+SHA512: 57711c5d46ed8652d14724097515a6589d30a2c3b004bf687119d9167c1a7b1521bdb54f5b4110d13a13707939e3f62bfdfa496e4911226e070aeafb413e15e5
+Description: Bluetooth manager
+
+Package: bt4stretch
+Architecture: amd64
+Version: 2.11
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, xdialog3
+Filename: ./bt4stretch-bookworm-gtk3_2.11_amd64.deb
+Size: 53220
+MD5sum: b243254d93e0c608b7c89b9ffd86fb19
+SHA1: 48f2d5e8b528803371ee11fdb0e504a548dad9c3
+SHA256: 82e05f4f705b68729af764ada45ea9fc4e0c154083b25aed3f07f729823b7e94
+SHA512: 01872387a4dd6d7557524a4c1f23d406d9f3bfd1bc5b0b30338a4cce43b37e1eb1438b1a11bb88f6fce3fe4267a893eafba8a6025811b7767446ecbe39585861
+Description: Bluetooth manager
+
+Package: bt4stretch
+Architecture: amd64
 Version: 2.7
 Priority: optional
 Section: base
@@ -690,6 +720,21 @@ MD5sum: e18adad3746e8dcae178ae0d1761bae7
 SHA1: 5ffbdef0ccd61ae9d846ad73d1afe3b293a79672
 SHA256: 60df471de74d582bc6d33592f36bdd81438e5933b3f4975a533936164e518a18
 SHA512: 01ec78603cbed7b44e63d0b5f0c2ecc333d7470ce7439022ceb992cc7d3a6f8bd69360d9cbe1c7ffca3d532291a5ca674270c03dcb1b0f6a3a93f96967102760
+Description: Bluetooth manager
+
+Package: bt4stretch
+Architecture: amd64
+Version: 2.9
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: blueman, xdialog3
+Filename: ./bt4stretch-bookworm-gtk3_2.9_amd64.deb
+Size: 53248
+MD5sum: 712553ad84d60c5a0b3380f58edab4ac
+SHA1: 8aa8a32daa17c1bb36c6629a7b28ebb6b4e588a0
+SHA256: b2bc623451f86d73172fec13939de42e2d44aa5f055adb2934c21615fc96174b
+SHA512: 98897aafbdc78d193183580c9dcce1ac8935a4ce4fd40e38aac1101b8320676c0fce928748dc304a760440a48b6363a0346e927bb12fdf9c05192085f3d9c752
 Description: Bluetooth manager
 
 Package: bt4stretch
