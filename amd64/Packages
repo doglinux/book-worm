@@ -694,6 +694,21 @@ Description: Bluetooth manager
 
 Package: bt4stretch
 Architecture: amd64
+Version: 2.12
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, xdialog3
+Filename: ./bt4stretch-bookworm-gtk3_2.12_amd64.deb
+Size: 53528
+MD5sum: bbb4e61b4853a9e367ca112e1a5dde74
+SHA1: 957619bf92c94814cad50d6992a418d57c8853da
+SHA256: 7045d8f4491ebfec9768984b8ea0aafdf8714c74a95914587cfc9b93ef845b87
+SHA512: 8e578bbb3654cc839388ab60ab14dc80aba52fb0414538bfd5594dda892ab7180317d475fcdffa313600e38bdabd99d57fed65f22bf04566d8538cc438a8e888
+Description: Bluetooth manager
+
+Package: bt4stretch
+Architecture: amd64
 Version: 2.7
 Priority: optional
 Section: base
