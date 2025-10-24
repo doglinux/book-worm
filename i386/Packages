@@ -1614,6 +1614,20 @@ SHA256: 98de7c7491aa4cfb47a4859b4507a476e70b3e6eacae48bc3a64b164355daf07
 SHA512: 4c33a2dd9cc181705b349f303c5220b97c21c652fe9e9dee533031504f3fd575816455204be101147fa83acac7e4ca03e5ad045f7cee82435a195977a5f76711
 Description: Special DebianDog mount and drive information scripts.
 
+Package: debdogmountscripts
+Architecture: all
+Version: 1.1.0
+Maintainer: root
+Installed-Size: 73
+Depends: libc6
+Filename: ./debdogmountscripts_1.1.0_all.deb
+Size: 2516
+MD5sum: 055500c153ca6e968d4726f837bc9722
+SHA1: 7b129a5e584f0320ade4ba0b3e3dc660ad1f8730
+SHA256: ec80524c4960db3b5672d5da2409cf3a3168037f7232806c2da0b556a542910a
+SHA512: f247d5a3b01587e92491b699ee404f298e59e303622e314f3e5d9839a6ef806b7c9504f29e4cdc42d26f7aae9df80c7ba3cef1e2e5f910177e8d7063eb8acd55
+Description: Special DebianDog mount and drive information scripts.
+
 Package: desktop-drive-icons
 Architecture: i386
 Version: 0.0.1-i486
