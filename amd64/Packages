@@ -8051,6 +8051,40 @@ Description: peasyscale from rcrsn51 for Puppy linux
 
 Package: peasyscan
 Architecture: amd64
+Version: 3.2
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, netpbm, libtiff-tools, libgtk-3-0, xdialog3, wmctrl
+Filename: ./peasyscan-gtk3_3.2_amd64.deb
+Size: 64764
+MD5sum: 448c5ded069a4e5cf201703c059689c5
+SHA1: 1c83a67e2f53edddd9713c9e23ba007c743aa761
+SHA256: 56ced44f89bbc618ba0a818aa2957fa1ea69e82f860215a04dfd7a2b133fcfff
+SHA512: ac41b50774169e327d2bd192d3a38e66953c676de4a198e050e46a92c352e62b3654482b82080b4bb09401c00c2d0740587c9388931c1f72f356dd8524ffe659
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
+Package: peasyscan
+Architecture: amd64
+Version: 3.3
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, netpbm, libtiff-tools, libgtk-3-0, xdialog3, wmctrl
+Filename: ./peasyscan-gtk3_3.3_amd64.deb
+Size: 64948
+MD5sum: 5925d47cdfa340070a817c1c24783c7e
+SHA1: 90cefa73c33c55121a86b9ee195b3074e89317b1
+SHA256: 18292aaa64a7d92d7d6cc71295dfac4965a90e318131b0fd358435d36d2192e5
+SHA512: 2e0480f004c3c3df8a1638d59462a1c35ac786af9003e297c66d67431dbbb1a3a93ddccebad63bb2483e4731a0042ef1090c949d41e5d504c6300ca77b94b13c
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
+Package: peasyscan
+Architecture: amd64
 Version: 2.13-1
 Priority: optional
 Section: Graphics;
