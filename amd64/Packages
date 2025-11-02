@@ -7612,6 +7612,22 @@ Description: Media player, CD player, Carousel
 
 Package: peasymp3
 Architecture: amd64
+Version: 5.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libcddb-get-perl, eject, xterm, libasound2-plugin-equal, xdialog3
+Filename: ./peasymp3-gtk3_5.1_amd64.deb
+Size: 11460
+MD5sum: 5b0fd578c470c71cd4dfbeb22a8533b0
+SHA1: a456f5d372a2b2612049c3bb1c5d403d9b03e1e6
+SHA256: e1d7715db9ac7e8e0136fca320be2b0daa9d7188bb82f5974881cd5d7f1fe778
+SHA512: 73769353c7927a4a1e8b5aa6efc291073b25e473af3e88b0fb59694b9cc72aa036d24073fef0fe7dab844434797d794b0406cebf9eb74c89a9351e498f99375f
+Description: Media player, CD player, Carousel 
+  User supplies mplayer
+
+Package: peasymp3
+Architecture: amd64
 Version: 4.1-3
 Priority: optional
 Section: base

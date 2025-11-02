@@ -607,6 +607,7 @@ root/.alsacap2/.asoundrc.capture3			    alsacapgui2
 root/.asoundrc						    peasymp3
 root/.asoundrc.base					    alsa-capture
 root/.asoundrc.capture					    alsa-capture
+root/.asoundrc.new					    peasymp3
 root/.config/autostart/screener.desktop.bak		    screener
 root/.config/rox.sourceforge.net/MIME-types/application	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwm-setup,jwmconf
