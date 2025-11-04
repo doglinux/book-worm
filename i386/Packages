@@ -2024,6 +2024,31 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  and config directory changed to ~/.dogradio2
  v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
 
+Package: dogradio
+Architecture: all
+Version: 2.6.0
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, mpv, file, streamripper, curl, jq
+Filename: ./dogradio_2.6.0_all.deb
+Size: 425296
+MD5sum: 0016cfb41662e47ff5532a8d3098ff5a
+SHA1: f3467f45324a44ced2aea9265253963fbe2671b0
+SHA256: 4c9cc86a79368093b0143ca69a6d4b730d9060d7f1dfae7e0d9c37bd12bc8af1
+SHA512: c2bf42f05e0074909fca52c3139ff41b18fa501f4af59b5257eaba23a4eaa02af20d4df328eb57e57e14aa8d0aa19e76ea7fddaf7b5720bca0bac08a6dc5ebf1
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+ v1.0.0: conky ticker config fixed (new syntax in config and changes in dogradio script)
+ v2.1.0: major changes, e.g. new (Radiosure) database, choice between mpv and mplayer
+ and config directory changed to ~/.dogradio2
+ v2.2.0, no index database required anymore, searching direct online from http://all.api.radio-browser.info, required is jq to parse
+ v2.6.0, fixed that playing with mpv didn't work properly
+
 Package: domycommand
 Architecture: i386
 Version: 9.0.3
@@ -12931,6 +12956,26 @@ Description: Internet Radio Player
  v1.3, works with mpv and mplayer
  v1.7, direct online search
  v1.8, volume fix for in case pipewire or pulseaudio running
+
+Package: yradio
+Architecture: all
+Version: 1.8.2-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.2-0_all.deb
+Size: 279960
+MD5sum: 63e2355fde9e7d303f141d6fe2a77696
+SHA1: fbfa5a6c1107b2c91402df8849467a31a02a3c07
+SHA256: a6093d2e921d50bf0c6078c4b51792a4b82dd40a18cc5c527d1091144924d810
+SHA512: fccb02b200d2019e2740be87c0fbc5a486ef8185414c05be8e991d08e2731d3a726f2ba69f9cf3181292ea2472f002d6eb31178133570bbadf37ece5746b6d2c
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
 
 Package: yt-dlp
 Architecture: all
