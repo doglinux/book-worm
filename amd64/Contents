@@ -178,7 +178,7 @@ home/puppy/Startup/network_tray.sh			    frisbee
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/Startup/peasywifi_tray			    PeasyWiFi
 home/puppy/Startup/rshift-gui-lite			    redshift-gui-lite
-home/puppy/Startup/run-pipewire				    pipewire-setup
+home/puppy/Startup/run-pipewire				    pipewire-setup,pipewire-setup-spot
 home/puppy/startup-jwm					    jwm-setup,jwm-setup-dd64,jwmconf
 index.html						    pack-it
 lib/dhcpcd/dhcpcd-hooks					    frisbee
@@ -734,12 +734,13 @@ root/.jwm/jwm.main					    jwm-setup,jwm-setup-dd64,jwmconf
 root/.jwm/jwm.main-debian				    jwm-setup-dd64
 root/.jwm/jwm.tail					    jwm-setup,jwm-setup-dd64,jwmconf
 root/.jwmrc						    jwm-setup,jwmconf
-root/.local/share/applications/chromium.desktop		    run-as-user
-root/.local/share/applications/google-chrome.desktop	    run-as-user
+root/.local/share/applications/chromium.desktop		    run-as-spot,run-as-user
+root/.local/share/applications/google-chrome.desktop	    run-as-spot,run-as-user
 root/.local/share/applications/gparted.desktop		    jwm-setup-dd64
+root/.local/share/applications/run-as-spot.desktop	    run-as-spot
 root/.local/share/applications/run-as-user.desktop	    run-as-user
 root/.local/share/applications/synaptic.desktop		    jwm-setup-dd64
-root/.local/share/applications/vlc.desktop		    run-as-user
+root/.local/share/applications/vlc.desktop		    run-as-spot,run-as-user
 root/.local/share/file-manager/actions/activate-sfs.desktop sfsload
 root/.local/share/file-manager/actions/activate.desktop	    sfsload
 root/.local/share/file-manager/actions/de-activate.desktop  sfsload
@@ -785,7 +786,7 @@ root/Startup/peasymag_tray				    peasymag
 root/Startup/peasymp3_tray				    peasymp3
 root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
-root/Startup/run-pipewire				    pipewire-setup
+root/Startup/run-pipewire				    pipewire-setup,pipewire-setup-spot
 root/Startup/samba-autostart				    samba-server-control
 root/Startup/xscreener					    screener
 root/fisherman.jpg					    jwmconf
@@ -2773,7 +2774,7 @@ usr/local/bin/conv-sfs					    edit-sfs-pcmanfm,edit-sfs-pcmanfm-qt,edit-sfs-thu
 usr/local/bin/create-portable				    create-portable
 usr/local/bin/dancingletters-forum			    dancing-letters
 usr/local/bin/dancingletters-html			    dancing-letters
-usr/local/bin/ddliveapp					    run-as-user
+usr/local/bin/ddliveapp					    run-as-spot,run-as-user
 usr/local/bin/debdog-full-install			    debdoginstallscripts
 usr/local/bin/debdog-install				    debdoginstallscripts
 usr/local/bin/defaultaudioplayer			    pmusic
@@ -2914,6 +2915,7 @@ usr/local/bin/photo-cropper				    photo-cropper
 usr/local/bin/picdrop					    picdrop
 usr/local/bin/picscale					    picdrop
 usr/local/bin/pipewire-start				    pipewire-setup
+usr/local/bin/pipewire-start-spot			    pipewire-setup-spot
 usr/local/bin/pmusic					    pmusic
 usr/local/bin/pmwget					    pmirrorget
 usr/local/bin/popup-image				    popup-image
@@ -2932,7 +2934,7 @@ usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/repo-conf					    repo-conf
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
-usr/local/bin/run-as-spot				    run-as-user
+usr/local/bin/run-as-spot				    run-as-spot,run-as-user
 usr/local/bin/run-as-user				    run-as-user
 usr/local/bin/samba-server-control			    samba-server-control
 usr/local/bin/scdripper					    simplecdripper
@@ -5340,7 +5342,7 @@ usr/local/r-shift/usr/lib/gtkdialog/xml_button-icon	    redshift-gui-lite
 usr/local/r-shift/usr/lib/libxcb-randr.so.0		    redshift-gui-lite
 usr/local/r-shift/usr/lib/libxcb-randr.so.0.1.0		    redshift-gui-lite
 usr/local/r-shift/usr/share/pixmaps/rshift.png		    redshift-gui-lite
-usr/local/rau/vlc.desktop				    run-as-user
+usr/local/rau/vlc.desktop				    run-as-spot,run-as-user
 usr/local/scdrip/bin/apetag				    simplecdripper
 usr/local/scdrip/bin/cdda2wav				    simplecdripper
 usr/local/scdrip/lib/libfdk-aac.so.1			    simplecdripper
@@ -9099,7 +9101,7 @@ usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ccsm.svg				    sfsload
 usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni
-usr/share/pixmaps/chromium64.png			    run-as-user
+usr/share/pixmaps/chromium64.png			    run-as-spot,run-as-user
 usr/share/pixmaps/clock_face33.png			    conkyclock2
 usr/share/pixmaps/clock_face45.png			    conkyclock
 usr/share/pixmaps/computer.png				    inxi-gui
@@ -9257,7 +9259,7 @@ usr/share/pixmaps/gnome-lock-screen.png			    xlockmore
 usr/share/pixmaps/gnome-mplayer.xpm			    gnome-mplayer-1.0.6
 usr/share/pixmaps/go-next.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/go-previous.png			    youtube-get2,youtube-get3
-usr/share/pixmaps/google-chrome64.png			    run-as-user
+usr/share/pixmaps/google-chrome64.png			    run-as-spot,run-as-user
 usr/share/pixmaps/google-drive-128.png			    googledrivegui,googledrivegui2
 usr/share/pixmaps/google-drive3-128.png			    googledrivegui3
 usr/share/pixmaps/gtk-go-back.png			    youtube-get2,youtube-get3
@@ -9411,8 +9413,8 @@ usr/share/pixmaps/tzupdate.png				    tzupdate
 usr/share/pixmaps/umounting.png				    diff-sync-umount
 usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/updater.png				    apulse
-usr/share/pixmaps/user-home64.png			    run-as-user
-usr/share/pixmaps/vlc64.png				    run-as-user
+usr/share/pixmaps/user-home64.png			    run-as-spot,run-as-user
+usr/share/pixmaps/vlc64.png				    run-as-spot,run-as-user
 usr/share/pixmaps/vnstat-tray.png			    vnstat-tray
 usr/share/pixmaps/websearch.png				    websearch
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg

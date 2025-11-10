@@ -8577,6 +8577,23 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer
 
+Package: pipewire-setup-spot
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: pipewire, pipewire-pulse, wireplumber, pipewire-alsa, run-as-spot, pavucontrol
+Conflicts: pipewire-setup
+Replaces: pipewire-setup
+Filename: ./pipewire-setup-spot_1.0.0_all.deb
+Size: 1848
+MD5sum: d9b01659cd2f64372aebd445b762c723
+SHA1: 71017f0cd56280b35de500fc08e985f63e516030
+SHA256: 39d91124886c8bf8473671ef73f7c33616a7ae4ec95124e9b75c5277d2635b1f
+SHA512: e6fd9235c1a9c33728d0d7da0b3605dcc4e6bd8561282e9ef1d7e4214e5bf19d81e99fe7a0e3f6702700dcb0dbadc2c57249721c2ad63142c4e08d29928d78d0
+Description: Set up pipewire running as spot
+
 Package: pipewire-setup
 Architecture: all
 Version: 1.0.0
@@ -10047,6 +10064,24 @@ Description: Multi-tabbed GTK+/VTE terminal emulator - GTK2 version
  This package provides the GTK+2 version of the binaries. The roxterm-gtk3
  package provides a GTK+3 version.
 
+Package: run-as-spot
+Architecture: amd64
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm, dbus-x11, chpupsocket
+Conflicts: run-as-user
+Replaces: run-as-user
+Filename: ./run-as-spot_0.0.1_amd64.deb
+Size: 27228
+MD5sum: 0bcc65fe39baa236152a1d0e30d92840
+SHA1: 6fd578946205e488a05d5f3e7f3bd0784e643dab
+SHA256: 80f7e6c8800b2baa241b83e79f4c0e69c4405d81716e996116bb25f44152605c
+SHA512: 0fa10a92af2c633838d9c0628b8e39ccf16ec9fc19a2bc941c6315ef5ea5db9dcf1c88c4878d0a8af71ef5389f8273533315bc1e4d9a94782e6a6daecffd2ad8
+Description: Run application as unprivileged user (from root account)
+
 Package: run-as-user
 Architecture: amd64
 Version: 0.0.1
@@ -10175,6 +10210,24 @@ SHA256: d1b5cea3f31e4b92943705dd418fd0cbfd4ae769d61df9d3f43e0b0ed45f2447
 SHA512: cff672e96bd458f111393f0a815ac827fb2fa1ac78d8824b76ac25a2047a32cdfbed105dcee73e8f3decc414316d5ecd6cc4dfd95bfb8aa02c272c3a37594b30
 Description: Run application as unprivileged user (from root account)
 
+Package: run-as-user
+Architecture: amd64
+Version: 0.0.9
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm, dbus-x11, chpupsocket
+Conflicts: run-as-spot
+Replaces: run-as-spot
+Filename: ./run-as-user_0.0.9_amd64.deb
+Size: 27344
+MD5sum: 526de22fc1628406d38fcfd93617df29
+SHA1: 677d1de1f0d5aded1d663ca439c9deaa3694f356
+SHA256: 6143255521fe20d9d7439e67baef0129e209fbc3e8670a3fb27b2ec3cc0ec84c
+SHA512: 1ad77350d2c9162ef604b5e19bb41ddf8628a6dc8eb034de8bda484d6ceb5a0c9960743110f2130f2b3f83e23f5dd9146eeba1dd4933a0e8c47585c5f467679a
+Description: Run application as unprivileged user (from root account)
+
 Package: samba-server-control
 Architecture: all
 Version: 3.0
@@ -10266,6 +10319,22 @@ MD5sum: 75d3440c2ebfb7811ccec59d40c763bc
 SHA1: 80a4fd2e8ac835b035ceee2226e353f639eb6782
 SHA256: bb95dfa4ce3a3c38dc58db696b6e267eade6fd07e8bd7a95f72af89b8ea53f7e
 SHA512: 0de4ac3921c90c0b44a279315716f9391da39c5c43485748875302b2f73781a4500cb23b5103a4c2a42ba496228142b268f918344c4bf4b973a532bdc297165b
+Description: Screensaver Gui
+
+Package: screener
+Architecture: amd64
+Version: 1.0.6
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 60
+Depends: yad, libc6, xautolock, xlockmore (=5.61), run-as-user | run-as-spot
+Filename: ./screener_1.0.6_amd64.deb
+Size: 15040
+MD5sum: ad65c6ba63161765d3a31e14908c3104
+SHA1: de477da40baf8a684a5e931e3a2b6fd6feb7adcc
+SHA256: 88686ad165fd61e709daf991a81984913ec41c6a4c724ea34468ea8b15fe3e1c
+SHA512: ef6265f4d5f441dbddba9c3bc94cb094ec1c90267087978f7e57cd6aed0d52eaac67b008e1c597dc70523c1a7517ec04c1c63e22a708c8615ec9e86d970002aa
 Description: Screensaver Gui
 
 Package: scrotdlg
