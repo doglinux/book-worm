@@ -2703,6 +2703,21 @@ SHA256: 95a35d70dc23df51fc1f8614f8c3cc5f3b0128a9040469a5dc4f64cb53a4800f
 SHA512: 90809c4c0be3ad86a44f85770a2320b94540215e7c816926e58a68e84fe0f6cce1827318fac118b58548d4c1aefbcca5d7581b5dfdc2f431eda12c62e9ea2af6
 Description: Mount images, savefile, modules
 
+Package: filemnt-pcmanfm-qt
+Architecture: amd64
+Version: 1.0.3
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype, menu, pcmanfm-qt
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
+Filename: ./filemnt-pcmanfm-qt_1.0.3_amd64.deb
+Size: 42680
+MD5sum: a87674ee44e1568968aded6e415c125b
+SHA1: 211082db9cc4a6d7e8e0931ad110b8c0f59186bc
+SHA256: 8eb23d17eb174afa5942803cdae062898a3795f33d95617152791fe341134933
+SHA512: c169a36721a9a3dba799e0913368f36b3ef4972040441cd967c0f6fa731dd8257d8439271c369cbdee3fc6b2db911783e2fee1fe1df03038f96b76c1f0416390
+Description: Mount images, savefile, modules
+
 Package: filemnt-pcmanfm
 Architecture: amd64
 Version: 1.0.1
