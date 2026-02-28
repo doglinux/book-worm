@@ -8576,6 +8576,29 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer
 
+Package: pipe-viewer
+Architecture: all
+Version: 0.5.6
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl, liblwp-protocol-https-perl, wget, fonts-symbola, yt-dlp
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.5.6_all.deb
+Size: 627096
+MD5sum: 9dcbd0b8c4c40ac9e69edc8d361bec0b
+SHA1: 763f83e4b18b0c6dad8b3bca4ed45e48c5b6f2aa
+SHA256: 9332a764d97f40c159f10aace3b489b57412a4cd1e97ffea6870d9457a183e0a
+SHA512: 085df736538c49a4bf3eabb917e4fd8b882ca0bf28ffd84039d879654a35617a0b248cd74e9c428cbdec2929f73e1207de57e1c2eda1b9c04bb5c928b29cf0e7
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
 Package: pipewire-setup-spot
 Architecture: all
 Version: 1.0.0
@@ -13212,6 +13235,32 @@ MD5sum: 08c686bce3f0f77ba0c721ac44c36829
 SHA1: edd83639284c08a95558d74757e558156043dd23
 SHA256: d651b5432eb2618deaf6468515e5ddc46d1eedafe84f15f3d14cd79271491fe3
 SHA512: 87bb5b469b0c1f0643b1e9dc7168733492079305e72631b81a92ad018d9b86efccc6bf88e974a990262901cfb5259cb823627cbcd52da66a5f12cfc53bb943a8
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2026.02.21
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2026.02.21_all.deb
+Size: 3063972
+MD5sum: 988b13b975fb13187b67daf955fbe77c
+SHA1: b3d623f60694b0196d8052af56925cc1de516c95
+SHA256: 8f100f51fc32c4219ebce3af5b117acdb3c2d92dcf17a1e356800ecf54b50bca
+SHA512: 38b2783fd91c1e655853c9da8d06a730371879f8c4a77d287d28bbd14f7e7deb6153c00e383946efb45b1beb022a0a6ba7a86c8d018cbe82c17354bc35b89488
 Homepage: https://github.com/yt-dlp/yt-dlp
 Description: Downloader of videos from web page.
  This tool is a small command-line program to download videos from webpage
