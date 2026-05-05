@@ -1,0 +1,688 @@
+#!/usr/bin/env bash
+#^ this script is also compatibile with BusyBox ash and dash
+
+###############################################################################
+# i v1.4                                                                      #
+# Get a lot of info about a file                                              #
+# Copyright © JakeSFR 2024,2026                                               #
+# License: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html             #
+###############################################################################
+
+export TEXTDOMAIN=i
+export OUTPUT_CHARSET=UTF-8
+
+APPVERSION="1.4"
+APPNAME="i v${APPVERSION}"
+APPNAME_YAD="i[nfo] v${APPVERSION}"
+COPYRIGHT="Copyright © JakeSFR 2024,2026"
+LICENSE="GNU GPL v2 applies"
+ICON_YAD="/usr/share/pixmaps/i.png"
+
+# -----------------------------------------------------------------------------
+
+# void
+f_trap() {
+	f_wait_stop
+	
+	printf "\n${IREDCOL}---%s---${OFFCOL}\n\n" "$(gettext "INTERRUPTED")"
+	
+	if [ "$I_GUI" = 'true' ]; then
+		[ "$YAD_PID" ] && kill -0 ${YAD_PID} 2>/dev/null && kill ${YAD_PID}
+		[ "$YAD_KEY" ] && pkill -f "yad.*--(key|plug)=${YAD_KEY} "
+		[ "$YAD_KEY" ] && ipcrm -M ${YAD_KEY} 2>/dev/null
+	fi
+	
+	exit 1
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = "$@"
+f_click_or_dnd() {
+	local exec_terminal opts f
+	
+	# If not started from terminal, use YAD GUI
+	if ([ ! -t 0 ] || [ "$I_GUI" = 'true' ]) && f_exists yad && yad --help-notebook >/dev/null 2>&1; then
+		I_GUI='true'	# not set otherwise, so can be used as ENV variable
+		
+		if [ "$*" ]; then
+			return
+		else	# stock window-icon was 'gtk-dialog-info'
+			if f="$(yad --title="${APPNAME_YAD}" \
+					--window-icon="${ICON_YAD}" \
+					--width=600 --height=400 --center \
+					--text "<big><b>$(gettext "Select input file or folder")</b></big>" \
+					--text-align=center --file)"
+			then
+				exec "$(readlink -f "$0")" "$f"
+			else
+				exit
+			fi
+		fi
+	fi
+	
+	# If not started from terminal, launch in terminal (fallback if YAD is unavailable)
+	if ([ ! -t 0 ] || [ "$I_GUI" = 'true' ]); then
+		I_GUI=	# unset, to avoid infinite loop if there's no YAD
+		
+		# I_TERM would be an ENV variable
+		for exec_terminal in $I_TERM $TERMINAL $TERM defaultterm x-terminal-emulator mate-terminal gnome-terminal konsole xfce4-terminal terminator lxterminal roxterm urxvt rxvt termit Eterm aterm uxterm termite sakura xterm vte terminology st qterminal lilyterm tilix terminix kitty alacritty hyper wezterm rio guake tilda; do
+			f_exists "${exec_terminal}" && break
+		done
+		
+		# If used, full options are required, otherwise some of them (like -p, -o) are "eaten" by the shell (?!)
+		[ "$*" ] && opts="" || opts=""
+		
+		exec ${exec_terminal} -T "${APPNAME}" -e "${SHELL}" -c ''$(readlink -f "$0")' "$@"; '"${SHELL}"'' "$(readlink -f "$0")" ${opts} "$@"
+	fi
+}
+
+# -----------------------------------------------------------------------------
+
+# void
+f_help() {
+	printf "%b\n"			"${UGREENCOL}${APPNAME} (${COPYRIGHT}; ${LICENSE})${OFFCOL}"
+	printf "%b\n"			"${YELLOWCOL}$(gettext "Get a lot of info about a file.")${OFFCOL}\n"
+	printf "%s\n\n"			"$(gettext "Usage:") ${0##*/} [options] <item>"
+	printf "%s\n"			"$(gettext "Options:")"
+	printf "  %-22s%s\n"	"-n, --no-colors"	"$(gettext "disable ANSI colors in output")"
+	printf "  %-22s%s\n"	"-r, --recurse"		"$(gettext "recurse subdirectories")"
+	printf "  %-22s%s\n"	"-s, --short"		"$(gettext "suppress excessive output from some commands")"
+	printf "  %-22s%s\n"	"-h, --help"		"$(gettext "this help")"
+	printf "\n"
+	
+	exit 0
+}
+
+# -----------------------------------------------------------------------------
+
+# void
+f_backends() {
+	local i
+	
+	printf "${IYELLOWCOL}\n---%s---${OFFCOL}\n\n"	"$(gettext 'BACKENDS')"
+	
+	sed -n "s_[[:blank:]]\+[^#]*)[[:blank:]]\+cmd='\([[:graph:]]\+[[:blank:]]\).*_\1_p" "$0" | sort | \
+	while read i; do
+		printf "${BOLDCOL}> %-32s${OFFCOL}"	"$i"
+		if f_exists "${i}"; then
+			printf "${GREENCOL}%s${OFFCOL}\n"	"[$(gettext 'OK')]"
+		else
+			printf "${REDCOL}%s${OFFCOL}\n"		"[$(gettext 'MISSING')]"
+		fi
+	done
+	
+	printf "${OFFCOL}\n"
+	
+	exit 0
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = character
+f_hr() {
+	printf -- "${1}%.0s" $(seq 1 $(${TERM_WIDTH_CMD} | cut -f2 -d " "))
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = command
+f_exists() {
+	type "$1" >/dev/null 2>&1
+}
+
+# -----------------------------------------------------------------------------
+
+# void
+f_wait() {
+	local i
+	
+	printf '\033[?25l' >&2 # disable cursor
+	
+	while :; do
+		for i in '-' '\' '|' '/'; do
+			printf "%s\b" "${i}" >&2; sleep 0.25
+		done
+	done
+}
+
+# -----------------------------------------------------------------------------
+
+# void
+f_wait_stop() {
+	if [ "$WAIT_PID" ] && kill -0 ${WAIT_PID} 2>/dev/null; then
+		kill ${WAIT_PID} 2>/dev/null
+		wait ${WAIT_PID} 2>/dev/null
+	fi
+	
+	printf "\r\033[2K" >&2	# clear line
+	printf '\033[?25h' >&2	# enable cursor
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_strip_mntpt() {
+	local path="$(readlink -f -- "$1")"
+	local mntpt="$path"
+	
+	#mntpt="$(df -- "$(readlink -f -- "$1")" | tail -n 1 | grep -oE '[^ ]+$')"
+	while ! mountpoint -q -- "$mntpt"; do mntpt="$(dirname -- "$mntpt")"; done
+	
+	echo "${path#${mntpt}}"
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_get_dev() {
+	df -- "$1" | tail -n 1 | cut -f1 -d ' '
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_is_ntfs() {
+	[ -b "$1" ] && return 1
+	[ "$(lsblk -n -o FSTYPE "$(f_get_dev "$1")" 2>/dev/null)" = 'ntfs' ]
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_is_img() {
+	LANG=C fdisk -l -- "$1" 2>&1 | grep -q '^Device'
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_appimage_offset() {
+	local offset
+	
+	case "$(echo "$1" | tr '[:upper:]' '[:lower:]')" in
+		*appimage)
+			offset=$(LANG=C grep -abo -m2 'hsqs' "$1" | sed -n 's/:.*//;2p') # 2nd 'hsqs' is "the one"
+			;;
+	esac
+	
+	[ "$offset" ] || offset=0
+	echo ${offset}
+}
+
+# -----------------------------------------------------------------------------
+
+# pipe
+f_pretty_xml() {
+	if f_exists xmllint; then
+		xmllint --nonet --format -
+	else
+		sed -e 's#\(</[^>]*>\|<[^>]*/>\)#&\n#g' -e 's#><#>\n<#g'
+	fi
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = filename, $2 = format, $3 = offset, $4 = amount
+f_get_magic() {
+	([ ! -f "$1" ] && [ ! -b "$1" ]) && return
+	od -An -t${2} -j${3} -N${4} -- "$1" 2>/dev/null | tr -d ' '
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = filename, $2 = ext1|ext2|...
+f_check_ext() {
+	eval '
+		case "$(echo "${1##*.}" | tr "[:upper:]" "[:lower:]")" in
+			'${2}')	return 0	;;
+			*)		return 1	;;
+		esac
+	'
+}
+
+# -----------------------------------------------------------------------------
+
+# $1 = item
+f_i() {
+	local i cmd flt result tabnum tabs fn_esc cmd_esc magic
+	
+	fn_esc="$(echo "$1" | sed 's#\\#\\\\#g')"	# for YAD, needs to be escaped
+	
+	printf "\n${BLUECOL}$(f_hr "=")${OFFCOL}\n"
+	printf -- "${BOLDCOL}%s\n" "${1}"
+	printf "${BLUECOL}$(f_hr "=")${OFFCOL}\n"
+	
+	# Non-existing item
+	if [ ! -e "${1}" ] && [ ! -h "${1}" ]; then
+		printf "\n${YELLOWCOL}%s${OFFCOL}\n" "$(gettext "File doesn't exist, ignoring...")"
+		return 1
+	fi
+	
+	if [ "$I_GUI" = 'true' ]; then
+		YAD_KEY=${RANDOM}	# only for Bash
+		[ "$YAD_KEY" ] || YAD_KEY=$(expr $(tr -cd '0-9' < /dev/urandom | head -c 5) % 32768)
+		YAD_KEY=$((YAD_KEY+1))	# can't be 0
+		tabnum=1
+		tabs=''
+		
+		while :; do echo; sleep 0.2; done | \
+			yad --window-icon="${ICON_YAD}" --title="${APPNAME_YAD}" \
+			--no-escape --fixed --center --text="<b>$(gettext "Please wait...")</b>" \
+			--text-align=center --button="$(gettext "_Abort")!gtk-cancel:1" \
+			--buttons-layout="center" --progress --pulsate --progress-text="" --hide-text --auto-kill &
+		YAD_PID=$!
+	fi
+	
+	# Get magic and replace non-printable chars with spaces
+	if [ -f "$1" ] || [ -b "$1" ]; then
+		magic="$(head -c 12 -- "$1" 2>/dev/null | tr -c ' -~' ' ')"
+	else
+		magic=''
+	fi
+	
+	# cd to target dir, so tools don't display full path, which is distracting
+	cd -- "$(dirname -- "$1")"
+	set -- "$(basename -- "$1")"
+	
+	echo	# initial newline
+	
+	# @ = suitable for processing dirs and/or special files
+	for i in @FILE @XDG-MIME @ROX @DF @LSBLK @MOUNTPOINT @FINDMNT @LOSETUP @FIND \
+			@LS @DU @STAT @GETFACL @CHACL @LSATTR @GETFATTR @FATATTR @EXFATATTRIB \
+			@NTFSSECAUDIT @LSOF @SMARTCTL @UDEVADM @FDISK @CRYPTSETUP @DUMPE2FS @BTRFS \
+			@DOSFSCK @DUMP.EXFAT @DUMPEXFAT @NTFSCLUSTER @NTFSINFO @XFS_INFO @DUMP.F2FS \
+			QEMU-IMG FILEFRAG WC FEH RDJPGCOM EXIV2 GIFSICLE TIFFINFO WEBPNG WEBPINFO XCFINFO \
+			XCUR2PNG FC-SCAN FTDUMP OGGINFO METAFLAC SNDFILE-INFO FFPROBE CTORRENT \
+			PDFINFO PDFIMAGES PDFFONTS PDFDETACH UNZIP ISOINFO UDFINFO DPKG-DEB RPM \
+			UNSQUASHFS WIMINFO BTRFS-COMPSIZE UPX GZIP XZ ZSTD ZIPINFO SQLITE3 PGPDUMP \
+			OPENSSL MODINFO READELF OBJDUMP LDD C1541
+	do
+		if [ "${i%${i#?}}" != '@' ]; then
+			[ -d "$1" ] || [ -b "$1" ] || [ -c "$1" ] || [ -p "$1" ] || [ -S "$1" ] && continue
+		else
+			i="${i#@*}"
+		fi
+		
+		# Exceptions/special cases
+		case "$i" in
+			EXIV2)		# hangs at .gig files
+				expr "$magic" : 'RIFF....DLS' >/dev/null && continue
+				;;
+			OGGINFO)	# tries to read other files - slow for big ones
+				expr "$magic" : 'OggS' >/dev/null || continue
+				;;
+			PDFINFO|PDFIMAGES|PDFFONTS|PDFDETACH)	# ditto
+				expr "$magic" : '%PDF' >/dev/null || continue
+				;;
+			SQLITE3)	# ditto
+				expr "$magic" : 'SQLite' >/dev/null || continue
+				;;
+			WEBPINFO)	# ditto
+				expr "$magic" : 'RIFF....WEBP' >/dev/null || continue
+				;;
+			XCFINFO)	# ditto
+				expr "$magic" : 'gimp.xcf' >/dev/null || continue
+				;;
+			XZ)	# ditto
+				expr "$magic" : '.7zXZ' >/dev/null || continue
+				;;
+			ZIPINFO)	# tries to read 7zip archives
+				expr "$magic" : 'PK' >/dev/null || continue
+				;;
+			CRYPTSETUP)	# may modify ctime
+				expr "$magic" : 'LUKS' >/dev/null || continue
+				;;
+			MODINFO)	# BB modinfo reads every file
+				expr "$magic" : '.ELF' >/dev/null || continue
+				;;
+			SNDFILE-INFO)	# no exit codes, so process only (some of) supported formats
+				expr "$magic" : 'RIFF....WAVE\|riff\|fLaC\|ID3\|OggS\|FORM....AIFF\|.snd\|.paf\|Creative' >/dev/null || continue
+				;;
+			QEMU-IMG)	# processes everything, so only supported formats
+				expr "$magic" : 'QFI\|KDMV\|<<< ' >/dev/null || continue
+				;;
+			XFS_INFO)	# makes drive icon(s) to refresh, so limit only to actual XFS
+				expr "$magic" : 'XFSB' >/dev/null || continue
+				;;
+			DUMP.EXFAT)	# ditto
+				expr "$magic" : '...EXFAT' >/dev/null || continue
+				;;
+			DUMP.F2FS)	# ditto
+				expr "$(f_get_magic "$1" x4 1024 4)" : 'f2f52010' >/dev/null 2>&1 || continue
+				;;
+			BTRFS)	# sometimes takes too long on unsupported partitions
+				expr "$(f_get_magic "$1" a 65600 8)" : '_BHRfS_M' >/dev/null 2>&1 || continue
+				;;
+			DOSFSCK)	# process only actual FAT filesystems and ignore errors, so there's info, even if dirty bit is set
+				expr "$(f_get_magic "$1" a 54 3)" : 'FAT' >/dev/null 2>&1 || continue
+				;;
+			FATATTR|DUMPE2FS|DUMPEXFAT|NTFSCLUSTER|NTFSINFO)	# these sometimes hang trying to read pipes (and char devs)
+				([ -p "$1" ] || [ -c "$1" ]) && continue
+				;;
+			FIND)	# only dirs
+				[ ! -d "$1" ] && continue
+				;;
+			LSOF)	# don't process dirs
+				[ -d "$1" ] && continue
+				;;
+			FDISK)	# don't process dirs and don't hang at pipes
+				([ -d "$1" ] || [ -p "$1" ]) && continue
+				;;
+			DF|EXFATATTRIB|LSBLK|NTFSSECAUDIT)	# hang at processing broken symlinks; may try to read pipes
+				[ -p "$1" ] || ([ ! -e "$1" ] && [ -h "$1" ]) && continue
+				;;
+			WC)	# should be used for plaintext files only
+				grep -q "[^[:print:][:blank:]$(printf '\r')]" -- "$1" 2>/dev/null && continue
+				;;
+			FFPROBE)	# too many false-positives on GEM, .txt and .key files; accept all but these extensions
+				f_check_ext "$1" 'img|txt|key' && continue
+				;;
+			PGPDUMP)	# too many false-positives, accept only these extensions
+				f_check_ext "$1" 'sig|asc|pgp|gpg' || continue
+				;;
+			OPENSSL)	# tends to hang for a long time on some files, so only supported
+				head -c 4096  -- "$1" 2>/dev/null | grep -q '^-----BEGIN.*CERTIFICATE-----$' || continue
+				;;
+			C1541)	# false positives
+				f_check_ext "$1" 'd41|d64|d67|d71|d80|d81|d82|d90|g41|g64|g71|x64' || continue
+				;;
+		esac
+		
+		flt='cat'	# default filter
+		
+		# Commands
+		case "$i" in
+			FILE)			cmd='file -b -- "$1"; file -bi -- "$1"'													;;
+			XDG-MIME)		cmd='xdg-mime query filetype "$1"'														;;
+			ROX)			cmd='rox -m "$1"'																		;;
+			DF)				cmd='df -h -T -- "$1"'																	;;
+			LSBLK)			cmd='lsblk -f -m -J $(f_get_dev "$1")'													;;
+			MOUNTPOINT)		cmd='mountpoint -- "$1"'																;;
+			FINDMNT)		cmd='findmnt -- "$1"'																	;;
+			LOSETUP)		cmd='losetup -j "$1"'																	;;
+			FIND)			cmd='find -H -- "$1" -type d | wc -l; find -H -- "$1" -not -type d | wc -l'				;;
+			LS)				cmd='ls -lds -- "$1"'																	;;
+			DU)				cmd='du -b -d 0 -- "$1"; du -bh -d 0 -- "$1"; du -h -d 0 -- "$1"'						;;
+			STAT)			cmd='stat -- "$1"'																		;;
+			GETFACL)		cmd='getfacl -P -- "$1"'																;;
+			CHACL)			cmd='chacl -l -- "$1"'																	;;
+			LSATTR)			cmd='lsattr -d -- "$1"'																	;;
+			GETFATTR)		cmd='getfattr -d -m ^ -- "$1"'															;;
+			FATATTR)		cmd='fatattr "$1"'																		;;
+			EXFATATTRIB)	cmd='exfatattrib -d "$(f_get_dev "$1")" -- "$(f_strip_mntpt "$1")"'						;;
+			NTFSSECAUDIT)	cmd='ntfssecaudit "$1"; f_is_ntfs "$1"'													;;	# always gives an error - just don't if it's NTFS
+			LSOF)			cmd='lsof -- "$1" | '${LSOF_FLT}''														;;
+			SMARTCTL)		cmd='smartctl -x -- "$1"; [ $(($? & 3)) -eq 0 ]'										;;
+			UDEVADM)		cmd='udevadm info --query=all --name="$(readlink -f -- "$1")"'							;;
+			FDISK)			cmd='fdisk -l -- "$1"; f_is_img "$1"'													;;
+			CRYPTSETUP)		cmd='cryptsetup -r luksDump -- "$1"'													;;
+			BTRFS)			cmd='btrfs filesystem show -- "$1"'														;;
+			DUMPE2FS)		cmd='dumpe2fs -h -- "$1"'																;;
+			DOSFSCK)		cmd='dosfsck -n -v -- "$1";:'															;;
+			DUMP.EXFAT)		cmd='dump.exfat "$1"'																	;;
+			DUMPEXFAT)		cmd='dumpexfat -- "$1"'																	;;
+			NTFSCLUSTER)	cmd='ntfscluster "$1"'																	;;
+			NTFSINFO)		cmd='ntfsinfo -m "$1"'																	;;
+			XFS_INFO)		cmd='xfs_info -- "$1"'																	;;
+			DUMP.F2FS)		cmd='dump.f2fs -d 1 -- "$1"'															;;
+			QEMU-IMG)		cmd='qemu-img info -- "$1"'																;;
+			FILEFRAG)		cmd='filefrag -v -- "$1"';										flt="${FILEFRAG_FLT}"	;;
+			WC)				cmd='wc -l -w -m -c -- "$1"'															;;
+			FEH)			cmd='feh -l -- "$1"'																	;;
+			RDJPGCOM)		cmd='rdjpgcom -verbose "$1"'															;;
+			EXIV2)			cmd='exiv2 -pc -- "$1"; exiv2 -- "$1"; exiv2 -pa -u -- "$1"';	flt="${EXIV2_FLT}"		;;
+			GIFSICLE)		cmd='gifsicle -I --cinfo --xinfo --sinfo -- "$1"';				flt="${GIFSICLE_FLT}"	;;
+			TIFFINFO)		cmd='tiffinfo -- "$1"';											flt="${TIFFINFO_FLT}"	;;
+			WEBPNG)			cmd='webpng -dl -- "$1"'																;;
+			WEBPINFO)		cmd='webpinfo -summary "$1"';									flt="${WEBPINFO_FLT}"	;;
+			XCFINFO)		cmd='xcfinfo "$1"'																		;;
+			XCUR2PNG)		cmd='xcur2png -n -- "$1" 2>/dev/null'													;;
+			FC-SCAN)		cmd='fc-scan -- "$1"'																	;;
+			FTDUMP)			cmd='ftdump "$1"'																		;;
+			OGGINFO)		cmd='ogginfo -- "$1"'																	;;
+			METAFLAC)		cmd='metaflac --list -- "$1"';									flt="${METAFLAC_FLT}"	;;
+			SNDFILE-INFO)	cmd='sndfile-info "$1"'																	;;
+			FFPROBE)		cmd='ffprobe '${FFPROBE_OPTS}' -- "$1" 2>&1'											;;
+			CTORRENT)		cmd='ctorrent -x -- "$1"'																;;
+			PDFINFO)		cmd='pdfinfo -- "$1"'																	;;
+			PDFIMAGES)		cmd='pdfimages -list -- "$1"'															;;
+			PDFFONTS)		cmd='pdffonts -- "$1"'																	;;
+			PDFDETACH)		cmd='pdfdetach -list -- "$1"'															;;
+			UNZIP)			cmd='unzip -p -- "$1" meta.xml docProps/core.xml 2>/dev/null | f_pretty_xml'			;;
+			ISOINFO)		cmd='isoinfo -d -i "$1"'																;;
+			UDFINFO)		cmd='udfinfo -- "$1"'																	;;
+			DPKG-DEB)		cmd='dpkg-deb -f -- "$1"'																;;
+			RPM)			cmd='rpm -qpi -- "$1"'																	;;
+			UNSQUASHFS)		cmd='unsquashfs '${UNSQUASH_OPTS}' -s "$1"'												;;
+			WIMINFO)		cmd='wiminfo -- "$1"'																	;;
+			BTRFS-COMPSIZE)	cmd='btrfs-compsize -- "$1"'															;;
+			UPX)			cmd='upx -l -- "$1"'																	;;
+			GZIP)			cmd='gzip -l -- "$1"'																	;;
+			XZ)				cmd='xz -l -- "$1"'																		;;
+			ZSTD)			cmd='zstd -l -- "$1"'																	;;
+			ZIPINFO)		cmd='zipinfo -htz -- "$1"'																;;
+			SQLITE3)		cmd='sqlite3 -readonly -deserialize "$1" .dbinfo'										;;	# deserialize excludes WAL DBs
+			PGPDUMP)		cmd='pgpdump -- "$1"'																	;;
+			OPENSSL)		cmd='openssl x509 -text -noout -passin pass: -in "$1"'									;;
+			MODINFO)		cmd='modinfo -- "$1"'																	;;
+			READELF)		cmd='readelf -e -W -- "$1"'														;;
+			OBJDUMP)		cmd='objdump -f -- "$1"'																;;
+			LDD)			cmd='ldd -- "$1"'																		;;
+			#C1541)			cmd='c1541 "$1" -info'																	;;
+			*)				continue
+		esac
+		
+		f_exists "${cmd%% *}" || continue
+		
+		[ "$SHORT" != 'true' ] && flt='cat'	# reset to default, if no -s option
+		
+		# See in real-time what's being executed (provisional, stderr)
+		printf -- "${IGRAYCOL}---%s---${OFFCOL}" "${i}" >&2
+		
+		f_wait & WAIT_PID=$!
+		
+		if result="$(eval ${cmd} 2>/dev/null)" && [ "$result" ]; then	
+			# grep removes blank lines (objdump and when 'exiv2 -pc' returns nothing)
+			result="$(echo "$result" | tr -d '\0' | grep . | $(echo eval "$flt") )"
+			
+			f_wait_stop
+			
+			printf -- "${IBLUECOL}---%s---${OFFCOL}\n" "${i}"
+			printf -- "${YELLOWCOL}# %s${OFFCOL}\n" "${cmd}"
+			echo "$result"
+			echo
+			
+			if [ "$I_GUI" = 'true' ]; then
+				cmd_esc="$(echo "$cmd" | sed 's#\\#\\\\#g')"	# for YAD, needs to be escaped
+				
+				echo "$result" | \
+					yad --plug=${YAD_KEY} --tabnum=${tabnum} --no-markup \
+						--text="${cmd_esc}" --fontname='Monospace' \
+						--wrap --text-info - 2>/dev/null &
+				
+				tabnum=$((tabnum+1))
+				tabs="${tabs}--tab=$(echo "$i" | sed 's/_/__/g') "	# YAD is changing _ to | in tab names
+			fi
+		else
+			f_wait_stop
+		fi
+		
+		WAIT_PID=''
+	done
+	
+	cd - >/dev/null
+	
+	if [ "$I_GUI" = 'true' ]; then
+		kill -0 ${YAD_PID} 2>/dev/null && kill -s USR1 ${YAD_PID}
+		YAD_PID=''
+		
+		yad --window-icon="${ICON_YAD}" --title="${APPNAME_YAD}" --width=750 --height=480 \
+			--center --button="$(gettext "_Close")!window-close" --buttons-layout="center" \
+			--escape-ok --no-markup --text="${fn_esc}" --text-align="center" \
+			--notebook --key=${YAD_KEY} ${tabs} --tab-pos=left --active-tab=1
+		
+		pkill -f "yad.*--(key|plug)=${YAD_KEY} "	# kill zombie processes, if any
+		YAD_KEY=''
+	fi
+}
+
+# =============================================================================
+# START
+# =============================================================================
+
+# Add stuff from pipe, if any
+if [ -p /dev/stdin ]; then
+	set -- "$@" '--'	# treat that stuff as files only, not options
+	while read -r i; do set -- "$@" "$i"; done	# get the list
+	
+	# Trial & error mess, but seems to work, by sheer luck
+	exec <&1			# Without it - keeps reading from (empty) pipe
+	exec 2>&0			# Without it - stops reading keyboard if 2>/dev/null
+	exec 0</dev/tty		# Without it - stops reading keyboard if 1>/dev/null
+	# Plus, opens a new terminal window (see f_click_or_dnd)
+fi
+
+# Must be _after_ the above pipe read!
+f_click_or_dnd "$@"
+
+trap 'f_wait_stop' 0
+trap 'f_trap' INT HUP TERM QUIT ABRT
+
+# -----------------------------------------------------------------------------
+
+WAIT_PID=''
+YAD_KEY=''
+YAD_PID=''
+SHORT='false'
+RECURSE='false'
+
+# Colors
+OFFCOL="\033[00m"
+BOLDCOL="\033[1m"			# bold
+REDCOL="\033[0;31m"			# red
+IREDCOL="\033[7;38;5;1m"	# inverted red
+BLUECOL="\033[0;34m"		# blue
+IBLUECOL="\033[7;38;5;4m"	# inverted blue
+GREENCOL="\033[0;32m"		# green
+YELLOWCOL="\033[0;33m"		# yellow
+IYELLOWCOL="\033[7;38;5;3m"	# inverted yellow
+IGRAYCOL="\033[7;38;5;8m"	# inverted gray
+UGREENCOL="\033[0;32;4m"	# underlined green
+
+# If gettext is missing (it's not given!), use 'echo' wrapper
+if ! f_exists gettext; then
+	gettext() { echo "$@"; }
+fi
+
+# Check if tput is available and fallback to stty if not
+if f_exists tput; then
+	TERM_WIDTH_CMD='tput cols'
+else
+	TERM_WIDTH_CMD='stty size'
+fi
+
+# Older versions of ffmpeg/ffprobe don't have this option
+if LANG=C ffprobe -h 2>&1 | grep -iwoq -- '-hide_banner'; then
+	FFPROBE_OPTS='-hide_banner'
+else
+	FFPROBE_OPTS=''
+fi
+
+# BusyBox lsof can only report _all_ open files, so we need a filter
+if f_exists lsof && lsof --help 2>&1 | grep -qw BusyBox; then
+	LSOF_FLT='grep -wF "$1"'
+else
+	LSOF_FLT='cat'
+fi
+
+# SquashFS-tools up to 4.4 don't support the offset (-o) option
+if unsquashfs -help-all 2>&1 | grep -qF -- '-o[ffset]'; then
+	UNSQUASH_OPTS='-o $(f_appimage_offset "$1")'
+else
+	UNSQUASH_OPTS=''
+fi
+
+# Filters for truncating excessive output
+FILEFRAG_FLT='sed "1,2b;$ b;d"'
+EXIV2_FLT='sed -E "/[[:blank:]]Undefined[[:blank:]]/ s/(( [0-9]+){16}).*/\1 .../"'
+TIFFINFO_FLT='sed -E "/: 0x[0-9a-fA-F]/ s/( (0x[0-9a-fA-F]+,){16}).*/\1 .../"'
+WEBPINFO_FLT='sed -n "/^Summary/,$ p"'
+GIFSICLE_FLT='sed "1,2b;d"'
+METAFLAC_FLT="sed '/^[[:blank:]]*[0-9A-F]\{8\}: /d'"
+
+# -----------------------------------------------------------------------------
+
+[ "$*" ] && EXTRAOPT='' || EXTRAOPT=help
+
+# Parse options
+while [ $# -gt 0 ]; do
+	case "${1}" in
+		-n|-no-colors|--no-colors)
+			unset OFFCOL BOLDCOL REDCOL BLUECOL IBLUECOL GREENCOL YELLOWCOL IYELLOWCOL IGRAYCOL BYELLOWCOL UGREENCOL
+			shift
+			;;
+		-s|-short|--short)
+			SHORT='true'
+			shift
+			;;
+		-r|-recurse|--recurse)
+			RECURSE='true'
+			shift
+			;;
+		-b|-backends|--backends)	# undocumented
+			EXTRAOPT=backends
+			shift
+			;;
+		-h|-help|--help)
+			EXTRAOPT=help
+			shift
+			;;
+		--)
+			shift
+			break
+			;;
+		-*)
+			printf "${REDCOL}%s %s${OFFCOL}\n" "$(gettext "Unsupported option:")" "${1}"
+			exit 255
+			;;
+		*)
+			break
+			;;
+	esac
+done
+
+case "$EXTRAOPT" in
+	backends)	f_backends; exit	;;
+	help)		f_help; exit		;;
+esac
+
+# -----------------------------------------------------------------------------
+
+if [ $# -eq 0 ]; then
+	printf "${YELLOWCOL}%s${OFFCOL}\n" "$(gettext "Nothing to process, exiting...")"
+	exit
+fi
+
+while [ $# -gt 0 ]; do
+	ITEM="$1"
+	shift
+	
+	if [ -d "$ITEM" ] && [ "$RECURSE" = 'true' ]; then
+		set -- "${ITEM%/}"/.* "$@"												# Add hidden items
+		while [ "${1##*/}" = '.' ] || [ "${1##*/}" = '..' ]; do shift; done		# not needed in bash, only in (d)ash
+		[ "${1%*/}" = "${ITEM%*/}/.*" ] && [ ! -e "${ITEM%*/}/.*" ] && shift	# empty dir
+		set -- "${ITEM%/}"/* "$@"												# Add regular items
+		[ "${1%*/}" = "${ITEM%*/}/*" ] && [ ! -e "${ITEM%*/}/*" ] && shift		# empty dir
+	fi
+	
+	# Let's goooo!
+	f_i "$ITEM"
+done
+
+printf "${BLUECOL}%s${OFFCOL}\n\n" "$(f_hr "*")"
+
+exit
+
+
+###############################################################################

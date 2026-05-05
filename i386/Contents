@@ -1046,6 +1046,7 @@ usr/bin/roxterm-config					    roxterm-gtk2
 usr/bin/sct						    sct
 usr/bin/sessreg						    x11-xserver-utils
 usr/bin/showrgb						    x11-xserver-utils
+usr/bin/simplegtkradio					    simplegtkradio
 usr/bin/skill						    procps
 usr/bin/slabtop						    procps
 usr/bin/slim						    slim
@@ -6070,6 +6071,32 @@ usr/local/share/pixmaps/wex/wex_www.png			    wex
 usr/local/simple_network_setup/help_profiles		    sns
 usr/local/simple_network_setup/help_security		    sns
 usr/local/simple_network_setup/rc.network		    sns
+usr/local/simplegtkradio/data/add.svg			    simplegtkradio
+usr/local/simplegtkradio/data/edit.svg			    simplegtkradio
+usr/local/simplegtkradio/data/find.svg			    simplegtkradio
+usr/local/simplegtkradio/data/media-back.svg		    simplegtkradio
+usr/local/simplegtkradio/data/media-next.svg		    simplegtkradio
+usr/local/simplegtkradio/data/media-play.svg		    simplegtkradio
+usr/local/simplegtkradio/data/media-record.svg		    simplegtkradio
+usr/local/simplegtkradio/data/media-stop.svg		    simplegtkradio
+usr/local/simplegtkradio/data/open.svg			    simplegtkradio
+usr/local/simplegtkradio/data/preferences.svg		    simplegtkradio
+usr/local/simplegtkradio/data/quit.svg			    simplegtkradio
+usr/local/simplegtkradio/data/radiotray.png		    simplegtkradio
+usr/local/simplegtkradio/data/save.svg			    simplegtkradio
+usr/local/simplegtkradio/data/show.svg			    simplegtkradio
+usr/local/simplegtkradio/data/shuffle.svg		    simplegtkradio
+usr/local/simplegtkradio/options			    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.Classical	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.Country	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.Jazz	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.M2radio	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.Opera	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.SomaFM	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.Tunein	    simplegtkradio
+usr/local/simplegtkradio/playlists/playlist.default	    simplegtkradio
+usr/local/simplegtkradio/simplegtkradio			    simplegtkradio
+usr/local/simplegtkradio/simplegtkradio-alt		    simplegtkradio
 usr/local/smokey-get/01micko				    sfs-get-smokey-get
 usr/local/smokey-get/Fatdog 700				    sfs-get-smokey-get
 usr/local/smokey-get/JamesC				    sfs-get-smokey-get
@@ -6938,6 +6965,7 @@ usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
 usr/share/applications/SaveFolderBackup.desktop		    SaveFolderBackup
 usr/share/applications/Set Locale_Language.desktop	    locale-conf
+usr/share/applications/Simple-GTK-Radio.desktop		    simplegtkradio
 usr/share/applications/System Info.desktop		    inxi-gui
 usr/share/applications/UExtract.desktop			    uextract
 usr/share/applications/Xlunch1.desktop			    xlunch

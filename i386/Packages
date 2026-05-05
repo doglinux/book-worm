@@ -10228,6 +10228,21 @@ SHA256: 9ef05bf79114585bfe0eb1b9dd1c127d97ccea20827acafd0481c35efb3726fc
 SHA512: 3e5095b5d1ada6f3d7b6c42a5809a1899fa83a2118d8ba7d0cc8f19b6cc0185a602f281d98e3cef651a0477db0dcd360eb5d34f49aa035a50c4495977cc4867d
 Description: Simple Audio CD ripper
 
+Package: simplegtkradio
+Architecture: all
+Version: 0.1.20.4
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: mpv, gtkdialog, streamripper, jq
+Filename: ./simplegtkradio_0.1.20.4_all.deb
+Size: 24924
+MD5sum: 2731ca8d0b30638aef54e19079063798
+SHA1: 9b1f1d963bdaf8b48ea07cb12044b548a6e75a5a
+SHA256: 12854c39283abecd4026e0b519a84817dd155922165191f56987d162227d42cd
+SHA512: e25f076b76bb4cf8427d749ad35af68c436ee7e0426351924d62512e57d3ecf1f948096bb6d98120c113e1fd2adace56743cb8e2901429229f8165eb8826bfec
+Description: Simple GTK Radio
+
 Package: slim
 Architecture: i386
 Version: 1.3.6-5.2
@@ -13009,6 +13024,26 @@ MD5sum: 63e2355fde9e7d303f141d6fe2a77696
 SHA1: fbfa5a6c1107b2c91402df8849467a31a02a3c07
 SHA256: a6093d2e921d50bf0c6078c4b51792a4b82dd40a18cc5c527d1091144924d810
 SHA512: fccb02b200d2019e2740be87c0fbc5a486ef8185414c05be8e991d08e2731d3a726f2ba69f9cf3181292ea2472f002d6eb31178133570bbadf37ece5746b6d2c
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+
+Package: yradio
+Architecture: all
+Version: 1.8.4-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.4-0_all.deb
+Size: 280052
+MD5sum: 8e545a0f6d0e21bf00777ffe13c7538b
+SHA1: c6ee694c9a9b3fc8925780aefccc4b83b4f4fadc
+SHA256: 24f5c4481785f6fa043f9a585e731e81f75c25eb38927696242c311747b06643
+SHA512: aba053b51eaee4f7ec7ab3d38fa0aaac7cd3b62a509fdc1a89896494c7f1dd78037aee3b86ca1b12aad8d9cea85e87fb1f1fd448af66582e3914842748d633a8
 Description: Internet Radio Player
  v1.3, works with mpv and mplayer
  v1.7, direct online search
