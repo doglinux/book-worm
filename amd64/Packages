@@ -10645,6 +10645,21 @@ SHA256: 12854c39283abecd4026e0b519a84817dd155922165191f56987d162227d42cd
 SHA512: e25f076b76bb4cf8427d749ad35af68c436ee7e0426351924d62512e57d3ecf1f948096bb6d98120c113e1fd2adace56743cb8e2901429229f8165eb8826bfec
 Description: Simple GTK Radio
 
+Package: simplegtkradio
+Architecture: all
+Version: 0.1.20.7
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: mpv, gtkdialog, streamripper, gawk
+Filename: ./simplegtkradio_0.1.20.7_all.deb
+Size: 25760
+MD5sum: 8f31ba56dbb494700f87c544a418f4a4
+SHA1: 3b1e8b66ed6c585a2ab7abfd72713882a60e42d3
+SHA256: 26975a7bca9396912a233327a312b830b929029c1bc68733cd14cb321fb48271
+SHA512: 90e04adc813b16e100c3c2fdae270aa294e2605a41146ee63a1d0d1a64d1a5b13b0d84bd317b72e48aa797662c989c7e65aba58567f196ea6989efc10ddadc2c
+Description: Simple GTK Radio
+
 Package: slim
 Architecture: amd64
 Version: 1.3.6-5.2
@@ -13229,6 +13244,28 @@ Description: Internet Radio Player
  v1.7, direct online search
  v1.8, volume fix for in case pipewire or pulseaudio running
  v1.8.2-0, fixed that playing with mpv didn't work properly
+
+Package: yradio
+Architecture: amd64
+Version: 1.9.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, streamripper, curl, gawk
+Filename: ./yradio_1.9.2_amd64.deb
+Size: 366528
+MD5sum: 9210281923ea3fb3d55c647c10b8af66
+SHA1: 94f162cd7846f712361ce7e4e96634276380a3f8
+SHA256: 17d49e552789da1e87598e31cf768822678061a226f35d34ad987315d458b576
+SHA512: 2fd3cf8b12893a558ca61795b2d3bf951f2ba5e03f0b20af532467ca702518d06c226bc3b54b56ccb8530d56d6ea72125a92300ea5db2423253ae5d7cdb72343
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+ v1.9.1, not depending on 'jq' anymore, using csv extracting for search
+ v1.9.2, portable setup with yad GTK3 included
 
 Package: yt-dlp
 Architecture: all

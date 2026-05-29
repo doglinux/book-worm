@@ -5988,6 +5988,9 @@ usr/local/youtube-get3/icons/yt-playlist.pngg		    youtube-get3
 usr/local/youtube-get3/icons/yt-search.png		    youtube-get3
 usr/local/youtube-get3/icons/yt-url.png			    youtube-get3
 usr/local/youtube-get3/icons/yt-user.png		    youtube-get3
+usr/local/yradio/.DirIcon				    yradio
+usr/local/yradio/AppRun					    yradio
+usr/local/yradio/YRadio.desktop				    yradio
 usr/local/yradio/icons/edit.png				    yradio
 usr/local/yradio/icons/fav.png				    yradio
 usr/local/yradio/icons/gtk-help.png			    yradio
@@ -6023,7 +6026,11 @@ usr/local/yradio/playlist/playlist.Rock			    yradio
 usr/local/yradio/playlist/playlist.SomaFM		    yradio
 usr/local/yradio/playlist/playlist.Urban		    yradio
 usr/local/yradio/playlist/playlist.World		    yradio
+usr/local/yradio/usr/bin/yad				    yradio
+usr/local/yradio/usr/share/glib-2.0/schemas/gschemas.compiled yradio
+usr/local/yradio/usr/share/glib-2.0/schemas/yad.gschema.xml yradio
 usr/local/yradio/yradio					    yradio
+usr/local/yradio/yradio.png				    yradio
 usr/sbin/NetworkManager					    network-manager
 usr/sbin/bootlace.com					    grub4dosconfig
 usr/sbin/dhcpcd						    frisbee
