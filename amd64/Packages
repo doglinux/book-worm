@@ -13267,6 +13267,29 @@ Description: Internet Radio Player
  v1.9.1, not depending on 'jq' anymore, using csv extracting for search
  v1.9.2, portable setup with yad GTK3 included
 
+Package: yradio
+Architecture: amd64
+Version: 1.9.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, streamripper, curl, gawk
+Filename: ./yradio_1.9.3_amd64.deb
+Size: 366612
+MD5sum: bff904609f021e83c7c3c15cc3ae99ed
+SHA1: e148262dbfba0cd1e5f7bead9292842dcfa33334
+SHA256: 2058c17a4c980c371b7bbad7b068d7a52b7ca98715310d1bca1215c5d6d48e47
+SHA512: 0f4a22ea92f9be9e761a6d5d4171ef80c5d5b55c0b90e80787dc7dae75f20ad0a858e3bdcf8b995a2c4205c077271e7a0d13cc906b4b0bf3be3d64adcca24bc2
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+ v1.9.1, not depending on 'jq' anymore, using csv extracting for search
+ v1.9.2, portable setup with yad GTK3 included
+ v1.9.3, fix for when containing special chars (e.g. &) in search query
+
 Package: yt-dlp
 Architecture: all
 Version: 2:2024.08.06
