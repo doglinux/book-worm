@@ -828,9 +828,11 @@ root/.jwm/jwm.head					    jwm-setup,jwmconf
 root/.jwm/jwm.main					    jwm-setup,jwmconf
 root/.jwm/jwm.tail					    jwm-setup,jwmconf
 root/.jwmrc						    jwm-setup,jwmconf
-root/.local/share/applications/chromium.desktop		    run-as-user
+root/.local/share/applications/chromium.desktop		    run-as-spot,run-as-user
+root/.local/share/applications/google-chrome.desktop	    run-as-spot
+root/.local/share/applications/run-as-spot.desktop	    run-as-spot
 root/.local/share/applications/run-as-user.desktop	    run-as-user
-root/.local/share/applications/vlc.desktop		    run-as-user
+root/.local/share/applications/vlc.desktop		    run-as-spot,run-as-user
 root/.local/share/file-manager/actions/activate-sfs.desktop sfsload
 root/.local/share/file-manager/actions/activate.desktop	    sfsload
 root/.local/share/file-manager/actions/de-activate.desktop  sfsload
@@ -2970,7 +2972,7 @@ usr/local/bin/conv-sfs					    edit-sfs-pcmanfm,edit-sfs-pcmanfm-qt,edit-sfs-thu
 usr/local/bin/create-portable				    create-portable
 usr/local/bin/dancingletters-forum			    dancing-letters
 usr/local/bin/dancingletters-html			    dancing-letters
-usr/local/bin/ddliveapp					    run-as-user
+usr/local/bin/ddliveapp					    run-as-spot,run-as-user
 usr/local/bin/debdog-advert-blocker			    debdog-advert-blocker
 usr/local/bin/debdog-full-install			    debdoginstallscripts
 usr/local/bin/debdog-install				    debdoginstallscripts
@@ -3143,7 +3145,7 @@ usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/repo-conf					    repo-conf
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
-usr/local/bin/run-as-spot				    run-as-user
+usr/local/bin/run-as-spot				    run-as-spot,run-as-user
 usr/local/bin/run-as-user				    run-as-user
 usr/local/bin/samba-server-control			    samba-server-control
 usr/local/bin/scdripper					    simplecdripper
@@ -5625,7 +5627,7 @@ usr/local/r-shift/usr/lib/gtkdialog/xml_button-icon	    redshift-gui-lite
 usr/local/r-shift/usr/lib/libxcb-randr.so.0		    redshift-gui-lite
 usr/local/r-shift/usr/lib/libxcb-randr.so.0.1.0		    redshift-gui-lite
 usr/local/r-shift/usr/share/pixmaps/rshift.png		    redshift-gui-lite
-usr/local/rau/vlc.desktop				    run-as-user
+usr/local/rau/vlc.desktop				    run-as-spot,run-as-user
 usr/local/scdrip/bin/apetag				    simplecdripper
 usr/local/scdrip/bin/cdda2wav				    simplecdripper
 usr/local/scdrip/lib/libfdk-aac.so.2			    simplecdripper
@@ -11629,7 +11631,7 @@ usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ccsm.svg				    sfsload
 usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni
-usr/share/pixmaps/chromium64.png			    run-as-user
+usr/share/pixmaps/chromium64.png			    run-as-spot,run-as-user
 usr/share/pixmaps/clock_face33.png			    conkyclock2
 usr/share/pixmaps/clock_face45.png			    conkyclock
 usr/share/pixmaps/computer.png				    inxi-gui
@@ -11793,6 +11795,7 @@ usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/gnome-lock-screen.png			    xlockmore
 usr/share/pixmaps/go-next.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/go-previous.png			    youtube-get2,youtube-get3
+usr/share/pixmaps/google-chrome64.png			    run-as-spot
 usr/share/pixmaps/google-drive-128.png			    googledrivegui,googledrivegui2
 usr/share/pixmaps/google-drive3-128.png			    googledrivegui3
 usr/share/pixmaps/gtk-about.png				    sns
@@ -11985,8 +11988,8 @@ usr/share/pixmaps/tzupdate.png				    tzupdate
 usr/share/pixmaps/umounting.png				    diff-sync-umount
 usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/updater.png				    apulse
-usr/share/pixmaps/user-home64.png			    run-as-user
-usr/share/pixmaps/vlc64.png				    run-as-user
+usr/share/pixmaps/user-home64.png			    run-as-spot,run-as-user
+usr/share/pixmaps/vlc64.png				    run-as-spot,run-as-user
 usr/share/pixmaps/vnstat-tray.png			    vnstat-tray
 usr/share/pixmaps/websearch.png				    websearch
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg

@@ -10121,6 +10121,24 @@ SHA256: 80f7e6c8800b2baa241b83e79f4c0e69c4405d81716e996116bb25f44152605c
 SHA512: 0fa10a92af2c633838d9c0628b8e39ccf16ec9fc19a2bc941c6315ef5ea5db9dcf1c88c4878d0a8af71ef5389f8273533315bc1e4d9a94782e6a6daecffd2ad8
 Description: Run application as unprivileged user (from root account)
 
+Package: run-as-spot
+Architecture: amd64
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm, dbus-x11, chpupsocket
+Conflicts: run-as-user
+Replaces: run-as-user
+Filename: ./run-as-spot_0.0.2_amd64.deb
+Size: 27232
+MD5sum: 34d16c7af0f63e57f1e3d4a04eec5c34
+SHA1: 814ba522b8abf1b822a32ab0c611b7367d325369
+SHA256: bf6659b24d4d7b13c6c8f9637c49cdc9b589b9ed5effad2f5e408ca5e7ad8772
+SHA512: e6544fae55f6b9c97c404b05b20e9a2c5f01e00ffbc351355295f2f2c63011b5f8743091bbd8d8140576fcece7b4117f92ff67ba49a19ae067ad6252ebe86d24
+Description: Run application as unprivileged user (from root account)
+
 Package: run-as-user
 Architecture: amd64
 Version: 0.0.1
@@ -10265,6 +10283,24 @@ MD5sum: 526de22fc1628406d38fcfd93617df29
 SHA1: 677d1de1f0d5aded1d663ca439c9deaa3694f356
 SHA256: 6143255521fe20d9d7439e67baef0129e209fbc3e8670a3fb27b2ec3cc0ec84c
 SHA512: 1ad77350d2c9162ef604b5e19bb41ddf8628a6dc8eb034de8bda484d6ceb5a0c9960743110f2130f2b3f83e23f5dd9146eeba1dd4933a0e8c47585c5f467679a
+Description: Run application as unprivileged user (from root account)
+
+Package: run-as-user
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm, dbus-x11, chpupsocket
+Conflicts: run-as-spot
+Replaces: run-as-spot
+Filename: ./run-as-user_1.0.0_amd64.deb
+Size: 27336
+MD5sum: 87a0472c4f8da93aec6ad22005dee031
+SHA1: 87adb700a38b24061d9d1702335cc9f3e52810a4
+SHA256: 603b0276d32a747fb55df7b16875453881d4d5750016a92404c748ed40c3f995
+SHA512: 90fbffd3c7cfc92f091e9679b0b50b604c93ca27a39cb65e18a4df1de201f83dad44c718801ee1731fe70a94059dc018bff725b44f408f91235d8bf05bae39ef
 Description: Run application as unprivileged user (from root account)
 
 Package: samba-server-control

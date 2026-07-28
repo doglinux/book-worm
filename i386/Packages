@@ -10839,3 +10839,2438 @@ Description: File Manager for Xfce
  .
  Also included is an Xfce panel plugin which can manage the desktop trash.
 
+Package: timidity-old
+Architecture: i386
+Version: 2.13.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./timidity-old_2.13.1_i386.deb
+Size: 7058420
+MD5sum: ab9a4fbccf53a909d19af3fff8c30648
+SHA1: 7d56cca32086c7b99a560ec855e87c8950982b62
+SHA256: 85ce4259300eae9448e72cf4a30884e694e28872e23316363c18358a6dc7c309
+SHA512: a80ecbff1da2634c8b0d0163eb9ceb746aad3456aed6e5a192c0cc631a3e100f1f4be69cfedb57b28ae0fd7c53d6391e0fa3644bfbeb78f8c512dbd93e6421be
+Description: MIDI to WAV converter
+
+Package: touchpad
+Architecture: all
+Version: 2.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct, xdialog3
+Filename: ./touchpad-gtk3_2.1_all.deb
+Size: 7016
+MD5sum: c9bc37351b7e17eed73eaa7d7de5d2c0
+SHA1: 7bf54059344391c98c33a8f654055744bf2933c2
+SHA256: 59e6603d92d8f374607c0a8c778e5229d434700f3d02e0497b1de5ca13a2faa9
+SHA512: 1fec525ed07548b47e2c7f003903167d0ef42dbea0edffc726175f641bda615c5a5c58b1ed0ef859001b2b1645d0c6927ad2c0ce2df189140c27964c91814b75
+Description: Touchpad/mouse/video/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.11
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.11_all.deb
+Size: 6806
+MD5sum: 6f740260f77890044235e9b5f88c894e
+SHA1: edd40ea049f3cfa2455f9d291ae865548de6e80b
+SHA256: 8b0534639251071d7bce48d2fd20732a8d81e8b73e338d36b170d5dca9a0339a
+SHA512: db904572c147c4176967e4a61c68401748816e7d04c81a584aaf0067018a44ee336995203a133b09a44c022c9c7cde2e28fc1fdde7bf22d9806f619b84b86ec4
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.13
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.13_all.deb
+Size: 6914
+MD5sum: d41676f42811e097cab85528d49fc391
+SHA1: b5f7cb0e168941571789d77292573fc1bfbaa085
+SHA256: 6d23062287ef780de3453ea36a54f0c48bff29cddc97b6f22c6f8b9edaf1206d
+SHA512: 4a031d8acaa83f9baab7e3b4439560b7090c007b22bf5c74f700fb28292beb9227d5f0e446ae73c721637e1c1aac872fab40e619055930515507a772be5e39bc
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.14
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.14_all.deb
+Size: 7314
+MD5sum: 74aa355cdfd978a70d8dff49844de637
+SHA1: 22be2aaf428d3d9ef2488fc683f6e6e89fb6a1bd
+SHA256: fb8c45f31d5758580e2421085590d5134ab7b4b3205e615fcf1483a69be7089a
+SHA512: 916e94b7bbda08381d96b71d8ce71f3cb1111e30e57a65542dc62b3a3b6aa5ede5c0753f6ce4ba3da4543122e46f0632c5a1e1ae80d437699b38736b4e3408be
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, gtkdialog
+Filename: ./touchpad_1.7_all.deb
+Size: 5808
+MD5sum: f83e143d1feeaf1ab4aed1680064300a
+SHA1: 970957a139850291cb3c6581d4daf8f11a36cac0
+SHA256: fd778f93287adb23a84da100484e47cae07378b7043a73e738057e4478f599e6
+SHA512: c14b42908d2ca70d71c66aae28b0391ad18a246caa2fac3126d1d0dc4d7873ba4584ebe57b0f272351e4c5a1397e2c7a3c1ab2678b3d358dae68f918c397ef64
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.9-3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.9-3_all.deb
+Size: 6360
+MD5sum: 39936a3d6f58dcade82c485a1655f64d
+SHA1: d572e6ffdf6d7113f9791f9f3cc0e72526246f43
+SHA256: ccfc084f349fc5460a215c13303d9442bf729bb28a35516a2b18bde6652a859e
+SHA512: 0899604d2c60ecc62763e36d905aa1fdc22557d2c2d508243a525ff3a25d7347aa4cd5ccad3ac59acd076c668f6ab13bc62a03cf276fe59f6643f69705b661cc
+Description: Touchpad/mouse/touchscreen setup
+
+Package: touchpad
+Architecture: all
+Version: 1.9-6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./touchpad_1.9-6_all.deb
+Size: 6354
+MD5sum: 4ed3f69f4d7e240fb04dcb559aced954
+SHA1: b6866f4af017d1a691285ee79ce0df3e70063b10
+SHA256: a02f20e4a87a1f0d7540a29222a0899304339c32193f18bbacef1c3f23c7eb38
+SHA512: ebc654576d9b98c3faa969168d00915a4cf54eecb69c7d18c972020168ff2eeee55f1318cd600a5c05610281a844ffcccdd7debd182db96a5b0e3a4f0fc46c69
+Description: Touchpad/mouse/touchscreen setup
+
+Package: trans-tray
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 90
+Depends: libc6, yad, xclip, gawk
+Filename: ./trans-tray_0.0.1_all.deb
+Size: 58546
+MD5sum: 6e244058814fc7f5903a57aa2ed4aedf
+SHA1: 82683eb7d275b38ec33433351d14b24216766e00
+SHA256: d50222b8c0926741eabcca0daeb62ab242456379826fed71d2d096e7de9110e1
+SHA512: ff84c81ee0b24b2cfce390957b323e37deec4d8f1ad61f823246a139375ff8ca608c0d78d62bc195ef443663e3fd1e8d96a63de2a56b97efef254999765ddf2e
+Description: Run application as unprivileged user (from root account)
+
+Package: trans-tray
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 90
+Depends: libc6, yad, xclip, gawk
+Filename: ./trans-tray_1.0.1_all.deb
+Size: 58696
+MD5sum: c28037eb1ce1ce9fc5f234a636038412
+SHA1: 7393ccc3e9b9dbf1c86da2236dbf9b1007494e88
+SHA256: 565f3be8b69565aee93ee29a0d77ffbe0d577677fa5d086bfdf07397cf49a19d
+SHA512: 6ff2fb33f9debbfb7b0d89ed395eabf296f7a0304c9c20ba17166e988ca54b651f5994092125c9069ee9ceb534c0971f4d3b2a76e9ee6d261b2913d75d12626c
+Description: Run application as unprivileged user (from root account)
+
+Package: transmission-2.31
+Architecture: i386
+Version: 2.31
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 3500
+Depends: libatk1.0-0, libc6, libcairo2, libcurl3, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libssl0.9.8
+Conflicts: transmission, transmission-gtk, transmission-qt, transmission-common
+Replaces: transmission, transmission-gtk, transmission-qt, transmission-common
+Filename: ./transmission-2.31_2.31_i386.deb
+Size: 1262970
+MD5sum: d09bbb1faa9bccb66aa874d81428e99d
+SHA1: 7e1c475aae61a6e884fa1e6431e6a4522c8031d3
+SHA256: acb120c3a391487e4bf4da1d419bd69259ba3f7c3fc2d45a2d717400c18ffd70
+SHA512: 774dc2fc7d858ff7113ba0c66e33cf45eab3ecba3e907b6c1594182cdddf03494cd5a765646b39f802c6d64938f433f6a28bbb07caaeaaab1a24e850f2df276f
+Description: transmission-2.31, a bittorrent client:
+ Light version of transmission for XenialDog
+
+Package: txt2svg
+Architecture: i386
+Version: 20170601
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 107
+Depends: libc6
+Filename: ./txt2svg_20170601_i386.deb
+Size: 91510
+MD5sum: a303633aa4115ed85b68339e6d7cee38
+SHA1: 0579340b0d47a34f98728102911c199ee7843833
+SHA256: 76015eecff21165b171d20c180372140cc6d5abb81cb56171bdda11661d243da
+SHA512: c82d7ad5836b5abc7dcfc353437a9b65ab1ca3a26ef12be9dc17f442c766dd409b9c191cac8cf8c107f09e2f0c264aeb067eaffa72574ae8c09f83d46b1cac58
+Description: Text to SVG/PNG Fancy Text and Logo Generator
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.4
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, ntpdate, gtkdialog, curl
+Filename: ./tzupdate_1.1.4_all.deb
+Size: 8158
+MD5sum: f42757bd87341f245cadf02bbf1ec7f4
+SHA1: 1f625d8649af77e644818bf31ae39669993995fb
+SHA256: f5aff599c309aeaee420a117c736eb5d543faa2584fbbb943482e642457b86e0
+SHA512: 0cd4b6731665579c6a908fffe9950f3cacc1cb7f781b8cf43cc849c2eb1cbdc6aa1ee2d093e9fc5f49c31de167cf2ec3e5dcc8efbe33420368372c0a2a9517dc
+Description: Automatically detect timezone,using curl
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.5
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, ntpdate, gtkdialog, curl
+Filename: ./tzupdate_1.1.5_all.deb
+Size: 8194
+MD5sum: 35ab425715c47ab7ad550b860b6ee884
+SHA1: 8172f45daced2e684b2723aa2f7416b6f16e363a
+SHA256: 79c79e639e94c013f0c68d1770af5893e9c58aaee3ce1a3569f5d8a5d2b11f75
+SHA512: 41b986843c48f8d5350edf19ea211899fead8edcd78bc67db283be87d1bb67338e2cb5745f27d8352fd623671a5aa07aa4057af84aa5c962ff7f33c65c446b7b
+Description: Automatically detect timezone,using curl
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.6
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, gtkdialog, curl
+Filename: ./tzupdate_1.1.6_all.deb
+Size: 8312
+MD5sum: 53da103d223a1d90943d1a256145c543
+SHA1: 76f2911e98ecc9d87ebacb7bd9eccc69f974e81c
+SHA256: 9eac6303f8701cc3c593ad90255bce909c187b53e0d2f463827a0bf70e231f91
+SHA512: a8150bfa794142dcb738a65bb96f9713a9bb15102e5502bcd97ea021e461c3d62257a2c60a9415b77605d2cf84cebbd5cded469e9f70ee7bc09337d9731e36c6
+Description: Automatically detect timezone,using curl
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.7
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, ntpdate, gtkdialog, curl
+Filename: ./tzupdate_1.1.7_all.deb
+Size: 8384
+MD5sum: e0d9a1a8bc3404d422ada1d3a9553e28
+SHA1: d6ca341c5bc923a8bca6efbb1da69cb7691f9687
+SHA256: c075bdcaa377ee666914c5478d852abf4c5b621af589bda6f1d239574ed54f63
+SHA512: d2a50e8ce5a3cb48b51ef05b79c75ea73e88aa849eb99eebcfc37ede4ad18c670e9173277b8d088cbbd9f7c276681678d9dc7e16b3aa69d526edbbbd04620f28
+Description: Automatically detect timezone,using curl
+ v1.1.6, changed the address to get timezone from to ip-api.com
+
+Package: udev
+Architecture: i386
+Version: 1:3.2.9+devuan4
+Multi-Arch: foreign
+Priority: optional
+Section: oldlibs
+Origin: Devuan
+Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
+Installed-Size: 13
+Depends: eudev
+Filename: ./udev_3.2.9+devuan4_i386.deb
+Size: 2960
+MD5sum: ae7c5bb32c3a7baf0ecc6388c986bb6d
+SHA1: 983e2744db9c0116b71f48bb68d3c69cfc0a7bb9
+SHA256: 29aa183acf6206f960fc64d2539c149dc73950724d1c8a243f2859c3b670c62c
+SHA512: 2aed5c372daa6b0608d01d79abb58f45d8754157a71e7e71a5dbedbd2445736f8ba8fb974517bf16c76fe7a8db82e598bb5a4c2cd9ad76da5d85f62f9efd0a81
+Description: Transitional package for eudev
+ This is a transitional package to ease upgrades to the eudev package.
+ It can safely be removed.
+
+Package: uextract
+Architecture: i386
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 308
+Depends: libc6, gtkdialog
+Filename: ./uextract_1.0.1_i386.deb
+Size: 64534
+MD5sum: e004ba41f76d623306c8c93582f6c5ad
+SHA1: aa37a8a531000bc8bbfb65175105385bf24f1fba
+SHA256: f950e47ba5c18ad2d2de6b87ab736b7ae4ad7ea6b1a1b5dd0588a304b41eb86f
+SHA512: e7c95fdf2447926bb431d171e5e64d7d39db1819e3126e265c4570f68b12fb489e02e36bd9e7801ff5768a17f5c422e8bb5a3fe81a496c5e07e8c34a19b4b9c5
+Description: uextract-converted-pet-to-deb
+
+Package: unzipper
+Architecture: all
+Version: 1.5-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gzip, bzip2, xz-utils, unzip, p7zip, unrar, gtkdialog
+Filename: ./unzipper_1.5-2_all.deb
+Size: 3674
+MD5sum: 48e7358528939ff1d5e7b04aa6377833
+SHA1: a13f08fcf0aa552b9db38e71b44aa6cfd6c4f6d3
+SHA256: fbb35ed7ecd2bcde111aeb675144d43280144f06f99e7a18ce5ffe8bea914b29
+SHA512: 28404167254d12d8434d3f6f50564c3f4d54b9417dd7895e19b3d157eeddac7827ed652e774d9da1defa140e923aa2841a9057eaf0ed327fae655b34fa241642
+Description: Extract gz, tgz, bz2, xz, zip, 7z archives
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.4_all.deb
+Size: 1120780
+MD5sum: 9c1babffcde4f417808e6922c04bf3d3
+SHA1: b9f932a19db3cb509721db4b47bdc52a30723ac0
+SHA256: fc6d6aa2f0400d8423848e2e31e6a1bcd64ea36ddff6942dce84d450cdd9e198
+SHA512: 4e9a7fff69b0ed6935fad96ae9ae90900251df5574bfefcc3a70e661cab4ad7404f5cea2ddcee94c18b395a396b44f1b1e3f0057ed80f2121e93ff82cd16aab9
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.5_all.deb
+Size: 1121108
+MD5sum: d096b4fe75373b92e37e2a673ef5a883
+SHA1: 5ec335b44f8ef1de796f1c363e0d8d16167fecda
+SHA256: 434b3ccbe6ec4396d341b1256e11044745a719860e19c66eb1a7c3b9282bb139
+SHA512: d311b07c0773f68e9d8fc8d7bb286cbf85fa6232a992c7040c9457e151c78fdea8328810207c13e15c5a4179497ee447c079deaeefb3c387d73f2a43247836ee
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.6
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.6_all.deb
+Size: 1121064
+MD5sum: a7e9855ebcbf73c2dbf604a849b36f7c
+SHA1: 29fd6b44906656552fec4fd2ccf29223671823b9
+SHA256: 4435d76a3b01f49e6fdde39c7f84cb0775262bd57793b682788543a0a7a60392
+SHA512: 59e1539dd46d937167e63c188b58d7c7609c5b4b1d955b4d0a8ffa938cd5426dcda3fe3681c6b50c796c936d0432a24aa18ff42289adc9a341dc6592bf19beb1
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.7
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.7_all.deb
+Size: 1120796
+MD5sum: ce796e1904d72484db8eb548a2dee1a5
+SHA1: 6adf98ff121c79c86e504f0b9a80c6c67aaa4c0e
+SHA256: 60374c1e17229a3e3ca5c84a5483d49fb0dc2daf0a15c4fda0703687b3203f17
+SHA512: f51e4f7b9eb8e9ee72ff7f80edfad417e932cd03753758955ca61e60797ccb4e56ae169d35fdbb73b4214253c22e8cf0dd6b05b7998d2df0cfedfd8dadd731e2
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.8
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.8_all.deb
+Size: 1120980
+MD5sum: b24882ea9a1123194a6297d3ac21adf9
+SHA1: 0e71f929b95aec033f0d8472331721be3d1a11f0
+SHA256: 39c38e7b1e454369c41c2daa315dfad3ec37896d028d17eef269c09efa23b533
+SHA512: 41925fe2051a1bf94b09e17250953e4596b68e184c4f2ce3bc810188709d8364e0a16357a6611d9129aa87d5643eecf1d33095036853ee7ade7ee36f6baa796c
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.9
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.9_all.deb
+Size: 1121296
+MD5sum: 3a6c08917576040214d59a2306ff5303
+SHA1: ed4b6b09028534505f5f3812db1fba9b9d0c3c78
+SHA256: 3c7f923c43ad5d1e267d268ef3064f7bbe7bc41106502d1c65ed67da9e8b4170
+SHA512: 3b58c3807944bc0249a9dcf1a44cdc602e9aefdda919aa4fa80fd871643405d44832ade6d1863bfe92231a48d3cf2d64e731a5506076fcb275ae2e365fbcca94
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.10.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.10.0_all.deb
+Size: 1121808
+MD5sum: 44ffad02c1fa8e741e801402f7257801
+SHA1: 65b562423753c804231017a2bbd3ff729cfe3eab
+SHA256: 7dcff6155e0c51d95e76ec69dad04c588fb23515a4b807695f2fb90782fd154f
+SHA512: 5b155d4d8d345fbe08eb8ea60da46c8ed7d639664e5762d0c99f1073f26cac97a358cf73cf090cea81dd5febe1b4000ce976eecd87c6f8f409ce2f3bae71f36a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.10.0, added i915, nouveau and radeon kernel modules to the initrd1.xz
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.11.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.11.0_all.deb
+Size: 1121988
+MD5sum: 8df2a80afca200afbfa38c8b81863710
+SHA1: 7a40286311d37acfbf77c7e3a5d03cfee39f8481
+SHA256: 0bd328e2a646ca7af2d34ec15f09bc6c3dedf010c45a3fe64e5579f3f3bedbae
+SHA512: d61e19db81e437661eeb6ba30f1ae9d9f228ee65bd8ef3d636e8056783844a0dca390beed0948baa17c0211c9b6919b8eb5cf3a8c1f9b9a28a4bcba59a4f3739
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.12.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.12.0_all.deb
+Size: 1122040
+MD5sum: de3ac4e3d96e76df7d99eb2fb99a5aee
+SHA1: 40d0a7cc06bbf9b5e91b6c160b5013e7e636413d
+SHA256: 9061c43c9282fbaa5731b2e3824f7f91c1c9baecf4d510c4e72e3a85fafb9e82
+SHA512: c677c95b707b51569b53a522e796065e98fce3c8bd9de06079f14ed1d4cca47b1dfc0be266f2cca176b85292c8b91fa3bd157443a4e108643d074d436e300694
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.13.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.13.0_all.deb
+Size: 1122060
+MD5sum: 244c35994897a869106297bb2a705933
+SHA1: b5ecd41bde3a8ef8dd5dc887421fdf7f8ee71351
+SHA256: 89b845d4855d74ec18e656f8aa31c7f631b67c37212ec80f1a7da0dcfb9bee66
+SHA512: eb1900ddedb5e61dc9675c613912d33b2d5689d7449d4077ba2e72e31303a8918268e774460030db5b4b001a27735beedd39520d63d7f8af7ac860b5f9112983
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.14.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.14.0_all.deb
+Size: 1122036
+MD5sum: 22185ca8660589746f522b550ea18902
+SHA1: c9e1bbb29e0fffb5000a23790738ac2aef9682be
+SHA256: 33fae9ba085a70092a858ac2ef4781ce828048915dc8ac43232d92f80f22f357
+SHA512: cc482a2b75c74d129f0f7b19ed2284f97c2f156823f7a42eee7c4242b1140578d7b9a62fa2977f69ec7aca7538d9f9372d7f77d7d8649517413680879ffe0aa4
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.15.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.15.0_all.deb
+Size: 1122652
+MD5sum: c11ca785f4c04e481ac71be4da5c4fc4
+SHA1: 0f62f10388fcf071e591540a6d4fdd0d15fd1c2e
+SHA256: cc930329d6b54a91308bf04c781dd5f2eec8bc6e3ca57d81093820b4f5a142fc
+SHA512: 5aea536a283b3bed8b0205be958bf2fc0845984d69c85d860d16964dbc5d2aee5ac57c18690afcaf9ab441318de7ea7e44cfb63c21e5302d6c380e6646e843f9
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.16.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.16.0_all.deb
+Size: 1123100
+MD5sum: da058f605ea6e16eed8e8e6c808cffbd
+SHA1: 2841465d161936a8eb6e00ed74a4b1487ebc1dac
+SHA256: df33ce2df68d62aa9fdbd844b7c532f9137ea6dc3b7adee5cfdf980f326f1166
+SHA512: 92372b5524d01f0bd884a45ff82bd046f8cd6fcd21f9fb2a1bef47c4f6a17f490820202406b1997d456126b7b3b6a5c8e813a57eb3928799fdad71ebde449cb6
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.17.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.17.0_all.deb
+Size: 1123156
+MD5sum: 43a3e8e98745b86ad0c4646e3ff75f4f
+SHA1: cfe47759a89f1bf1e2affe2d47876e475f95945d
+SHA256: 383410cd61fdd7ce6e1296f9a98c501908f5941268161fe1fb6ccaca8e6b9748
+SHA512: 4a879a74c91dd79e2f7d4a21084d9b3228a5c1e3c45beb2fac1e5e8ddd3ec0da30fb5f87e21dfc5464935ac65b8838c81e83e890694601f9e002135650ea6b5a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.18.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.18.0_all.deb
+Size: 1122988
+MD5sum: f8df7de5c4f64bfd3173e4f75def551e
+SHA1: 69ea57cbab7a9310132cdccbd75b40e5f13e0277
+SHA256: 9bb3be587d39303925261e07ab5b5916649fc9e5494bc123946e1655751356c2
+SHA512: d2032cb0f05ff96ddf8495d35eb7121269f6fd1d6c5c98f6593148e3d76a1ff4e8b189f508d66faaf0cd846732f88624af63f1958f7dd3b0eca535652d390e75
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+ v1.18.0, fixed support for encrypted save file
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.19.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.19.0_all.deb
+Size: 1123236
+MD5sum: 4ac247641807ea9b6a7151bca1f9a86f
+SHA1: ce7ee8cd475c92fcea1625baafef0c3947166d50
+SHA256: a87fb05c4e0a4e90c9de4f74152e9a616aba9805ba63afdf1de730456532ae93
+SHA512: aedbe25b308f907594b99711fe6d532a7a992f4ac922a58b3d4910cac3473fcd5935cf440fe67890842509c2efaa7f09caa8a194ae409ab4efdc188ae96b60a1
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+ v1.18.0, fixed support for encrypted save file
+ v1.19.0, added support in initrd for some DELL computers (e.g. PERC5i)
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.2.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.2.0_all.deb
+Size: 1121200
+MD5sum: 25ad4464cb6ed906ff04452704ce5349
+SHA1: ff286fbaa072204aef72f2bf14e2de651c03d105
+SHA256: 3154fb9c63559e841cd0daef7a96001eb66b38fd3d58cd40471b599c2c4f3dc9
+SHA512: 66d0e3a18d16ab8e07ac7ae41975aa06727dcb8320e56d51b43bdaff251af27875a9fe27b5ff779c6195946e89bb8d688ecc8bb7f0667c3fd2ebf90db3adf0f5
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.20.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.20.0_all.deb
+Size: 1123516
+MD5sum: acee04a154b63e261490b63b9c087b0e
+SHA1: bf188dcb83f79841e12d74baa12abe516838387f
+SHA256: 77047a94dc52bc672ce98c3f503d42189fac6bbd1d13fd8dba4176e2cff87090
+SHA512: f32de30c981fedb2b2dc289fcac9fa316f135346fa780bcb3951105d51bc81c7868b1988d9acb8e6da0feb29f316184d5df288afde9a93685b64f15148425adc
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+ v1.18.0, fixed support for encrypted save file
+ v1.19.0, added support in initrd for some DELL computers (e.g. PERC5i)
+ v1.20.0, change only for when using pfull (Pseudo full install),
+  the created initrd1.xz supports now booting (in case of used pfull=/...) without any .squashfs modules loaded
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.3.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.3.0_all.deb
+Size: 1121004
+MD5sum: dedb3420888c215e08e1065b7f19a7fd
+SHA1: 83660c1156a7609c32d0bd43f390111a0bb0079f
+SHA256: 7d937747424c8828e5e6740050a80b3c8a1a59f8df9dfaf46baff54ca872c468
+SHA512: a5b0884c74804bbf47e0759513aa4c6ebab4830763474593e7e6a508004782311373edff6b90da565c398bf736e33378feb11c19a0afc4f717d4f5a791eca612
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.4.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel-mod
+Replaces: upgrade-kernel-mod
+Filename: ./upgrade-kernel_1.4.0_all.deb
+Size: 1121656
+MD5sum: 8626e56b75fd983f2d50711ab25a53c0
+SHA1: 469bb8182c088e3c7fabfca350f9d42785896892
+SHA256: d6fdffd24a5e7a93f45f6b4203a95ab89df6abbebcfdbac2499092cd1fee713a
+SHA512: 774ba55fbb09664d8b009d80d02e76d5a12d6a85ae41939db3aef07856c00f14f89cd2e0e776af65ee363afc9c109f53fd044f82992906d1310249632429513a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.4.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel-mod
+Replaces: upgrade-kernel-mod
+Filename: ./upgrade-kernel_1.4.1_all.deb
+Size: 1121112
+MD5sum: 91fc1a8b5362ffc643143500374965b7
+SHA1: 8923210dae608d43300770d5c13dea1585a6bed0
+SHA256: 1a11dafd56b2853a45bea356e7e9efa47fa10c580eb349f86550f4ca2e2149d8
+SHA512: 4e3ad697fe9d24d3cb23baf0473ed10a3b81869401829b8d00ecd24ddc48b3e17e68fdc257518e020d10f1bddd55caf006ca33181a188c38c49060e523192a4c
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.5.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.5.0_all.deb
+Size: 1121208
+MD5sum: 20b1fb6f2da0bbb7814a8588d72db915
+SHA1: 4bf210b610d6d94a061e6251e41c73d3f417ecd8
+SHA256: d624b4c33d44695f56d1155bc9aa9c8ec657960d9973fc4319db8f870b89b79b
+SHA512: d581bb1fb74debce4dc607bd55d35e03be0a25c0f723c74a9f888342c78734a00dcf04df43f2fcde7670fad96867e062d6b2ec180ada6311703aef528102390d
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.6.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.6.0_all.deb
+Size: 1121080
+MD5sum: 91e4456a19b04d6db1da015c83843578
+SHA1: f88a6efb1d29dcdd29b707d0f52803213ee1c5ff
+SHA256: e903efcd05a3449ca99317953ddd203f8f10d94ec8829f4277c8c26492abc6b5
+SHA512: e9190470b71e0b2140bf8969bedf1d14d5607a21fc7397d7854f08a3e3a5d35b8070065a3e570ce1eff92f0107f8ab336e532676ace7edf8579ab63bcf1d20b8
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.7.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.7.0_all.deb
+Size: 1121784
+MD5sum: 2d0475109ab57bf9d2da81dfc6a52e48
+SHA1: aa149c974d2cc3ba8c9e35d4ccd1850e0f693444
+SHA256: b4f665bf30157b0d30e2f600f0ab84d93beba279518418f5f9d4668d4c543002
+SHA512: 1166f173db95ab65449354a5c461de4616f9fb02078b5af972345772f9237d551bce8ec8b906a79625b0f6ffbf0e06d95c12286ea40637f93c6dbf6d3dba5346
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.8.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.8.0_all.deb
+Size: 1121720
+MD5sum: 8f6e1c2e8a611526eb14952b0085d191
+SHA1: bb47601d2a2ca897b4d91944c6397a4cdc5db30c
+SHA256: 66b0516715b89cfbbc5dce76ec73fa5ebe636444e6d4907692225a5ad2606b33
+SHA512: 53239abf51965e0a24faa7a7839633139c413bb277c1a6dca0f102a79122b96305a69f3964eb93006a2dde2f92d7973692a59d3b70f46f967d514f0dc33c9d57
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.9.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.9.0_all.deb
+Size: 1121680
+MD5sum: 3ad87ea9c6e25a8be3f19ac2d107a316
+SHA1: 6cd343061c78cbdbfc0ee8c1b29dbbf5b5560a6e
+SHA256: 9b016c6515d2a4341bc4b861ff3b8ea83110ae7f3cf375d10fffedf8124ad9bf
+SHA512: 2c432a44996d6a724d093a8c33dbb2ef80cbe6872083d6030d45d9c2691405f50fe5b2d48f3790b761aec340c1aac7ec873a99a031a9d71f8b25d7c4d689489a
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+
+Package: vnstat-tray
+Architecture: i386
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: vnstat
+Filename: ./vnstat-tray_1.1_i386.deb
+Size: 4360
+MD5sum: a0a1212a86df224e66158505f52b3929
+SHA1: e25ee6700c02714ced3dab0476ce2bb8116612b3
+SHA256: 8036d8013420e98cbec2e1ac637970dc44621e4f977a2fa01425dfd852943403
+SHA512: 99684e60ab9f03965a6c3e96a871cc025d58ecf43613ac1b680b06239f50ce7e3d9c330ec64e5733afc179f83761987da14accaea2574eecb03fc1e6dabce63c
+Description: Vnstat tray applet
+
+Package: weav
+Architecture: i386
+Version: 9.1.1
+Priority: extra
+Section: audio
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Installed-Size: 148
+Depends: libc6, gtkdialog
+Replaces: wex
+Filename: ./weav_9.1.1_i386.deb
+Size: 13570
+MD5sum: 0c106d5b81c71e7f41266c0b22c060ec
+SHA1: 811acf51765066a43f64ba5d2ba18446d332aa8d
+SHA256: 3cd58c9b99a5cfc961cfc810982ef3a1f9e19be2450df7bdbe13fa20b25f043c
+SHA512: 6fe92a79de653c0b92327a59e2827d33b5e5f7b0b0eb2f0d237e0c19d20f0169118400176d0f0bd2d16573061fbf76be3e6e138aff3d80f77cd56d9b8d6eda92
+Description: weav commandline processor
+
+Package: websearch
+Architecture: all
+Version: 3.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./websearch_3.0.1_all.deb
+Size: 13400
+MD5sum: 77959fe7f5eb41da1a9c36e737b723f1
+SHA1: ca8ca3053ef7b45a930ec90c13921a339cb67919
+SHA256: 6ba54381645a657f0f3b4ae342b9eb2c6dd038127abe510407db9a5dd4820d2b
+SHA512: ae6fcf6bde93f875601b757bf362a3274286dd21fb322ce3451e649f3c2e9cfa6a1d10db21f3e46cd0a2cfec913b3966382540e7315f302e933173c963696576
+Description: Search the web, by Argolance, choice of 36 search engines
+
+Package: websearch
+Architecture: all
+Version: 5.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./websearch_5.0.0_all.deb
+Size: 16620
+MD5sum: 7e912386a02db1cc909154e34daafccd
+SHA1: 80ab03bceb535222c0a6cea5261eec07fc9b60c3
+SHA256: b08e89ca88f13ce92d4f12477b84d124b7665ff94b025e88d3c216a626fd0114
+SHA512: ad245065cc2b9658709966de9a652cdedfc9c19aa87f7a91db12360bcd9249e12d91aa28ebf4dbfc4fcfdeb63df868fbc0b7a08de52b7a241b6ccc0863934131
+Description: Search the web, by Argolance, choice of 36 search engines
+
+Package: wex
+Architecture: all
+Version: 0.8.18-1
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 168
+Depends: libc6, gtkdialog, ffmpeg, weav, scrox
+Replaces: weav
+Filename: ./wex_0.8.18-1_all.deb
+Size: 32268
+MD5sum: 46d927a200d147c252253b870f59c77b
+SHA1: 6fa3f617c83e33c8594badd8e5f9369f1f3f4e7c
+SHA256: a81c77f5417dc25cbd06a75fc7326de72d103476744335bb7ec22708cb9b6019
+SHA512: 467c17ef40115c7e47a3246d6cc075851a4603903dc017f00b3a0fef9e2027bd60c4a2e261973f131ae9b9687cd9f9ba2a0ac07ba27ab51bd14f8f4ee81bbf8d
+Description:
+ weX is a media recorder for audio, screencast, or webcam
+ weX is by mcewanw.
+
+Package: wex
+Architecture: all
+Version: 0.8.18-2
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 168
+Depends: libc6, gtkdialog, ffmpeg, weav, scrox
+Replaces: weav
+Filename: ./wex_0.8.18-2_all.deb
+Size: 32268
+MD5sum: 4aba387c821994b82fb17587552aff63
+SHA1: 9639cf704c9f3b65ab1c71b2fc7b08c99b234c3f
+SHA256: e03c6a405f9aa819e0819c9c690ffdd0787d9da8796087cc81b795f885ddcc72
+SHA512: 7b9fc6d39aed164812b1653f1031e6674e024cadf40647daa1da431e72ab224b1e4aa879fa170afe4358d7f65270194ab60b734602c1d4e3e875d28ac984aa2a
+Description:
+ weX is a media recorder for audio, screencast, or webcam
+ weX is by mcewanw.
+
+Package: wifibox-dhcpcd
+Architecture: i386
+Version: 1.0.3
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 282
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox, wifibox-tazpanel
+Filename: ./wifibox-dhcpcd_1.0.3_i386.deb
+Size: 93534
+MD5sum: 6bfec7c0e3235f6c36d33659e6b0a56f
+SHA1: ffa5934908ff5f7ad5a59706acff14c8df6e778e
+SHA256: c96c4968c12c5414048022cb6cf2338f3707981c25b30b89d6b1ede2befa957d
+SHA512: 02b85d97cd1e46e490b4b099153245712ede244a4857f54b14a0c86b12080c12fa518c521952e8aa54f8075186680b477629681ac256cef636cdf683d5ea55cf
+Description: Wireless Network manager
+
+Package: wifibox
+Architecture: i386
+Version: 1.0.4
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 290
+Depends: libc6, rfkill, libiw30, yad, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, wireless-tools, net-tools, gsu | gksu
+Conflicts: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, frisbee, wifibox-tazpanel, wifibox-dhcpcd
+Replaces: ceni, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, udhcpc, frisbee, wifibox-tazpanel, wifibox-dhcpcd
+Filename: ./wifibox_1.0.4_i386.deb
+Size: 43458
+MD5sum: a11a2e8f2eb5793413cd9b91517ade39
+SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
+SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
+SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
+Description: Wireless Network manager
+
+Package: wlanmaker
+Architecture: i386
+Version: 1.3
+Priority: extra
+Maintainer: rcrsn51
+Filename: ./wlanmaker_1.3_i386.deb
+Size: 192918
+MD5sum: 6ae0e1eb57c8f2fef0f8f055fe10430a
+SHA1: b613d66a8b36ff719cac36cfbc8a163d4db6bdfb
+SHA256: 774cb2da0b1786171bb97e59c8686c2cc26a30383d15fa8b7884213b80385e5d
+SHA512: 4ce68fbd0bcc604ac14f0ea671e2c0a91f5ae44fb9448e27b3da40655bbbaa1e7eab3a5f04037aa77a4c48c6e0271128e31743ce6cb870e63034f6359d989af5
+Description: Makes a WiFi access point, needs legacy libnl1
+
+Package: wlanmaker
+Architecture: all
+Version: 2.0
+Priority: extra
+Maintainer: rcrsn51
+Depends: hostapd
+Filename: ./wlanmaker_2.0_all.deb
+Size: 1586
+MD5sum: 71a6dcd008256e97c1f44a0b5e603f10
+SHA1: 5f4c461676b9ebeef3e8d92411a484059fe50dc2
+SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
+SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
+Description: Makes a WiFi access point, needs iptables for internet
+
+Package: wlanmaker
+Architecture: all
+Version: 2.1
+Priority: extra
+Maintainer: rcrsn51
+Depends: hostapd
+Filename: ./wlanmaker_2.1_all.deb
+Size: 1632
+MD5sum: d2069e4e99059fc037f77eebe961da22
+SHA1: 2b7c5b6219bc6c0edb5cf244972fabc60c29cd24
+SHA256: 33d0473c4ddaab510b6174bdb0ad9d49936b78eb9e21c2f204a4f713df62f5f5
+SHA512: 3c0d615ea703bba5d9b639cb0c7f18490201a049f987f99cc833b63743b9d5f1a677216160b7f5f86d231f591d0a88aac38cbfd01bf3b5d0224b4a4fbc77d902
+Description: Makes a WiFi access point, needs iptables for internet
+
+Package: wmx
+Architecture: i386
+Version: 8.0.1
+Priority: extra
+Section: checkinstall
+Maintainer: root
+Installed-Size: 208
+Depends: libice6, libsm6, libxcomposite1, libxpm4, libxext6, libx11-6, libxft2, libfreetype6, libfontconfig1, libstdc++6, libc6-i686, libgcc1, libc6, fbpanel
+Filename: ./wmx_8.0.1_i386.deb
+Size: 80556
+MD5sum: 7ef499fb2cbea0917af3a959a2ab65d9
+SHA1: 3508eafa669c925c11d6f9918a8a40d513c4ad96
+SHA256: 74f4bdf519f59b75d629d66449085c7f9ace9a0f259c8877803619df2a4de28c
+SHA512: 8b811da7dd23e356639f0bc8e05437fe721f1b1e6d608fe44053d9e21df1939d6e92d8c539b3694f101ecc6abb34c9daf712d4ba06f61d6acf4b709c77f79860
+Description: Light window manager.
+
+Package: x11-xserver-utils
+Architecture: i386
+Version: 1:7.7+7+b1
+Priority: optional
+Section: x11
+Source: x11-xserver-utils (7.7+7)
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 466
+Depends: libc6 (>= 2.8), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.5.0), libxrender1, libxt6, libxxf86vm1
+Suggests: nickle, cairo-5c, xorg-docs-core
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Breaks: arandr (<< 0.1.9)
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Filename: ./x11-xserver-utils_7.7+7+b1_i386.deb
+Size: 167602
+MD5sum: e5e3bc4c40ba32d4bc1796d2ffd46cb7
+SHA1: 5c702d930c4c1f255008cf256bab433afeca4273
+SHA256: 83514530385c9a0780dc401c179468678420b2094afacf75d70f5d3111fdfdc0
+SHA512: e67052d5825f88301b64d2a3e6f6d1c1a5b6886ff0ea16bd3bce085098e1dfedab3d1f01bf7ec21bd53fb2c245a1f4cc535e491bddf2230f182ad8f0e7236be2
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: xdialog3
+Architecture: i386
+Version: 2.3.5
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: libgtk-3-0
+Filename: ./xdialog3_2.3.5_i386.deb
+Size: 36012
+MD5sum: eb5960d1f009f1ee7a4e76cfb97d36ec
+SHA1: 2b2738685ba07bbb6f493023dd1d99688e6aa616
+SHA256: 0d4540182cbef8c3225494a8b5b2dfd285396b3dd64927144cd5c0c471ae0fef
+SHA512: 4cc79692cd1da760d9ba72e735b537b5b002dfe7ad1bd1904a1cf56b08094148910e76dcb184e2de030ee714b150b073cffe272a7d5ec21d8013ae067dbf1674
+Description: Xdialog for gtk3
+
+Package: xdm
+Architecture: i386
+Version: 1:1.1.11-2
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 705
+Provides: x-display-manager
+Depends: libc6 (>= 2.11), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libx11-6, libxau6, libxaw7, libxdmcp6, libxext6, libxft2 (>> 2.1.1), libxinerama1, libxmu6, libxpm4, libxrender1, libxt6, debconf (>= 1.2.9) | debconf-2.0, x11-utils | xbase-clients | xmessage, lsb-base (>= 3.2-14), x11-xserver-utils, procps
+Recommends: cpp
+Filename: ./xdm_1.1.11-2_i386.deb
+Size: 243842
+MD5sum: 241a3178cfa1a1721de1ba0c1a7f83ad
+SHA1: 8d06f27c6fbbf92026c3b3dfe18e3020c1da417f
+SHA256: 7f19ee106b320675e6de2459500c43ccb5e9a4d5c21308a0229ccf010f058404
+SHA512: b9ac09aa93213b606e9cdaa8588058f54e0db5111702d66dcd1fe7d57b53bc240fd26c75ea94f7c848a81ef6324a3ea5dce3374876af26aee4cdd56694836abc
+Description: X display manager
+ xdm manages a collection of X servers, which may be on the local host or
+ remote machines.  It provides services similar to those provided by init,
+ getty, and login on character-based terminals: prompting for login name and
+ password, authenticating the user, and running a session.  xdm supports XDMCP
+ (X Display Manager Control Protocol) and can also be used to run a chooser
+ process which presents the user with a menu of possible hosts that offer
+ XDMCP display management.
+
+Package: xfce4-goodies
+Architecture: i386
+Version: 4.12.3
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 10
+Depends: xfce4-battery-plugin, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-datetime-plugin, xfce4-diskperf-plugin, xfce4-fsguard-plugin, xfce4-genmon-plugin, xfce4-mailwatch-plugin, xfce4-mount-plugin, xfce4-netload-plugin, xfce4-notes-plugin, xfce4-places-plugin, xfce4-sensors-plugin, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin | xfce4-whiskermenu-plugin-mod, xfce4-xkb-plugin, thunar-archive-plugin, thunar-media-tags-plugin, mousepad, ristretto, xfburn, xfce4-dict, xfce4-notifyd | notification-daemon | notify-osd, xfce4-screenshooter, xfce4-taskmanager, xfce4-terminal
+Recommends: xfce4-power-manager
+Suggests: xfce4-cellmodem-plugin, xfce4-linelight-plugin, xfce4-messenger-plugin, xfce4-mpc-plugin, xfce4-radio-plugin, xfswitch-plugin, xfce4-hdaps, gigolo, parole
+Filename: ./xfce4-goodies_4.12.3_i386.deb
+Size: 4960
+MD5sum: 1f20e0b74440c490896cb7fecc364044
+SHA1: 6236b9335bd4c673042475a92fae0848066c1381
+SHA256: b3be232b0f76dd131c2a8572c85f8c475aa10b51e4f12793ebd878cc189139bf
+SHA512: d3fc99b9dad60aa433308907fc231c7b98cca38c76a5d6a96b0e63bacc4bed2c327d9bfaab4893fbc7f1e2fa93e9db2ceaeaa424ee043340b3338ffd405b34dc
+Homepage: http://goodies.xfce.org/
+Description: enhancements for the Xfce4 Desktop Environment
+ The "Goodies for Xfce" project includes additional software and artwork that
+ are related to the Xfce desktop, but not part of the official release.
+ .
+ This package will install the following Xfce4 related plugins:
+   * Extra artwork (xfce4-artwork)
+   * Battery levels monitor (xfce4-battery-plugin)
+   * Clipboard history (xfce4-clipman-plugin)
+   * CPU frequency management plugin (xfce4-cpufreq-plugin)
+   * CPU utilisation graphs (xfce4-cpugraph-plugin)
+   * Date and time plugin (xfce4-datetime-plugin)
+   * Disk performance display (xfce4-diskperf-plugin)
+   * Filesystem monitor (xfce4-fsguard-plugin)
+   * Generic monitor, for displaying any command result (xfce4-genmon-plugin)
+   * Mail watcher (xfce4-mailwatch-plugin)
+   * Mount plugin (xfce4-mount-plugin)
+   * Network load monitor (xfce4-netload-plugin)
+   * Notes plugin (xfce4-notes-plugin)
+   * Quick access to bookmarked folders, recent documents and removable
+     media (xfce4-places-plugin)
+   * Sensors plugin, frontend to lm-sensors (xfce4-sensors-plugin)
+   * Smartbookmarks plugin (xfce4-smartbookmark-plugin)
+   * System load monitor (xfce4-systemload-plugin)
+   * Timer plugin (xfce4-timer-plugin)
+   * Command line with history (xfce4-verve-plugin)
+   * Wireless lan monitor (xfce4-wavelan-plugin)
+   * Weather monitor (xfce4-weather-plugin)
+   * Keyboard configuration (xfce4-xkb-plugin)
+   * Archive management for Thunar (thunar-archive-plugin)
+   * Media tags editor for Thunar (thunar-media-tags-plugin)
+   * Alternate menu plugin (xfce4-whiskermenu-plugin)
+ .
+ It'll install some standalone applications too:
+   * Tiny text editor (mousepad)
+   * Images viewer (ristretto)
+   * CD/DVD burner (xfburn)
+   * Frontend to dictionnaries (xfce4-dict)
+   * Notification daemon (xfce4-notifyd)
+   * Tool to take screenshots (xfce4-screenshooter)
+   * Task manager (xfce4-taskmanager)
+   * Terminal emulator (xfce4-terminal)
+ .
+ Some packages are only suggested because they bring too much dependencies,
+ but you may find them interesting:
+   * Cellular modem plugin (xfce4-cellmodem-plugin)
+   * Search plugin, frontend to locate (xfce4-linelight-plugin)
+   * DBus messaging plugin (xfce4-messenger-plugin)
+   * Another commandline plugin (xfce4-minicmd-plugin)
+   * Frontends to MPD (xfce4-mpc-plugin, xfmpc)
+   * Radio plugin (xfce4-radio-plugin))
+   * Fast-user switching plugin (xfswitch-plugin)
+   * ThinkPads HDAPS plugin (xfce4-hdaps)
+   * GIO/GVfs frontend to manage connections to remote filesystems (gigolo)
+   * Media player (parole)
+   * Power Manager (xfce4-power-manager)
+ .
+ This is a metapackage to ease upgrades, installations, and provide a
+ consistent upgrade path from previous versions. It can safely be removed with
+ no ill effects.
+
+Package: xfce4-mime-settings
+Architecture: i386
+Version: 2.2.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: exo-utils, libgarcon-common, xfce4-helpers, xfconf, libexo-2-0, libfontconfig1, libgarcon-1-0, libgdk-pixbuf-2.0-0, libgtk-3-0, libgdk-pixbuf-2.0-0, libglib2.0-0, libxfce4ui-2-0, libxfce4util7, libatk1.0-0, libc6, libcairo2
+Conflicts: xfce4-settings
+Replaces: xfce4-settings
+Filename: ./xfce4-mime-settings_2.2.0_i386.deb
+Size: 38388
+MD5sum: 3655765c76c0a0ddb0a33b68b772aa4e
+SHA1: 4429ade4ae3511f58f7fe92ca6cbc3ec3c640f7b
+SHA256: b031a708a53315ffb672bc15f2dad2699487724b80fb3b71c653aa1de4d31ab7
+SHA512: 81f3c8a7d601d3a69c4695ecb8415e9b35b379e6e7eb7dc20f19659ff96a2a30ac3ecd5fca5c243a3df43feb09f23632035a61dd33abcdbac1aa9b7d2bb81df8
+Description: xfce4-mime-settings for openbox/xfce4 setup
+
+Package: xfce4-whiskermenu-plugin-mod
+Architecture: i386
+Version: 1.6.2-1
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 681
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libexo-1-0 (>= 0.5.0), libgarcon-1-0 (>= 0.1.2), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libstdc++6 (>= 5.2), libxfce4ui-1-0 (>= 4.8.0), libxfce4util7 (>= 4.9.0), xfce4-panel (>= 4.11), xfce4-panel (<< 4.13), yad
+Conflicts: xfce4-whiskermenu-plugin
+Replaces: xfce4-whiskermenu-plugin
+Filename: ./xfce4-whiskermenu-plugin-mod_1.6.2-1_i386.deb
+Size: 173318
+MD5sum: 2d52a013856c42122312e741d3fc1709
+SHA1: 1fb4322b5a428a3441b0d37ac71ee5d7b0879d4e
+SHA256: dbdda6feb0f0d8c57eb0e5f2204d674ca5a3c0542a4703cf00819f8b0ff1ea7c
+SHA512: 1393cf3ae22880b2454c7616e98e8a112883a7a9f5d3c469704d4bf7f42c8778da30ec35f0931241e206e39c61056898eadd7603a57c50b8023907eb2a4675a9
+Homepage: http://gottcode.org/xfce4-whiskermenu-plugin/
+Description: Alternate menu plugin for the Xfce desktop environment
+ Whisker Menu is an alternate application launcher for Xfce. When you open it
+ you are shown a list of applications you have marked as favorites. You can
+ browse through all of your installed applications by clicking on the category
+ buttons on the side. Top level categories make browsing fast, and simple to
+ switch between. Additionally, Whisker Menu keeps a list of the last ten
+ applications that you've launched from it.
+
+Package: xfce4-whiskermenu-plugin
+Architecture: i386
+Version: 1.6.2-1
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 681
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libexo-1-0 (>= 0.5.0), libgarcon-1-0 (>= 0.1.2), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libstdc++6 (>= 5.2), libxfce4ui-1-0 (>= 4.8.0), libxfce4util7 (>= 4.9.0), xfce4-panel (>= 4.11), xfce4-panel (<< 4.13)
+Conflicts: xfce4-whiskermenu-plugin-mod
+Replaces: xfce4-whiskermenu-plugin-mod
+Filename: ./xfce4-whiskermenu-plugin_1.6.2-1_i386.deb
+Size: 164092
+MD5sum: bf7662159729d0b3087aa2fb44af0b1e
+SHA1: d119866225e16f7547467b15d34bf5d3e1d02fae
+SHA256: a3717bdd03cc0aaf0dec1019138d7380dc08a6d5b56ee7f8edfbff608d2ba686
+SHA512: e6611a2b8bedcf538acfa5cae9a6017a00639749f09d813dca7c8cc890007f7fb50aa25a2d1a244e3c4f7e0f537fd0a1f89a4d24caed5f935613085653c88e65
+Homepage: http://gottcode.org/xfce4-whiskermenu-plugin/
+Description: Alternate menu plugin for the Xfce desktop environment
+ Whisker Menu is an alternate application launcher for Xfce. When you open it
+ you are shown a list of applications you have marked as favorites. You can
+ browse through all of your installed applications by clicking on the category
+ buttons on the side. Top level categories make browsing fast, and simple to
+ switch between. Additionally, Whisker Menu keeps a list of the last ten
+ applications that you've launched from it.
+
+Package: xfe
+Architecture: i386
+Version: 1.37
+Priority: optional
+Section: x11
+Maintainer: Roland Baudin <roland65@free.fr>
+Installed-Size: 6822
+Depends: libc6 (>= 2.3.6-6~), libfox-1.6-0, libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libx11-6, libxft2 (>> 2.1.1)
+Replaces: xfe-themes
+Filename: ./xfe_1.37_i386.deb
+Size: 1458608
+MD5sum: d80bf7e0fac8d5efdd5321e20d727521
+SHA1: e132638256bcc2977105867479bbae9676da78e2
+SHA256: 8701b77c54b8b19bf4b6ef871ab2b1faa37e0eb073b9c92300d2d50a43392d1e
+SHA512: 7f3cb23b9978e8cad13b75542dbb626bbeb2ffe581019d7175cf006ccc9dc12b4cc29a4ad1833ba942dd945a4499d79b756e70a6918560d00edc6a0a54042381
+Description: A lightweight file manager for X11
+ Xfe is desktop independent and is written using the C++ Fox Toolkit.
+ It has Windows Commander or MS-Explorer look and is very fast and simple.
+ Included in the package are a simple text viewer (Xfv),
+ a simple text editor (Xfw),a simple package manager (Xfp)
+ and a simple image viewer (Xfi).
+
+Package: xhippo
+Architecture: i386
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 436
+Depends: libc6
+Filename: ./xhippo_1.0.1_i386.deb
+Size: 36076
+MD5sum: 39927c5ef24a4298f1faca0fa3140176
+SHA1: 1a05155ca873722f2498ea00c64d81ffc3b6bdf8
+SHA256: f3b63bbe6c55eb2efce18ff799f765788122cd217f2ad902bc196226370e9328
+SHA512: 4d537f80be7ad8f240b2b92fd0b693fa1664b50a2b11a5dcf333751ea71f86704c0332ad5176c021c2c8fc7ce0b70cfc32c6960cdc08d3904c610496acb1bb9f
+Description: xhippo-converted-pet-to-deb
+
+Package: xinit
+Architecture: i386
+Version: 1.3.4-1
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 57
+Depends: libc6 (>= 2.11), libx11-6, coreutils (>= 7.4-1), x11-common, xauth
+Recommends: xserver-xorg | xserver, xterm | x-session-manager | x-window-manager | x-terminal-emulator
+Filename: ./xinit_1.3.4-1_i386-mod.deb
+Size: 41352
+MD5sum: 8d3aa9dd72557a707fe878ef78a9aadc
+SHA1: 1fe7e798b31a3bd41ed8b0dd92d747ab9063d5e7
+SHA256: 33044b639b52693e4b82dfa998839e8b4b1529a65eabd0bf8c36cb6ae20afd33
+SHA512: 470cd1bce13e6c753d1aa5ca9605a322cf50d85d76a8c8912ed17e07669d0553db2c3719f669f9b89463696d2b9450a458ea002390d81e6459a442cc40fa4e31
+Description: X server initialisation tool
+ xinit and startx are programs which facilitate starting an X server, and
+ loading a base X session.
+
+Package: xlockmore
+Architecture: i386
+Version: 5.43
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1700
+Depends: yad, libc6, libglu1-mesa
+Filename: ./xlockmore_5.43_i386.deb
+Size: 332572
+MD5sum: 40fbb426020d1bd57ee5334124a52d05
+SHA1: a38fb5d89140fc2fcb9368fcd8ad403867d3ea0d
+SHA256: ddcf383f7fadca7260d80c583e99e051da78a3b16fe5e697eedaeccfd6453bf1
+SHA512: d2e56cf4d914d2c9d0e17ab93fb734c91f03c9f6bd8f3766df006487c4eba6b50e5aedcdd7b4a70cff068347d0cb128bf2ccaf5684c5e1657b8a6bf7f957d915
+Description: Screensaver
+
+Package: xlunch
+Architecture: i386
+Version: 4.1.1-3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libimlib2, libpng16-16, xterm, librsvg2-bin, devilspie2
+Filename: ./xlunch_4.1.1-3_i386.deb
+Size: 1319992
+MD5sum: 96601dcb0a3db115d0ad4663a936b739
+SHA1: 7af8fc5de63b8b9370a192f04b90ac226678df74
+SHA256: 7a8bb1232057712eced5d007a411f49da9fb4c161855f6d5ea11edeef8f98399
+SHA512: 082e76d915fd51064613db5f1889c82a05b45e561c07cd04c52528c77ac3a97fd0f0f388870ccda99d14e01bdd007f75c13c86f4d51d3f8d174e97b7c414c596
+Description: xlunch by Tomas M
+ Graphical app launcher
+
+Package: xlunch
+Architecture: i386
+Version: 4.1.1-4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libimlib2, libpng16-16, xterm, librsvg2-bin, devilspie2
+Filename: ./xlunch_4.1.1-4_i386.deb
+Size: 1320036
+MD5sum: c65d057824095015d8cabd9d4f13e817
+SHA1: 1fd51e11e78792413c4b05d61c5fcf66a8aa8008
+SHA256: 71b18d38b7bb3819efe118edb4f192124930e04e4068016d6db061384c84af84
+SHA512: f0a9b24e6a2952e4ec537bde221ab1d20c64c9326bc992698450b697c277c5771302240675be39ba3111e5f6ba3e16a6a3d50f076804dce38f0516f3307546a1
+Description: xlunch by Tomas M
+ Graphical app launcher
+
+Package: xlunch
+Architecture: i386
+Version: 4.1.1-5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libimlib2, xterm, librsvg2-bin, devilspie2
+Filename: ./xlunch_4.1.1-5_i386.deb
+Size: 1317436
+MD5sum: e1e3210e4d9f1814ff029934e1c80d29
+SHA1: 2f78011ea68aa797f263df6c035aa1ccc51db109
+SHA256: a900244ffba560d2d8256b1a4b912b50b8024aac63a5fbd8d30530e8e91566c4
+SHA512: 88705d4475d4689c048d1938727c25b44896ff0a1220b0b762f641ff39fdd690ce569a6453cdd57847bfb078cfcf16ebcd6ecb1f0f1cd0cd89c27f0f528bd8ec
+Description: xlunch by Tomas M
+ Graphical app launcher
+
+Package: yad-splash
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utility
+Maintainer: Fredx181
+Installed-Size: 21
+Depends: libc6, yad
+Filename: ./yad-splash_1.0.1_all.deb
+Size: 3100
+MD5sum: 35b4bc22b62d51a3acb1c3b6057b92ff
+SHA1: b8f11e5be3207a102347334d30ef9feb5f3f8e22
+SHA256: 87f2035b54346fe66976c9a015bf4b91ebc0f4d813f2767f9ecc4a40ab8f0847
+SHA512: 92e152c037c45d67091235a69657bbb39ccc509be197e8ae603c49711e66c422cbec3012249adfc82ab868d8623c80328ab22b3e7e3faa2d578d117f93d17e55
+Description: graphical yad message utility.
+
+Package: yad-splash
+Architecture: i386
+Version: 1.0.1
+Priority: optional
+Section: utility
+Maintainer: Fredx181
+Installed-Size: 21
+Depends: libc6, yad
+Filename: ./yad-splash_1.0.1_i386.deb
+Size: 3072
+MD5sum: 6948080e0262c9bad05c4e0f3736d177
+SHA1: f430d7caa0e1db30cc18c45fc4698e40bbc3d97d
+SHA256: 3e39bd20e651c2bb8d0f4d26d5ce7e3cdcd1809604551f4d94dccfb57e63cc31
+SHA512: cb2c19a856e898c2d84cbb0ff4afc80d8b0b0e360c40256b6a5308e489243733653b9f1e012a0a53969dd444ba70b0a7d534602aef2b1a54ac88418f9f37b7c2
+Description: graphical yad message utility.
+
+Package: yad
+Architecture: i386
+Version: 1:0.38.1
+Priority: extra
+Section: x11
+Maintainer: fredx181
+Installed-Size: 429
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
+Filename: ./yad_0.38.1_i386.deb
+Size: 186466
+MD5sum: 03169289888c05f385e2501414c9724b
+SHA1: b53ccbcbfa7fa7dd0385d33e4de3ab78ae62e355
+SHA256: 8472f0311a077737fc7beac6bc22a5bb0e4a52eec83b10b5456ca7deac28f60a
+SHA512: 63e22255349bcc299f980c8b9a069375190b3332cbf5253ddd0005fa63735b8260474e5f8792aa348bd6e5f45e5c07c4396defecc7b0955fd20a1ec5371508de
+Homepage: http://code.google.com/p/yad/
+Description: Yet Another Dialog - dialogs for shell
+ Yad (yet another dialog) is a fork of Zenity with many improvements, such
+ as custom buttons, additional dialogs, pop-up menu in notification icon
+ and more.
+ .
+ There were two main reasons to make this fork. The first one is to remove
+ dependencies on deprecated libraries, such as libglade and gnome-canvas.
+ And the second one - as for me, Zenity looks like an abandoned project. Its
+ ChangeLog consists of just "bump version to..." and "translation updated" for
+ the long time, but many interesting ideas which are ignored by
+ developers/maintainers were in GNOME Bugzilla.
+
+Package: yad
+Architecture: i386
+Version: 1:0.40.0
+Priority: extra
+Section: x11
+Maintainer: fredx181
+Installed-Size: 429
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0)
+Filename: ./yad_0.40.0_i386.deb
+Size: 187164
+MD5sum: b9b24a7a7f2ed01c65d729a40a86e61b
+SHA1: d49c30655453f31ef17090fa3a852ab306755d2c
+SHA256: 931de818f9a96c96e30820c76ff2c8205907ed1c6f035c472998fcdbc7e5f3cd
+SHA512: dd113c5cad63e14c8ba743b8780b08d9b39b2aa3e1a3af0b9a10bfd6c4c69146ec721423977eaa7aefab2e3b5fce5aa1573d66ec287dde8531b7b77dfa683260
+Homepage: http://code.google.com/p/yad/
+Description: Yet Another Dialog - dialogs for shell
+ Yad (yet another dialog) is a fork of Zenity with many improvements, such
+ as custom buttons, additional dialogs, pop-up menu in notification icon
+ and more.
+ .
+ There were two main reasons to make this fork. The first one is to remove
+ dependencies on deprecated libraries, such as libglade and gnome-canvas.
+ And the second one - as for me, Zenity looks like an abandoned project. Its
+ ChangeLog consists of just "bump version to..." and "translation updated" for
+ the long time, but many interesting ideas which are ignored by
+ developers/maintainers were in GNOME Bugzilla.
+
+Package: yalarm2
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm2_0.0.2_all.deb
+Size: 119510
+MD5sum: 56319f31d518daf307b000d34a1653e8
+SHA1: 2f7e867fd5d1933a67800fd478a9afe46e8f3f3e
+SHA256: 698c6c9345b19b81df94ac41b962f042f01dd11f7e1c68b239eb63dcde0b64c7
+SHA512: 8d1d822695fdbf2b475dd83ac2f145caac2704a9ae00965bdb4052e9c610a4190fca89651ecc00b690ff5ae33e9ba2e88d2738dcdd28d88296cf9f8491718f13
+Description: Alarm scheduler v2 by fredx181 and Argolance
+
+Package: yalarm2
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm2_0.0.3_all.deb
+Size: 119546
+MD5sum: 2d61fb40af772005d10556581f42ed0c
+SHA1: 27c84c92294046b6a02899970351f5095b06a633
+SHA256: 7a649a20c084043f03c6106089a783ff7e671fe2ff9409e9de4b61dde1701f15
+SHA512: 6751891c85584f03b97d10e8b629814f33fd816f660b344477c378bd2c885a5f84d2bad99194f5a91f7bd56d5c6567ab9ebb478f40d38765f80dee70528b963a
+Description: Alarm scheduler v2 by fredx181 and Argolance
+
+Package: yalarm
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm_0.0.1_all.deb
+Size: 39088
+MD5sum: 3df27afe9e0e0a348d7a433ec2466e83
+SHA1: e26947ce275d6b9eb6e12adcbf2e9bfb3844b534
+SHA256: 1401660cfe0fd42a580bf883899f06b4e6b4b1ea527cad3dbdda906d3fa969b5
+SHA512: 9937bef7ed29a68702f37db7a014b9e71f986c4b5cb57a66f4343ec781701154a9e4a36046d6d24ea2e51e39132f161c117bac18e673040128410798e43edfc6
+Description: Alarm scheduler
+
+Package: yalarm
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm_0.0.2_all.deb
+Size: 39404
+MD5sum: 077a87cc0c50128c672613a86f162376
+SHA1: 7047304d4fd7a1a9f9ef5ba877c65805fdab0b1e
+SHA256: f8a0c515f6532150adfe9e055f45f91ccf18cdec871e4b7bbd332f264203df40
+SHA512: c8665fd5e62812e3058c84801043380fff2bf476ba90bd4f4a441a8be463fba5c5d15d9bdb2e1b664e8bc556222944e6aa8a86073b0a528cd5c7828a21a4b08c
+Description: Alarm scheduler
+
+Package: yalarm
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm_0.0.3_all.deb
+Size: 39416
+MD5sum: c46dcb433107a731d3c882fb58e258d6
+SHA1: 030370389fe7c1d0e363469c43387eee2e5e5f6c
+SHA256: 82bacd6b59fb6631249e66ecd1d705b44d8bef09dc7f827c1771b9a6f69f3e98
+SHA512: 42be6c27dbedeea33852cb0d7dcd43771a2f941b1cd9a4ce495eef1ea9761ebfd4fdebee96e0ad348c0290d7da168ebea3b152ab7e3383edbe66703fa230faa0
+Description: Alarm scheduler
+
+Package: yassm-smbclient-mpscan
+Architecture: i386
+Version: 2:2.6-2
+Priority: optional
+Section: net
+Source: samba
+Maintainer: root
+Installed-Size: 1000
+Depends: libc6, gtkdialog, mount, libpopt0, libreadline5, libncurses5, gsu
+Recommends: libc6-i686
+Conflicts: samba4-clients, smbclient, samba
+Filename: ./yassm-smbclient-mpscan_2.6-2_i386.deb
+Size: 279820
+MD5sum: 0d0ded5a0bf39296e8371df4fbdffe6a
+SHA1: 7e1d7ad0d81d62a2ae9d19a79483491256ae6b09
+SHA256: 0d21768c3377edac7455574bedc7c188186d0ef1ca757c891054f512fec0d92c
+SHA512: 567b34adfad7339d965dfc87bb0826a29435a1ddb21c1e21b5f8b04b9820ada2d92ce0bfd1a05ba6cee5bfd560dd7255b2a3b7dd3f8da28738844016a9c959b5
+Description: SMB/CIFS clients for Unix
+
+Package: yassm
+Architecture: all
+Version: 4.2-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, gtkdialog
+Filename: ./yassm_4.2-1_all.deb
+Size: 7068
+MD5sum: 33aa852e6daf1713cc48699ed1bab186
+SHA1: c5225e9fe95b5c2e4bc336c13a98d4cfa7e9affb
+SHA256: ef554d84ff1983fbad0366faaaaf8301d9dfe0d2fbcd0c5f1cccaf32dae8226f
+SHA512: 5112517b4943947b802bea9edebda449d307ff87accd12516bd26e47329bc495ed046c70c12fe8079c61c4ed1a47bf0d248e6fd555a2edb9ad59dbfb9b131e99
+Description: Samba share mounter
+
+Package: yassm
+Architecture: all
+Version: 4.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, samba-common-bin, peasyport (>= 3.0)
+Filename: ./yassm_4.7_all.deb
+Size: 7090
+MD5sum: 796f4dccb98fcc9172357d922e0a8c23
+SHA1: 857c4dab2e1c9108d6865be1aba05f4d6d9efaf6
+SHA256: 669871f1e8ad43af5e1cb9e495fcacadfec8770217dd7cc972d2b7d7eeace7e7
+SHA512: b5aaf6f1dcd008e6a4584e31d75943fb16717dc82a85785444469f87295bc7614560c14a4824b35d0860726a5e9530f2ab5ce993f66dd0b93cf132683ea74032
+Description: Samba share mounter
+
+Package: yassm
+Architecture: all
+Version: 4.8
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, samba-common-bin, peasyport (>= 3.0)
+Filename: ./yassm_4.8_all.deb
+Size: 7094
+MD5sum: d6a462e6ea9293b54ee82a43be6ebd94
+SHA1: ff2c6299230abe044a075a4f04e06e93746ca824
+SHA256: 63f0cbd047129a11c957094a62cf665d0de777588588773139650e2f7f2c879c
+SHA512: e565506c866e78e52aca91172a3f97a38d48780fb7890c80bbda5b1f733cd7fe85778594cf4ce5c8dfa196fdd6cfbdde33dc128619542c890e19bfc5d61e5a20
+Description: Samba share mounter
+
+Package: youtube-get2
+Architecture: all
+Version: 0.2.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.0_all.deb
+Size: 1589348
+MD5sum: 62713261e0142b3afccd90718b9d5946
+SHA1: 0a7de08eafd9a3cbc1c23389b1f81b3f95a1a109
+SHA256: 96ea574f3454bfa6bc324274e697bb2f2945a0eea946d9a24c08cf69aaedec33
+SHA512: 8d63a2e78ea4d28229e2566dbb534612b0fd46a79d6ad3e339216436a2c3c24cac5c36f794c7d4dbcca6b91663200d832222e8565f30350b0996c7530433c7c9
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+
+Package: youtube-get2
+Architecture: all
+Version: 0.2.1
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.1_all.deb
+Size: 1589352
+MD5sum: 3ef81802d1af5afc564196391f8405f7
+SHA1: 5cce55b96f1998f6196ba60a7190da665998cf14
+SHA256: 8e0864ad7b0c2abc93f8a97e2ca7c6e345bf5a3bd20ed13623a9f198970c4dc1
+SHA512: 451a341f6b66b575a9d60835fa4c88cc6a10903a552312ba37a9f0e3abc9c8708ea1b259561095beff625da7bcbb405eff4cea5d490d4be92ae6e5a169f33d53
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+
+Package: youtube-get2
+Architecture: all
+Version: 0.2.2
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.2_all.deb
+Size: 1704146
+MD5sum: 7b06b78099636ab800f4e791a922d0ec
+SHA1: 8a4b36cc6b615b072a175d8e1b405eaf91b27367
+SHA256: f65e1f6ef88d6b8f084b263eb35d247fb0c48dee690829015c052fa35fad5410
+SHA512: a76f4e5ab1c90dea1a37f65846e9929deac0df13ee90f5dc7637eaacbf49731685ae803225c8e15ee9fb3216017cea92030012b131c7668d1c7b26a3b629f41e
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - v0.2.1 Speedup waiting time for downloads to be started
+
+Package: youtube-get3
+Architecture: all
+Version: 1.3.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.3.0_all.deb
+Size: 1732424
+MD5sum: 45b3a9b7940f8eced754b3fdcf9d1b5d
+SHA1: fd8138f29fa59dabc78eff5be15c09c83b81cd94
+SHA256: 930df46e0017066b683d3ea98e5eb65e0e2121331edc2160fdb715fa92483475
+SHA512: d8a6ef3c1d6f2e329fd917ea298c8fba66569eb4ad6c7fedc9e3bdd6b6193ea04e5fa186d1c5991d9682378691b64c8cb5b2329a7b7014628c2298ee6598da01
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button
+
+Package: youtube-get3
+Architecture: all
+Version: 1.4.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.4.0_all.deb
+Size: 1739232
+MD5sum: ad161716e53d25320be86808127f4342
+SHA1: d8b3f5695bf5772ada2027f4d027187ded120342
+SHA256: 640b47a42fe8e34f4067e480fec312b0dab6947149b5cba29c8449c988ee9856
+SHA512: 82b7208c6244e09f8b2304090f440f5f0eed1afa98e10fb3eb8ed6ea324632821e28e0bc3d05ae003f474527d605fe3081a98cbff6f1c21ac3e4add37a3f0e76
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.1
+Maintainer: fredx181
+Installed-Size: 1938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.1_all.deb
+Size: 1751144
+MD5sum: c8d824dc409eb1f7dc3cbdba20017e7c
+SHA1: 6f22f1e851e0734bbeccbcb87cad5380fc366216
+SHA256: d9d0b3fd7ebacb70a89ee91c1c1505d0fa5febf1cec5d01bb37fa7550d5d6081
+SHA512: d0c1af825613380255f81fd4b93ca1f7511050b4ee6b3b0410d7d7c380fc7695dd61d6378e6ec6a15cb837afcbbd4f019d618afa5f19c27bc625551dfbb85fe2
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.2
+Maintainer: fredx181
+Installed-Size: 1938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.2_all.deb
+Size: 1782252
+MD5sum: 870eb82b1d2002e6d25d5f136b002ae1
+SHA1: 24cf3140fe14ba65cfd710037b67d3f95c9b28e1
+SHA256: 07d5769e5230d9fe4f7019d23e344ff24f2cb900aadfce672ad19ecba86f4d2e
+SHA512: f195b1e92dca749bfeba0dcec19d328428c95e930c75fdc9c52dd99ecf6bb83e59b7f0f33090b13383de222e1a93b7bb91bdc4a2e7ff96d718d21723f57545ba
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.3
+Maintainer: fredx181
+Installed-Size: 1938
+Depends: libc6, yad, sed, wget, python3, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.3_all.deb
+Size: 2139696
+MD5sum: 741d527f314e533614f17044c777da06
+SHA1: ae88ef0774467105ffe00dcaa2424d8e8b3afa0d
+SHA256: 7be365faa32be10957228b58f607ba787fc929fe1c7b7a88e60472597c16dcca
+SHA512: 1482ce3c53d64b2209b0fa076704e952f193fc174085ad8681f239806cfa9a61a7c168aef4c2e5bef9ad598b9dc3401f22e4ff45328b1d19e536c6d398370c53
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.4
+Maintainer: fredx181
+Installed-Size: 1978
+Depends: libc6, yad, sed, wget, python3, gsu | gksu, curl, ffmpeg
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.4_all.deb
+Size: 2566124
+MD5sum: 64ee92f0b4f24b016b6d62ef3fffef12
+SHA1: 9a64244d20019c08cb6dbafc4f23b7f01b7594cc
+SHA256: ccda62ea7d90c4acc799e7d2c9e5ca875a88f06cabd3ec3bb25c7d1b8e89c25f
+SHA512: 245b92b9371bb41aeb0a5167361164459b6f9deacae1706079b059a562c438492296e8685278a268dc1e4eedda6883edd14ea55576597448994bc4495e9eeae0
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+ -v1.5.4, fixed when id starts with a dash (-), that download failed
+
+Package: youtube-get3
+Architecture: all
+Version: 1.5.5
+Maintainer: fredx181
+Installed-Size: 1978
+Depends: libc6, yad, sed, wget, python3, curl, ffmpeg, yt-dlp
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.5.5_all.deb
+Size: 54820
+MD5sum: f545cc5f775f1bb329c570f6c2aaac82
+SHA1: edc156fdbb8de1ba64d9f59ac73092543040492d
+SHA256: c4529bd425f908974b3f052e4eb27dad8386d5c41b811606e09b3b60b73bfbb6
+SHA512: 5bcf562dac2d900db37b0bd09126037da1f25aa14bed1545ffa1ef72a3d70a39ee31233c6de45d298eaf2568e6736b8a206511cf251b9a863cc7d6a9fc292e77
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button 
+ - v1.4.0 Added DragnDrop and fixed quality settings
+ - v1.5.1 Using youtube-dl now rather than youtube-dlc 
+ -v1.5.2, fixes for display for yad gtk3 linked, and more
+ -v1.5.3, use yt-dlp instead of youtube-dl, requires python3
+ -v1.5.4, fixed when id starts with a dash (-), that download failed
+
+Package: youtube-get
+Architecture: i386
+Version: 0.1.1
+Maintainer: fredx181
+Installed-Size: 68
+Depends: libc6, yad, sed, wget, xterm, gnome-mplayer-1.0.7 | mpv | mplayer | gmplayer-portable
+Recommends: locales
+Replaces: youtube-get2
+Filename: ./youtube-get_0.1.1_i386.deb
+Size: 20734
+MD5sum: 35d293a9645912b47b7fd2f7cf7c8258
+SHA1: c4ada3d25f2e9e27c7b68e036d44302084d07e34
+SHA256: e6eacad81067d0c548f2a5c0b48cf5db2a03877523e2a2380b3d90283750e06a
+SHA512: c175e659f666f042b21f2f1e625fd797252f7724432cdd59fd77fa05bd12c6438f220bbff30897a9ef97da23a82be06f32998f447d22dbb9d9b20bddfe14930e
+Description: A simple YouTube Downloader
+ - A shell script (bash) with yad as frontend
+ - Based on the idea of Dr. Mark Humphrys, see here:
+  https://computing.dcu.ie/~humphrys/Notes/UNIX/lab.youtube.html
+ - Gives choice which quality to download, e.g. 360p or 720p, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mpv
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.6-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.7.6-0_all.deb
+Size: 235886
+MD5sum: d4c8d9b3bedce41b613f5e77350a56e9
+SHA1: 72912b252b7e2cb4b4c9d0f7a96dbef9e6193466
+SHA256: 1db7e88e6975351a87a5b919bf04f0c908c5fbb4d30858a5c379bc244572be89
+SHA512: 085644ba85b1f52605cc9857d6cf208a4f809cee387e44da2ae3be99eb233d2e709cc3dbea9fdefec8457d156fb5773711057827ac6211ff666b879ac5faa583
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.6-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python2, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.7.6-1_all.deb
+Size: 235980
+MD5sum: e35821d55dc25e0d2965560124c3c26f
+SHA1: 3e1febb7ec175d44cc1c3666c2d775df532fb6c3
+SHA256: b419a668f056743cabe2fb5d01b05b473843cb770e4cc75479412446c01ba444
+SHA512: cfebe923f8d3b3b4c69f9c0b61c9d8ca24acf4ed6afb4e4d0683e15ee009975b47647fb9524710a5f453a0208ed9b5ad6b87c5db48da959dfadb3162712c4efe
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.8.0-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.8.0-0_all.deb
+Size: 244998
+MD5sum: 8a2de4cdf78327b5048b315e925e57ac
+SHA1: 5aa6f087e78363e779142c0d1232cb9905c19eec
+SHA256: 2cc5d8e9c38c20d4412d8f09776623e2364d6caaf8901ccff6c9761a6a7619f6
+SHA512: 51b7df20b4eb39a918bea51199370088b05c0a5c7ebf0503aeea47cae996407c77db3ca328edf8c1ddc875426863faf22f1e8912a2037c40d914a3c7b5af068a
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.8.1-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk3-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python2, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.8.1-0_all.deb
+Size: 247724
+MD5sum: 372d9df2fabb0f974abb9a0236233371
+SHA1: be8b3e72dcf2fe11e8c1bfaf74588b9293a7a74f
+SHA256: a32f6346fc714a300c11e4043757db299fd90ab5e1bb863843b9e3da90c993ba
+SHA512: e272707d054b23ba8866e315e51f4b8e2125cb16e0b13a8790b5887547d0509868c3ee93924fb52a159784804f1dfcce3a1b53dcb6ffc029ff84ad4b7dc80fb4
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.9.6-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk3-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, fonts-symbola
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Replaces: straw-viewer, pipe-viewer
+Filename: ./youtube-viewer_3.9.6-0_all.deb
+Size: 251676
+MD5sum: 3ef9f753c5a684f2f8e3d0936fc16ad8
+SHA1: de3cc7199c16e114e1358c760525ada09257525b
+SHA256: 51f77353899d28942a195b5d1985f18bfc0bab717ec4d7d8c49fcc4f97f04fd5
+SHA512: deb9bdb1637746862f998445018e3b1638010212a6fd6109d1166ebdde283205a2b1527337d383d5702715d43ad09af5292d42cf2a6e3ea9ee1834b11e7f5c7f
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.9.6-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk3-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, fonts-symbola, yt-dlp
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Replaces: straw-viewer, pipe-viewer
+Filename: ./youtube-viewer_3.9.6-1_all.deb
+Size: 251036
+MD5sum: 00c202e30b15298a2bae3b7f08a27796
+SHA1: 054052b844af536df9cc411c45c6f4072fe90d4a
+SHA256: 47d4d699fc4e89311916722d4d37f0c8d9847997f676eb1f684f8fdf39be98f9
+SHA512: c2e8dc24bd68f00aed5e64e8d58ee510482458442d185269717a22920fc4a2946ac99bf9adadf6df82e49f10ebff387f514d1373083aecaa0f25889e6bebb3b6
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
+Package: yradio
+Architecture: i386
+Version: 0.0.6-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./yradio_0.0.6-1_i386.deb
+Size: 199330
+MD5sum: c761eedda534670feca8e75b9aed7eec
+SHA1: 7876da9887e9be30442ca2a44bbaf3caa7937a0d
+SHA256: e8043510d3fe413e80fb0ad18b34954bcfa6c3cf2f1cec8e262071aba77fbdc2
+SHA512: a7e176df46a6446a83e5f3cac09157915940e9ea770f4dc242cd7b12c77c2e34a89d21d2b7124a2fcb1ad61e3b3e9f064ef5eba8815e5a1cb90503d8dfc086a9
+Description: Internet Radio Player
+
+Package: yradio
+Architecture: i386
+Version: 0.0.7-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./yradio_0.0.7-0_i386.deb
+Size: 190090
+MD5sum: 06129dd39292a306b61d69e2280c4073
+SHA1: be589e26908a71bfe5a42f1fdaba5c4375f894b6
+SHA256: 522e01071e3a3d63a7d03f2c11d031fc05ee6746fa363cbd6aaeb1047c16a218
+SHA512: 47e01e7d075d0351b5837e4035477d7a1fe9b2e4b67571c5f7668e8cf4484999718ad75e1a66f36956fc8ab41a92711f67b3a710bb77c37797ebe5d77483171a
+Description: Internet Radio Player
+
+Package: yradio
+Architecture: i386
+Version: 0.0.7-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./yradio_0.0.7-1_i386.deb
+Size: 190156
+MD5sum: 304c70957bfa496ce4641fc1ab46d87e
+SHA1: 42b3d20aa46aeceaa1ed81fff910db8c2a12a87e
+SHA256: 209ae76bdf8bb32996ae4d793a0ebbe4b33a402dd037a6ac2b992715bf693371
+SHA512: 1e221a5eb43e09eb6695f9241bdbb01c9045f1098c255552cfdd51a33b2dd9754fa06f422e7f5c13a937e6cd35d773343a4261ddb389b86fb4ac006f2f14b39f
+Description: Internet Radio Player
+
+Package: yradio
+Architecture: i386
+Version: 0.0.7-2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./yradio_0.0.7-2_i386.deb
+Size: 190164
+MD5sum: eea1c598942933aa3179d7a1b7cf90c3
+SHA1: ddc75e2b372c1e4b4140b3586f5cbd5575d866fa
+SHA256: 2606c91fc418f356555543608768c6a7341f8294a0b0325c829bf06a69a132be
+SHA512: 7ef87f7fe063a4b8f2ac9cfbbe778728c52c0761bb1f9111a4551a56c3de697dba60931111b230f14789f2cf582e492ac19192cfe8bfc1b5ba23aee0a782548d
+Description: Internet Radio Player
+
+Package: yradio
+Architecture: amd64
+Version: 1.3.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper
+Filename: ./yradio_1.3.0-0_amd64.deb
+Size: 276012
+MD5sum: b314116f99b2bed5099fa86c17139cbd
+SHA1: 06c014d1649f7af9698389f6212c8af22ac0fe6b
+SHA256: ff16d3f47986ea0583b2d86ae14c71004f4628b3639ee9fedf3c90d940df2036
+SHA512: fb9d51602379af7b852a0dd444149133af79041f3435e1b41820c975aa6b00f01734a16c907c90f44f3fce1f09a9a2807cafd32efdc509b47cbff039ad5bb960
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+
+Package: yradio
+Architecture: all
+Version: 1.7.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.7.0-0_all.deb
+Size: 280000
+MD5sum: bc9d3f05e559497471e9af6fd4074098
+SHA1: a6bd607360508897fc1df3d3a9c77ce90940c028
+SHA256: 9a9ae5e0619ed5bc390697897f9259ad2b8651025a2b0d8c2774dc66256d25e8
+SHA512: 667568679d7b40d145bfb10fd2e2eebc15041d97abd3ed27cb0ba33722f0425b8e046eacd3b1b19084f832069c73d04babf8145351181ced69629b705cc74bec
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+
+Package: yradio
+Architecture: all
+Version: 1.8.0-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.0-0_all.deb
+Size: 279916
+MD5sum: 210585cec88034fedcd93f52f8726a13
+SHA1: 90a4da598bbdc09ed256ca1c0fc2c948ba382441
+SHA256: 30abbe6a1cfb272042de12b87063a3db3b8997e3edb1e6f1d9ee25780d756f97
+SHA512: 3ceab9ec9041ef0d2e3c93d7c3e60ab16aed88485d21073cb9b707d4cd6bbaabae35ab2e49cac722d38ec94ee8aeac1d7968a223664046703c90e10cbb828e69
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+
+Package: yradio
+Architecture: all
+Version: 1.8.1-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.1-0_all.deb
+Size: 279908
+MD5sum: 6359c82fef97f3fea982947d6d1cc72e
+SHA1: ec4881949eb52da54d3330776118dcf42b865628
+SHA256: 58a6baa941977124a7ccab5683f2142ffc7a09fd9a343a84d854c1021c479664
+SHA512: feb844a72a8d5980bc2fcb8c5d7e3ba67f0ecbcea57123c4422df48a8ef5367cfd60b8e999c04934efac55599be503a729dfc14a0b0e59912b056600d77b62c8
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+
+Package: yradio
+Architecture: all
+Version: 1.8.2-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.2-0_all.deb
+Size: 279960
+MD5sum: 63e2355fde9e7d303f141d6fe2a77696
+SHA1: fbfa5a6c1107b2c91402df8849467a31a02a3c07
+SHA256: a6093d2e921d50bf0c6078c4b51792a4b82dd40a18cc5c527d1091144924d810
+SHA512: fccb02b200d2019e2740be87c0fbc5a486ef8185414c05be8e991d08e2731d3a726f2ba69f9cf3181292ea2472f002d6eb31178133570bbadf37ece5746b6d2c
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+
+Package: yradio
+Architecture: all
+Version: 1.8.4-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, unzip, streamripper, jq, curl
+Filename: ./yradio_1.8.4-0_all.deb
+Size: 280052
+MD5sum: 8e545a0f6d0e21bf00777ffe13c7538b
+SHA1: c6ee694c9a9b3fc8925780aefccc4b83b4f4fadc
+SHA256: 24f5c4481785f6fa043f9a585e731e81f75c25eb38927696242c311747b06643
+SHA512: aba053b51eaee4f7ec7ab3d38fa0aaac7cd3b62a509fdc1a89896494c7f1dd78037aee3b86ca1b12aad8d9cea85e87fb1f1fd448af66582e3914842748d633a8
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+
+Package: yradio
+Architecture: i386
+Version: 1.9.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, streamripper, curl, gawk
+Filename: ./yradio_1.9.2_i386.deb
+Size: 373012
+MD5sum: fa7556822a42cde9d3033af4ff9b9678
+SHA1: 19f19f1ae5850e4d3063d3ca6c2f3c8025ea2cee
+SHA256: b28b3a9570b2e0bad3c083e8544f8b54416c70ea30a58c8a1dd39870dda6a44f
+SHA512: dc64160cf8f43ebe31d395f347c3a1c1eaca538225e7a2ede29406b7f67426fd5995f4dc12c9514d368a7088caecd850066522432bc17eb13b6bb84d21ae86c2
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+ v1.9.1, not depending on 'jq' anymore, using csv extracting for search
+ v1.9.2, portable setup with yad GTK3 included
+
+Package: yradio
+Architecture: i386
+Version: 1.9.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), mpv, xdotool, streamripper, curl, gawk
+Filename: ./yradio_1.9.3_i386.deb
+Size: 373000
+MD5sum: 3a88ee8e307682f90e7a0018469219f9
+SHA1: d669b378640c24626ce3516581b507e08d80bad8
+SHA256: 4eae47ba4b83b24dabb55737da124e671ddf014d009454464f3a8fcd0ff02b2a
+SHA512: 7a35bfa7621baf75b3ccebec6d6abec6a63438242756981e9879d28f0b1d9366de35568b844517d766971cecd3992bb5f4388c391ce2f2d5a2a695db35dba926
+Description: Internet Radio Player
+ v1.3, works with mpv and mplayer
+ v1.7, direct online search
+ v1.8, volume fix for in case pipewire or pulseaudio running
+ v1.8.2-0, fixed that playing with mpv didn't work properly
+ v1.9.1, not depending on 'jq' anymore, using csv extracting for search
+ v1.9.2, portable setup with yad GTK3 included
+ v1.9.3, fix for when containing special chars (e.g. &) in search query
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2024.08.06
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2024.08.06_all.deb
+Size: 2834816
+MD5sum: ace9f6f86514c99d08ba7cbd643e0526
+SHA1: 873e8a7f0db5338294601e67d06da9e176c5f12f
+SHA256: 117ee7aab338042828df248941108b9c400328da08a3c701417d041a2eaa79ee
+SHA512: fdfb98a546ea311859f324152d389d92073273636de3653159560cb60000b320f96756542d5c971830cecf5f8a853f4dd2396082ef6c51e93b62691671749445
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2025.05.22
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2025.05.22_all.deb
+Size: 2958764
+MD5sum: 08c686bce3f0f77ba0c721ac44c36829
+SHA1: edd83639284c08a95558d74757e558156043dd23
+SHA256: d651b5432eb2618deaf6468515e5ddc46d1eedafe84f15f3d14cd79271491fe3
+SHA512: 87bb5b469b0c1f0643b1e9dc7168733492079305e72631b81a92ad018d9b86efccc6bf88e974a990262901cfb5259cb823627cbcd52da66a5f12cfc53bb943a8
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
+Package: yt-dlp
+Architecture: all
+Version: 2:2026.02.21
+Priority: optional
+Maintainer: fredx181
+Installed-Size: 3187
+Depends: python3:any
+Replaces: youtube-get3, youtube-get2
+Filename: ./yt-dlp_2026.02.21_all.deb
+Size: 3063972
+MD5sum: 988b13b975fb13187b67daf955fbe77c
+SHA1: b3d623f60694b0196d8052af56925cc1de516c95
+SHA256: 8f100f51fc32c4219ebce3af5b117acdb3c2d92dcf17a1e356800ecf54b50bca
+SHA512: 38b2783fd91c1e655853c9da8d06a730371879f8c4a77d287d28bbd14f7e7deb6153c00e383946efb45b1beb022a0a6ba7a86c8d018cbe82c17354bc35b89488
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: Downloader of videos from web page.
+ This tool is a small command-line program to download videos from webpage
+ that don't provide direct links to the videos served.
+ .
+ This tool allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab.  It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ yt-dlp is a youtube-dl fork.
+
+Package: zenity-portable
+Architecture: i386
+Version: 2.30.0
+Priority: extra
+Section: x11
+Maintainer: fredx <fredx@nomail.nl>
+Installed-Size: 280
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libx11-6
+Conflicts: zenity
+Replaces: zenity
+Filename: ./zenity-portable_2.30.0_i386.deb
+Size: 102162
+MD5sum: b969b04a28c99ec573458a9950cad0c8
+SHA1: 154e276015a70ff0a5361c3cace3cbf2fe7452a6
+SHA256: 6c67f639e516c847a82222d80cd264c6582dc3ad6877899073399a7f6842cbb8
+SHA512: 0e95f9c8947676ff3435a3d3d26dfa752ed24240f4dcfa48d278a02c7e00f9bd35710cd52e1221e7613a5c94dbabb7c2d5b2c8b6ff261172a11393554a758442
+Description: Small portable old(er) version of zenity
+
