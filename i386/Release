@@ -6,24 +6,3 @@ Codename: bookworm
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Fri, 17 Jul 2026 11:53:12 +0000
-MD5Sum:
- 4073652d0bec4ca057647ef7aa3c1483           571781 Packages
- a7169d7a2e944648a9d5e298b0635dd7           184023 Packages.gz
- a9ac23b34212d61bfd528bf546733f22              188 Release
- a7169d7a2e944648a9d5e298b0635dd7           184023 Translation-en.gz
-SHA1:
- 826abdbdf46e9895ac3749c48cdbc778a5d90e21           571781 Packages
- 386c658d3d4862133ee5db0ff6cedb44ab943573           184023 Packages.gz
- 7ed9043b7354f6f191f12caa0d9c985ea71f4a9d              188 Release
- 386c658d3d4862133ee5db0ff6cedb44ab943573           184023 Translation-en.gz
-SHA256:
- 0875b5c3c429d99c505b4c723825f2617e7613bfcd9f805850c5ad4f14a66365           571781 Packages
- fd40b48e55b6afc60d27c0398799f547a7ad366ebb33a7455a6e6463a937e720           184023 Packages.gz
- 19f08e2623643a70f5e7bf21067f1619b08998559d8b9ae6a93fe04ddd1d4a7f              188 Release
- fd40b48e55b6afc60d27c0398799f547a7ad366ebb33a7455a6e6463a937e720           184023 Translation-en.gz
-SHA512:
- ccf5453104197e2120993b49df7750efc5f6d132623db2c5081da82231c58c038d6342c2d5f0a7b7f08a1413dd1c5f93ad26bfe23f8a5a237f442ffddb39c1c4           571781 Packages
- e626b5ce865a70d3bf8d9abdbd61c5c5a43c141defbd5beb7f26d2e82aa74f6f0710f5234e5dd7a7391e35635ff39c98466ecd31980cab7bb162f8cdf17ac111           184023 Packages.gz
- 0eae9ece39bc3c4c53031abc40acc53e2ad46eb4e6a06c46fed5c594abde2a683ea8cd4b818d5189ddd72cd2a2c13d3aabac10fdd00f8ba1adb67d8071a9b872              188 Release
- e626b5ce865a70d3bf8d9abdbd61c5c5a43c141defbd5beb7f26d2e82aa74f6f0710f5234e5dd7a7391e35635ff39c98466ecd31980cab7bb162f8cdf17ac111           184023 Translation-en.gz
