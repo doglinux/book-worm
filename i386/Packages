@@ -8887,6 +8887,22 @@ SHA256: 64adf97aa9c3c1961f3ab57b6133a1c959f9f6732c485ab6464c897c49676fd2
 SHA512: 7c45567c0d6fca9f0ce478ade1953ec660a439431b89ef5c020883b6228f0c7d851f57dce1e70c5958160d906d74fdc2c079e1bb00018ef19d472982ff43752a
 Description: Record what you hear (for pulse or pipewire)
 
+Package: pulsecapgui
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 962
+Depends: pulseaudio-utils, vorbis-tools, lame
+Filename: ./pulsecapgui_1.1.0_all.deb
+Size: 5600
+MD5sum: 388e024fca645afd6e6d5788a7e47179
+SHA1: c9c489ba014aa5e3eb49c2c5101646e3163a0a4c
+SHA256: 8cc217d005f5cbd4795ec0e93cdfecd40d724c191ea71549b9f174e578c09d29
+SHA512: 3ab2623985784100d72940e9fe3a031c392790b0de8e763af39497b6dc4b2a7d1ca00a20090617a7d27a15e305f73615a1a0bb41277a054cc36083fa75ef78c2
+Description: Record what you hear (for pulse or pipewire)
+
 Package: pup-volume-monitor
 Architecture: i386
 Version: 0.1.15-2
@@ -10739,6 +10755,23 @@ MD5sum: 3f47f4af07f8e147f381013e8e039b6c
 SHA1: 8a659a139b19a84b4e464e30d5283ceac298f1fb
 SHA256: 292bd23f7a45354eb6336c9ed089b657b42a92ca182b7af5255d7d61b8880d6d
 SHA512: 270984e02bbe59bcaee7c2139d8ecabf85e73adc7800ea998b25d9d8fc646df33461ece9666c134dac5b3a2cd5fab073e8366878e3f4188446c5529f2a9e9cef
+Description: Modified from TAS Screenshot utility, focused on taking a screencast with audio included
+
+Package: takeacast
+Architecture: all
+Version: 2.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 234
+Depends: ffmpeg, gtkdialog
+Replaces: takeagif
+Filename: ./takeacast_2.0.1_all.deb
+Size: 57532
+MD5sum: 87c06cf5da8cc892271980f4c37bf3ce
+SHA1: 2841326ed0f83970218a37e959f39276a133bf13
+SHA256: 8ed71cd4e474c001c50e8eae640f7bfe22294e1657862580919a0b75b5c36ac1
+SHA512: e2485a513f3821cd9156a2d4e11b15811317cdeccb3775257e065109b77279e693152b2f7343c64c0266edb73bf01b45c6b4da6cb26d4e6f7c0c8ae82109b5d0
 Description: Modified from TAS Screenshot utility, focused on taking a screencast with audio included
 
 Package: takeagif
