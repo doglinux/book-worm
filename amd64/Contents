@@ -6031,6 +6031,7 @@ usr/local/yradio/usr/share/glib-2.0/schemas/gschemas.compiled yradio
 usr/local/yradio/usr/share/glib-2.0/schemas/yad.gschema.xml yradio
 usr/local/yradio/yradio					    yradio
 usr/local/yradio/yradio.png				    yradio
+usr/local/yradio/yradio_ripper.lua			    yradio
 usr/sbin/NetworkManager					    network-manager
 usr/sbin/bootlace.com					    grub4dosconfig
 usr/sbin/dhcpcd						    frisbee
